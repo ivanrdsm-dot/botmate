@@ -1,9 +1,9 @@
 export const site = {
   name: "BotMate",
   legalName: "BotMate México",
-  tagline: "Robots de servicio en renta y venta · México",
+  tagline: "El compañero robot ideal para tu marca · México",
   description:
-    "BotMate es el líder en México en renta y venta de robots de servicio para restaurantes, hoteles, hospitales, centros comerciales y corporativos. Modelos BellaBot, KettyBot, SwiftBot, FlashBot, HolaBot, CC1 y más. Refacciones, mantenimiento y soporte técnico especializado.",
+    "BotMate es el compañero robot ideal para tu marca en México. Renta y venta de robots para publicidad interactiva, navegación en eventos, exposiciones, ferias y limpieza. Confianza de Universidad Anáhuac, Red Bull, TECMA, AMDM y más.",
   url: "https://botmate.mx",
   email: "contacto@botmate.mx",
   whatsapp: "525531491986",

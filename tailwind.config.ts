@@ -14,19 +14,34 @@ const config: Config = {
       },
       colors: {
         bg: {
-          DEFAULT: "#04060B",
-          soft: "#0A0D14",
-          card: "#0E1320",
+          DEFAULT: "#05070F",
+          soft: "#0A0E1C",
+          card: "#0E1426",
+        },
+        // BotMate brand blue (matches the official logo)
+        brand: {
+          50: "#EEF1FF",
+          100: "#DCE3FF",
+          200: "#B6C3FE",
+          300: "#8A9DFC",
+          400: "#5B73FB",
+          500: "#3D5AFE", // official BotMate blue
+          600: "#2C42E6",
+          700: "#2335B8",
+          800: "#1B2992",
+          900: "#16236F",
+          950: "#0E174D",
         },
         accent: {
-          DEFAULT: "#22D3EE",
-          violet: "#A855F7",
-          glow: "#7C3AED",
+          DEFAULT: "#3D5AFE", // alias to brand-500 for backward compatibility
+          violet: "#7C8DFD",
+          pink: "#EC4899",
+          glow: "#2C42E6",
         },
       },
       backgroundImage: {
         "grid-fade":
-          "radial-gradient(circle at 50% 0%, rgba(124,58,237,0.18), transparent 60%), radial-gradient(circle at 80% 60%, rgba(34,211,238,0.12), transparent 50%)",
+          "radial-gradient(circle at 50% 0%, rgba(61,90,254,0.22), transparent 60%), radial-gradient(circle at 80% 60%, rgba(236,72,153,0.10), transparent 50%)",
         "hero-grid":
           "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
       },

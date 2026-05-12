@@ -1,11 +1,13 @@
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
+import Pillars from "@/components/Pillars";
 import Metrics from "@/components/Metrics";
 import Bento from "@/components/Bento";
-import Sectors from "@/components/Sectors";
-import Process from "@/components/Process";
+import Gallery from "@/components/Gallery";
+import VideoShowcase from "@/components/VideoShowcase";
 import Compare from "@/components/Compare";
 import Testimonials from "@/components/Testimonials";
+import Process from "@/components/Process";
 import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Newsletter from "@/components/Newsletter";
@@ -26,6 +28,8 @@ export default function HomePage() {
     <>
       <Hero />
       <Marquee />
+      <Pillars />
+      <VideoShowcase />
       <Metrics />
 
       <section className="py-24">
@@ -34,7 +38,7 @@ export default function HomePage() {
             <SectionTitle
               eyebrow="Catálogo"
               title={<>Robots <span className="gradient-text">destacados</span></>}
-              description="Modelos de servicio, limpieza y carga con la mejor tecnología Pudu Robotics, disponibles en renta o venta en México."
+              description="Modelos Pudu Robotics adaptados al estilo BotMate para servicio, publicidad, eventos y limpieza."
             />
             <Link href="/robots" className="btn-ghost">
               Ver todos <ArrowRight className="h-4 w-4" />
@@ -50,16 +54,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <Gallery />
       <Bento />
-      <Sectors />
 
       <section className="py-24">
         <div className="container-x">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionTitle
               eyebrow="Casos de éxito"
-              title={<>Empresas que <span className="gradient-text">multiplicaron resultados</span></>}
-              description="Resultados verificados en restaurantes, hoteles, hospitales, plazas, logística y corporativos."
+              title={<>Marcas que <span className="gradient-text">multiplicaron</span> resultados</>}
+              description="Resultados verificados con Universidad Anáhuac, Red Bull, TECMA, AMDM y más."
             />
             <Link href="/casos-de-exito" className="btn-ghost">
               Todos los casos <ArrowRight className="h-4 w-4" />
@@ -70,12 +74,12 @@ export default function HomePage() {
               <Reveal key={c.slug} delay={i}>
                 <Link href={`/casos-de-exito/${c.slug}`} className="card-tech group flex h-full flex-col">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-accent">{c.industry}</span>
+                    <span className="text-brand-300">{c.industry}</span>
                     <span className="inline-flex items-center gap-1 text-white/40"><MapPin className="h-3 w-3" /> {c.city}</span>
                   </div>
                   <h3 className="mt-3 flex items-start justify-between gap-3 font-display text-lg font-semibold leading-tight">
                     {c.title}
-                    <ArrowUpRight className="h-4 w-4 shrink-0 text-white/40 transition group-hover:rotate-12 group-hover:text-accent" />
+                    <ArrowUpRight className="h-4 w-4 shrink-0 text-white/40 transition group-hover:rotate-12 group-hover:text-brand-300" />
                   </h3>
                   <div className="mt-5 grid grid-cols-2 gap-3 border-t border-white/5 pt-5">
                     {c.results.slice(0, 2).map((r) => (

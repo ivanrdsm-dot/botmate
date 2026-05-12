@@ -52,16 +52,16 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const clients = [
-  "Grupo Gastro",
-  "Hotelera Maya",
-  "Plaza Premium",
-  "MediCare MX",
-  "Logística Bajío",
-  "Polanco Towers",
-  "Fine Dining Co.",
-  "Café Aurora",
-  "Cadena Boreal",
-  "RestoLab",
-  "Hospital Norte",
-  "RetailX",
+  "Universidad Anáhuac",
+  "Red Bull",
+  "Peñafiel",
+  "Sprite",
+  "TECMA",
+  "AMDM 1943",
+  "Anáhuac Labs",
+  "Club Élite Industrial",
+  "Ferias de Idaho",
+  "Pudu Robotics",
+  "Anáhuac 5.0",
+  "EXP CMAQ",
 ];

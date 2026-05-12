@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X, Bot, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import Logo from "./Logo";
 import { waLink } from "@/lib/site";
 
 const nav = [
@@ -35,13 +36,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container-x flex h-16 items-center justify-between">
-        <Link href="/" className="group flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-accent to-accent-violet shadow-lg shadow-accent-violet/30 transition group-hover:rotate-12">
-            <Bot className="h-5 w-5 text-white" />
-          </span>
-          <span className="font-display text-lg font-bold tracking-tight">
-            Bot<span className="gradient-text">Mate</span>
-          </span>
+        <Link href="/" aria-label="BotMate" className="group flex items-center">
+          <Logo className="h-7 transition group-hover:scale-[1.03]" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Bot, Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
+import Logo from "./Logo";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -9,17 +10,9 @@ export default function Footer() {
       <div className="container-x py-16">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <div className="flex items-center gap-2">
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-accent to-accent-violet">
-                <Bot className="h-5 w-5 text-white" />
-              </span>
-              <span className="font-display text-lg font-bold">
-                Bot<span className="gradient-text">Mate</span>
-              </span>
-            </div>
+            <Logo className="h-7" />
             <p className="mt-4 max-w-md text-sm text-white/60">
-              Líderes en renta y venta de robots de servicio en México. Distribuidor
-              autorizado Pudu Robotics con soporte técnico, refacciones y mantenimiento certificado en todo el país.
+              El compañero robot ideal para tu marca. Renta y venta de robots de servicio para publicidad interactiva, eventos, exposiciones y limpieza en todo México. Distribuidor autorizado Pudu Robotics.
             </p>
             <div className="mt-6 flex gap-3">
               <a href={site.social.instagram} aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10">
