@@ -55,13 +55,13 @@ export default function Pillars() {
           {pillars.map((p, i) => (
             <Reveal key={p.title} delay={i}>
               <Link href={p.href} className="group block overflow-hidden rounded-3xl border border-white/10 bg-bg-card/60 transition hover:border-brand-500/50">
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[5/4]">
                   <Image
                     src={p.photo}
                     alt={p.title}
                     fill
                     sizes="(min-width: 1024px) 50vw, 100vw"
-                    className="object-cover transition duration-700 group-hover:scale-105"
+                    className="object-cover object-center transition duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent" />
                   <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/45 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur">
