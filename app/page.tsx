@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
+import RobotCarousel from "@/components/RobotCarousel";
 import Pillars from "@/components/Pillars";
 import Metrics from "@/components/Metrics";
 import Bento from "@/components/Bento";
@@ -29,15 +30,16 @@ export default function HomePage() {
       <Hero />
       <Marquee />
       <Pillars />
+      <RobotCarousel />
       <VideoShowcase />
       <Metrics />
 
-      <section className="py-24">
+      <section className="pb-24">
         <div className="container-x">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionTitle
-              eyebrow="Catálogo"
-              title={<>Robots <span className="gradient-text">destacados</span></>}
+              eyebrow="Catálogo completo"
+              title={<>Toda la <span className="gradient-text">flota</span></>}
               description="Modelos Pudu Robotics adaptados al estilo BotMate para servicio, publicidad, eventos y limpieza."
             />
             <Link href="/robots" className="btn-ghost">
