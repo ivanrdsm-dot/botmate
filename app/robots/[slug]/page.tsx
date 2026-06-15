@@ -144,8 +144,7 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
 
             <div className="relative">
               <div className="absolute -inset-8 -z-10 rounded-[40px] bg-gradient-to-br from-brand-500/30 via-brand-700/20 to-transparent blur-3xl" />
-              <div className="relative grid aspect-square place-items-center overflow-hidden rounded-[36px] border border-white/10 bg-gradient-to-br from-[#0B1226] to-[#05070F] p-6">
-                <div className="absolute inset-0 grid-bg opacity-40" />
+              <div className="relative mx-auto grid aspect-[3/4] w-full max-w-[460px] place-items-center overflow-hidden rounded-[36px] border border-white/10 bg-gradient-to-br from-[#10162E] to-[#05070F]">
                 {r.image ? (
                   <Image
                     src={r.image}
@@ -153,10 +152,13 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
                     fill
                     priority
                     sizes="(min-width: 1024px) 45vw, 100vw"
-                    className="object-contain p-8"
+                    className="object-cover"
                   />
                 ) : (
-                  <RobotArt variant={robotVariantFromSlug(r.slug)} className="relative h-3/4 w-3/4 animate-float" />
+                  <>
+                    <div className="absolute inset-0 grid-bg opacity-40" />
+                    <RobotArt variant={robotVariantFromSlug(r.slug)} className="relative h-3/4 w-3/4 animate-float" />
+                  </>
                 )}
                 <div className="absolute left-4 right-4 top-4 z-10 flex items-center justify-between text-[10px] uppercase tracking-widest text-white/45">
                   <span>{r.model ?? r.name}</span>

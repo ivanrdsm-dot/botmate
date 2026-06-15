@@ -29,29 +29,23 @@ const photo = (file: string) => `/photos/robots/${file}`;
 
 export const robotImage = {
   "bellabot-pro": photo("bellabot-pro.jpg"),
-  "bellabot-pro-alt": photo("bellabot-pro-2.jpg"),
-  "kettybot-pro": photo("kettybot-pro.png"),
-  "kettybot-pro-white": photo("kettybot-pro-white.png"),
-  "kettybot-pro-black": photo("kettybot-pro-black.png"),
-  "kettybot-pro-yellow": photo("kettybot-pro-yellow.png"),
-  swiftbot: photo("swiftbot.png"),
+  "kettybot-pro": photo("kettybot-pro.jpg"),
+  "kettybot-pro-black": photo("kettybot-pro-black.jpg"),
+  "kettybot-pro-yellow": photo("kettybot-pro-yellow.jpg"),
+  swiftbot: photo("swiftbot.jpg"),
   flashbot: photo("flashbot.jpg"),
-  holabot: photo("holabot.png"),
+  holabot: photo("holabot.jpg"),
   cc1: photo("cc1.jpg"),
-  "cc1-alt": photo("cc1-2.jpg"),
   sh1: photo("sh1.jpg"),
   "pudubot-2": photo("pudubot-2.jpg"),
-  "pudubot-2-alt": photo("pudubot-2-2.jpg"),
   t300: photo("t300.jpg"),
   t600: photo("t600.jpg"),
-  "t600-alt": photo("t600-2.jpg"),
 } as const;
 
 export const robots: Robot[] = [
   {
     slug: "bellabot-pro",
     image: photo("bellabot-pro.jpg"),
-    imageAlt: photo("bellabot-pro-2.jpg"),
     name: "BellaBot Pro",
     model: "BellaBot Pro",
     tagline: "El robot mesero premium con expresiones que enamoran",
@@ -103,8 +97,8 @@ export const robots: Robot[] = [
   },
   {
     slug: "kettybot-pro",
-    image: photo("kettybot-pro.png"),
-    imageAlt: photo("kettybot-pro-yellow.png"),
+    image: photo("kettybot-pro.jpg"),
+    imageAlt: photo("kettybot-pro-yellow.jpg"),
     name: "KettyBot Pro",
     model: "KettyBot Pro",
     tagline: "Anfitrión + publicidad + entrega en un solo robot",
@@ -156,7 +150,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "swiftbot",
-    image: photo("swiftbot.png"),
+    image: photo("swiftbot.jpg"),
     name: "SwiftBot",
     model: "SwiftBot",
     tagline: "Hospitalidad premium con doble pantalla animada",
@@ -254,7 +248,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "holabot",
-    image: photo("holabot.png"),
+    image: photo("holabot.jpg"),
     name: "HolaBot",
     model: "HolaBot",
     tagline: "Bus-tender de alta capacidad para rotación rápida",
@@ -303,7 +297,6 @@ export const robots: Robot[] = [
   {
     slug: "cc1",
     image: photo("cc1.jpg"),
-    imageAlt: photo("cc1-2.jpg"),
     name: "CC1",
     model: "CC1 · PuduScrub",
     tagline: "Robot inteligente de limpieza comercial · 4 en 1",
@@ -413,7 +406,6 @@ export const robots: Robot[] = [
   {
     slug: "pudubot-2",
     image: photo("pudubot-2.jpg"),
-    imageAlt: photo("pudubot-2-2.jpg"),
     name: "PuduBot 2",
     model: "PuduBot 2",
     tagline: "El nuevo robot de entrega universal con PUDU VSLAM+",
@@ -527,7 +519,6 @@ export const robots: Robot[] = [
   {
     slug: "t600",
     image: photo("t600.jpg"),
-    imageAlt: photo("t600-2.jpg"),
     name: "T600",
     model: "T600",
     tagline: "AMR heavy-duty de hasta 600 kg",
