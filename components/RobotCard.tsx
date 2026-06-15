@@ -26,8 +26,11 @@ export default function RobotCard({ robot }: { robot: Robot }) {
 
         <h3 className="mt-2 flex items-center justify-between font-display text-xl font-semibold">
           {robot.name}
-          <ArrowUpRight className="h-5 w-5 text-white/40 transition group-hover:rotate-12 group-hover:text-accent" />
+          <ArrowUpRight className="h-5 w-5 text-white/40 transition group-hover:rotate-12 group-hover:text-brand-300" />
         </h3>
+        {robot.model && robot.model !== robot.name && (
+          <p className="mt-1 text-[11px] uppercase tracking-wider text-white/40">{robot.model}</p>
+        )}
         <p className="mt-1 text-sm text-white/60">{robot.tagline}</p>
 
         <div className="mt-4 flex flex-wrap gap-1.5">
