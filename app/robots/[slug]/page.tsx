@@ -14,6 +14,7 @@ import {
   Settings2,
   Layers,
 } from "lucide-react";
+import Image from "next/image";
 import CTA from "@/components/CTA";
 import RobotArt, { robotVariantFromSlug } from "@/components/RobotArt";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -145,13 +146,24 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
               <div className="absolute -inset-8 -z-10 rounded-[40px] bg-gradient-to-br from-brand-500/30 via-brand-700/20 to-transparent blur-3xl" />
               <div className="relative grid aspect-square place-items-center overflow-hidden rounded-[36px] border border-white/10 bg-gradient-to-br from-[#0B1226] to-[#05070F] p-6">
                 <div className="absolute inset-0 grid-bg opacity-40" />
-                <RobotArt variant={robotVariantFromSlug(r.slug)} className="relative h-3/4 w-3/4 animate-float" />
-                <div className="absolute left-4 right-4 top-4 flex items-center justify-between text-[10px] uppercase tracking-widest text-white/45">
+                {r.image ? (
+                  <Image
+                    src={r.image}
+                    alt={`${r.name} — ${r.brand}`}
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 45vw, 100vw"
+                    className="object-contain p-8"
+                  />
+                ) : (
+                  <RobotArt variant={robotVariantFromSlug(r.slug)} className="relative h-3/4 w-3/4 animate-float" />
+                )}
+                <div className="absolute left-4 right-4 top-4 z-10 flex items-center justify-between text-[10px] uppercase tracking-widest text-white/45">
                   <span>{r.model ?? r.name}</span>
                   <span className="text-emerald-400">● Disponible</span>
                 </div>
                 {r.modes && (
-                  <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-1.5">
+                  <div className="absolute bottom-4 left-4 right-4 z-10 flex flex-wrap gap-1.5">
                     {r.modes.map((m) => (
                       <span key={m} className="rounded-full border border-white/10 bg-bg/65 px-2.5 py-1 text-[10px] font-medium text-white/85 backdrop-blur">
                         {m}

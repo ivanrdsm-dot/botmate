@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import type { Robot } from "@/lib/robots";
 import { categoryLabel } from "@/lib/robots";
@@ -9,18 +10,31 @@ export default function RobotCard({ robot }: { robot: Robot }) {
   return (
     <TiltCard className="rounded-3xl">
       <Link href={`/robots/${robot.slug}`} className="card-tech group flex h-full flex-col">
-        <div className="relative mb-5 grid aspect-[4/3] place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-[#0B1020] to-[#070A14]">
+        <div className="relative mb-5 grid aspect-[4/3] place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-[#0B1226] to-[#070A14]">
           <div className="absolute inset-0 grid-bg opacity-40" />
-          <RobotArt variant={robotVariantFromSlug(robot.slug)} className="h-[78%] w-[78%] transition-transform duration-500 group-hover:scale-105" />
+          {robot.image ? (
+            <Image
+              src={robot.image}
+              alt={`${robot.name} — Pudu Robotics`}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+            />
+          ) : (
+            <RobotArt
+              variant={robotVariantFromSlug(robot.slug)}
+              className="h-[78%] w-[78%] transition-transform duration-500 group-hover:scale-105"
+            />
+          )}
           {robot.badge && (
-            <span className="absolute left-3 top-3 rounded-full bg-gradient-to-r from-accent to-accent-violet px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
+            <span className="absolute left-3 top-3 z-10 rounded-full bg-gradient-to-r from-brand-500 to-brand-400 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
               {robot.badge}
             </span>
           )}
         </div>
 
         <div className="flex items-center justify-between text-xs">
-          <span className="text-accent">{categoryLabel[robot.category]}</span>
+          <span className="text-brand-300">{categoryLabel[robot.category]}</span>
           <span className="text-white/40">{robot.brand}</span>
         </div>
 
