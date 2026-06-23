@@ -1,3 +1,5 @@
+import Reveal from "@/components/Reveal";
+import VitalaAurora from "@/components/vitala/VitalaAurora";
 import { vitala } from "@/lib/vitala/brand";
 import { HABITS, LESSONS, PRACTICES, motivationOfDay } from "@/lib/vitala/wellness";
 
@@ -15,17 +17,20 @@ export const metadata = { title: "Bienestar" };
 
 export default function Bienestar() {
   return (
-    <div className="space-y-12">
+    <div className="relative space-y-12">
+      <VitalaAurora intensity={0.7} />
       {/* Motivación del día */}
-      <section
-        className="rounded-3xl border p-6 text-center"
-        style={{ borderColor: "rgba(245,158,11,.25)", background: "rgba(245,158,11,.06)" }}
-      >
-        <div className="text-xs uppercase tracking-wide opacity-60">Motivación de hoy</div>
-        <p className="mt-2 text-lg font-semibold" style={{ color: C.accent }}>
-          “{motivationOfDay()}”
-        </p>
-      </section>
+      <Reveal>
+        <section
+          className="rounded-3xl border p-6 text-center"
+          style={{ borderColor: "rgba(245,158,11,.25)", background: "rgba(245,158,11,.06)" }}
+        >
+          <div className="text-xs uppercase tracking-wide opacity-60">Motivación de hoy</div>
+          <p className="mt-2 text-lg font-semibold" style={{ color: C.accent }}>
+            “{motivationOfDay()}”
+          </p>
+        </section>
+      </Reveal>
 
       {/* Hábitos */}
       <section>
@@ -33,7 +38,7 @@ export default function Bienestar() {
         <p className="mt-1 text-sm opacity-70">Pequeños cambios sostenibles, con un anclaje claro.</p>
         <div className="mt-5 grid gap-4 sm:grid-cols-2">
           {HABITS.map((h) => (
-            <div key={h.id} className="rounded-2xl border p-5" style={{ borderColor: "rgba(74,222,128,.15)", background: C.bgSoft }}>
+            <div key={h.id} className="rounded-2xl border p-5 transition-transform duration-300 hover:-translate-y-1" style={{ borderColor: "rgba(74,222,128,.15)", background: C.bgSoft }}>
               <div className="flex items-center gap-2">
                 <span className="text-xl">{PILLAR_EMOJI[h.pillar]}</span>
                 <h3 className="font-semibold" style={{ color: C.brandLight }}>{h.title}</h3>

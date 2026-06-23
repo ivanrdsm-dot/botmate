@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import Reveal from "@/components/Reveal";
 import { vitala } from "@/lib/vitala/brand";
 import { generatePlan } from "@/lib/vitala/planner";
 import { loadProfile } from "@/lib/vitala/store";
@@ -74,12 +75,14 @@ export default function PlanPage() {
       )}
 
       {/* Objetivos */}
-      <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Ring label="Calorías / día" value={t.calories} unit="kcal" />
-        <Ring label="Proteína" value={t.macros.protein} unit="g" />
-        <Ring label="Carbohidratos" value={t.macros.carbs} unit="g" />
-        <Ring label="Grasas" value={t.macros.fat} unit="g" />
-      </section>
+      <Reveal>
+        <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <Ring label="Calorías / día" value={t.calories} unit="kcal" />
+          <Ring label="Proteína" value={t.macros.protein} unit="g" />
+          <Ring label="Carbohidratos" value={t.macros.carbs} unit="g" />
+          <Ring label="Grasas" value={t.macros.fat} unit="g" />
+        </section>
+      </Reveal>
       <p className="text-xs opacity-60">
         Metabolismo basal {t.bmr} kcal · gasto total estimado {t.tdee} kcal · agua sugerida {t.waterMl} ml/día.
       </p>

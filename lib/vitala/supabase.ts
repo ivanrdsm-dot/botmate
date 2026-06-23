@@ -4,7 +4,18 @@
 // tiene su cuenta y su plan sincronizado y privado (RLS por usuario).
 
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { Capacitor } from "@capacitor/core";
 import type { Profile } from "./types";
+
+// Bundle ID / Services ID de Apple (debe coincidir con tu configuración).
+const APPLE_CLIENT_ID = "health.vitala.app";
+
+async function sha256Hex(input: string): Promise<string> {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(input));
+  return Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -42,10 +53,31 @@ export async function signOut(): Promise<void> {
   await getSupabase()?.auth.signOut();
 }
 
-/** Inicia sesión con Apple (App Store Guideline 4.8). */
+/**
+ * Inicia sesión con Apple (App Store Guideline 4.8).
+ * En iOS nativo (Capacitor) usa Sign in with Apple NATIVO; en la PWA usa OAuth web.
+ */
 export async function signInWithApple(): Promise<void> {
   const sb = getSupabase();
   if (!sb) return;
+
+  if (Capacitor.isNativePlatform()) {
+    const { SignInWithApple } = await import("@capacitor-community/apple-sign-in");
+    const rawNonce = crypto.randomUUID();
+    const hashedNonce = await sha256Hex(rawNonce); // Apple recibe el nonce hasheado
+    const result = await SignInWithApple.authorize({
+      clientId: APPLE_CLIENT_ID,
+      redirectURI: `${window.location.origin}/vitala/cuenta`,
+      scopes: "email name",
+      nonce: hashedNonce,
+    });
+    const idToken = result.response?.identityToken;
+    if (!idToken) return;
+    // Supabase verifica el token con el nonce SIN hashear
+    await sb.auth.signInWithIdToken({ provider: "apple", token: idToken, nonce: rawNonce });
+    return;
+  }
+
   await sb.auth.signInWithOAuth({
     provider: "apple",
     options: { redirectTo: `${window.location.origin}/vitala/cuenta` },
