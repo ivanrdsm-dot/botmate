@@ -47,8 +47,8 @@ export async function saveProfileCloud(userId: string, profile: Profile): Promis
   const sb = getSupabase();
   if (!sb) return;
   await sb.from("profiles").upsert(
-    { id: userId, data: profile, updated_at: new Date().toISOString() },
-    { onConflict: "id" }
+    { user_id: userId, data: profile, updated_at: new Date().toISOString() },
+    { onConflict: "user_id" }
   );
 }
 
@@ -59,8 +59,28 @@ export async function loadProfileCloud(userId: string): Promise<Profile | null> 
   const { data, error } = await sb
     .from("profiles")
     .select("data")
-    .eq("id", userId)
+    .eq("user_id", userId)
     .maybeSingle();
   if (error || !data) return null;
   return (data.data as Profile) ?? null;
+}
+
+/**
+ * Inicia el borrado de la cuenta (App Store 5.1.1(v)).
+ * Llama al servidor, que anonimiza el cascarón y borra la identidad de auth.
+ * Devuelve true si se borró; luego cierra sesión.
+ */
+export async function deleteAccount(): Promise<boolean> {
+  const sb = getSupabase();
+  if (!sb) return false;
+  const { data } = await sb.auth.getSession();
+  const token = data.session?.access_token;
+  if (!token) return false;
+  const res = await fetch("/api/vitala/account/delete", {
+    method: "POST",
+    headers: { authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) return false;
+  await sb.auth.signOut();
+  return true;
 }

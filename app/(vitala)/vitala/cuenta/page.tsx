@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
 import { vitala } from "@/lib/vitala/brand";
 import { useUser } from "@/lib/vitala/useUser";
 import {
+  deleteAccount,
   loadProfileCloud,
   saveProfileCloud,
   signInWithGoogle,
   signOut,
 } from "@/lib/vitala/supabase";
-import { loadProfile, saveProfile } from "@/lib/vitala/store";
+import { clearProfile, loadProfile, saveProfile } from "@/lib/vitala/store";
+import { clearLifetime } from "@/lib/vitala/entitlement";
 
 const C = vitala.colors;
 
@@ -29,6 +31,27 @@ export default function Cuenta() {
   const { user, loading, configured } = useUser();
   const [sync, setSync] = useState<string>("");
 
+  // Flujo de borrado de cuenta (App Store 5.1.1(v))
+  const [showDelete, setShowDelete] = useState(false);
+  const [confirmText, setConfirmText] = useState("");
+  const [deleting, setDeleting] = useState(false);
+  const [deleted, setDeleted] = useState(false);
+  const [delError, setDelError] = useState("");
+
+  async function onDelete() {
+    setDeleting(true);
+    setDelError("");
+    const ok = await deleteAccount();
+    if (ok) {
+      clearProfile();
+      clearLifetime();
+      setDeleted(true);
+    } else {
+      setDelError("No pudimos eliminar la cuenta. Inténtalo de nuevo o contáctanos.");
+    }
+    setDeleting(false);
+  }
+
   // Al iniciar sesión: fusiona el perfil local con la nube (cuenta personal).
   useEffect(() => {
     if (!user) return;
@@ -46,6 +69,31 @@ export default function Cuenta() {
   }, [user]);
 
   if (loading) return null;
+
+  // Paso 6 — confirmación de cuenta eliminada
+  if (deleted) {
+    return (
+      <div className="mx-auto max-w-md py-10 text-center">
+        <div className="text-5xl">✅</div>
+        <h1 className="mt-4 text-2xl font-bold">Tu cuenta fue eliminada</h1>
+        <p className="mt-2 text-sm opacity-75">
+          Borramos tu identidad y anonimizamos tus datos de forma permanente. No
+          hay vuelta atrás. Gracias por haber sido parte de Vitala. 💚
+        </p>
+        <p className="mt-4 text-xs opacity-60">
+          Por obligación legal en México conservamos los registros de facturación
+          (sin tu información personal) durante 5 años.
+        </p>
+        <Link
+          href="/vitala"
+          className="mt-6 inline-block rounded-full px-6 py-3 font-semibold text-black"
+          style={{ background: C.brand }}
+        >
+          Volver al inicio
+        </Link>
+      </div>
+    );
+  }
 
   // Modo local (Supabase aún no configurado)
   if (!configured) {
@@ -125,6 +173,76 @@ export default function Cuenta() {
       <button onClick={() => signOut()} className="text-sm underline opacity-60 hover:opacity-100">
         Cerrar sesión
       </button>
+
+      {/* Zona de peligro — Eliminar cuenta (App Store 5.1.1(v)) */}
+      <div className="mt-4 rounded-2xl border p-5" style={{ borderColor: "rgba(248,113,113,.35)", background: "rgba(248,113,113,.05)" }}>
+        <h2 className="text-sm font-semibold" style={{ color: "#FCA5A5" }}>Zona de peligro</h2>
+
+        {!showDelete ? (
+          <>
+            <p className="mt-2 text-xs opacity-70">
+              Eliminar tu cuenta borra tu identidad y anonimiza tus datos de forma
+              permanente. Esta acción no se puede deshacer.
+            </p>
+            <button
+              onClick={() => setShowDelete(true)}
+              className="mt-3 rounded-full border px-4 py-2 text-sm font-semibold"
+              style={{ borderColor: "#F87171", color: "#FCA5A5" }}
+            >
+              Eliminar cuenta
+            </button>
+          </>
+        ) : (
+          <div className="mt-3 space-y-3">
+            <p className="text-xs opacity-80">
+              Esto es <strong>permanente e irreversible</strong>. Tu identidad y tus
+              datos de salud se eliminan; no podrás recuperarlos.
+            </p>
+            <p className="text-xs opacity-80">
+              ⚠️ Si pagaste por la app, tu <strong>suscripción de Apple no se cancela
+              sola</strong>. Cancélala aquí:{" "}
+              <a
+                href="https://apps.apple.com/account/subscriptions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+                style={{ color: C.brandLight }}
+              >
+                apps.apple.com/account/subscriptions
+              </a>
+              .
+            </p>
+            <label className="block text-xs opacity-70">
+              Escribe <strong>ELIMINAR</strong> para confirmar:
+            </label>
+            <input
+              value={confirmText}
+              onChange={(e) => setConfirmText(e.target.value)}
+              placeholder="ELIMINAR"
+              className="w-full rounded-xl border bg-transparent px-4 py-3 text-sm outline-none"
+              style={{ borderColor: "rgba(248,113,113,.4)" }}
+            />
+            {delError && <p className="text-xs" style={{ color: "#FCA5A5" }}>{delError}</p>}
+            <div className="flex gap-2">
+              <button
+                onClick={onDelete}
+                disabled={confirmText !== "ELIMINAR" || deleting}
+                className="rounded-full px-5 py-2.5 text-sm font-semibold text-white disabled:opacity-40"
+                style={{ background: "#DC2626" }}
+              >
+                {deleting ? "Eliminando…" : "Eliminar mi cuenta para siempre"}
+              </button>
+              <button
+                onClick={() => { setShowDelete(false); setConfirmText(""); setDelError(""); }}
+                className="rounded-full border px-5 py-2.5 text-sm"
+                style={{ borderColor: "rgba(74,222,128,.25)" }}
+              >
+                Cancelar
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

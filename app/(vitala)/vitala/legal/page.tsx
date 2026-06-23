@@ -47,7 +47,20 @@ export default function Legal() {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold" style={{ color: vitala.colors.brandLight }}>5. Emergencias</h2>
+        <h2 className="text-lg font-semibold" style={{ color: vitala.colors.brandLight }}>5. Eliminar tu cuenta</h2>
+        <p>
+          Puedes eliminar tu cuenta cuando quieras desde <strong>Mi cuenta</strong> en
+          la app. Al hacerlo, borramos tu identidad y <strong>anonimizamos tus datos
+          de forma permanente e irreversible</strong>. Por obligación legal en México,
+          conservamos los registros de facturación (procesados por Stripe)
+          <strong> sin tu información personal durante 5 años</strong>. Eliminar la
+          cuenta no cancela una suscripción de Apple: gestiónala en los ajustes de tu
+          dispositivo.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold" style={{ color: vitala.colors.brandLight }}>6. Emergencias</h2>
         <p>
           {vitala.name} no es un servicio de emergencia. Si presentas síntomas
           graves o una crisis, contacta de inmediato a los servicios de

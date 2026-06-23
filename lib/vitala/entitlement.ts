@@ -21,8 +21,14 @@ export function grantLifetime(): void {
       getSupabase()
         ?.from("memberships")
         .upsert(
-          { id: data.user.id, lifetime: true, granted_at: new Date().toISOString() },
-          { onConflict: "id" }
+          { user_id: data.user.id, lifetime: true, granted_at: new Date().toISOString() },
+          { onConflict: "user_id" }
         );
     });
+}
+
+/** Limpia la membresía local (al borrar la cuenta). */
+export function clearLifetime(): void {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(KEY);
 }
