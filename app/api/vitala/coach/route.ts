@@ -8,7 +8,7 @@ import { NextResponse } from "next/server";
 export const runtime = "nodejs";
 
 // Modelo configurable; por costo/escala usamos Haiku por defecto.
-const MODEL = process.env.VITALA_AI_MODEL || "claude-haiku-4-5-20251001";
+const MODEL = process.env.VITALA_AI_MODEL || "claude-haiku-4-5";
 
 const SYSTEM_PROMPT = `Eres "Vitala", un coach de nutrición y bienestar enfocado en hacer accesible la salud a cualquier persona. Hablas claro, cálido y motivador, en el idioma del usuario (por defecto español).
 
