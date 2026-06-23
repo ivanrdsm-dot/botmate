@@ -76,11 +76,11 @@ export default function VitalaLayout({ children }: { children: React.ReactNode }
               Bienestar
             </Link>
             <Link
-              href="/vitala/onboarding"
+              href="/vitala/cuenta"
               className="rounded-full px-4 py-1.5 text-sm font-semibold text-black"
               style={{ background: vitala.colors.brand }}
             >
-              Empezar
+              Mi cuenta
             </Link>
           </nav>
         </div>

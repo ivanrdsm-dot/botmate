@@ -5,6 +5,7 @@ import { useState } from "react";
 import { vitala } from "@/lib/vitala/brand";
 import { ACTIVITY_LABEL, GOAL_LABEL, validateProfile } from "@/lib/vitala/nutrition";
 import { emptyProfile, loadProfile, saveProfile } from "@/lib/vitala/store";
+import { getSupabase, saveProfileCloud } from "@/lib/vitala/supabase";
 import type { Allergen, Profile } from "@/lib/vitala/types";
 
 const C = vitala.colors;
@@ -60,6 +61,12 @@ export default function Onboarding() {
       return;
     }
     saveProfile(p);
+    // Si hay sesión, guarda también en la cuenta personal del usuario.
+    getSupabase()
+      ?.auth.getUser()
+      .then(({ data }) => {
+        if (data.user) saveProfileCloud(data.user.id, p);
+      });
     router.push("/vitala/plan");
   };
 
