@@ -69,6 +69,26 @@ create policy "editar mi membresia" on public.memberships for update using (auth
 
 ¡Listo! El botón "Continuar con Google" de `/vitala/cuenta` ya funciona.
 
+## 3b. Activa "Sign in with Apple" (Guideline 4.8)
+
+Apple exige una opción de login con privacidad cuando ofreces Google. Pasos:
+
+1. En **developer.apple.com** → Certificates, Identifiers & Profiles:
+   - Crea un **App ID** y un **Services ID** (este último es tu `client_id` web).
+   - Habilita **Sign in with Apple** y registra el dominio + la URL de retorno de
+     Supabase: `https://TU-PROYECTO.supabase.co/auth/v1/callback`.
+   - Crea una **Key** con Sign in with Apple → descarga el `.p8`. Anota **Key ID**
+     y **Team ID**.
+2. En Supabase → **Authentication → Providers → Apple** → pega Services ID,
+   Team ID, Key ID y el contenido del `.p8`. Activa.
+3. El botón "Continuar con Apple" de `/vitala/cuenta` ya queda funcionando.
+
+> ⚠️ **Nota para la app nativa (Capacitor/iOS):** el flujo web de arriba sirve
+> para la PWA. Para la app de la App Store, Apple suele exigir el **Sign in with
+> Apple nativo** (no el redirect web dentro del WebView). Si te lo marcan en
+> revisión, se agrega el plugin nativo de Apple Sign-In en Capacitor — avísame y
+> lo integramos.
+
 ## Costo a escala (por qué Supabase)
 
 | Usuarios activos/mes | Costo |

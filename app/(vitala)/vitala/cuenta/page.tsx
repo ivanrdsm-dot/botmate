@@ -8,6 +8,7 @@ import {
   deleteAccount,
   loadProfileCloud,
   saveProfileCloud,
+  signInWithApple,
   signInWithGoogle,
   signOut,
 } from "@/lib/vitala/supabase";
@@ -23,6 +24,14 @@ function GoogleIcon() {
       <path fill="#FF3D00" d="M8.3 14.7l6.6 4.8C16.7 16 20 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34 8.1 29.3 6 24 6 16.3 6 9.7 10.3 8.3 14.7z"/>
       <path fill="#4CAF50" d="M24 42c5.2 0 9.9-2 13.4-5.2l-6.2-5.2c-2 1.5-4.6 2.4-7.2 2.4-5.2 0-9.6-3.3-11.2-8l-6.5 5C9.6 37.6 16.2 42 24 42z"/>
       <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.2 5.2C39.9 36.7 42 31 42 24c0-1.2-.1-2.3-.4-3.5z"/>
+    </svg>
+  );
+}
+
+function AppleIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M16.37 12.78c.02 2.3 2.02 3.06 2.04 3.07-.02.05-.32 1.1-1.06 2.18-.64.94-1.3 1.87-2.35 1.89-1.03.02-1.36-.61-2.54-.61-1.18 0-1.55.59-2.52.63-1.01.04-1.78-1.01-2.42-1.95-1.32-1.9-2.33-5.38-.97-7.73.67-1.16 1.88-1.9 3.19-1.92.99-.02 1.93.67 2.54.67.6 0 1.74-.83 2.94-.71.5.02 1.91.2 2.81 1.53-.07.05-1.68.98-1.66 2.95zM14.43 5.5c.54-.66.9-1.57.8-2.48-.78.03-1.71.52-2.27 1.18-.5.58-.94 1.51-.82 2.4.87.07 1.76-.44 2.29-1.1z"/>
     </svg>
   );
 }
@@ -127,9 +136,15 @@ export default function Cuenta() {
         </div>
         <button
           onClick={() => signInWithGoogle()}
-          className="mx-auto flex items-center justify-center gap-3 rounded-full bg-white px-6 py-3 font-semibold text-gray-800"
+          className="mx-auto flex w-full max-w-xs items-center justify-center gap-3 rounded-full bg-white px-6 py-3 font-semibold text-gray-800"
         >
           <GoogleIcon /> Continuar con Google
+        </button>
+        <button
+          onClick={() => signInWithApple()}
+          className="mx-auto flex w-full max-w-xs items-center justify-center gap-3 rounded-full bg-black px-6 py-3 font-semibold text-white"
+        >
+          <AppleIcon /> Continuar con Apple
         </button>
         <p className="text-xs opacity-50">
           Al continuar aceptas el <Link href="/vitala/legal" className="underline">aviso de salud y privacidad</Link>.

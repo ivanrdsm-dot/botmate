@@ -42,6 +42,16 @@ export async function signOut(): Promise<void> {
   await getSupabase()?.auth.signOut();
 }
 
+/** Inicia sesión con Apple (App Store Guideline 4.8). */
+export async function signInWithApple(): Promise<void> {
+  const sb = getSupabase();
+  if (!sb) return;
+  await sb.auth.signInWithOAuth({
+    provider: "apple",
+    options: { redirectTo: `${window.location.origin}/vitala/cuenta` },
+  });
+}
+
 /** Guarda el perfil del usuario autenticado en la nube (tabla profiles). */
 export async function saveProfileCloud(userId: string, profile: Profile): Promise<void> {
   const sb = getSupabase();
