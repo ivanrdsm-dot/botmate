@@ -34,7 +34,24 @@ create policy "crear mi perfil"  on public.profiles
   for insert with check (auth.uid() = id);
 create policy "editar mi perfil" on public.profiles
   for update using (auth.uid() = id);
+
+-- Membresía de por vida ("1 peso, para siempre")
+create table if not exists public.memberships (
+  id uuid primary key references auth.users(id) on delete cascade,
+  lifetime boolean not null default false,
+  granted_at timestamptz not null default now()
+);
+alter table public.memberships enable row level security;
+create policy "ver mi membresia"    on public.memberships for select using (auth.uid() = id);
+create policy "crear mi membresia"  on public.memberships for insert with check (auth.uid() = id);
+create policy "editar mi membresia" on public.memberships for update using (auth.uid() = id);
 ```
+
+> **Pago "1 peso":** el flujo de `/vitala/uno-peso` usa **Stripe** si configuras
+> `STRIPE_SECRET_KEY`; si no, corre en **modo demo** (concede el acceso para
+> probar). Nota real: las pasarelas tienen un **monto mínimo** (Stripe ≈ $10 MXN),
+> así que "1 peso" literal puede requerir un ajuste de precio o un proveedor local;
+> el valor se controla con `VITALA_PRICE_CENTS` y `VITALA_CURRENCY`.
 
 > Con RLS activado, aunque alguien tuviera la llave pública, **no puede leer los
 > datos de otra persona**. Es la base de la privacidad de salud.
