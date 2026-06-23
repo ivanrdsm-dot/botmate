@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/vitala/icon.svg",
-    apple: "/vitala/icon.svg",
+    apple: "/vitala/apple-touch-icon.png",
   },
 };
 

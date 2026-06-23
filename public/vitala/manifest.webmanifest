@@ -10,7 +10,9 @@
   "lang": "es",
   "categories": ["health", "lifestyle", "medical"],
   "icons": [
-    { "src": "/vitala/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
-    { "src": "/vitala/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+    { "src": "/vitala/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/vitala/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/vitala/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/vitala/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }
