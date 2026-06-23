@@ -20,6 +20,13 @@ export const metadata: Metadata = {
     locale: "es_MX",
     title: `${vitala.name} — ${vitala.tagline}`,
     description: vitala.description,
+    images: [{ url: "/vitala/og.svg", width: 1200, height: 630, alt: "Vitala" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${vitala.name} — ${vitala.tagline}`,
+    description: vitala.description,
+    images: ["/vitala/og.svg"],
   },
   icons: {
     icon: "/vitala/icon.svg",
@@ -62,7 +69,10 @@ export default function VitalaLayout({ children }: { children: React.ReactNode }
             <Link href="/vitala/plan" className="opacity-80 hover:opacity-100">
               Mi plan
             </Link>
-            <Link href="/vitala/bienestar" className="opacity-80 hover:opacity-100">
+            <Link href="/vitala/coach" className="opacity-80 hover:opacity-100">
+              Coach IA
+            </Link>
+            <Link href="/vitala/bienestar" className="hidden opacity-80 hover:opacity-100 sm:inline">
               Bienestar
             </Link>
             <Link
