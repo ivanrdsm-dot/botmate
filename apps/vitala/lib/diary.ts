@@ -1,6 +1,8 @@
 // Vitala — diario de comidas (registro local por día).
 // Privacidad por diseño: vive en el dispositivo (luego se podrá sincronizar).
 
+import type { MealSlot } from "./types";
+
 export type Confidence = "alta" | "media" | "baja";
 
 export interface FoodItem {
@@ -17,6 +19,7 @@ export interface DiaryEntry {
   id: string;
   ts: string; // ISO
   title: string;
+  slot: MealSlot;
   items: FoodItem[];
   kcal: number;
   protein: number;
