@@ -72,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="flex items-center gap-4 text-sm">
               <Link href="/plan" className="opacity-80 hover:opacity-100">Mi plan</Link>
               <Link href="/diario" className="opacity-80 hover:opacity-100">Diario</Link>
+              <Link href="/progreso" className="hidden opacity-80 hover:opacity-100 sm:inline">Progreso</Link>
               <Link href="/coach" className="hidden opacity-80 hover:opacity-100 sm:inline">Coach IA</Link>
               <Link href="/bienestar" className="hidden opacity-80 hover:opacity-100 sm:inline">Bienestar</Link>
               <Link
