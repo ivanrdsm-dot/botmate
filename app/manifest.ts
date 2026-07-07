@@ -1,18 +1,16 @@
 import type { MetadataRoute } from "next";
-
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "BotMate — Robots de servicio en México",
-    short_name: "BotMate",
-    description: "Renta y venta de robots de servicio Pudu Robotics en México.",
+    name: "Vitala",
+    short_name: "Vitala",
+    description: "Nutrición de primer mundo, al alcance de toda la humanidad.",
     start_url: "/",
     display: "standalone",
-    background_color: "#04060B",
-    theme_color: "#04060B",
-    lang: "es-MX",
+    background_color: "#06120C",
+    theme_color: "#06120C",
     icons: [
-      { src: "/icon.svg", sizes: "any", type: "image/svg+xml" },
-      { src: "/logo.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+      { src: "/vitala/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+      { src: "/vitala/icon-maskable.svg", sizes: "any", type: "image/svg+xml", purpose: "maskable" },
     ],
   };
 }
