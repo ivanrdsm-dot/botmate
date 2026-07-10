@@ -73,6 +73,8 @@ export interface PlannedMeal {
   kcal: number;
   macros: Macros;
   prepMin: number;
+  steps?: string[]; // preparación paso a paso
+  origin?: string;  // cocina de origen (México, Japón, Grecia…)
 }
 
 export interface DayPlan {

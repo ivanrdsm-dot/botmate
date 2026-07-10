@@ -80,6 +80,8 @@ function scaleMeal(meal: Meal, targetKcal: number): PlannedMeal {
     kcal: r(meal.baseKcal),
     macros: { protein: r(meal.protein), carbs: r(meal.carbs), fat: r(meal.fat) },
     prepMin: meal.prepMin,
+    steps: meal.steps,
+    origin: meal.origin,
   };
 }
 
