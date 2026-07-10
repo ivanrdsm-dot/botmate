@@ -54,7 +54,8 @@ function LeafLogo() {
 
 const navLinks = [
   { href: "/plan",      label: "Mi plan" },
-  { href: "/diario",   label: "Diario" },
+  { href: "/recetas",  label: "Recetas" },
+  { href: "/diario",   label: "Diario", sm: true },
   { href: "/progreso", label: "Progreso", sm: true },
   { href: "/coach",    label: "Coach IA", sm: true },
   { href: "/bienestar",label: "Bienestar", sm: true },
