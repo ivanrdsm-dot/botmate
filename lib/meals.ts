@@ -110,7 +110,7 @@ export const MEALS: Meal[] = [
     origin: "México",
     items: ["Tortilla horneada", "Salsa verde", "1/2 taza frijoles", "Queso fresco"],
     steps: [
-      "Corta las tortillas en triángulos y h.ornéalas 8 minutos hasta que doren (sin freír).",
+      "Corta las tortillas en triángulos y hornéalas 8 minutos hasta que doren (sin freír).",
       "Calienta la salsa verde y baña los totopos justo antes de servir.",
       "Acompaña con frijoles calientes y espolvorea queso fresco.",
     ],
@@ -159,7 +159,7 @@ export const MEALS: Meal[] = [
     items: ["150 g pollo", "1 taza arroz integral", "Brócoli", "Zanahoria"],
     steps: [
       "Cuece el arroz integral (2 partes de agua por 1 de arroz, ~25 min).",
-      "Sazona el pollo con sal, pimienta y limón; c.ocínalo a la plancha 5-6 min por lado.",
+      "Sazona el pollo con sal, pimienta y limón; cocínalo a la plancha 5-6 min por lado.",
       "Cuece el brócoli y la zanahoria al vapor 6 minutos.",
       "Sirve todo junto con un chorrito de aceite de oliva.",
     ],
@@ -328,7 +328,7 @@ export const MEALS: Meal[] = [
     items: ["150 g pescado blanco", "Mezcla de hojas verdes", "Aguacate", "Limón"],
     steps: [
       "Sazona el pescado con sal, pimienta y limón.",
-      "C.ocínalo a la plancha 3-4 minutos por lado.",
+      "Cocínalo a la plancha 3-4 minutos por lado.",
       "Sirve sobre hojas verdes con aguacate y un hilo de aceite de oliva.",
     ],
     baseKcal: 340, protein: 34, carbs: 12, fat: 18, prepMin: 18,
