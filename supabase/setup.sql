@@ -1,10 +1,13 @@
 -- ============================================================================
--- Vitala · setup.sql — Esquema COMPLETO para un proyecto Supabase NUEVO.
--- Pega TODO esto una sola vez en: Supabase → SQL Editor → Run.
--- (Si ya corriste el SQL base + 0001 + 0002, NO necesitas esto.)
+-- Vitala · setup.sql — Esquema COMPLETO (BLUEPRINT bloques 1+).
+-- Pega TODO esto en: Supabase → SQL Editor → Run. Es idempotente: puedes
+-- correrlo de nuevo sobre una base existente y aplica los cambios nuevos.
 --
--- Crea las tablas en su forma final (con user_id desacoplado + deleted_at),
--- la seguridad por fila (RLS) y la función de borrado anónimo.
+-- Seguridad clave (BLUEPRINT sección 08 y 16):
+--   · RLS por usuario en profiles.
+--   · memberships: el cliente SOLO LEE la suya. Otorgar membresía es exclusivo
+--     del servidor vía grant_lifetime_membership() (webhooks de pago).
+--   · anonymize_user(): sobreescribe EN SU LUGAR, nunca copia datos.
 -- ============================================================================
 
 -- PERFIL (datos de salud por usuario) ----------------------------------------
@@ -26,7 +29,10 @@ create policy "leer mi perfil"   on public.profiles for select using (auth.uid()
 create policy "crear mi perfil"  on public.profiles for insert with check (auth.uid() = user_id);
 create policy "editar mi perfil" on public.profiles for update using (auth.uid() = user_id);
 
--- MEMBRESÍA ("1 peso, de por vida" / cascarón financiero anónimo) -------------
+-- MEMBRESÍA ("1 peso, de por vida") ------------------------------------------
+-- BLOQUE 1: el cliente autenticado SOLO puede LEER su membresía. Escribirla es
+-- exclusivo del servidor (service_role / grant_lifetime_membership). Así nadie
+-- se otorga acceso editando su propio cliente.
 create table if not exists public.memberships (
   id          uuid primary key default gen_random_uuid(),
   user_id     uuid references auth.users(id) on delete set null,
@@ -39,13 +45,45 @@ create unique index if not exists memberships_user_id_uidx
 
 alter table public.memberships enable row level security;
 drop policy if exists "ver mi membresia"    on public.memberships;
-drop policy if exists "crear mi membresia"  on public.memberships;
-drop policy if exists "editar mi membresia" on public.memberships;
-create policy "ver mi membresia"    on public.memberships for select using (auth.uid() = user_id);
-create policy "crear mi membresia"  on public.memberships for insert with check (auth.uid() = user_id);
-create policy "editar mi membresia" on public.memberships for update using (auth.uid() = user_id);
+drop policy if exists "crear mi membresia"  on public.memberships;  -- eliminada (bloque 1)
+drop policy if exists "editar mi membresia" on public.memberships;  -- eliminada (bloque 1)
+create policy "ver mi membresia" on public.memberships for select using (auth.uid() = user_id);
+-- Sin políticas de INSERT/UPDATE/DELETE → con RLS activo, el cliente no puede escribir.
+
+-- EVENTOS DE PAGO (bloque 1) --------------------------------------------------
+-- Idempotencia y rastro mínimo de webhooks. 100% server-side: sin políticas RLS
+-- (RLS activo + cero políticas = invisible para anon/authenticated).
+-- No guarda datos personales: solo ids del proveedor y estado.
+create table if not exists public.payment_events (
+  id           uuid primary key default gen_random_uuid(),
+  provider     text not null check (provider in ('mercadopago','stripe')),
+  external_id  text not null,
+  user_id      uuid,
+  status       text not null,
+  raw_status   text,
+  processed_at timestamptz not null default now(),
+  unique (provider, external_id)
+);
+alter table public.payment_events enable row level security;
+
+-- OTORGAR MEMBRESÍA (bloque 1) ------------------------------------------------
+-- Único camino para conceder "de por vida". Solo invocable con service_role
+-- (revocada a todos los demás). La llaman los webhooks tras verificar el pago.
+create or replace function public.grant_lifetime_membership(p_user_id uuid)
+returns void
+language sql
+security definer
+set search_path = public
+as $$
+  insert into public.memberships (user_id, lifetime, granted_at)
+  values (p_user_id, true, now())
+  on conflict (user_id) where user_id is not null
+  do update set lifetime = true, deleted_at = null;
+$$;
+revoke all on function public.grant_lifetime_membership(uuid) from public, anon, authenticated;
 
 -- BORRADO DE CUENTA — anonimización irreversible (App Store 5.1.1(v)) ---------
+-- Sobreescribe EN SU LUGAR. Prohíbido copiar datos a logs/backups/auditoría.
 create or replace function public.anonymize_user(p_user_id uuid)
 returns void
 language sql
