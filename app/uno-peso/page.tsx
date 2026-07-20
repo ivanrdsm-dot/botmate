@@ -77,7 +77,7 @@ function UnoPesoInner() {
           <ul className="mt-6 space-y-2 text-sm">
             {INCLUDES.map((i) => (<li key={i} className="flex items-start gap-2"><span style={{ color: C.brand }}>✓</span><span className="opacity-85">{i}</span></li>))}
           </ul>
-          <button onClick={buy} disabled={loading} className="mt-7 w-full rounded-full px-6 py-4 font-semibold text-black disabled:opacity-60" style={{ background: C.accent }}>{loading ? "Abriendo pago seguro…" : "Obtener acceso de por vida"}</button>
+          <button onClick={buy} disabled={loading} className="mt-7 w-full rounded-full px-6 py-4 font-semibold text-white disabled:opacity-60" style={{ background: C.accent, boxShadow: "0 6px 18px -6px rgba(180,83,9,0.45)" }}>{loading ? "Abriendo pago seguro…" : "Obtener acceso de por vida"}</button>
           <p className="mt-3 text-center text-xs opacity-50">Pago seguro. Tu salud, tu cuenta, tu control.</p>
         </div>
       </Reveal>

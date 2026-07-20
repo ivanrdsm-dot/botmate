@@ -69,8 +69,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header
           className="sticky top-0 z-40 border-b backdrop-blur-xl"
           style={{
-            borderColor: "rgba(52,211,153,0.12)",
-            background: "rgba(8,15,10,0.82)",
+            borderColor: "rgba(14,122,82,0.14)",
+            background: "rgba(250,245,236,0.85)",
           }}
         >
           <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
@@ -107,7 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link
                 href="/cuenta"
                 className="ml-2 btn-brand text-sm glow"
-                style={{ background: C.brand, color: "#03190A" }}
+                style={{ background: C.brandDeep, color: "#FFFFFF" }}
               >
                 Mi cuenta
               </Link>
@@ -121,7 +121,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* ── Footer ────────────────────────────── */}
         <footer
           className="mt-16 border-t px-5 py-10 text-center"
-          style={{ borderColor: "rgba(52,211,153,0.10)", color: C.textMuted }}
+          style={{ borderColor: "rgba(14,122,82,0.14)", color: C.textMuted }}
         >
           <div className="mx-auto max-w-xl space-y-3">
             <p className="flex items-center justify-center gap-2 text-sm font-medium" style={{ color: C.brandLight }}>

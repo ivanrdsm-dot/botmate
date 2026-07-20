@@ -144,7 +144,7 @@ export default function VitalaHome() {
       <Reveal>
         <section
           className="relative overflow-hidden rounded-3xl border p-8 text-center"
-          style={{ borderColor: "rgba(251,191,36,0.25)", background: "rgba(251,191,36,0.06)" }}
+          style={{ borderColor: "rgba(180,83,9,0.22)", background: "rgba(247,178,78,0.12)" }}
         >
           <h2 className="text-3xl font-bold">Por qué una sola moneda</h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm" style={{ color: C.textMuted }}>
@@ -156,8 +156,8 @@ export default function VitalaHome() {
           </p>
           <Link
             href="/uno-peso"
-            className="mt-6 inline-block rounded-full px-6 py-3 font-semibold text-black transition-transform hover:scale-105"
-            style={{ background: C.accent }}
+            className="mt-6 inline-block rounded-full px-6 py-3 font-semibold text-white transition-transform hover:scale-105"
+            style={{ background: C.accent, boxShadow: "0 6px 18px -6px rgba(180,83,9,0.45)" }}
           >
             Por un peso, empieza hoy
           </Link>

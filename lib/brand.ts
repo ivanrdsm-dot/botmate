@@ -9,23 +9,23 @@ export const vitala = {
   lifetimePriceLabel: "✨  1 moneda · acceso de por vida",
   path: "/",
   colors: {
-    // Verdes — más cálidos y saturados
-    brand:       "#34D399",  // mint-verde principal
-    brandDeep:   "#059669",  // profundo para contraste
-    brandLight:  "#6EE7B7",  // claro, amigable
-    brandGlow:   "rgba(52,211,153,0.18)",
-    // Ámbar — calidez y energía
-    accent:      "#FBBF24",
-    accentLight: "#FDE68A",
-    accentGlow:  "rgba(251,191,36,0.18)",
-    // Fondos — cálidos, no fríos
-    bg:          "#080F0A",  // verde muy oscuro y cálido
-    bgSoft:      "rgba(52,211,153,0.07)",
-    bgCard:      "rgba(255,255,255,0.04)",
-    bgCardHover: "rgba(52,211,153,0.10)",
-    // Texto
-    text:        "#ECFDF5",
-    textMuted:   "rgba(236,253,245,0.60)",
+    // TEMA CLARO CÁLIDO — crema + jade + terracota (nada de negro).
+    brand:       "#4CC38A",  // jade cálido: botones con texto oscuro
+    brandDeep:   "#0E7A52",  // esmeralda profundo: CTA destacado, hovers
+    brandLight:  "#0B6B4A",  // verde bosque: TITULARES legibles sobre crema
+    brandGlow:   "rgba(76,195,138,0.20)",
+    // Terracota/miel — calidez humana
+    accent:      "#B45309",  // terracota: acentos y botones con texto blanco
+    accentLight: "#F7B24E",  // miel: fondos suaves y detalles
+    accentGlow:  "rgba(180,83,9,0.12)",
+    // Fondos — crema cálida, papel
+    bg:          "#FAF5EC",  // crema principal
+    bgSoft:      "rgba(14,122,82,0.07)",
+    bgCard:      "#FFFFFF",
+    bgCardHover: "#F3EEE2",
+    // Texto — verde-carbón cálido, nunca negro puro
+    text:        "#26382E",
+    textMuted:   "rgba(38,56,46,0.66)",
   },
   defaultCurrency: { code: "MXN", symbol: "$", country: "México" },
 } as const;
