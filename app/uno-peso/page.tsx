@@ -5,7 +5,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import Reveal from "@/components/Reveal";
 import { vitala } from "@/lib/brand";
-import { grantLifetime, hasLifetime } from "@/lib/entitlement";
+import { grantLifetime, hasLifetime, syncLifetimeFromCloud } from "@/lib/entitlement";
+import { getSupabase } from "@/lib/supabase";
 
 const C = vitala.colors;
 
@@ -26,15 +27,25 @@ function UnoPesoInner() {
   useEffect(() => {
     if (params.get("status") === "ok") grantLifetime();
     setOwned(hasLifetime());
+    // La membresía VERIFICADA viene de la nube (solo el webhook la otorga).
+    syncLifetimeFromCloud().then(setOwned);
   }, [params]);
 
   async function buy() {
     setLoading(true);
     try {
-      const res = await fetch("/api/checkout", { method: "POST" });
+      // Con sesión, mandamos el token: el pago queda ligado al usuario y el
+      // webhook podrá otorgar la membresía verificada en la nube.
+      const sb = getSupabase();
+      const token = sb ? (await sb.auth.getSession()).data.session?.access_token : undefined;
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: token ? { authorization: `Bearer ${token}` } : undefined,
+      });
       const data = await res.json();
       if (data.url) { window.location.href = data.url; }
-      else { grantLifetime(); setOwned(true); router.replace("/uno-peso?status=ok"); }
+      else if (data.demo) { grantLifetime(); setOwned(true); router.replace("/uno-peso?status=ok"); }
+      else if (data.error) { alert(data.error); }
     } finally { setLoading(false); }
   }
 

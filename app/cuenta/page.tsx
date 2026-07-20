@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { vitala } from "@/lib/brand";
 import { useUser } from "@/lib/useUser";
-import { deleteAccount, loadProfileCloud, saveProfileCloud, signInWithApple, signInWithGoogle, signOut } from "@/lib/supabase";
+import { deleteAccount, getSupabase, loadProfileCloud, saveProfileCloud, signInWithApple, signInWithGoogle, signOut } from "@/lib/supabase";
 import { clearProfile, loadProfile, saveProfile } from "@/lib/store";
 import { clearLifetime } from "@/lib/entitlement";
 
@@ -37,6 +37,22 @@ export default function Cuenta() {
   const [deleting, setDeleting] = useState(false);
   const [deleted, setDeleted] = useState(false);
   const [delError, setDelError] = useState("");
+
+  // Exportar mis datos (bloque 4, derecho de portabilidad).
+  async function onExport() {
+    const sb = getSupabase();
+    if (!sb) return;
+    const token = (await sb.auth.getSession()).data.session?.access_token;
+    if (!token) return;
+    const res = await fetch("/api/account/export", { headers: { authorization: `Bearer ${token}` } });
+    if (!res.ok) { setSync("No pudimos exportar tus datos ahora. Intenta más tarde."); return; }
+    const blob = await res.blob();
+    const dl = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = dl; a.download = "vitala-mis-datos.json"; a.click();
+    URL.revokeObjectURL(dl);
+    setSync("Tus datos se descargaron como vitala-mis-datos.json. Son tuyos. 💚");
+  }
 
   async function onDelete() {
     setDeleting(true); setDelError("");
@@ -101,6 +117,7 @@ export default function Cuenta() {
         <Link href="/plan" className="rounded-2xl border p-4 text-sm" style={{ borderColor: "rgba(74,222,128,.18)", background: C.bgSoft }}>📋 Ver mi plan</Link>
         <Link href="/onboarding" className="rounded-2xl border p-4 text-sm" style={{ borderColor: "rgba(74,222,128,.18)", background: C.bgSoft }}>✏️ Editar mis datos</Link>
         <Link href="/coach" className="rounded-2xl border p-4 text-sm" style={{ borderColor: "rgba(74,222,128,.18)", background: C.bgSoft }}>🤖 Hablar con el Coach</Link>
+        <button onClick={onExport} className="rounded-2xl border p-4 text-left text-sm" style={{ borderColor: "rgba(74,222,128,.18)", background: C.bgSoft }}>⬇️ Exportar mis datos (JSON)</button>
       </div>
       <button onClick={() => signOut()} className="text-sm underline opacity-60 hover:opacity-100">Cerrar sesión</button>
       <div className="mt-4 rounded-2xl border p-5" style={{ borderColor: "rgba(248,113,113,.35)", background: "rgba(248,113,113,.05)" }}>

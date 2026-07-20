@@ -4,6 +4,7 @@
 // NUNCA diagnostica; ante señales de emergencia deriva a servicios de salud.
 
 import { NextResponse } from "next/server";
+import { limitByIp, limitByUser, userFromBearer, RATE_MSG } from "@/lib/ratelimit";
 
 export const runtime = "nodejs";
 
@@ -57,9 +58,18 @@ export async function POST(req: Request) {
   const messages = Array.isArray(body.messages) ? body.messages : [];
   const last = messages[messages.length - 1]?.content ?? "";
 
-  // 1) Guardrail de emergencia (antes de cualquier modelo).
+  // 1) Guardrail de emergencia (antes de cualquier modelo Y de cualquier límite).
   if (EMERGENCY_PATTERNS.some((re) => re.test(last))) {
     return NextResponse.json({ reply: EMERGENCY_REPLY, safety: "emergency" });
+  }
+
+  // 1.5) Rate limit (bloque 3): 20/h por usuario con sesión, 10/h por IP anónima.
+  const userId = await userFromBearer(req);
+  const allowed = userId
+    ? await limitByUser(userId, "coach", 20, 3600)
+    : await limitByIp(req, "coach", 10, 3600);
+  if (!allowed) {
+    return NextResponse.json({ error: RATE_MSG, reply: RATE_MSG }, { status: 429 });
   }
 
   // 2) Sin llave → respuesta segura por reglas.

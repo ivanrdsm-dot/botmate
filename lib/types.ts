@@ -55,6 +55,8 @@ export interface Profile {
   country: string;
   currency: string;
   acceptedDisclaimer: boolean;
+  /** Registro de consentimiento (bloque 4): qué versión del aviso aceptó y cuándo. */
+  consent?: { version: string; acceptedAt: string };
 }
 
 export interface Targets {

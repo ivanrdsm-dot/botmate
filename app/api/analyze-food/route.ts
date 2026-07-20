@@ -4,6 +4,7 @@
 // NO diagnostica. Degrada con elegancia si no hay ANTHROPIC_API_KEY.
 
 import { NextResponse } from "next/server";
+import { limitByIp, limitByUser, userFromBearer, RATE_MSG } from "@/lib/ratelimit";
 
 export const runtime = "nodejs";
 
@@ -45,6 +46,13 @@ export async function POST(req: Request) {
 
   const { base64, mediaType = "image/jpeg", allergies = [] } = body;
   if (!base64) return NextResponse.json({ error: "Falta la imagen." }, { status: 400 });
+
+  // Rate limit (bloque 3): 15/h por usuario con sesión, 6/h por IP anónima.
+  const userId = await userFromBearer(req);
+  const allowed = userId
+    ? await limitByUser(userId, "analyze", 15, 3600)
+    : await limitByIp(req, "analyze", 6, 3600);
+  if (!allowed) return NextResponse.json({ error: RATE_MSG }, { status: 429 });
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {

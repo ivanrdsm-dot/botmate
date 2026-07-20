@@ -6,6 +6,7 @@
 
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { limitByUser, RATE_MSG } from "@/lib/ratelimit";
 
 export const runtime = "nodejs";
 
@@ -31,6 +32,11 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Sesión inválida." }, { status: 401 });
   }
   const userId = userData.user.id;
+
+  // Rate limit (bloque 3): 3 intentos por día por usuario.
+  if (!(await limitByUser(userId, "delete", 3, 86400))) {
+    return NextResponse.json({ error: RATE_MSG }, { status: 429 });
+  }
 
   // Cliente admin (service_role): omite RLS, puede borrar identidades.
   const admin = createClient(url, serviceRole, {
