@@ -55,16 +55,45 @@ function LeafLogo() {
 const navLinks = [
   { href: "/plan",      label: "Mi plan" },
   { href: "/recetas",  label: "Recetas" },
+  { href: "/comunidad",label: "Comunidad", sm: true },
   { href: "/diario",   label: "Diario", sm: true },
   { href: "/progreso", label: "Progreso", sm: true },
   { href: "/coach",    label: "Coach IA", sm: true },
   { href: "/bienestar",label: "Bienestar", sm: true },
 ];
 
+// SEO: identidad de la organización y de la app (schema.org).
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "Vitala",
+      url: "https://vitala.app",
+      logo: "https://vitala.app/vitala/icon-512.png",
+      slogan: "Un nutriólogo para todos. Una moneda. Para toda la vida.",
+    },
+    {
+      "@type": "WebApplication",
+      name: "Vitala",
+      url: "https://vitala.app",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "Web, iOS",
+      offers: { "@type": "Offer", price: "1", priceCurrency: "MXN" },
+      description:
+        "Plan de alimentación personalizado, recetas del mundo, coach IA y hábitos. Acceso de por vida por una moneda.",
+    },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es-MX" className={`${inter.variable} ${jakarta.variable}`}>
       <body style={{ color: C.text }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
         {/* ── Navbar ──────────────────────────────── */}
         <header
           className="sticky top-0 z-40 border-b backdrop-blur-xl"

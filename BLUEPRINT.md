@@ -119,6 +119,10 @@ atomica: resetea ventana vencida o incrementa; revocada a anon/authenticated).
 
 **Consentimiento** [BLOQUE 4] — dentro del JSONB del perfil: `consent: { version, acceptedAt }`.
 
+**community_posts** — muro de logros: `user_id` (FK SET NULL), `display_name` (≤40), `message`
+(≤500), `stats` jsonb, `created_at`, `deleted_at`. RLS: SELECT público (no borrados); INSERT
+solo servidor tras moderación. `anonymize_user()` también anonimiza `display_name`.
+
 ### Relaciones
 `auth.users 1⅄0..1 profiles`, `auth.users 1⅄0..1 memberships` — ambas sobreviven al borrado
 de identidad como cascarón anónimo (SET NULL + anonymize_user previo).
@@ -136,6 +140,8 @@ de identidad como cascarón anónimo (SET NULL + anonymize_user previo).
 | `/api/webhooks/stripe` | POST | firma HMAC | — | Verifica `stripe-signature` con `STRIPE_WEBHOOK_SECRET`; `checkout.session.completed` → otorga |
 | `/api/account/delete` | POST | Bearer token | 3/día user | Verifica `auth.getUser(token)` → `anonymize_user()` → `deleteUser()` |
 | `/api/account/export` | GET | Bearer token | 5/día user | Devuelve JSON con perfil + membresía del usuario autenticado |
+| `/api/analyze-body` | POST | opcional | 5/h user · 3/h IP | Visión IA de fotos de progreso. Guardrails anti-diagnóstico y anti-body-shaming. Foto SOLO en memoria |
+| `/api/community/post` | POST | Bearer token | 5/día user | Publica en comunidad tras moderación (reglas + IA). El cliente nunca inserta directo |
 
 Errores: JSON `{error}` con 400/401/429/500/502. Los webhooks SIEMPRE responden 200 tras
 registrar el evento (aunque se ignore) para evitar reintentos infinitos, salvo firma inválida (401).
@@ -321,3 +327,12 @@ Stripe CLI / MP sandbox para simular webhooks en local si está disponible.
 **Proceso**
 15. Sin dependencias nuevas en bloques 1-4. Sin refactors fuera del alcance del bloque en curso.
 16. Si un cambio toca este BLUEPRINT, actualízalo en el mismo commit.
+
+**Fotos de progreso corporal y comunidad**
+17. Las fotos de progreso corporal viven SOLO en el dispositivo (localStorage reducidas).
+    El análisis IA las procesa en memoria y las descarta — misma garantía que el diario.
+18. El análisis corporal JAMÁS da cifras "exactas" de grasa, diagnósticos ni lenguaje que
+    avergüence el cuerpo o fomente trastornos alimenticios. Si parece menor de edad, se niega.
+19. La comunidad es texto + stats: sin fotos hasta que exista pipeline de moderación visual.
+    Publicar requiere cuenta; todo pasa por moderación server-side (reglas + IA); mensajes en
+    crisis reciben respuesta de apoyo con líneas de ayuda, nunca se publican.

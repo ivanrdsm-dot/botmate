@@ -33,9 +33,44 @@ const ALLERGEN_LABEL: Record<Allergen, string> = {
   ajonjoli: "Ajonjolí",
 };
 
+// SEO: datos estructurados schema.org/Recipe — cada platillo indexable en Google.
+function recipeJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Recetario Vitala — recetas saludables del mundo",
+    itemListElement: MEALS.map((m, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Recipe",
+        name: m.name,
+        recipeCuisine: m.origin,
+        recipeCategory: m.slot,
+        recipeIngredient: m.items,
+        recipeInstructions: m.steps.map((s) => ({ "@type": "HowToStep", text: s })),
+        totalTime: `PT${m.prepMin}M`,
+        keywords: `receta saludable, ${m.origin}, nutrición`,
+        nutrition: {
+          "@type": "NutritionInformation",
+          calories: `${m.baseKcal} calories`,
+          proteinContent: `${m.protein} g`,
+          carbohydrateContent: `${m.carbs} g`,
+          fatContent: `${m.fat} g`,
+        },
+        author: { "@type": "Organization", name: "Vitala" },
+      },
+    })),
+  };
+}
+
 export default function RecetasPage() {
   return (
     <div className="space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(recipeJsonLd()) }}
+      />
       <header className="text-center">
         <span className="badge-amber">🌎 Cocinas de todo el mundo</span>
         <h1 className="mt-4 text-3xl font-bold sm:text-4xl">Recetario Vitala</h1>

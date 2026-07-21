@@ -98,8 +98,31 @@ as $$
   update public.memberships
      set deleted_at = now()
    where user_id = p_user_id;
+
+  update public.community_posts
+     set display_name = 'Alguien de Vitala'
+   where user_id = p_user_id;
 $$;
 revoke all on function public.anonymize_user(uuid) from public, anon, authenticated;
+
+-- COMUNIDAD (muro de logros) --------------------------------------------------
+-- Lectura pública (motivación); escritura SOLO vía servidor tras moderación
+-- (/api/community/post con service_role). Sin política de INSERT para clientes.
+create table if not exists public.community_posts (
+  id           uuid primary key default gen_random_uuid(),
+  user_id      uuid references auth.users(id) on delete set null,
+  display_name text not null check (char_length(display_name) between 1 and 40),
+  message      text not null check (char_length(message) between 1 and 500),
+  stats        jsonb not null default '{}'::jsonb,
+  created_at   timestamptz not null default now(),
+  deleted_at   timestamptz
+);
+create index if not exists community_posts_created_idx on public.community_posts (created_at desc);
+
+alter table public.community_posts enable row level security;
+drop policy if exists "leer comunidad" on public.community_posts;
+create policy "leer comunidad" on public.community_posts
+  for select using (deleted_at is null);
 
 -- RATE LIMITING (bloque 3) ----------------------------------------------------
 -- Ventana fija en Postgres, sin servicios externos. Claves tipo

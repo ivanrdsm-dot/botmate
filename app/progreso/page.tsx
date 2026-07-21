@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Reveal from "@/components/Reveal";
+import ProgressPhotos from "@/components/ProgressPhotos";
 import { vitala } from "@/lib/brand";
 import {
   addMeasurementsEntry,
@@ -287,6 +288,10 @@ export default function ProgresoPage() {
           </div>
         </Reveal>
       )}
+
+      <Reveal>
+        <ProgressPhotos />
+      </Reveal>
     </div>
   );
 }
