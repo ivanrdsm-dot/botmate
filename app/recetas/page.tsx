@@ -4,6 +4,8 @@
 import type { Metadata } from "next";
 import { MEALS } from "@/lib/meals";
 import { vitala } from "@/lib/brand";
+import RecipeArt from "@/components/RecipeArt";
+import { RECIPE_IMAGES } from "@/lib/recipeImages";
 import type { Allergen, MealSlot } from "@/lib/types";
 
 export const metadata: Metadata = {
@@ -45,6 +47,7 @@ function recipeJsonLd() {
       item: {
         "@type": "Recipe",
         name: m.name,
+        ...(RECIPE_IMAGES[m.id] ? { image: `https://vitala.app${RECIPE_IMAGES[m.id]}` } : {}),
         recipeCuisine: m.origin,
         recipeCategory: m.slot,
         recipeIngredient: m.items,
@@ -92,14 +95,27 @@ export default function RecetasPage() {
             <div className="grid gap-3">
               {meals.map((m) => (
                 <details key={m.id} className="card overflow-hidden">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4">
-                    <div>
-                      <div className="font-semibold">{m.name}</div>
+                  <summary className="flex cursor-pointer list-none items-center gap-4 px-4 py-3.5">
+                    {RECIPE_IMAGES[m.id] ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={RECIPE_IMAGES[m.id]}
+                        alt={m.name}
+                        width={64}
+                        height={64}
+                        loading="lazy"
+                        className="h-16 w-16 shrink-0 rounded-xl object-cover"
+                      />
+                    ) : (
+                      <RecipeArt id={m.id} slot={m.slot} size={64} className="rounded-xl" />
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <div className="font-semibold leading-snug">{m.name}</div>
                       <div className="mt-0.5 text-xs" style={{ color: C.textMuted }}>
                         {m.origin} · {m.prepMin} min · {m.baseKcal} kcal · {m.protein} g proteína
                       </div>
                     </div>
-                    <span aria-hidden style={{ color: C.brand }}>+</span>
+                    <span aria-hidden className="text-lg" style={{ color: C.brand }}>+</span>
                   </summary>
                   <div className="space-y-4 border-t px-5 py-4" style={{ borderColor: "rgba(52,211,153,0.12)" }}>
                     <div>
