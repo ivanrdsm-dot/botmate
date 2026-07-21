@@ -132,7 +132,22 @@ export default function ComunidadPage() {
       )}
 
       <div className="space-y-3">
-        {!loaded && <p className="text-center text-sm" style={{ color: C.textMuted }}>Cargando comunidad…</p>}
+        {!loaded &&
+          [1, 2, 3].map((i) => (
+            <div key={i} className="card animate-pulse p-5">
+              <div className="flex items-center gap-2">
+                <div className="h-9 w-9 rounded-full" style={{ background: "rgba(14,122,82,0.12)" }} />
+                <div className="space-y-1.5">
+                  <div className="h-3 w-24 rounded" style={{ background: "rgba(14,122,82,0.12)" }} />
+                  <div className="h-2.5 w-14 rounded" style={{ background: "rgba(14,122,82,0.08)" }} />
+                </div>
+              </div>
+              <div className="mt-4 space-y-2">
+                <div className="h-3 w-full rounded" style={{ background: "rgba(14,122,82,0.08)" }} />
+                <div className="h-3 w-3/4 rounded" style={{ background: "rgba(14,122,82,0.08)" }} />
+              </div>
+            </div>
+          ))}
         {loaded && posts.length === 0 && (
           <div className="card p-6 text-center text-sm" style={{ color: C.textMuted }}>
             Sé la primera persona en compartir un logro. Alguien allá afuera necesita ver que sí se puede. 🌱

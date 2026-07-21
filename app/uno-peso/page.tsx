@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import Reveal from "@/components/Reveal";
+import Confetti from "@/components/Confetti";
 import { vitala } from "@/lib/brand";
 import { grantLifetime, hasLifetime, syncLifetimeFromCloud } from "@/lib/entitlement";
 import { getSupabase } from "@/lib/supabase";
@@ -23,9 +24,10 @@ function UnoPesoInner() {
   const params = useSearchParams();
   const [owned, setOwned] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [party, setParty] = useState(false);
 
   useEffect(() => {
-    if (params.get("status") === "ok") grantLifetime();
+    if (params.get("status") === "ok") { grantLifetime(); setParty(true); }
     setOwned(hasLifetime());
     // La membresía VERIFICADA viene de la nube (solo el webhook la otorga).
     syncLifetimeFromCloud().then(setOwned);
@@ -51,6 +53,7 @@ function UnoPesoInner() {
 
   if (owned) return (
     <div className="mx-auto max-w-md py-10 text-center">
+      {party && <Confetti />}
       <div className="text-5xl">💚</div>
       <h1 className="mt-4 text-2xl font-bold">¡Bienvenido de por vida!</h1>
       <p className="mt-2 text-sm opacity-75">Tu acceso a Vitala está activo para siempre. Una moneda cambió tu salud.</p>

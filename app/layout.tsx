@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import NavLinks from "@/components/NavLinks";
 import { vitala } from "@/lib/brand";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -51,16 +52,6 @@ function LeafLogo() {
     </svg>
   );
 }
-
-const navLinks = [
-  { href: "/plan",      label: "Mi plan" },
-  { href: "/recetas",  label: "Recetas" },
-  { href: "/comunidad",label: "Comunidad", sm: true },
-  { href: "/diario",   label: "Diario", sm: true },
-  { href: "/progreso", label: "Progreso", sm: true },
-  { href: "/coach",    label: "Coach IA", sm: true },
-  { href: "/bienestar",label: "Bienestar", sm: true },
-];
 
 // SEO: identidad de la organización y de la app (schema.org).
 const orgJsonLd = {
@@ -121,18 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             {/* Nav links */}
             <nav className="flex items-center gap-1 text-sm">
-              {navLinks.map((n) => (
-                <Link
-                  key={n.href}
-                  href={n.href}
-                  className={`rounded-full px-3 py-1.5 transition-colors hover:bg-white/5 ${
-                    n.sm ? "hidden sm:inline-block" : ""
-                  }`}
-                  style={{ color: C.textMuted }}
-                >
-                  {n.label}
-                </Link>
-              ))}
+              <NavLinks />
               <Link
                 href="/cuenta"
                 className="ml-2 btn-brand text-sm glow"

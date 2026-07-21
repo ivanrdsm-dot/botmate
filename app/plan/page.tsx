@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import Reveal from "@/components/Reveal";
+import MacroRing from "@/components/MacroRing";
+import Confetti from "@/components/Confetti";
 import { vitala } from "@/lib/brand";
 import { generatePlan } from "@/lib/planner";
 import { loadProfile } from "@/lib/store";
@@ -10,25 +12,20 @@ import type { Profile, WeekPlan } from "@/lib/types";
 
 const C = vitala.colors;
 
-function Ring({ label, value, unit }: { label: string; value: number; unit: string }) {
-  return (
-    <div className="rounded-2xl border p-4 text-center" style={{ borderColor: "rgba(74,222,128,.18)", background: C.bgSoft }}>
-      <div className="text-xl font-bold" style={{ color: C.brandLight }}>
-        {value}
-        <span className="ml-1 text-xs font-normal opacity-60">{unit}</span>
-      </div>
-      <div className="mt-1 text-xs opacity-70">{label}</div>
-    </div>
-  );
-}
-
 export default function PlanPage() {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [ready, setReady] = useState(false);
+  const [party, setParty] = useState(false);
 
   useEffect(() => {
-    setProfile(loadProfile());
+    const p = loadProfile();
+    setProfile(p);
     setReady(true);
+    // Celebra la PRIMERA vez que la persona ve su plan. Un momento, una vez.
+    if (p && !window.localStorage.getItem("vitala.plan.celebrated")) {
+      window.localStorage.setItem("vitala.plan.celebrated", "1");
+      setParty(true);
+    }
   }, []);
 
   const plan = useMemo<WeekPlan | null>(
@@ -64,8 +61,10 @@ export default function PlanPage() {
         </Link>
       </div>
 
+      {party && <Confetti />}
+
       {plan.flags.length > 0 && (
-        <div className="space-y-2 rounded-2xl border p-4 text-sm" style={{ borderColor: "rgba(245,158,11,.35)", background: "rgba(245,158,11,.07)", color: "#FCD9A0" }}>
+        <div className="space-y-2 rounded-2xl border p-4 text-sm" style={{ borderColor: "rgba(180,83,9,.30)", background: "rgba(247,178,78,.14)", color: C.text }}>
           <strong style={{ color: C.accent }}>Importante:</strong>
           {plan.flags.map((f) => (
             <p key={f}>• {f}</p>
@@ -75,10 +74,14 @@ export default function PlanPage() {
 
       <Reveal>
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Ring label="Calorías / día" value={t.calories} unit="kcal" />
-          <Ring label="Proteína" value={t.macros.protein} unit="g" />
-          <Ring label="Carbohidratos" value={t.macros.carbs} unit="g" />
-          <Ring label="Grasas" value={t.macros.fat} unit="g" />
+          <MacroRing label="Calorías / día" value={t.calories} unit="kcal"
+            fraction={t.calories / Math.max(t.tdee, 1)} color={C.brandDeep} />
+          <MacroRing label="Proteína" value={t.macros.protein} unit="g"
+            fraction={(t.macros.protein * 4) / Math.max(t.calories, 1)} color="#4CC38A" delay={0.1} />
+          <MacroRing label="Carbohidratos" value={t.macros.carbs} unit="g"
+            fraction={(t.macros.carbs * 4) / Math.max(t.calories, 1)} color="#E8A13D" delay={0.2} />
+          <MacroRing label="Grasas" value={t.macros.fat} unit="g"
+            fraction={(t.macros.fat * 9) / Math.max(t.calories, 1)} color="#B45309" delay={0.3} />
         </section>
       </Reveal>
       <p className="text-xs opacity-60">
