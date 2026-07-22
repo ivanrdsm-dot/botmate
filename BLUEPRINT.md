@@ -141,7 +141,8 @@ de identidad como cascarón anónimo (SET NULL + anonymize_user previo).
 | `/api/account/delete` | POST | Bearer token | 3/día user | Verifica `auth.getUser(token)` → `anonymize_user()` → `deleteUser()` |
 | `/api/account/export` | GET | Bearer token | 5/día user | Devuelve JSON con perfil + membresía del usuario autenticado |
 | `/api/analyze-body` | POST | opcional | 5/h user · 3/h IP | Visión IA de fotos de progreso. Guardrails anti-diagnóstico y anti-body-shaming. Foto SOLO en memoria |
-| `/api/community/post` | POST | Bearer token | 5/día user | Publica en comunidad tras moderación (reglas + IA). El cliente nunca inserta directo |
+| `/api/community/post` | POST | Bearer token | 5/día user | Publica en comunidad tras moderación de texto (reglas + IA) y de FOTO (IA visual, fail-closed). El cliente nunca inserta directo |
+| `/api/community/report` | POST | Bearer token | 10/día user | Reporta un post (App Store 1.2); a los 3 reportes se auto-oculta |
 
 Errores: JSON `{error}` con 400/401/429/500/502. Los webhooks SIEMPRE responden 200 tras
 registrar el evento (aunque se ignore) para evitar reintentos infinitos, salvo firma inválida (401).
@@ -333,6 +334,10 @@ Stripe CLI / MP sandbox para simular webhooks en local si está disponible.
     El análisis IA las procesa en memoria y las descarta — misma garantía que el diario.
 18. El análisis corporal JAMÁS da cifras "exactas" de grasa, diagnósticos ni lenguaje que
     avergüence el cuerpo o fomente trastornos alimenticios. Si parece menor de edad, se niega.
-19. La comunidad es texto + stats: sin fotos hasta que exista pipeline de moderación visual.
-    Publicar requiere cuenta; todo pasa por moderación server-side (reglas + IA); mensajes en
-    crisis reciben respuesta de apoyo con líneas de ayuda, nunca se publican.
+19. Comunidad con fotos: SOLO tras moderación visual con IA en modo fail-closed (sin llave
+    de IA no se aceptan fotos). Se rechazan: desnudez/sexual, menores, violencia, spam,
+    documentos. Subida al bucket 'community' únicamente vía service_role tras aprobarse.
+    Publicar requiere cuenta; texto moderado (reglas + IA); mensajes en crisis reciben
+    respuesta de apoyo con líneas de ayuda, nunca se publican.
+20. Todo post es reportable (1 reporte/usuario/post); a los 3 reportes se auto-oculta.
+    Al borrar la cuenta, las fotos de comunidad del usuario se ELIMINAN del storage.

@@ -4,12 +4,13 @@
 // Lectura pública; publicar requiere cuenta y pasa por moderación server-side.
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Reveal from "@/components/Reveal";
 import { vitala } from "@/lib/brand";
 import { getSupabase } from "@/lib/supabase";
 import { useUser } from "@/lib/useUser";
 import { loadProfile } from "@/lib/store";
+import { downscale } from "@/lib/photos";
 
 const C = vitala.colors;
 
@@ -18,7 +19,19 @@ interface Post {
   display_name: string;
   message: string;
   stats: { kgLost?: number; streakDays?: number };
+  image_url?: string | null;
   created_at: string;
+}
+
+const HIDDEN_KEY = "vitala.community.hidden.v1";
+
+function loadHidden(): string[] {
+  if (typeof window === "undefined") return [];
+  try {
+    return JSON.parse(window.localStorage.getItem(HIDDEN_KEY) || "[]") as string[];
+  } catch {
+    return [];
+  }
 }
 
 function timeAgo(iso: string): string {
@@ -39,20 +52,50 @@ export default function ComunidadPage() {
   const [streak, setStreak] = useState("");
   const [sending, setSending] = useState(false);
   const [notice, setNotice] = useState("");
+  const [photo, setPhoto] = useState<string | null>(null);
+  const [hidden, setHidden] = useState<string[]>([]);
+  const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    setHidden(loadHidden());
     (async () => {
       const sb = getSupabase();
       if (!sb) { setLoaded(true); return; }
       const { data } = await sb
         .from("community_posts")
-        .select("id, display_name, message, stats, created_at")
+        .select("id, display_name, message, stats, image_url, created_at")
         .order("created_at", { ascending: false })
         .limit(50);
       setPosts((data as Post[]) ?? []);
       setLoaded(true);
     })();
   }, []);
+
+  async function onPickPhoto(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    if (!file) return;
+    setPhoto(await downscale(file));
+  }
+
+  function hidePost(id: string) {
+    const next = [...hidden, id];
+    setHidden(next);
+    window.localStorage.setItem(HIDDEN_KEY, JSON.stringify(next));
+  }
+
+  async function reportPost(id: string) {
+    const sb = getSupabase();
+    const token = sb ? (await sb.auth.getSession()).data.session?.access_token : undefined;
+    if (!token) { setNotice("Inicia sesión para reportar."); return; }
+    hidePost(id); // se oculta de inmediato para quien reporta
+    await fetch("/api/community/report", {
+      method: "POST",
+      headers: { "content-type": "application/json", authorization: `Bearer ${token}` },
+      body: JSON.stringify({ postId: id }),
+    }).catch(() => {});
+    setNotice("Gracias por el reporte. Lo revisamos. 💚");
+  }
 
   async function publish() {
     setSending(true);
@@ -68,6 +111,9 @@ export default function ComunidadPage() {
           message,
           displayName: loadProfile()?.name?.split(" ")[0] || "Alguien de Vitala",
           stats: { kgLost: kgLost ? Number(kgLost) : undefined, streakDays: streak ? Number(streak) : undefined },
+          ...(photo
+            ? { imageBase64: photo.split(",")[1], imageType: "image/jpeg" }
+            : {}),
         }),
       });
       const data = await res.json();
@@ -75,7 +121,7 @@ export default function ComunidadPage() {
       if (data.error) { setNotice(data.error); return; }
       if (data.post) {
         setPosts((p) => [data.post, ...p]);
-        setMessage(""); setKgLost(""); setStreak("");
+        setMessage(""); setKgLost(""); setStreak(""); setPhoto(null);
         setNotice("¡Publicado! Gracias por motivar a la comunidad. 💚");
       }
     } catch {
@@ -110,7 +156,19 @@ export default function ComunidadPage() {
               className="w-full resize-none rounded-xl border bg-transparent px-4 py-3 text-sm outline-none"
               style={{ borderColor: "rgba(14,122,82,0.25)" }}
             />
+            {photo && (
+              <div className="relative mt-3 inline-block">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={photo} alt="Vista previa" className="h-28 rounded-xl object-cover" />
+                <button onClick={() => setPhoto(null)} className="absolute -right-2 -top-2 rounded-full bg-white px-2 py-0.5 text-xs shadow">✕</button>
+              </div>
+            )}
             <div className="mt-3 flex flex-wrap items-center gap-3">
+              <button onClick={() => fileRef.current?.click()} title="Adjuntar foto"
+                className="rounded-xl border px-3 py-2 text-sm" style={{ borderColor: "rgba(14,122,82,0.25)", color: C.textMuted }}>
+                📷 Foto
+              </button>
+              <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={onPickPhoto} />
               <input value={kgLost} onChange={(e) => setKgLost(e.target.value)} type="number" min="0" step="0.1" placeholder="kg perdidos (opcional)"
                 className="w-40 rounded-xl border bg-transparent px-3 py-2 text-sm outline-none" style={{ borderColor: "rgba(14,122,82,0.25)" }} />
               <input value={streak} onChange={(e) => setStreak(e.target.value)} type="number" min="0" placeholder="días de racha (opcional)"
@@ -119,6 +177,9 @@ export default function ComunidadPage() {
                 {sending ? "Publicando…" : "Publicar"}
               </button>
             </div>
+            <p className="mt-2 text-[11px]" style={{ color: C.textMuted }}>
+              Las fotos pasan por moderación automática: solo progreso (con ropa), comida o ejercicio.
+            </p>
             {notice && <p className="mt-3 text-sm" style={{ color: C.brandLight }}>{notice}</p>}
           </div>
         </Reveal>
@@ -153,7 +214,7 @@ export default function ComunidadPage() {
             Sé la primera persona en compartir un logro. Alguien allá afuera necesita ver que sí se puede. 🌱
           </div>
         )}
-        {posts.map((p) => (
+        {posts.filter((p) => !hidden.includes(p.id)).map((p) => (
           <Reveal key={p.id}>
             <article className="card p-5">
               <div className="flex items-center gap-2">
@@ -164,8 +225,16 @@ export default function ComunidadPage() {
                   <p className="text-sm font-semibold">{p.display_name}</p>
                   <p className="text-xs" style={{ color: C.textMuted }}>{timeAgo(p.created_at)}</p>
                 </div>
+                <div className="ml-auto flex gap-2 text-xs">
+                  <button onClick={() => hidePost(p.id)} title="Ocultar" style={{ color: C.textMuted }}>Ocultar</button>
+                  <button onClick={() => reportPost(p.id)} title="Reportar" style={{ color: "#B91C1C" }}>Reportar</button>
+                </div>
               </div>
               <p className="mt-3 text-sm leading-relaxed">{p.message}</p>
+              {p.image_url && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={p.image_url} alt="" loading="lazy" className="mt-3 max-h-96 w-full rounded-xl object-cover" />
+              )}
               {(p.stats?.kgLost || p.stats?.streakDays) && (
                 <div className="mt-3 flex gap-2">
                   {p.stats.kgLost ? (

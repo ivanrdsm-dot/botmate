@@ -82,6 +82,44 @@ as $$
 $$;
 revoke all on function public.grant_lifetime_membership(uuid) from public, anon, authenticated;
 
+-- COMUNIDAD (muro de logros) --------------------------------------------------
+-- Lectura pública (motivación); escritura SOLO vía servidor tras moderación
+-- (/api/community/post con service_role). Sin política de INSERT para clientes.
+create table if not exists public.community_posts (
+  id           uuid primary key default gen_random_uuid(),
+  user_id      uuid references auth.users(id) on delete set null,
+  display_name text not null check (char_length(display_name) between 1 and 40),
+  message      text not null check (char_length(message) between 1 and 500),
+  stats        jsonb not null default '{}'::jsonb,
+  image_url    text,
+  created_at   timestamptz not null default now(),
+  deleted_at   timestamptz
+);
+alter table public.community_posts add column if not exists image_url text;
+create index if not exists community_posts_created_idx on public.community_posts (created_at desc);
+
+alter table public.community_posts enable row level security;
+drop policy if exists "leer comunidad" on public.community_posts;
+create policy "leer comunidad" on public.community_posts
+  for select using (deleted_at is null);
+
+-- REPORTES (App Store 1.2: mecanismo de reporte de contenido) -----------------
+-- Un reporte por usuario por post; a los 3 reportes el post se oculta solo.
+create table if not exists public.community_reports (
+  post_id     uuid not null references public.community_posts(id) on delete cascade,
+  user_id     uuid not null,
+  created_at  timestamptz not null default now(),
+  primary key (post_id, user_id)
+);
+alter table public.community_reports enable row level security;
+-- Sin políticas: solo el servidor (service_role) escribe y cuenta reportes.
+
+-- BUCKET de fotos de comunidad (público de lectura; escribe SOLO el servidor
+-- tras moderación visual con IA).
+insert into storage.buckets (id, name, public)
+values ('community', 'community', true)
+on conflict (id) do nothing;
+
 -- BORRADO DE CUENTA — anonimización irreversible (App Store 5.1.1(v)) ---------
 -- Sobreescribe EN SU LUGAR. Prohíbido copiar datos a logs/backups/auditoría.
 create or replace function public.anonymize_user(p_user_id uuid)
@@ -100,29 +138,16 @@ as $$
    where user_id = p_user_id;
 
   update public.community_posts
-     set display_name = 'Alguien de Vitala'
+     set display_name = 'Alguien de Vitala',
+         image_url = null
    where user_id = p_user_id;
+
+  -- Sus fotos de comunidad se ELIMINAN del storage (datos corporales sensibles).
+  delete from storage.objects
+   where bucket_id = 'community'
+     and name like p_user_id::text || '/%';
 $$;
 revoke all on function public.anonymize_user(uuid) from public, anon, authenticated;
-
--- COMUNIDAD (muro de logros) --------------------------------------------------
--- Lectura pública (motivación); escritura SOLO vía servidor tras moderación
--- (/api/community/post con service_role). Sin política de INSERT para clientes.
-create table if not exists public.community_posts (
-  id           uuid primary key default gen_random_uuid(),
-  user_id      uuid references auth.users(id) on delete set null,
-  display_name text not null check (char_length(display_name) between 1 and 40),
-  message      text not null check (char_length(message) between 1 and 500),
-  stats        jsonb not null default '{}'::jsonb,
-  created_at   timestamptz not null default now(),
-  deleted_at   timestamptz
-);
-create index if not exists community_posts_created_idx on public.community_posts (created_at desc);
-
-alter table public.community_posts enable row level security;
-drop policy if exists "leer comunidad" on public.community_posts;
-create policy "leer comunidad" on public.community_posts
-  for select using (deleted_at is null);
 
 -- RATE LIMITING (bloque 3) ----------------------------------------------------
 -- Ventana fija en Postgres, sin servicios externos. Claves tipo
