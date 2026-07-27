@@ -28,24 +28,24 @@ export type Robot = {
 const photo = (file: string) => `/photos/robots/${file}`;
 
 export const robotImage = {
-  "bellabot-pro": photo("bellabot-pro.jpg"),
-  "kettybot-pro": photo("kettybot-pro.jpg"),
-  "kettybot-pro-black": photo("kettybot-pro-black.jpg"),
-  "kettybot-pro-yellow": photo("kettybot-pro-yellow.jpg"),
-  swiftbot: photo("swiftbot.jpg"),
-  flashbot: photo("flashbot.jpg"),
-  holabot: photo("holabot.jpg"),
-  cc1: photo("cc1.jpg"),
-  sh1: photo("sh1.jpg"),
+  "bellabot-pro": photo("botmate-serve.jpg"),
+  "kettybot-pro": photo("botmate-ads.jpg"),
+  "kettybot-pro-black": photo("botmate-ads-black.jpg"),
+  "kettybot-pro-yellow": photo("botmate-ads-yellow.jpg"),
+  swiftbot: photo("botmate-glide.jpg"),
+  flashbot: photo("botmate-tower.jpg"),
+  holabot: photo("botmate-carry.jpg"),
+  cc1: photo("botmate-clean.jpg"),
+  sh1: photo("botmate-clean-mini.jpg"),
   "pudubot-2": photo("botmate-flex.jpg"),
-  t300: photo("t300.jpg"),
-  t600: photo("t600.jpg"),
+  t300: photo("botmate-cargo-300.jpg"),
+  t600: photo("botmate-cargo-600.jpg"),
 } as const;
 
 export const robots: Robot[] = [
   {
     slug: "botmate-serve",
-    image: photo("bellabot-pro.jpg"),
+    image: photo("botmate-serve.jpg"),
     name: "BotMate Serve",
     model: "BotMate Serve",
     tagline: "El robot mesero premium con expresiones que enamoran",
@@ -97,8 +97,8 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-ads",
-    image: photo("kettybot-pro.jpg"),
-    imageAlt: photo("kettybot-pro-yellow.jpg"),
+    image: photo("botmate-ads.jpg"),
+    imageAlt: photo("botmate-ads-yellow.jpg"),
     name: "BotMate Ads",
     model: "BotMate Ads",
     tagline: "Anfitrión + publicidad + entrega en un solo robot",
@@ -150,7 +150,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-glide",
-    image: photo("swiftbot.jpg"),
+    image: photo("botmate-glide.jpg"),
     name: "BotMate Glide",
     model: "BotMate Glide",
     tagline: "Hospitalidad premium con doble pantalla animada",
@@ -199,7 +199,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-tower",
-    image: photo("flashbot.jpg"),
+    image: photo("botmate-tower.jpg"),
     name: "BotMate Tower",
     model: "BotMate Tower",
     tagline: "Entregas autónomas multi-piso para hoteles 24/7",
@@ -248,7 +248,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-carry",
-    image: photo("holabot.jpg"),
+    image: photo("botmate-carry.jpg"),
     name: "BotMate Carry",
     model: "BotMate Carry",
     tagline: "Bus-tender de alta capacidad para rotación rápida",
@@ -296,7 +296,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-clean",
-    image: photo("cc1.jpg"),
+    image: photo("botmate-clean.jpg"),
     name: "BotMate Clean",
     model: "BotMate Clean",
     tagline: "Robot inteligente de limpieza comercial · 4 en 1",
@@ -364,7 +364,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-clean-mini",
-    image: photo("sh1.jpg"),
+    image: photo("botmate-clean-mini.jpg"),
     name: "BotMate Clean Mini",
     model: "BotMate Clean Mini",
     tagline: "Robot de limpieza compacto para espacios reducidos",
@@ -476,7 +476,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-cargo-300",
-    image: photo("t300.jpg"),
+    image: photo("botmate-cargo-300.jpg"),
     name: "BotMate Cargo 300",
     model: "BotMate Cargo 300",
     tagline: "AMR de carga industrial 300 kg",
@@ -518,7 +518,7 @@ export const robots: Robot[] = [
   },
   {
     slug: "botmate-cargo-600",
-    image: photo("t600.jpg"),
+    image: photo("botmate-cargo-600.jpg"),
     name: "BotMate Cargo 600",
     model: "BotMate Cargo 600",
     tagline: "AMR heavy-duty de hasta 600 kg",
