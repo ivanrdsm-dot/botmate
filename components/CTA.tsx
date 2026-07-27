@@ -1,12 +1,19 @@
 import Link from "next/link";
 import { waLink } from "@/lib/site";
+import MagneticButton from "./MagneticButton";
 
 export default function CTA({
   title = "¿Listo para automatizar tu operación?",
   subtitle = "Agenda una demo gratuita y descubre qué robot es el ideal para tu negocio.",
+  waMessage = "Hola BotMate, quiero agendar una demostración gratuita.",
+  primaryHref = "/contacto",
+  primaryLabel = "Agendar demo",
 }: {
   title?: string;
   subtitle?: string;
+  waMessage?: string;
+  primaryHref?: string;
+  primaryLabel?: string;
 }) {
   return (
     <section className="py-20">
@@ -20,8 +27,14 @@ export default function CTA({
               <p className="mt-3 max-w-xl text-white/70">{subtitle}</p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Link href="/contacto" className="btn-primary">Agendar demo</Link>
-              <a href={waLink()} target="_blank" rel="noopener" className="btn-ghost">WhatsApp directo</a>
+              <MagneticButton>
+                <Link href={primaryHref} className="btn-primary">{primaryLabel}</Link>
+              </MagneticButton>
+              <MagneticButton>
+                <a href={waLink(waMessage)} target="_blank" rel="noopener" className="btn-ghost">
+                  WhatsApp directo
+                </a>
+              </MagneticButton>
             </div>
           </div>
         </div>

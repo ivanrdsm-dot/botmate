@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import CTA from "@/components/CTA";
+import ROICalculator from "@/components/ROICalculator";
 import { Check, BadgePercent, Truck, ShieldCheck, Banknote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -96,7 +97,9 @@ export default function VentaPage() {
         </div>
       </section>
 
-      <CTA />
+      <ROICalculator />
+
+      <CTA waMessage="Hola BotMate, quiero comprar un robot. ¿Me comparten precios y financiamiento?" primaryLabel="Cotizar compra" />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 import ContactForm from "@/components/ContactForm";
+import DemoScheduler from "@/components/DemoScheduler";
 import { site, waLink } from "@/lib/site";
 import { Mail, MessageCircle, MapPin, Phone, Clock } from "lucide-react";
 
@@ -70,6 +71,8 @@ export default function ContactoPage() {
           </div>
         </div>
       </section>
+
+      <DemoScheduler />
     </>
   );
 }

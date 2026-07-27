@@ -13,6 +13,8 @@ import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Newsletter from "@/components/Newsletter";
 import RobotCard from "@/components/RobotCard";
+import ROICalculator from "@/components/ROICalculator";
+import DemoScheduler from "@/components/DemoScheduler";
 import SectionTitle from "@/components/SectionTitle";
 import Reveal from "@/components/Reveal";
 import { robots } from "@/lib/robots";
@@ -99,9 +101,11 @@ export default function HomePage() {
       </section>
 
       <Compare />
+      <ROICalculator />
       <Testimonials />
       <Process />
       <FAQ />
+      <DemoScheduler />
       <Newsletter />
       <CTA />
     </>

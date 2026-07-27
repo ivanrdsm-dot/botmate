@@ -85,7 +85,7 @@ export default function RefaccionesPage() {
         </div>
       </section>
 
-      <CTA title="¿Tu robot necesita servicio?" subtitle="Atendemos equipos de servicio de cualquier distribuidor con técnicos certificados." />
+      <CTA title="¿Tu robot necesita servicio?" subtitle="Atendemos robots de servicio de cualquier marca con técnicos certificados." waMessage="Hola BotMate, mi robot necesita servicio o refacciones. ¿Me apoyan?" primaryLabel="Solicitar servicio" />
     </>
   );
 }

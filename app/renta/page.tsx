@@ -132,7 +132,7 @@ export default function RentaPage() {
       </section>
 
       <FAQ />
-      <CTA title="Cotiza tu renta hoy" subtitle="Recibe propuesta en menos de 24 horas con el plan que más conviene a tu operación." />
+      <CTA title="Cotiza tu renta hoy" subtitle="Recibe propuesta en menos de 24 horas con el plan que más conviene a tu operación." waMessage="Hola BotMate, quiero rentar un robot. ¿Me comparten planes y disponibilidad?" primaryLabel="Cotizar renta" />
     </>
   );
 }

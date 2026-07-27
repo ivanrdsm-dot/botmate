@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
 import Analytics from "@/components/Analytics";
+import SmartCursor from "@/components/SmartCursor";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
@@ -165,6 +166,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es-MX" className={`${inter.variable} ${grotesk.variable}`}>
       <body>
+        <SmartCursor />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

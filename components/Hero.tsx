@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, ShieldCheck, Zap, PlayCircle } from "lucide-react";
 import { waLink } from "@/lib/site";
 import Aurora from "./Aurora";
+import MagneticButton from "./MagneticButton";
 
 export default function Hero() {
   return (
@@ -53,12 +54,21 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <Link href="/robots" className="btn-primary">
-              Ver catálogo <ArrowRight className="h-4 w-4" />
-            </Link>
-            <a href={waLink()} target="_blank" rel="noopener" className="btn-ghost">
-              <PlayCircle className="h-4 w-4" /> Cotizar por WhatsApp
-            </a>
+            <MagneticButton>
+              <Link href="/robots" className="btn-primary">
+                Ver catálogo <ArrowRight className="h-4 w-4" />
+              </Link>
+            </MagneticButton>
+            <MagneticButton>
+              <a
+                href={waLink("Hola BotMate, quiero cotizar un robot para mi negocio.")}
+                target="_blank"
+                rel="noopener"
+                className="btn-ghost"
+              >
+                <PlayCircle className="h-4 w-4" /> Cotizar por WhatsApp
+              </a>
+            </MagneticButton>
           </motion.div>
 
           <motion.div
@@ -123,6 +133,24 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="pointer-events-none absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex"
+        aria-hidden
+      >
+        <span className="text-[10px] uppercase tracking-[0.3em] text-white/35">Desliza</span>
+        <span className="relative h-9 w-[22px] rounded-full border border-white/25">
+          <motion.span
+            className="absolute left-1/2 top-1.5 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-brand-300"
+            animate={{ y: [0, 14, 0], opacity: [1, 0.3, 1] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </span>
+      </motion.div>
     </section>
   );
 }
