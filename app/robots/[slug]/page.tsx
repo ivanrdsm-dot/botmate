@@ -195,6 +195,35 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      {/* BANNER CINEMATOGRÁFICO */}
+      {r.video && (
+        <section className="py-16">
+          <div className="container-x">
+            <div className="relative overflow-hidden rounded-[36px] border border-white/10">
+              <video
+                className="aspect-video w-full object-cover"
+                src={r.video}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-label={`${r.name} en escena`}
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/70 via-transparent to-transparent" />
+              <div className="absolute bottom-5 left-6 right-6 flex items-end justify-between gap-4">
+                <p className="font-display text-lg font-semibold text-white sm:text-xl">
+                  {r.name} <span className="text-white/50">en escena</span>
+                </p>
+                <span className="rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[10px] uppercase tracking-widest text-white/70 backdrop-blur">
+                  BotMate Films
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* KEY FEATURES estilo BotMate */}
       <section className="py-20">
         <div className="container-x">

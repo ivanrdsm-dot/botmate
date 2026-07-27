@@ -23,6 +23,8 @@ export type Robot = {
   image?: string;
   /** Secondary image for gallery / hover state. */
   imageAlt?: string;
+  /** Clip cinematográfico (loop, sin audio) para el banner de detalle. */
+  video?: string;
 };
 
 const photo = (file: string) => `/photos/robots/${file}`;
@@ -46,6 +48,7 @@ export const robots: Robot[] = [
   {
     slug: "botmate-serve",
     image: photo("botmate-serve.jpg"),
+    video: "/videos/cta-restaurant.mp4",
     name: "BotMate Serve",
     model: "BotMate Serve",
     tagline: "El robot mesero premium con expresiones que enamoran",
@@ -98,6 +101,7 @@ export const robots: Robot[] = [
   {
     slug: "botmate-ads",
     image: photo("botmate-ads.jpg"),
+    video: "/videos/ads-orbit.mp4",
     imageAlt: photo("botmate-ads-yellow.jpg"),
     name: "BotMate Ads",
     model: "BotMate Ads",
@@ -297,6 +301,7 @@ export const robots: Robot[] = [
   {
     slug: "botmate-clean",
     image: photo("botmate-clean.jpg"),
+    video: "/videos/clean-track.mp4",
     name: "BotMate Clean",
     model: "BotMate Clean",
     tagline: "Robot inteligente de limpieza comercial · 4 en 1",
