@@ -19,6 +19,18 @@ export default function CTA({
     <section className="py-20">
       <div className="container-x">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-bg-card/60 p-8 sm:p-12">
+          {/* Fondo cinematográfico sutil */}
+          <video
+            className="absolute inset-0 h-full w-full object-cover opacity-25"
+            src="/videos/cta-restaurant.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-bg/90 via-bg/70 to-bg/50" />
           <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-accent-violet/30 blur-3xl" />
           <div className="absolute -right-20 -bottom-20 h-72 w-72 rounded-full bg-accent/30 blur-3xl" />
           <div className="relative grid items-center gap-6 md:grid-cols-[1fr_auto]">

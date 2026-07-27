@@ -10,8 +10,23 @@ import MagneticButton from "./MagneticButton";
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden pt-32">
+      {/* Fondo cinematográfico */}
+      <div className="absolute inset-0 -z-20" aria-hidden>
+        <video
+          className="h-full w-full object-cover opacity-45"
+          src="/videos/hero-loop.mp4"
+          poster="/videos/hero-loop-poster.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/70 via-bg/55 to-bg" />
+        <div className="absolute inset-0 bg-gradient-to-r from-bg/80 via-transparent to-bg/40" />
+      </div>
       <Aurora />
-      <div className="absolute inset-0 -z-10 grid-bg" />
+      <div className="absolute inset-0 -z-10 grid-bg opacity-60" />
 
       <div className="container-x relative grid items-center gap-12 pb-24 lg:grid-cols-12">
         <div className="lg:col-span-7">
