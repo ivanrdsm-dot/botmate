@@ -55,6 +55,9 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: { "es-MX": "/", "x-default": "/" },
   },
+  verification: {
+    google: "-VmDBYxlipsg1I6kHsexB9DDvfEG8y6qoFe_z5_nSYQ",
+  },
   openGraph: {
     type: "website",
     locale: "es_MX",
