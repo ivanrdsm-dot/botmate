@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --brand: #3D5AFE;
+  --brand-deep: #2C42E6;
+  --brand-light: #5B73FB;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #05070F;
+  color: #E5E7EB;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(61, 90, 254, 0.35);
+  color: #fff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #05070F; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #3D5AFE, #7C8DFD); border-radius: 8px; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8; }
+
+  .gradient-text {
+    background: linear-gradient(120deg, #5B73FB 0%, #3D5AFE 50%, #7C8DFD 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gradient-text-pink {
+    background: linear-gradient(120deg, #3D5AFE 0%, #7C8DFD 45%, #EC4899 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white transition;
+    background: linear-gradient(120deg, #3D5AFE, #5B73FB);
+    box-shadow: 0 10px 40px -10px rgba(61, 90, 254, 0.65);
+  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 16px 50px -10px rgba(61, 90, 254, 0.75); }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/10;
+  }
+
+  .card-tech {
+    @apply relative overflow-hidden rounded-3xl border border-white/10 bg-bg-card/60 p-6 backdrop-blur-xl transition;
+  }
+  .card-tech:hover { border-color: rgba(61, 90, 254, 0.45); transform: translateY(-2px); }
+  .card-tech::before {
+    content: "";
+    position: absolute; inset: -1px;
+    background: linear-gradient(120deg, transparent, rgba(61,90,254,0.20), transparent 40%);
+    opacity: 0; transition: opacity .4s;
+    pointer-events: none; border-radius: inherit;
+  }
+  .card-tech:hover::before { opacity: 1; }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-white/80;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+
+  .glow-orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+}
+
+/* ── Motion primitives ───────────────────────────────────────── */
+@keyframes sheen {
+  0%   { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+@keyframes shimmer-text {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(0.9); opacity: 0.7; }
+  70%  { transform: scale(1.5); opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-float-y { animation: float-y 6s ease-in-out infinite; }
+.tabular { font-variant-numeric: tabular-nums; }
