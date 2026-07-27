@@ -4,15 +4,28 @@ import MagneticButton from "./MagneticButton";
 import { site, waLink } from "@/lib/site";
 
 /**
- * Agenda de demostraciones. Si NEXT_PUBLIC_CALENDLY_URL está configurada,
- * embebe el calendario oficial (elige fecha/hora y confirma sin salir del
- * sitio). Sin URL, muestra un flujo elegante por WhatsApp y correo.
+ * Agenda de demostraciones. Si NEXT_PUBLIC_BOOKING_URL está configurada
+ * (horario de citas de Google Calendar o evento de Calendly), embebe el
+ * calendario oficial: el cliente elige fecha/hora y confirma sin salir del
+ * sitio, con correo de confirmación automático. Sin URL, muestra un flujo
+ * elegante por WhatsApp, correo y teléfono.
  */
+function buildEmbed(url: string): string {
+  // Google Calendar appointment schedule → necesita ?gv=true para embeber
+  if (url.includes("calendar.google.com") || url.includes("calendar.app.google")) {
+    return `${url}${url.includes("?") ? "&" : "?"}gv=true`;
+  }
+  // Calendly → tema oscuro de marca
+  if (url.includes("calendly.com")) {
+    return `${url}${url.includes("?") ? "&" : "?"}hide_gdpr_banner=1&background_color=070a14&text_color=ffffff&primary_color=3d5afe`;
+  }
+  return url;
+}
+
 export default function DemoScheduler() {
-  const calendly = process.env.NEXT_PUBLIC_CALENDLY_URL;
-  const embed = calendly
-    ? `${calendly}${calendly.includes("?") ? "&" : "?"}hide_gdpr_banner=1&background_color=070a14&text_color=ffffff&primary_color=3d5afe`
-    : null;
+  const booking = process.env.NEXT_PUBLIC_BOOKING_URL ?? process.env.NEXT_PUBLIC_CALENDLY_URL;
+  const embed = booking ? buildEmbed(booking) : null;
+  const isGoogle = !!booking && (booking.includes("calendar.google") || booking.includes("calendar.app.google"));
 
   return (
     <section className="py-24" id="demo">
@@ -24,7 +37,11 @@ export default function DemoScheduler() {
         />
 
         {embed ? (
-          <div className="mt-12 overflow-hidden rounded-3xl border border-white/10 bg-bg-card/60">
+          <div
+            className={`mt-12 overflow-hidden rounded-3xl border border-white/10 ${
+              isGoogle ? "bg-white" : "bg-bg-card/60"
+            }`}
+          >
             <iframe
               src={embed}
               title="Agenda tu demostración BotMate"
