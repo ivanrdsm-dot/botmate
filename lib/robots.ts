@@ -9,7 +9,7 @@ export type Robot = {
   tagline: string;
   slogan: string;
   category: RobotCategory;
-  brand: "Pudu Robotics" | "BotMate";
+  brand: "BotMate";
   description: string;
   highlights: string[];
   keyFeatures: KeyFeature[];
@@ -19,7 +19,7 @@ export type Robot = {
   awards?: string[];
   hero?: string;
   badge?: string;
-  /** Path to main official Pudu product photo (in /public). */
+  /** Path to main official product photo (in /public). */
   image?: string;
   /** Secondary image for gallery / hover state. */
   imageAlt?: string;
@@ -37,27 +37,27 @@ export const robotImage = {
   holabot: photo("holabot.jpg"),
   cc1: photo("cc1.jpg"),
   sh1: photo("sh1.jpg"),
-  "pudubot-2": photo("pudubot-2.jpg"),
+  "pudubot-2": photo("botmate-flex.jpg"),
   t300: photo("t300.jpg"),
   t600: photo("t600.jpg"),
 } as const;
 
 export const robots: Robot[] = [
   {
-    slug: "bellabot-pro",
+    slug: "botmate-serve",
     image: photo("bellabot-pro.jpg"),
-    name: "BellaBot Pro",
-    model: "BellaBot Pro",
+    name: "BotMate Serve",
+    model: "BotMate Serve",
     tagline: "El robot mesero premium con expresiones que enamoran",
     slogan: "Robot de entrega premium con interacción emocional avanzada",
     category: "delivery",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
-      "BellaBot Pro es la evolución del icónico robot mesero más querido del mundo. Combina pantalla facial emotiva, cámaras 3D de profundidad, sensores ultrasónicos y bandejas para 4 niveles que entregan hasta 40 kg con la mejor experiencia de servicio del mercado.",
+      "BotMate Serve es la evolución del icónico robot mesero más querido del mundo. Combina pantalla facial emotiva, cámaras 3D de profundidad, sensores ultrasónicos y bandejas para 4 niveles que entregan hasta 40 kg con la mejor experiencia de servicio del mercado.",
     highlights: [
       "Pantalla facial con +20 expresiones emocionales",
       "Carga útil de 40 kg distribuida en 4 bandejas",
-      "Navegación PUDU SLAM con LiDAR + visión 3D",
+      "Navegación BotMate SLAM con LiDAR + visión 3D",
       "Modos: entrega, regreso, crucero, cumpleaños y greeting",
       "Tactile touch: caricia en la cabeza activa respuesta",
     ],
@@ -76,18 +76,18 @@ export const robots: Robot[] = [
       },
       {
         title: "Modos de operación versátiles",
-        desc: "Entrega, regreso, crucero, marketing y cumpleaños — todo configurable desde pantalla o app PUDU Link.",
+        desc: "Entrega, regreso, crucero, marketing y cumpleaños — todo configurable desde pantalla o app BotMate Link.",
       },
     ],
     specs: [
-      { label: "Modelo", value: "BellaBot Pro" },
+      { label: "Modelo", value: "BotMate Serve" },
       { label: "Carga máxima", value: "40 kg" },
       { label: "Bandejas", value: "4 niveles" },
       { label: "Pantalla", value: "Doble HD frontal y trasera" },
       { label: "Velocidad", value: "0.5 – 1.2 m/s" },
       { label: "Autonomía", value: "12 – 24 horas" },
       { label: "Ancho de paso", value: "55 cm" },
-      { label: "Navegación", value: "PUDU SLAM · LiDAR + visión 3D" },
+      { label: "Navegación", value: "BotMate SLAM · LiDAR + visión 3D" },
       { label: "Sensores", value: "LiDAR 360° · RGBD · Ultrasónicos · Caída" },
       { label: "Conectividad", value: "Wi-Fi · BLE · 4G opcional" },
     ],
@@ -96,17 +96,17 @@ export const robots: Robot[] = [
     badge: "Más vendido",
   },
   {
-    slug: "kettybot-pro",
+    slug: "botmate-ads",
     image: photo("kettybot-pro.jpg"),
     imageAlt: photo("kettybot-pro-yellow.jpg"),
-    name: "KettyBot Pro",
-    model: "KettyBot Pro",
+    name: "BotMate Ads",
+    model: "BotMate Ads",
     tagline: "Anfitrión + publicidad + entrega en un solo robot",
     slogan: "El robot anfitrión con la pantalla publicitaria más grande del mercado",
     category: "guidance",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
-      "KettyBot Pro combina entrega ágil con la pantalla publicitaria frontal más grande de su categoría: 18.5\" FHD. Ideal para anfitrionería, marketing experiencial y campañas dinámicas. Su diseño ultra-esbelto navega pasillos de hasta 55 cm.",
+      "BotMate Ads combina entrega ágil con la pantalla publicitaria frontal más grande de su categoría: 18.5\" FHD. Ideal para anfitrionería, marketing experiencial y campañas dinámicas. Su diseño ultra-esbelto navega pasillos de hasta 55 cm.",
     highlights: [
       "Pantalla publicitaria frontal 18.5\" FHD",
       "Ancho ultra esbelto para pasillos angostos",
@@ -133,7 +133,7 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "KettyBot Pro" },
+      { label: "Modelo", value: "BotMate Ads" },
       { label: "Pantalla principal", value: "18.5\" FHD frontal" },
       { label: "Pantalla secundaria", value: "Trasera HD" },
       { label: "Carga máxima", value: "15 kg" },
@@ -141,7 +141,7 @@ export const robots: Robot[] = [
       { label: "Velocidad", value: "0.5 – 1.2 m/s" },
       { label: "Autonomía", value: "Hasta 16 horas" },
       { label: "Tiempo de carga", value: "4 horas" },
-      { label: "Navegación", value: "PUDU SLAM · visión profunda" },
+      { label: "Navegación", value: "BotMate SLAM · visión profunda" },
       { label: "CMS", value: "Plataforma web BotMate Ads" },
     ],
     useCases: ["Restaurantes", "Retail", "Eventos", "Marketing experiencial"],
@@ -149,16 +149,16 @@ export const robots: Robot[] = [
     badge: "Marketing 360°",
   },
   {
-    slug: "swiftbot",
+    slug: "botmate-glide",
     image: photo("swiftbot.jpg"),
-    name: "SwiftBot",
-    model: "SwiftBot",
+    name: "BotMate Glide",
+    model: "BotMate Glide",
     tagline: "Hospitalidad premium con doble pantalla animada",
     slogan: "El robot de entrega para experiencias premium en hotelería y fine dining",
     category: "delivery",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
-      "SwiftBot eleva la experiencia de servicio con pantallas duales animadas, bandejas modulares intercambiables y operación silenciosa <50 dB. La opción favorita de hoteles boutique, restaurantes de alta cocina, spas y casinos premium.",
+      "BotMate Glide eleva la experiencia de servicio con pantallas duales animadas, bandejas modulares intercambiables y operación silenciosa <50 dB. La opción favorita de hoteles boutique, restaurantes de alta cocina, spas y casinos premium.",
     highlights: [
       "Doble pantalla con animaciones premium",
       "Bandejas modulares intercambiables",
@@ -185,29 +185,29 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "SwiftBot" },
+      { label: "Modelo", value: "BotMate Glide" },
       { label: "Carga máxima", value: "40 kg" },
       { label: "Bandejas", value: "Modulares intercambiables" },
       { label: "Pantallas", value: "Duales HD animadas" },
       { label: "Autonomía", value: "12 horas" },
       { label: "Ruido", value: "< 50 dB(A)" },
       { label: "Velocidad", value: "0.5 – 1.2 m/s" },
-      { label: "Navegación", value: "PUDU SLAM" },
+      { label: "Navegación", value: "BotMate SLAM" },
     ],
     useCases: ["Hoteles", "Fine dining", "Spas", "Casinos"],
     modes: ["Servicio", "Crucero", "Promociones"],
   },
   {
-    slug: "flashbot",
+    slug: "botmate-tower",
     image: photo("flashbot.jpg"),
-    name: "FlashBot",
-    model: "FlashBot",
+    name: "BotMate Tower",
+    model: "BotMate Tower",
     tagline: "Entregas autónomas multi-piso para hoteles 24/7",
     slogan: "Robot de entrega completamente cerrado, multi-piso y con integración IoT",
     category: "delivery",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
-      "FlashBot navega elevadores, abre puertas automáticas y entrega amenidades 24/7 sin contacto. Diseño cerrado con compartimentos seguros y código de apertura por SMS. Integración nativa con PMS hoteleros y plataformas de room service.",
+      "BotMate Tower navega elevadores, abre puertas automáticas y entrega amenidades 24/7 sin contacto. Diseño cerrado con compartimentos seguros y código de apertura por SMS. Integración nativa con PMS hoteleros y plataformas de room service.",
     highlights: [
       "Integración con elevadores y puertas automáticas",
       "Compartimentos cerrados con código por SMS",
@@ -234,11 +234,11 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "FlashBot" },
+      { label: "Modelo", value: "BotMate Tower" },
       { label: "Carga máxima", value: "20 kg" },
       { label: "Compartimentos", value: "Hasta 4 cerrados" },
       { label: "Conectividad", value: "Wi-Fi · 4G · LoRa · IoT" },
-      { label: "Navegación", value: "Multi-piso · PUDU SLAM" },
+      { label: "Navegación", value: "Multi-piso · BotMate SLAM" },
       { label: "Autonomía", value: "12-15 horas" },
       { label: "Apertura", value: "Código SMS / app / face ID" },
     ],
@@ -247,16 +247,16 @@ export const robots: Robot[] = [
     badge: "Multi-piso",
   },
   {
-    slug: "holabot",
+    slug: "botmate-carry",
     image: photo("holabot.jpg"),
-    name: "HolaBot",
-    model: "HolaBot",
+    name: "BotMate Carry",
+    model: "BotMate Carry",
     tagline: "Bus-tender de alta capacidad para rotación rápida",
     slogan: "El robot busser que soporta 60 kg y se activa con tu voz",
     category: "delivery",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
-      "HolaBot soporta hasta 60 kg en 4 bandejas profundas y recoge platillos sucios con un solo comando de voz \"¡Hola Bot!\". Triplica la productividad del personal de busser en restaurantes de alto volumen y comedores industriales.",
+      "BotMate Carry soporta hasta 60 kg en 4 bandejas profundas y recoge platillos sucios con un solo comando de voz \"¡Hola Bot!\". Triplica la productividad del personal de busser en restaurantes de alto volumen y comedores industriales.",
     highlights: [
       "Capacidad de 60 kg en 4 bandejas profundas",
       "Comando por voz '¡Hola Bot!'",
@@ -283,33 +283,33 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "HolaBot" },
+      { label: "Modelo", value: "BotMate Carry" },
       { label: "Carga máxima", value: "60 kg" },
       { label: "Bandejas", value: "4 profundas" },
       { label: "Activación", value: "Voz / pantalla / app" },
       { label: "Autonomía", value: "12 horas" },
       { label: "Velocidad", value: "0.5 – 1.2 m/s" },
-      { label: "Navegación", value: "PUDU SLAM" },
+      { label: "Navegación", value: "BotMate SLAM" },
     ],
     useCases: ["Restaurantes alto volumen", "Buffets", "Comedores industriales"],
     modes: ["Busser", "Entrega", "Regreso"],
   },
   {
-    slug: "cc1",
+    slug: "botmate-clean",
     image: photo("cc1.jpg"),
-    name: "CC1",
-    model: "CC1 · PuduScrub",
+    name: "BotMate Clean",
+    model: "BotMate Clean",
     tagline: "Robot inteligente de limpieza comercial · 4 en 1",
     slogan: "Funciones de barrido, fregado, aspirado y trapeado en un solo equipo",
     category: "cleaning",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
-      "CC1 integra cuatro capacidades de limpieza —barrido, fregado, aspirado y trapeado— con potencia de succión de hasta 17,000 Pa que no deja manchas. Apto para pisos duros y alfombras suaves con estación de auto-recarga, auto-vaciado y auto-rellenado de agua.",
+      "BotMate Clean integra cuatro capacidades de limpieza —barrido, fregado, aspirado y trapeado— con potencia de succión de hasta 17,000 Pa que no deja manchas. Apto para pisos duros y alfombras suaves con estación de auto-recarga, auto-vaciado y auto-rellenado de agua.",
     highlights: [
       "4 funciones en uno: barre, friega, aspira y trapea",
       "Potencia de succión 17,000 Pa que no deja manchas",
       "Estación dedicada de carga y agua automática",
-      "Navegación PUDU SLAM con LiDAR + visión",
+      "Navegación BotMate SLAM con LiDAR + visión",
       "Reanudación desde punto de interrupción",
       "Reportes digitales en tiempo real",
     ],
@@ -327,7 +327,7 @@ export const robots: Robot[] = [
         desc: "Carga automática y adición y drenaje automático de agua mediante estación de acoplamiento dedicada.",
       },
       {
-        title: "Navegación PUDU SLAM",
+        title: "Navegación BotMate SLAM",
         desc: "Mapeo SLAM con sensores LiDAR y visuales. Reanuda la limpieza exactamente donde se quedó tras una pausa.",
       },
       {
@@ -336,7 +336,7 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "CC1 · PuduScrub" },
+      { label: "Modelo", value: "BotMate Clean" },
       { label: "Modos de limpieza", value: "Barrido · Trapeado · Fregado · Aspirado" },
       { label: "Potencia de succión", value: "Máx 17,000 Pa" },
       { label: "Eficiencia", value: "700 – 1,000 m²/h" },
@@ -347,7 +347,7 @@ export const robots: Robot[] = [
       { label: "Tiempo de carga", value: "< 3 horas" },
       { label: "Ruido operativo", value: "< 70 dB(A)" },
       { label: "Velocidad máxima", value: "1.2 m/s" },
-      { label: "Navegación", value: "PUDU SLAM (LiDAR + visión)" },
+      { label: "Navegación", value: "BotMate SLAM (LiDAR + visión)" },
     ],
     useCases: [
       "Edificio de oficinas",
@@ -363,14 +363,14 @@ export const robots: Robot[] = [
     badge: "4 en 1",
   },
   {
-    slug: "sh1",
+    slug: "botmate-clean-mini",
     image: photo("sh1.jpg"),
-    name: "SH1",
-    model: "SH1",
+    name: "BotMate Clean Mini",
+    model: "BotMate Clean Mini",
     tagline: "Robot de limpieza compacto para espacios reducidos",
     slogan: "Limpieza autónoma silenciosa para oficinas y hoteles",
     category: "cleaning",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
       "Pensado para oficinas medianas, hoteles y locales comerciales. Limpia automáticamente durante horarios off-peak con operación silenciosa y reportes de cobertura en la nube.",
     highlights: [
@@ -394,28 +394,28 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "SH1" },
+      { label: "Modelo", value: "BotMate Clean Mini" },
       { label: "Eficiencia", value: "Hasta 600 m²/h" },
       { label: "Autonomía", value: "3 horas" },
-      { label: "Navegación", value: "PUDU SLAM" },
+      { label: "Navegación", value: "BotMate SLAM" },
       { label: "Ruido", value: "< 60 dB(A)" },
     ],
     useCases: ["Oficinas", "Hoteles", "Boutiques", "Áreas comunes"],
     modes: ["Limpieza profunda", "Limpieza ligera", "Modo silencioso"],
   },
   {
-    slug: "pudubot-2",
-    image: photo("pudubot-2.jpg"),
-    name: "PuduBot 2",
-    model: "PuduBot 2",
-    tagline: "El nuevo robot de entrega universal con PUDU VSLAM+",
+    slug: "botmate-flex",
+    image: photo("botmate-flex.jpg"),
+    name: "BotMate Flex",
+    model: "BotMate Flex",
+    tagline: "El nuevo robot de entrega universal con BotMate VSLAM+",
     slogan: "Robot de entrega universal con despliegue 75% más rápido",
     category: "logistics",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
-      "PuduBot 2 es la siguiente generación con tecnología PUDU VSLAM+ que reduce el tiempo de despliegue un 75%. Opera en entornos con techos de hasta 30 metros y mapea escenas de hasta 40,000 m². Bandejas configurables hasta 7 niveles con doble LiDAR y chasis de líder industrial.",
+      "BotMate Flex es la siguiente generación con tecnología BotMate VSLAM+ que reduce el tiempo de despliegue un 75%. Opera en entornos con techos de hasta 30 metros y mapea escenas de hasta 40,000 m². Bandejas configurables hasta 7 niveles con doble LiDAR y chasis de líder industrial.",
     highlights: [
-      "PUDU VSLAM+: despliegue 75% más rápido",
+      "BotMate VSLAM+: despliegue 75% más rápido",
       "Opera con techos de hasta 30 metros",
       "Mapeo en escenas de hasta 40,000 m²",
       "Doble LiDAR para detección 360°",
@@ -424,7 +424,7 @@ export const robots: Robot[] = [
     ],
     keyFeatures: [
       {
-        title: "PUDU VSLAM+ sin marcadores",
+        title: "BotMate VSLAM+ sin marcadores",
         desc: "Nueva generación de tecnología sin marcadores que reduce el tiempo de despliegue en un 75% y opera en entornos con techos altos.",
       },
       {
@@ -436,12 +436,12 @@ export const robots: Robot[] = [
         desc: "3 bandejas estándar, hasta 7 configurables según la operación. Tamaño 52×43.2 cm con sensor de retiro.",
       },
       {
-        title: "PUDU OS plataforma abierta",
-        desc: "SDK abierto, conectividad Type-C, 4G, LoRa y Wi-Fi. Compatible con Pudu Watch, Pudu Pager y Pudu Link.",
+        title: "BotMate OS plataforma abierta",
+        desc: "SDK abierto, conectividad Type-C, 4G, LoRa y Wi-Fi. Compatible con BotMate Watch, BotMate Pager y BotMate Link.",
       },
     ],
     specs: [
-      { label: "Modelo", value: "PuduBot 2" },
+      { label: "Modelo", value: "BotMate Flex" },
       { label: "Dimensiones", value: "58 × 53.5 × 129 cm" },
       { label: "Tamaño de bandeja", value: "52 × 43.2 cm" },
       { label: "Peso", value: "39 kg" },
@@ -453,10 +453,10 @@ export const robots: Robot[] = [
       { label: "Velocidad", value: "0.5 – 1.2 m/s" },
       { label: "Batería", value: "Li-ion alto rendimiento" },
       { label: "Carga", value: "Cable y auto-carga" },
-      { label: "Navegación", value: "PUDU VSLAM+ (sin marcadores)" },
+      { label: "Navegación", value: "BotMate VSLAM+ (sin marcadores)" },
       { label: "Sensores", value: "Doble LiDAR · cámaras RGBD" },
       { label: "Conectividad", value: "Type-C · 4G · LoRa · Wi-Fi" },
-      { label: "SDK", value: "PUDU OS · plataforma abierta" },
+      { label: "SDK", value: "BotMate OS · plataforma abierta" },
     ],
     useCases: [
       "Manufactura",
@@ -470,19 +470,19 @@ export const robots: Robot[] = [
       "100+ premios internacionales",
       "11M+ horas de trabajo acumuladas",
       "8,000+ socios globales",
-      "80% cuota de mercado global Pudu",
+      "80% cuota de mercado global en su categoría",
     ],
     badge: "Nuevo · VSLAM+",
   },
   {
-    slug: "t300",
+    slug: "botmate-cargo-300",
     image: photo("t300.jpg"),
-    name: "T300",
-    model: "T300",
+    name: "BotMate Cargo 300",
+    model: "BotMate Cargo 300",
     tagline: "AMR de carga industrial 300 kg",
     slogan: "Robot autónomo móvil para transporte de carga media en almacenes",
     category: "logistics",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
       "Robot autónomo móvil para transporte de cargas medianas en almacenes, plantas de manufactura y campus industriales. Acoplable a estaciones de carga y elevadores con flota administrada por software RMS.",
     highlights: [
@@ -507,7 +507,7 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "T300" },
+      { label: "Modelo", value: "BotMate Cargo 300" },
       { label: "Carga máxima", value: "300 kg" },
       { label: "Velocidad", value: "1.5 m/s" },
       { label: "Navegación", value: "SLAM industrial" },
@@ -517,14 +517,14 @@ export const robots: Robot[] = [
     modes: ["Pick-and-place", "Transporte", "Flota"],
   },
   {
-    slug: "t600",
+    slug: "botmate-cargo-600",
     image: photo("t600.jpg"),
-    name: "T600",
-    model: "T600",
+    name: "BotMate Cargo 600",
+    model: "BotMate Cargo 600",
     tagline: "AMR heavy-duty de hasta 600 kg",
     slogan: "Solución de mayor capacidad para tarimas y carga pesada",
     category: "logistics",
-    brand: "Pudu Robotics",
+    brand: "BotMate",
     description:
       "Solución de mayor capacidad para mover tarimas y unidades de carga pesada en CEDIS y plantas. Reduce hasta 60% el tiempo de picking & packing con flotas coordinadas por RMS y APIs para WMS.",
     highlights: [
@@ -549,7 +549,7 @@ export const robots: Robot[] = [
       },
     ],
     specs: [
-      { label: "Modelo", value: "T600" },
+      { label: "Modelo", value: "BotMate Cargo 600" },
       { label: "Carga máxima", value: "600 kg" },
       { label: "Velocidad", value: "1.5 m/s" },
       { label: "Tipo de carga", value: "Tarimas estándar" },

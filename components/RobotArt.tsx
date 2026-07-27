@@ -1,4 +1,4 @@
-type Variant = "bella" | "ketty" | "swift" | "flash" | "hola" | "cc1" | "sh1" | "pudubot" | "t300" | "t600" | "generic";
+type Variant = "bella" | "ketty" | "swift" | "flash" | "hola" | "cc1" | "sh1" | "flex" | "t300" | "t600" | "generic";
 
 export default function RobotArt({ variant = "generic", className = "" }: { variant?: Variant; className?: string }) {
   return (
@@ -123,7 +123,7 @@ function renderBody(v: Variant) {
           <circle cx="210" cy="248" r="10" fill="#0B1020" stroke={g(`grad-sh1`)} />
         </>
       );
-    case "pudubot":
+    case "flex":
     case "t300":
       return (
         <>
@@ -174,7 +174,7 @@ export function robotVariantFromSlug(slug: string): Variant {
   if (slug.includes("hola")) return "hola";
   if (slug === "cc1") return "cc1";
   if (slug === "sh1") return "sh1";
-  if (slug.includes("pudubot")) return "pudubot";
+  if (slug.includes("flex")) return "flex";
   if (slug === "t300") return "t300";
   if (slug === "t600") return "t600";
   return "generic";

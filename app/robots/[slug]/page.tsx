@@ -83,7 +83,7 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
         ]}
       />
 
-      {/* HERO estilo Pudu */}
+      {/* HERO estilo BotMate */}
       <section className="relative isolate overflow-hidden pt-28">
         <div className="absolute inset-0 -z-10 grid-bg opacity-50" />
         <div className="absolute -top-32 left-1/2 -z-10 h-[600px] w-[1100px] -translate-x-1/2 rounded-full bg-brand-700/30 blur-3xl" />
@@ -195,7 +195,7 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      {/* KEY FEATURES estilo Pudu */}
+      {/* KEY FEATURES estilo BotMate */}
       <section className="py-20">
         <div className="container-x">
           <div className="max-w-3xl">
@@ -220,7 +220,7 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      {/* SPECS TABLE estilo Pudu */}
+      {/* SPECS TABLE estilo BotMate */}
       <section className="py-20">
         <div className="container-x">
           <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
@@ -230,7 +230,7 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
                 <span className="gradient-text">Datos técnicos</span> oficiales
               </h2>
               <p className="mt-4 text-white/70">
-                Especificaciones autorizadas por Pudu Robotics. ¿Necesitas el datasheet en PDF? Solicítalo a tu asesor BotMate por WhatsApp.
+                Especificaciones autorizadas por BotMate. ¿Necesitas el datasheet en PDF? Solicítalo a tu asesor BotMate por WhatsApp.
               </p>
               <a
                 href={waLink(`Hola, ¿me podrían enviar el datasheet PDF oficial del ${r.name}?`)}
@@ -259,7 +259,7 @@ export default function RobotDetail({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      {/* SCENARIOS estilo Pudu */}
+      {/* SCENARIOS estilo BotMate */}
       <section className="py-20">
         <div className="container-x">
           <div className="flex flex-wrap items-end justify-between gap-6">

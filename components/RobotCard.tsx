@@ -14,7 +14,7 @@ export default function RobotCard({ robot }: { robot: Robot }) {
           {robot.image ? (
             <Image
               src={robot.image}
-              alt={`${robot.name} — Pudu Robotics`}
+              alt={`${robot.name} — BotMate`}
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"

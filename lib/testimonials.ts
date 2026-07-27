@@ -29,14 +29,14 @@ export const testimonials: Testimonial[] = [
     rating: 5,
   },
   {
-    text: "Convertimos un gasto operativo en una unidad de negocio. KettyBot Pro renta espacio publicitario premium.",
+    text: "Convertimos un gasto operativo en una unidad de negocio. BotMate Ads renta espacio publicitario premium.",
     author: "Eduardo Mejía",
     role: "Director Comercial",
     company: "Plaza Comercial Premium GDL",
     rating: 5,
   },
   {
-    text: "12 T600 trabajan 22 horas diarias sin queja. Triplicamos capacidad sin construir un nuevo CEDIS.",
+    text: "12 BotMate Cargo 600 trabajan 22 horas diarias sin queja. Triplicamos capacidad sin construir un nuevo CEDIS.",
     author: "Andrés Carmona",
     role: "Director de Logística",
     company: "3PL Bajío",
@@ -61,7 +61,7 @@ export const clients = [
   "Anáhuac Labs",
   "Club Élite Industrial",
   "Ferias de Idaho",
-  "Pudu Robotics",
+  "BotMate",
   "Anáhuac 5.0",
   "EXP CMAQ",
 ];

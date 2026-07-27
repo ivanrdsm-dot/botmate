@@ -68,7 +68,7 @@ export default function RobotCarousel() {
             Explora la <span className="gradient-text">flota BotMate</span>
           </h2>
           <p className="mt-3 max-w-xl text-white/60">
-            Arrastra, desliza o usa las flechas. Cada robot Pudu, listo para tu marca.
+            Arrastra, desliza o usa las flechas. Cada robot BotMate, listo para tu marca.
           </p>
         </div>
 

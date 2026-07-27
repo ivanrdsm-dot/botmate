@@ -11,11 +11,11 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Blog BotMate — Robótica de servicio, ROI y guías en México",
   description:
-    "Guías, comparativas y análisis de ROI sobre robots Pudu Robotics en México. BellaBot vs KettyBot, implementación en restaurantes, Plan México, limpieza autónoma y más.",
+    "Guías, comparativas y análisis de ROI sobre robots de servicio BotMate en México. BotMate Serve vs BotMate Ads, implementación en restaurantes, Plan México, limpieza autónoma y más.",
   alternates: { canonical: "/blog" },
   keywords: [
     "blog robótica México",
-    "comparativa BellaBot KettyBot",
+    "comparativa BotMate Serve BotMate Ads",
     "ROI robots restaurantes",
     "guía implementación robot",
     "Plan México robots deducción",

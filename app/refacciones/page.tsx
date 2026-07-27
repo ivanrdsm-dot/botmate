@@ -5,17 +5,17 @@ import CTA from "@/components/CTA";
 import { Wrench, Package, Clock, ShieldCheck, Cpu, Battery } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Refacciones y mantenimiento de robots Pudu Robotics en México",
+  title: "Refacciones y mantenimiento de robots de servicio BotMate en México",
   description:
-    "Refacciones originales y servicio técnico certificado para robots Pudu Robotics en México. Baterías, sensores LiDAR, cámaras 3D, ruedas y kits de mantenimiento para BellaBot, KettyBot, SwiftBot, FlashBot y CC1.",
+    "Refacciones originales y servicio técnico certificado para robots de servicio BotMate en México. Baterías, sensores LiDAR, cámaras 3D, ruedas y kits de mantenimiento para BotMate Serve, BotMate Ads, BotMate Glide, BotMate Tower y BotMate Clean.",
   alternates: { canonical: "/refacciones" },
   keywords: [
-    "refacciones Pudu Robotics",
-    "mantenimiento BellaBot",
+    "refacciones BotMate",
+    "mantenimiento BotMate Serve",
     "servicio técnico robot México",
-    "batería robot Pudu",
-    "sensor LiDAR Pudu",
-    "kit limpieza CC1",
+    "batería robot de servicio",
+    "sensor LiDAR",
+    "kit limpieza BotMate Clean",
     "póliza mantenimiento robot",
   ],
 };
@@ -24,12 +24,12 @@ const parts = [
   { icon: Battery, t: "Baterías de litio originales", d: "Reposición con garantía de fábrica." },
   { icon: Cpu, t: "Tarjetas y módulos electrónicos", d: "Sensores LiDAR, cámaras 3D y controladores." },
   { icon: Package, t: "Componentes mecánicos", d: "Bandejas, ruedas, motores, carcasas y más." },
-  { icon: Wrench, t: "Kits de mantenimiento", d: "Cepillos, escobillas, mopas y filtros para CC1." },
+  { icon: Wrench, t: "Kits de mantenimiento", d: "Cepillos, escobillas, mopas y filtros para BotMate Clean." },
 ];
 
 const services = [
   { icon: Clock, t: "Mantenimiento preventivo", d: "Diagnóstico, actualización de firmware, calibración SLAM, limpieza interna y reporte ejecutivo." },
-  { icon: Wrench, t: "Mantenimiento correctivo", d: "Reparación en sitio o en laboratorio con técnicos certificados Pudu y refacciones originales." },
+  { icon: Wrench, t: "Mantenimiento correctivo", d: "Reparación en sitio o en laboratorio con técnicos certificados BotMate y refacciones originales." },
   { icon: ShieldCheck, t: "Pólizas de servicio", d: "Pólizas anuales con visitas programadas, SLA garantizado y refacciones consumibles incluidas." },
 ];
 
@@ -41,7 +41,7 @@ export default function RefaccionesPage() {
           <SectionTitle
             eyebrow="Refacciones y servicio"
             title={<>Mantén tus robots <span className="gradient-text">siempre operando</span></>}
-            description="Stock de refacciones originales Pudu Robotics y servicio técnico certificado en todo México. Ya seas cliente de BotMate o de otro distribuidor, te apoyamos."
+            description="Stock de refacciones originales BotMate y servicio técnico certificado en todo México. Ya seas cliente de BotMate o no, te apoyamos."
           />
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function RefaccionesPage() {
         </div>
       </section>
 
-      <CTA title="¿Tu robot necesita servicio?" subtitle="Atendemos equipos Pudu Robotics de cualquier distribuidor con técnicos certificados." />
+      <CTA title="¿Tu robot necesita servicio?" subtitle="Atendemos equipos de servicio de cualquier distribuidor con técnicos certificados." />
     </>
   );
 }

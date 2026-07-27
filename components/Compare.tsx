@@ -6,7 +6,7 @@ import SectionTitle from "./SectionTitle";
 
 type Row = { label: string; values: (string | boolean)[] };
 
-const cols = ["BellaBot Pro", "KettyBot Pro", "SwiftBot", "CC1"];
+const cols = ["BotMate Serve", "BotMate Ads", "BotMate Glide", "BotMate Clean"];
 const rows: Row[] = [
   { label: "Categoría", values: ["Entrega", "Entrega + Marketing", "Hospitalidad premium", "Limpieza 4 en 1"] },
   { label: "Carga máxima", values: ["40 kg", "15 kg", "40 kg", "—"] },

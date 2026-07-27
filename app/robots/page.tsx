@@ -9,19 +9,19 @@ import { site } from "@/lib/site";
 import { itemListLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Catálogo de robots Pudu Robotics en México — BellaBot, KettyBot, SwiftBot, CC1",
+  title: "Catálogo de robots de servicio BotMate en México — BotMate Serve, BotMate Ads, BotMate Glide, BotMate Clean",
   description:
-    "Catálogo completo de robots Pudu Robotics en México: BellaBot Pro, KettyBot Pro, SwiftBot, FlashBot, HolaBot, CC1, SH1, PuduBot 2, T300 y T600. Disponibles en renta o venta con stock inmediato.",
+    "Catálogo completo de robots de servicio BotMate en México: BotMate Serve, BotMate Ads, BotMate Glide, BotMate Tower, BotMate Carry, BotMate Clean, BotMate Clean Mini, BotMate Flex, BotMate Cargo 300 y BotMate Cargo 600. Disponibles en renta o venta con stock inmediato.",
   alternates: { canonical: "/robots" },
   keywords: [
-    "catálogo robots Pudu México",
+    "catálogo robots BotMate México",
     "robot mesero México",
-    "BellaBot Pro precio",
-    "KettyBot Pro renta",
-    "SwiftBot México",
-    "CC1 PuduScrub",
+    "BotMate Serve precio",
+    "BotMate Ads renta",
+    "BotMate Glide México",
+    "BotMate Clean",
     "robots de limpieza autónoma",
-    "AMR T600",
+    "BotMate Cargo 600",
   ],
 };
 

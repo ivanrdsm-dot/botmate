@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Logo className="h-7" />
             <p className="mt-4 max-w-md text-sm text-white/60">
-              El compañero robot ideal para tu marca. Renta y venta de robots de servicio para publicidad interactiva, eventos, exposiciones y limpieza en todo México. Distribuidor autorizado Pudu Robotics.
+              El compañero robot ideal para tu marca. Renta y venta de robots de servicio para publicidad interactiva, eventos, exposiciones y limpieza en todo México. Robots de servicio de vanguardia.
             </p>
             <div className="mt-6 flex gap-3">
               <a href={site.social.instagram} aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10">
@@ -66,7 +66,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} {site.legalName}. Todos los derechos reservados.</p>
-          <p>Distribuidor autorizado · Hecho en México con tecnología Pudu Robotics</p>
+          <p>Marca mexicana · Tecnología BotMate de clase mundial</p>
         </div>
       </div>
     </footer>

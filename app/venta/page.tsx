@@ -5,19 +5,19 @@ import CTA from "@/components/CTA";
 import { Check, BadgePercent, Truck, ShieldCheck, Banknote } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Venta de robots Pudu Robotics en México — Compra y financiamiento · BotMate",
+  title: "Venta de robots de servicio BotMate en México — Compra y financiamiento · BotMate",
   description:
-    "Compra robots Pudu Robotics en México con BotMate, distribuidor autorizado. Leasing, garantía hasta 4 años, refacciones originales y hasta 89% deducible bajo el Plan México. Entrega inmediata en CDMX, GDL, MTY.",
+    "Compra robots de servicio BotMate en México con Leasing, garantía hasta 4 años, refacciones originales y hasta 89% deducible bajo el Plan México. Entrega inmediata en CDMX, GDL, MTY.",
   alternates: { canonical: "/venta" },
   keywords: [
     "venta de robots México",
-    "comprar BellaBot México",
-    "comprar KettyBot",
-    "distribuidor Pudu México",
+    "comprar BotMate Serve México",
+    "comprar BotMate Ads",
+    "robots de servicio México",
     "leasing robots",
     "Plan México deducción 89%",
     "comprar robot mesero",
-    "venta robots limpieza CC1",
+    "venta robots limpieza BotMate Clean",
   ],
 };
 
@@ -36,7 +36,7 @@ export default function VentaPage() {
           <SectionTitle
             eyebrow="Venta directa"
             title={<>Adquiere robots con <span className="gradient-text">los mejores beneficios</span></>}
-            description="Distribuidor autorizado Pudu Robotics. Compra directa con asesoría técnica, instalación profesional y soporte por toda la vida útil del equipo."
+            description="Robots de servicio de vanguardia. Compra directa con asesoría técnica, instalación profesional y soporte por toda la vida útil del equipo."
           />
         </div>
       </section>

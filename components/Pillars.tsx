@@ -12,15 +12,15 @@ const pillars = [
     title: "Publicidad interactiva",
     desc: "Pantallas rodantes que muestran anuncios, capturan atención y promocionan productos en supermercados, plazas y stands.",
     photo: "/photos/outdoor-display.jpg",
-    href: "/robots/kettybot-pro",
-    clients: ["Universidad Anáhuac", "Pudu"],
+    href: "/robots/botmate-ads",
+    clients: ["Universidad Anáhuac", "Peñafiel"],
   },
   {
     icon: Map,
     title: "Navegación en eventos",
     desc: "Guía a tus asistentes en convenciones y conferencias. Facilita la orientación y mejora la experiencia del usuario.",
     photo: "/photos/event-redbull.jpg",
-    href: "/robots/kettybot-pro",
+    href: "/robots/botmate-ads",
     clients: ["Anáhuac 5.0", "Red Bull"],
   },
   {
@@ -28,7 +28,7 @@ const pillars = [
     title: "Exposiciones y ferias",
     desc: "Atractivo de stand: brinda información, destaca tu marca y reparte muestras o piezas promocionales con tus productos.",
     photo: "/photos/expo-tecma.jpg",
-    href: "/robots/swiftbot",
+    href: "/robots/botmate-glide",
     clients: ["TECMA", "AMDM 1943"],
   },
   {
@@ -36,7 +36,7 @@ const pillars = [
     title: "Robot de limpieza",
     desc: "Mantiene espacios impecables en plazas, hoteles, hospitales y corporativos. Barre, aspira, friega y trapea de forma autónoma.",
     photo: "/photos/anahuac-service.jpg",
-    href: "/robots/cc1",
+    href: "/robots/botmate-clean",
     clients: ["Hoteles", "Corporativos"],
   },
 ];

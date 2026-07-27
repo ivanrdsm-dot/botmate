@@ -11,14 +11,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Casos de éxito — Empresas mexicanas que escalaron con BotMate",
   description:
-    "Casos reales de restaurantes, hoteles, hospitales, plazas comerciales, CEDIS y corporativos en México que aumentaron productividad y redujeron costos con robots Pudu Robotics implementados por BotMate.",
+    "Casos reales de restaurantes, hoteles, hospitales, plazas comerciales, CEDIS y corporativos en México que aumentaron productividad y redujeron costos con robots de servicio BotMate.",
   alternates: { canonical: "/casos-de-exito" },
   keywords: [
     "casos de éxito robots México",
     "ROI robots restaurantes",
     "robot hotelero caso real",
     "automatización hospital México",
-    "T600 CEDIS caso",
+    "BotMate Cargo 600 CEDIS caso",
   ],
 };
 

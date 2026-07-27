@@ -24,7 +24,7 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
             </span>
-            Distribuidor autorizado Pudu Robotics · México
+            Robots de servicio inteligentes · México
           </motion.div>
 
           <motion.h1
@@ -106,7 +106,7 @@ export default function Hero() {
                     <p className="text-white/65">Publicidad · Eventos · Limpieza</p>
                   </div>
                   <span className="rounded-full bg-brand-500/30 px-2.5 py-1 text-[10px] font-semibold text-brand-100">
-                    Pudu Robotics
+                    BotMate
                   </span>
                 </div>
               </div>

@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Sectores que atendemos — Restaurantes, Hoteles, Hospitales, Retail y Logística",
   description:
-    "Soluciones de robots Pudu Robotics para restaurantes, hoteles, hospitales, plazas comerciales, manufactura y corporativos en México. Implementación, capacitación y soporte 24/7.",
+    "Soluciones de robots de servicio BotMate para restaurantes, hoteles, hospitales, plazas comerciales, manufactura y corporativos en México. Implementación, capacitación y soporte 24/7.",
   alternates: { canonical: "/sectores" },
   keywords: [
     "robot para restaurante México",
@@ -30,44 +30,44 @@ const sectors = [
   {
     icon: UtensilsCrossed,
     name: "Restaurantes",
-    desc: "BellaBot, KettyBot y HolaBot reducen el tiempo de servicio y aumentan la propina.",
+    desc: "BotMate Serve, BotMate Ads y BotMate Carry reducen el tiempo de servicio y aumentan la propina.",
     kpis: ["+40% productividad", "-60% pasos de mesero", "+35% experiencia"],
-    robots: ["BellaBot Pro", "KettyBot Pro", "HolaBot"],
+    robots: ["BotMate Serve", "BotMate Ads", "BotMate Carry"],
   },
   {
     icon: BedDouble,
     name: "Hoteles",
-    desc: "FlashBot entrega amenidades multi-piso 24/7 y SwiftBot eleva el room service.",
+    desc: "BotMate Tower entrega amenidades multi-piso 24/7 y BotMate Glide eleva el room service.",
     kpis: ["Entrega 24/7", "Integración PMS", "Experiencia premium"],
-    robots: ["FlashBot", "SwiftBot", "BellaBot Pro"],
+    robots: ["BotMate Tower", "BotMate Glide", "BotMate Serve"],
   },
   {
     icon: Hospital,
     name: "Hospitales y clínicas",
     desc: "Distribución de medicamentos, muestras y limpieza autónoma de áreas críticas.",
     kpis: ["Cero contacto", "Trazabilidad", "Higiene continua"],
-    robots: ["FlashBot", "PuduBot 2", "CC1"],
+    robots: ["BotMate Tower", "BotMate Flex", "BotMate Clean"],
   },
   {
     icon: ShoppingBag,
     name: "Retail y centros comerciales",
-    desc: "KettyBot publicita marcas mientras CC1 mantiene los pisos impecables.",
+    desc: "BotMate Ads publicita marcas mientras BotMate Clean mantiene los pisos impecables.",
     kpis: ["Marketing 360°", "Limpieza 4 en 1", "+ tráfico convertido"],
-    robots: ["KettyBot Pro", "CC1", "SH1"],
+    robots: ["BotMate Ads", "BotMate Clean", "BotMate Clean Mini"],
   },
   {
     icon: Factory,
     name: "Manufactura y logística",
-    desc: "AMR T300 y T600 transportan piezas, tarimas y materia prima entre estaciones.",
+    desc: "BotMate Cargo 300 y BotMate Cargo 600 transportan piezas, tarimas y materia prima entre estaciones.",
     kpis: ["-60% tiempo picking", "Carga 600 kg", "Integración WMS/MES"],
-    robots: ["T300", "T600", "PuduBot 2"],
+    robots: ["BotMate Cargo 300", "BotMate Cargo 600", "BotMate Flex"],
   },
   {
     icon: Building2,
     name: "Corporativos",
     desc: "Recepción inteligente, room service interno y limpieza nocturna automatizada.",
     kpis: ["Empleados felices", "Limpieza off-peak", "Ahorro operativo"],
-    robots: ["KettyBot Pro", "CC1", "SwiftBot"],
+    robots: ["BotMate Ads", "BotMate Clean", "BotMate Glide"],
   },
 ];
 

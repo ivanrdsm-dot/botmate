@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "BotMate — Robots de servicio en México",
     short_name: "BotMate",
-    description: "Renta y venta de robots de servicio Pudu Robotics en México.",
+    description: "Renta y venta de robots de servicio BotMate en México.",
     start_url: "/",
     display: "standalone",
     background_color: "#04060B",

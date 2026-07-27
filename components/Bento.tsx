@@ -22,7 +22,7 @@ export default function Bento() {
               <div>
                 <Cpu className="h-7 w-7 text-accent" />
                 <h3 className="mt-4 font-display text-2xl font-semibold sm:text-3xl">
-                  Tecnología <span className="gradient-text">Pudu Robotics</span> certificada
+                  Tecnología <span className="gradient-text">BotMate</span> certificada
                 </h3>
                 <p className="mt-3 max-w-md text-sm text-white/65">
                   Distribuidor autorizado con acceso directo a roadmap, firmware temprano y soporte de ingeniería desde Shenzhen. Tus robots siempre están a la última.

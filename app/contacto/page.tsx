@@ -7,13 +7,13 @@ import { Mail, MessageCircle, MapPin, Phone, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contacto BotMate — Cotiza robots y agenda demo gratis en México",
   description:
-    "Cotiza renta o venta de robots Pudu Robotics, agenda demo gratuita o solicita servicio técnico. Respuesta en menos de 24 horas. WhatsApp +52 55 3149 1986 · contacto@botmate.mx · CDMX y toda la República.",
+    "Cotiza renta o venta de robots de servicio BotMate, agenda demo gratuita o solicita servicio técnico. Respuesta en menos de 24 horas. WhatsApp +52 55 3149 1986 · contacto@botmate.mx · CDMX y toda la República.",
   alternates: { canonical: "/contacto" },
   keywords: [
     "cotizar robot México",
     "agendar demo robot",
     "contacto BotMate",
-    "WhatsApp robots Pudu",
+    "WhatsApp robots de servicio",
     "soporte técnico robot México",
   ],
 };

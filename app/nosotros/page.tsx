@@ -7,13 +7,13 @@ import Counter from "@/components/Counter";
 import { Award, Globe2, HeartHandshake, Rocket, Target, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Nosotros — BotMate, distribuidor autorizado Pudu Robotics en México",
+  title: "Nosotros — BotMate, líder en robots de servicio en México",
   description:
-    "BotMate es la empresa mexicana líder en robótica de servicio y distribuidor autorizado de Pudu Robotics. Misión, valores, equipo y compromiso con la automatización inteligente del negocio mexicano.",
+    "BotMate es la empresa mexicana líder en robótica de servicio, con marca y tecnología propias. Misión, valores, equipo y compromiso con la automatización inteligente del negocio mexicano.",
   alternates: { canonical: "/nosotros" },
   keywords: [
     "BotMate empresa",
-    "distribuidor autorizado Pudu Robotics México",
+    "robots de servicio en México",
     "líderes robótica servicio México",
     "empresa robots CDMX",
   ],
@@ -23,7 +23,7 @@ const values = [
   { icon: Target, t: "Resultados medibles", d: "Cada implementación tiene KPIs claros desde el día 1. Si no movemos la aguja, no cumplimos." },
   { icon: HeartHandshake, t: "Cliente primero", d: "Soporte 24/7 en español, sin call centers offshore. Nuestro número lo contesta un humano." },
   { icon: Rocket, t: "Velocidad", d: "Del primer contacto al go-live en menos de 30 días promedio. La burocracia mata la innovación." },
-  { icon: Award, t: "Excelencia técnica", d: "Equipo certificado por Pudu Robotics con horas reales de implementación, no solo teoría." },
+  { icon: Award, t: "Excelencia técnica", d: "Equipo certificado por BotMate con horas reales de implementación, no solo teoría." },
 ];
 
 const stats = [
@@ -68,13 +68,13 @@ export default function NosotrosPage() {
       <section className="py-16">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
-            <span className="chip"><Globe2 className="h-3.5 w-3.5 text-accent" /> Distribuidor autorizado</span>
+            <span className="chip"><Globe2 className="h-3.5 w-3.5 text-accent" /> Marca mexicana · Tecnología global</span>
             <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">
-              Pudu Robotics, líder mundial.<br />
-              <span className="gradient-text">BotMate</span>, su brazo en México.
+              Tecnología de clase mundial,<br />
+              <span className="gradient-text">marca 100% mexicana</span>.
             </h2>
             <p className="mt-4 text-white/70 leading-relaxed">
-              Pudu Robotics es el fabricante #1 de robots de servicio comercial del mundo, con más de 80,000 unidades operando en 60 países. BotMate es su distribuidor autorizado para México, con acceso directo a roadmap, ingeniería y refacciones originales.
+              BotMate integra la mejor tecnología de robótica de servicio del mundo —probada en más de 80,000 despliegues en 60 países— y la lleva a México como marca propia, con ingeniería local, roadmap y refacciones originales.
             </p>
             <p className="mt-4 text-white/70 leading-relaxed">
               Combinamos esa tecnología de clase mundial con un servicio profundamente local: hablamos tu idioma, conocemos al SAT, tenemos refacciones en bodegas en CDMX, GDL y MTY, y entendemos cómo funciona realmente un restaurante o un hospital mexicano.

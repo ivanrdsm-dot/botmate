@@ -13,7 +13,7 @@ export const faqs = [
   },
   {
     q: "¿Los robots necesitan internet o WiFi?",
-    a: "Sí. Operan en redes WiFi 2.4/5GHz. Algunos modelos (FlashBot, CC1) ofrecen conectividad 4G y módulos IoT para multi-piso y reportes en la nube.",
+    a: "Sí. Operan en redes WiFi 2.4/5GHz. Algunos modelos (BotMate Tower, BotMate Clean) ofrecen conectividad 4G y módulos IoT para multi-piso y reportes en la nube.",
   },
   {
     q: "¿Puedo comprar el robot al final de la renta?",
@@ -24,7 +24,7 @@ export const faqs = [
     a: "1 año de garantía estándar de fábrica, con extensiones hasta 4 años. La renta incluye garantía total durante todo el plazo.",
   },
   {
-    q: "¿Venden refacciones para robots Pudu existentes?",
-    a: "Sí, contamos con stock de refacciones originales para todos los modelos Pudu Robotics y servicio de mantenimiento certificado.",
+    q: "¿Venden refacciones para robots de servicio existentes?",
+    a: "Sí, contamos con stock de refacciones originales para todos los modelos BotMate y servicio de mantenimiento certificado.",
   },
 ];

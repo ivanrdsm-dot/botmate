@@ -21,7 +21,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
 
 export default function HomePage() {
-  const featured = ["bellabot-pro", "kettybot-pro", "swiftbot", "cc1", "flashbot", "t600"];
+  const featured = ["botmate-serve", "botmate-ads", "botmate-glide", "botmate-clean", "botmate-tower", "botmate-cargo-600"];
   const featuredRobots = robots.filter((r) => featured.includes(r.slug));
   const featuredCases = cases.slice(0, 3);
 
@@ -40,7 +40,7 @@ export default function HomePage() {
             <SectionTitle
               eyebrow="Catálogo completo"
               title={<>Toda la <span className="gradient-text">flota</span></>}
-              description="Modelos Pudu Robotics adaptados al estilo BotMate para servicio, publicidad, eventos y limpieza."
+              description="Robots de servicio inteligentes para publicidad, eventos, exposiciones y limpieza autónoma en toda la República."
             />
             <Link href="/robots" className="btn-ghost">
               Ver todos <ArrowRight className="h-4 w-4" />

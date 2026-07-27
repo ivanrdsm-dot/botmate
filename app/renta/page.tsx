@@ -8,15 +8,15 @@ import { Check, Calendar, Wrench, GraduationCap, Headphones, BadgeDollarSign } f
 export const metadata: Metadata = {
   title: "Renta de robots en México — Planes flexibles desde 1 mes · BotMate",
   description:
-    "Renta robots meseros, de limpieza y de carga en México con planes mensuales, semestrales o anuales. Instalación, capacitación, mantenimiento, refacciones y soporte 24/7 incluidos. BellaBot, KettyBot, CC1, FlashBot.",
+    "Renta robots meseros, de limpieza y de carga en México con planes mensuales, semestrales o anuales. Instalación, capacitación, mantenimiento, refacciones y soporte 24/7 incluidos. BotMate Serve, BotMate Ads, BotMate Clean, BotMate Tower.",
   alternates: { canonical: "/renta" },
   keywords: [
     "renta de robots México",
     "renta robot mesero",
-    "renta BellaBot",
-    "renta KettyBot",
-    "renta CC1 limpieza",
-    "plan renta robot Pudu",
+    "renta BotMate Serve",
+    "renta BotMate Ads",
+    "renta BotMate Clean limpieza",
+    "plan renta robot de servicio",
     "leasing robots México",
     "robot mesero precio renta",
   ],
