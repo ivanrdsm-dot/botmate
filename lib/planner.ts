@@ -60,6 +60,17 @@ function poolFor(slot: MealSlot, p: Profile): Meal[] {
   );
 }
 
+/** Alternativas compatibles (dieta + alergias) para un slot — para "cambiar platillo". */
+export function poolForSlot(slot: MealSlot, p: Profile): Meal[] {
+  return poolFor(slot, p);
+}
+
+/** Convierte un platillo del banco en comida planeada, escalada al objetivo del slot. */
+export function plannedFromMeal(p: Profile, meal: Meal): PlannedMeal {
+  const targets = computeTargets(p);
+  return scaleMeal(meal, targets.calories * SLOT_SHARE[meal.slot]);
+}
+
 // Hash determinista simple a partir del perfil → semilla de rotación.
 function seedFrom(p: Profile): number {
   const str = `${p.name}|${p.age}|${p.weightKg}|${p.heightCm}|${p.goal}|${p.preference}`;
