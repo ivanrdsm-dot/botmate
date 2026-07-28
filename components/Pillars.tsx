@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowUpRight, Megaphone, Map, Tent, Sparkles } from "lucide-react";
 import SectionTitle from "./SectionTitle";
 import Reveal from "./Reveal";
+import HoverVideo from "./HoverVideo";
 
 const pillars = [
   {
@@ -12,6 +13,7 @@ const pillars = [
     title: "Publicidad interactiva",
     desc: "Pantallas rodantes que muestran anuncios, capturan atención y promocionan productos en supermercados, plazas y stands.",
     photo: "/photos/outdoor-display.jpg",
+    video: "/videos/pillar-ads.mp4",
     href: "/robots/botmate-ads",
     clients: ["Universidad Anáhuac", "Peñafiel"],
   },
@@ -36,6 +38,7 @@ const pillars = [
     title: "Robot de limpieza",
     desc: "Mantiene espacios impecables en plazas, hoteles, hospitales y corporativos. Barre, aspira, friega y trapea de forma autónoma.",
     photo: "/photos/anahuac-service.jpg",
+    video: "/videos/pillar-clean.mp4",
     href: "/robots/botmate-clean",
     clients: ["Hoteles", "Corporativos"],
   },
@@ -63,6 +66,13 @@ export default function Pillars() {
                     sizes="(min-width: 1024px) 50vw, 100vw"
                     className="object-cover object-center transition duration-700 group-hover:scale-105"
                   />
+                  {p.video && (
+                    <HoverVideo
+                      src={p.video}
+                      alt={p.title}
+                      className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent" />
                   <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/45 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur">
                     <p.icon className="h-3.5 w-3.5 text-brand-300" />

@@ -4,7 +4,7 @@ import Script from "next/script";
 import { notFound } from "next/navigation";
 import { posts } from "@/lib/posts";
 import { site } from "@/lib/site";
-import { ArrowLeft, Clock, Calendar, Share2, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Share2, ArrowUpRight, Lightbulb } from "lucide-react";
 import ScrollProgress from "@/components/ScrollProgress";
 import Newsletter from "@/components/Newsletter";
 
@@ -132,8 +132,9 @@ function Block({ b }: { b: { type: string; content: string | string[] } }) {
       );
     case "callout":
       return (
-        <div className="rounded-2xl border border-accent/30 bg-accent/5 p-5 text-sm text-accent/90">
-          💡 {b.content as string}
+        <div className="flex gap-3 rounded-2xl border border-accent/30 bg-accent/5 p-5 text-sm text-accent/90">
+          <Lightbulb className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+          <span>{b.content as string}</span>
         </div>
       );
     default:

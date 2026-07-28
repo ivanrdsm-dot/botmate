@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import CTA from "@/components/CTA";
 import TiltCard from "@/components/TiltCard";
 import Reveal from "@/components/Reveal";
 import { cases } from "@/lib/cases";
+import { getCaseCover } from "@/lib/media";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
@@ -42,10 +44,16 @@ export default function CasosPage() {
             <Reveal key={c.slug} delay={i}>
               <TiltCard className="rounded-3xl" max={5}>
                 <Link href={`/casos-de-exito/${c.slug}`} className="card-tech group flex h-full flex-col">
-                  <div className="relative mb-5 grid aspect-[16/9] place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-[#0B1020] to-[#070A14]">
-                    <div className="absolute inset-0 grid-bg opacity-40" />
-                    <CaseHero variant={c.hero} />
-                    <span className="absolute left-3 top-3 rounded-full bg-gradient-to-r from-accent to-accent-violet px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
+                  <div className="relative mb-5 aspect-[16/9] overflow-hidden rounded-2xl bg-gradient-to-br from-[#10162E] to-[#070A14]">
+                    <Image
+                      src={getCaseCover(c.hero).src}
+                      alt={getCaseCover(c.hero).alt}
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-cover transition duration-700 group-hover:scale-[1.04]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/25 to-transparent" />
+                    <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-black/50 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white backdrop-blur">
                       {c.industry}
                     </span>
                   </div>
@@ -81,19 +89,3 @@ export default function CasosPage() {
   );
 }
 
-function CaseHero({ variant }: { variant: string }) {
-  const map: Record<string, string> = {
-    restaurant: "🍽️",
-    hotel: "🏨",
-    hospital: "🏥",
-    retail: "🛍️",
-    logistics: "📦",
-    corporate: "🏢",
-  };
-  return (
-    <div className="relative">
-      <div className="absolute -inset-12 -z-10 rounded-full bg-gradient-to-br from-accent/30 to-accent-violet/30 blur-2xl" />
-      <span className="text-7xl" aria-hidden>{map[variant] ?? "🤖"}</span>
-    </div>
-  );
-}
