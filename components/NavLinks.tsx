@@ -11,6 +11,7 @@ const C = vitala.colors;
 const LINKS = [
   { href: "/plan",      label: "Mi plan" },
   { href: "/recetas",   label: "Recetas" },
+  { href: "/salud",     label: "Salud", sm: true },
   { href: "/comunidad", label: "Comunidad", sm: true },
   { href: "/diario",    label: "Diario", sm: true },
   { href: "/progreso",  label: "Progreso", sm: true },

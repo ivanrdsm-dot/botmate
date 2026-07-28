@@ -8,6 +8,10 @@
 	<string>Vitala usa tu cámara para tomar fotos de tus comidas y estimar sus nutrientes. Las fotos se analizan al momento y se descartan: nunca se guardan.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Vitala accede a tus fotos solo cuando eliges una imagen de comida para analizarla. Las fotos se analizan al momento y se descartan: nunca se guardan.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Vitala lee tus pasos, energía activa y ejercicio de Apple Salud para mostrarte tu progreso hacia tu meta. Tus datos permanecen en tu dispositivo.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Vitala no escribe datos en Apple Salud; solo los lee para mostrar tu progreso.</string>
 	<key>CFBundleDisplayName</key>
         <string>Vitala</string>
 	<key>CFBundleExecutable</key>

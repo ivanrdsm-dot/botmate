@@ -113,3 +113,27 @@ Resolution Center citando las notas de arriba.
       (Apple: Services ID + key .p8 según docs de Supabase).
 - [ ] Env vars en Vercel completas (ver BLUEPRINT.md sección 10).
 - [ ] Pago probado end-to-end (webhook otorga membresía).
+
+
+## Apple Salud / Health Connect (wearables) — build nativo
+
+El panel `/salud` ya usa el mecanismo estándar de Capacitor (`registerPlugin`),
+así que el build web funciona sin dependencias extra. Para que la sincronización
+REAL funcione en la app nativa:
+
+1. En tu Mac, dentro del proyecto:
+   ```bash
+   npm install capacitor-health   # compatible con Capacitor 6 (iOS + Android)
+   npx cap sync
+   ```
+2. En Xcode → target App → Signing & Capabilities → **+ HealthKit**
+   (el entitlement `com.apple.developer.healthkit` ya está en App.entitlements).
+3. Verifica que el nombre del plugin registrado en `lib/healthkit.ts`
+   ("HealthPlugin") coincida con el que exponga `capacitor-health`; ajusta los
+   `dataType` ('steps', 'active-calories', 'workout') a los del plugin si difieren.
+4. Las cadenas de permiso (`NSHealthShareUsageDescription`) ya están en Info.plist.
+
+Con eso, el botón "Conectar Apple Salud" pedirá permiso y traerá pasos, energía
+activa y ejercicio de los últimos 30 días. La mayoría de las pulseras (Apple
+Watch, Fitbit, Garmin, Oura, Xiaomi…) ya vuelcan sus datos en Apple Salud /
+Health Connect, así que se cubren sin integrarlas una por una.
