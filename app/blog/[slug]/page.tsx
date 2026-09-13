@@ -1,3 +1,6 @@
+import stories from '@/lib/pudu-stories.json';
+import {BlogDetail} from '@/components/PuduPages';
+import {localizedMetadata} from '@/lib/pudu-seo';
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
@@ -6,7 +9,7 @@ import { posts } from "@/lib/posts";
 import { site } from "@/lib/site";
 import CTA from "@/components/CTA";
 export function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }));
+  return [...posts,...stories.posts].map((p) => ({ slug: p.slug }));
 }
 export async function generateMetadata(
   props: {
@@ -14,18 +17,22 @@ export async function generateMetadata(
   }
 ): Promise<Metadata> {
   const params = await props.params;
+  const current = stories.posts.find(p => p.slug === params.slug);
+  if (current) return localizedMetadata(current.title.es,current.intro.es,"/blog/"+current.slug);
   const p = posts.find((p) => p.slug === params.slug);
   return p
     ? {
         title: p.title,
         description: p.excerpt,
-        alternates: { canonical: `/blog/${p.slug}` },
+        alternates: { canonical: `/blog/${p.slug}`, languages: {"es-MX": `/blog/${p.slug}`, en: `/en/blog/${p.slug}`} },
         openGraph: { type: "article", title: p.title, description: p.excerpt },
       }
     : {};
 }
 export default async function Page(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
+  const current = stories.posts.find(p => p.slug === params.slug);
+  if (current) return <BlogDetail post={current}/>;
   const p = posts.find((p) => p.slug === params.slug);
   if (!p) notFound();
   return (

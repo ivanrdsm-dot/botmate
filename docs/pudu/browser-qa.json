@@ -1,0 +1,25 @@
+{
+  "base": "http://127.0.0.1:3006",
+  "checkedAt": "2026-09-13T08:02:11.773903+00:00",
+  "checks": {
+    "mobile390NoHorizontalOverflow": true,
+    "desktop1280NoHorizontalOverflow": true,
+    "modelVideoDecoded": {
+      "model": "PUDU CC1 Pro",
+      "width": 1080,
+      "height": 720,
+      "playing": true
+    },
+    "sameModelLanguageSwitch": true,
+    "clientNavigationHtmlLanguageAndSkipLink": true,
+    "mobileMenuEscapeCloses": true,
+    "threeModelComparisonAndFourthDisabled": true,
+    "cleaningFilterResults": 10,
+    "emptySearchState": true,
+    "bellaBotProCompatibleAccessories": 5,
+    "bookingIframeAfterClick": true,
+    "globalPauseStopsMotion": true,
+    "homepageBrokenLoadedImages": 0,
+    "consoleErrorsObserved": 0
+  }
+}

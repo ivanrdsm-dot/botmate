@@ -6,11 +6,13 @@ import { useSiteMotion } from "./MotionProvider";
 export default function CinematicMedia({
   poster,
   src,
+  locale = "es",
   alt,
   priority = false,
   className = "",
 }: {
   poster: string;
+  locale?: "es" | "en";
   src?: string;
   alt: string;
   priority?: boolean;
@@ -72,14 +74,14 @@ export default function CinematicMedia({
           type="button"
           className="film-control"
           onClick={() => setPaused(!paused)}
-          aria-label={paused ? "Reproducir secuencia" : "Pausar secuencia"}
+          aria-label={paused ? (locale === "en" ? "Play sequence" : "Reproducir secuencia") : (locale === "en" ? "Pause sequence" : "Pausar secuencia")}
         >
           {paused ? <Play size={16} /> : <Pause size={16} />}
         </button>
       )}
       {error && (
         <span className="film-fallback" role="status">
-          Mostrando fotografía original
+          {locale === "en" ? "Showing original photograph" : "Mostrando fotografía original"}
         </span>
       )}
     </div>

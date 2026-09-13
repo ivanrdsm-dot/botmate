@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Privacidad y uso de datos",
   description:
     "Cómo funciona la preparación de consultas de Botmate y qué sucede al continuar a WhatsApp.",
-  alternates: { canonical: "/privacidad" },
+  alternates: { canonical: "/privacidad", languages: {"es-MX": "/privacidad", en: "/en/privacy"} },
   robots: { index: false, follow: true },
 };
 export default function Page() {

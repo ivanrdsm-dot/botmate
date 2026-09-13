@@ -2,8 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
 import { headers } from "next/headers";
 import "./globals.css";
+import "./pudu.css";
 import { site } from "@/lib/site";
-import Navbar from "@/components/Navbar";
+import Navbar, {SkipLink} from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
 import MotionProvider from "@/components/MotionProvider";
@@ -49,7 +50,9 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const nonce = (await headers()).get("x-nonce") ?? undefined;
+  const requestHeaders = await headers();
+  const nonce = requestHeaders.get("x-nonce") ?? undefined;
+  const locale = requestHeaders.get("x-site-locale") === "en" ? "en" : "es";
   const ld = {
     "@context": "https://schema.org",
     "@graph": [
@@ -64,7 +67,7 @@ export default async function RootLayout({
           telephone: site.phone,
           email: site.email,
           contactType: "sales",
-          availableLanguage: "Spanish",
+          availableLanguage: ["Spanish", "English"],
         },
       },
       {
@@ -77,15 +80,13 @@ export default async function RootLayout({
   };
   return (
     <html
-      lang="es-MX"
+      lang={locale === "en" ? "en" : "es-MX"}
       className={manrope.variable}
       data-scroll-behavior="smooth"
     >
       <body>
         <MotionProvider>
-          <a className="skip-link" href="#contenido">
-            Saltar al contenido
-          </a>
+          <SkipLink />
           <Navbar />
           <main id="contenido" tabIndex={-1}>
             {children}

@@ -49,6 +49,7 @@ export default function MotionProvider({
   );
   const limited = preference === "limited";
   const pathname = usePathname();
+  const en = pathname === "/en" || pathname.startsWith("/en/");
   const enabled = preference === "on";
   useEffect(() => {
     document.documentElement.dataset.motion = enabled ? "on" : "off";
@@ -79,10 +80,10 @@ export default function MotionProvider({
         aria-pressed={!enabled}
         aria-label={
           limited
-            ? "Movimiento reducido según tu dispositivo"
+            ? (en?"Reduced motion based on your device":"Movimiento reducido según tu dispositivo")
             : enabled
-              ? "Pausar animaciones de la página"
-              : "Activar animaciones de la página"
+              ? (en?"Pause page animations":"Pausar animaciones de la página")
+              : (en?"Enable page animations":"Activar animaciones de la página")
         }
         disabled={limited}
         onClick={() => {
@@ -94,7 +95,7 @@ export default function MotionProvider({
         }}
       >
         {enabled ? <Pause size={14} /> : <Play size={14} />}
-        <span>{enabled ? "Pausar movimiento" : "Movimiento reducido"}</span>
+        <span>{enabled ? (en?"Pause motion":"Pausar movimiento") : (en?"Reduced motion":"Movimiento reducido")}</span>
       </button>
     </MotionContext.Provider>
   );

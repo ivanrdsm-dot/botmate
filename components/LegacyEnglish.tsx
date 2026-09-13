@@ -1,0 +1,6 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import {PuduIntro,PuduCTA} from './PuduSections';
+import {legacyEnglishPosts,legacyEnglishRobots} from '@/lib/legacy-en';
+export function LegacyEnglishArticle({post:p}:{post:typeof legacyEnglishPosts[number]}){return <><PuduIntro locale="en" eyebrow="Botmate guide" title={p.title} description={p.excerpt}/><article className="container-x pudu-editorial section-space">{p.sections.map(s=><section key={s.title}><h2>{s.title}</h2><p>{s.text}</p></section>)}</article><PuduCTA locale="en"/></>}
+export function LegacyEnglishRobot({robot:r}:{robot:typeof legacyEnglishRobots[number]}){return <><PuduIntro locale="en" eyebrow="Pudu Robotics · Earlier catalog" title={r.name} description={r.description}/><section className="container-x pudu-detail-grid section-space"><div><p>{r.text}</p><p className="pudu-attribution">Reference from Botmate’s existing product archive. Confirm model generation, availability and configuration before ordering.</p><Link className="btn-primary" href="/en/contact">Enquire about this model ↗</Link></div>{r.image&&<div className="pudu-detail-image"><Image src={r.image} alt={r.name} fill sizes="(min-width:900px) 45vw, 90vw"/></div>}</section><PuduCTA locale="en"/></>}

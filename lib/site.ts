@@ -4,7 +4,7 @@ export const site = {
   tagline: "Robótica que trabaja contigo.",
   description:
     "Robots de servicio para entrega, publicidad y limpieza en México. Explora soluciones Pudu Robotics y consulta renta, compra e implementación con Botmate.",
-  url: "https://botmate.mx",
+  url: "https://www.botmate.mx",
   email: "contacto@botmate.mx",
   whatsapp: "525531491986",
   whatsappDisplay: "+52 55 3149 1986",

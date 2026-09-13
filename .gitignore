@@ -8,3 +8,5 @@ build
 .vercel
 *.log
 next-env.d.ts
+.pudu-source/
+*.tsbuildinfo

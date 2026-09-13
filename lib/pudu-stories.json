@@ -1,0 +1,412 @@
+{
+  "cases": [
+    {
+      "slug": "food-bayana",
+      "brand": "Food Bayana",
+      "country": {
+        "es": "Malasia",
+        "en": "Malaysia"
+      },
+      "industry": "hospitality",
+      "models": [
+        "flashbot-max"
+      ],
+      "title": {
+        "es": "Entregas en un centro gastronómico",
+        "en": "Delivery in a dining complex"
+      },
+      "description": {
+        "es": "Food Bayana, en Penang, incorporó FlashBot en una colaboración con Pudu Robotics y Pentamaster. El caso explora la automatización de entregas dentro de un centro gastronómico.",
+        "en": "Food Bayana in Penang introduced FlashBot through a collaboration with Pudu Robotics and Pentamaster. The case explores automated delivery within a dining complex."
+      },
+      "image": "/media/pudu/26fe141e6078b869.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/pudu-flashbot-bayana"
+    },
+    {
+      "slug": "skylark",
+      "brand": "Skylark Group",
+      "country": {
+        "es": "Japón",
+        "en": "Japan"
+      },
+      "industry": "food-and-beverage",
+      "models": [
+        "bellabot"
+      ],
+      "title": {
+        "es": "Robots dentro del servicio de restaurante",
+        "en": "Robots in restaurant service"
+      },
+      "description": {
+        "es": "Pudu documenta la incorporación de BellaBot en Skylark para apoyar el traslado de alimentos y reducir recorridos del personal. Su publicación describe un plan de 3,000 robots para más de 2,000 establecimientos.",
+        "en": "Pudu documents BellaBot adoption at Skylark to assist food transport and reduce staff walking. Its case describes a plan for 3,000 robots across more than 2,000 locations."
+      },
+      "image": "/media/pudu/e2cfb9cf825bcef5.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/skylark-bellabot"
+    },
+    {
+      "slug": "smile-park",
+      "brand": "Smile Park",
+      "country": {
+        "es": "Japón",
+        "en": "Japan"
+      },
+      "industry": "health-care",
+      "models": [
+        "bellabot"
+      ],
+      "title": {
+        "es": "Más tiempo para el cuidado de las personas",
+        "en": "More time for resident care"
+      },
+      "description": {
+        "es": "La residencia Smile Park utiliza BellaBot para transportar artículos entre áreas. Según el caso de Pudu, el personal puede permanecer más tiempo en sus zonas de atención mientras el robot realiza recorridos de entrega.",
+        "en": "Smile Park uses BellaBot to move items between areas. Pudu reports that staff can spend more time in their care areas while the robot handles delivery routes."
+      },
+      "image": "/media/pudu/088aa1e44c1dc043.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/bellabot-smile-park-elderly-care-home"
+    },
+    {
+      "slug": "manufactura-baterias",
+      "brand": "Manufactura de baterías",
+      "country": {
+        "es": "China",
+        "en": "China"
+      },
+      "industry": "industrial-warehouse-logistics",
+      "models": [
+        "pudubot-2",
+        "pudu-cc1",
+        "pudu-t300"
+      ],
+      "title": {
+        "es": "Tres robots, diferentes tareas",
+        "en": "Three robots, different tasks"
+      },
+      "description": {
+        "es": "Un fabricante de baterías de ion-litio integra PuduBot 2, CC1 y T300 para combinar transporte y limpieza. Pudu no identifica públicamente al fabricante en este caso.",
+        "en": "A lithium-ion battery manufacturer integrates PuduBot 2, CC1 and T300 to combine transport and cleaning. Pudu does not publicly identify the manufacturer in this case."
+      },
+      "image": "/media/pudu/7bd0031ce615e6ce.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/pudu-tri-robot-battery"
+    },
+    {
+      "slug": "mediamarkt",
+      "brand": "MediaMarkt",
+      "country": {
+        "es": "Países Bajos",
+        "en": "Netherlands"
+      },
+      "industry": "retail",
+      "models": [
+        "kettybot-pro",
+        "bellabot"
+      ],
+      "title": {
+        "es": "Orientación dentro de la tienda",
+        "en": "In-store customer guidance"
+      },
+      "description": {
+        "es": "El caso de Pudu describe a KettyBot y BellaBot apoyando la orientación de clientes y la comunicación comercial. El personal configura información de productos y ubicaciones para guiar a los visitantes.",
+        "en": "Pudu describes KettyBot and BellaBot assisting customer guidance and in-store communication. Staff configure product and location information to direct visitors."
+      },
+      "image": "/media/pudu/179756956c75bfcd.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/mediamarkt-kettybot-bellabot"
+    },
+    {
+      "slug": "xtreme",
+      "brand": "Xtreme Trampoline Park",
+      "country": {
+        "es": "Canadá",
+        "en": "Canada"
+      },
+      "industry": "entertainment-and-sports",
+      "models": [
+        "kettybot-pro",
+        "pudu-cc1"
+      ],
+      "title": {
+        "es": "Servicio y limpieza en un espacio de juego",
+        "en": "Service and cleaning in an entertainment venue"
+      },
+      "description": {
+        "es": "Xtreme combina KettyBot para entregas de alimentos durante fiestas con CC1 para el cuidado de pisos. El ejemplo muestra dos tareas complementarias dentro del mismo recinto.",
+        "en": "Xtreme combines KettyBot food delivery during parties with CC1 floor care. The example shows two complementary tasks within the same venue."
+      },
+      "image": "/media/pudu/d4afce0d9537a1dd.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/xtreme-pudu-sports"
+    },
+    {
+      "slug": "parkhotel",
+      "brand": "Parkhotel Eisenstadt",
+      "country": {
+        "es": "Austria",
+        "en": "Austria"
+      },
+      "industry": "hospitality",
+      "models": [
+        "bellabot",
+        "flashbot-max",
+        "pudu-cc1"
+      ],
+      "title": {
+        "es": "Una operación hotelera con varios robots",
+        "en": "A hotel operation with multiple robots"
+      },
+      "description": {
+        "es": "Pudu presenta cinco modelos en Parkhotel: KettyBot, HolaBot, BellaBot, FlashBot y CC1. Las aplicaciones incluyen recepción, entrega de alimentos y artículos, y limpieza de pisos.",
+        "en": "Pudu presents five models at Parkhotel: KettyBot, HolaBot, BellaBot, FlashBot and CC1. Applications include reception, food and item delivery, and floor cleaning."
+      },
+      "image": "/media/pudu/43e1267cd9bed08a.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/pudu-parkhotel-austria"
+    },
+    {
+      "slug": "meritum",
+      "brand": "Meritum",
+      "country": {
+        "es": "Polonia",
+        "en": "Poland"
+      },
+      "industry": "realestate-and-property-services",
+      "models": [
+        "kettybot-pro"
+      ],
+      "title": {
+        "es": "Recepción y orientación en oficinas",
+        "en": "Office reception and guidance"
+      },
+      "description": {
+        "es": "La firma de contabilidad y nómina Meritum incorporó KettyBot en recepción. El caso describe guía hacia salas y comunicación en pantalla para visitantes y colaboradores.",
+        "en": "Accounting and payroll firm Meritum introduced KettyBot at reception. The case describes guidance to meeting rooms and on-screen communication for visitors and staff."
+      },
+      "image": "/media/pudu/8c57ef934794b7a0.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/pudu-meritum-kettybot"
+    },
+    {
+      "slug": "mnactec",
+      "brand": "MNACTEC",
+      "country": {
+        "es": "España",
+        "en": "Spain"
+      },
+      "industry": "public-service",
+      "models": [
+        "kettybot-pro"
+      ],
+      "title": {
+        "es": "Tecnología que acompaña al visitante",
+        "en": "Technology alongside museum visitors"
+      },
+      "description": {
+        "es": "El Museo Nacional de la Ciencia y la Técnica de Cataluña integró dos KettyBot en sus exposiciones. Pudu describe orientación e interacción mediante contenidos audiovisuales.",
+        "en": "The National Museum of Science and Technology of Catalonia integrated two KettyBots into its exhibitions. Pudu describes navigation assistance and audiovisual interaction."
+      },
+      "image": "/media/pudu/79ba5390f0e57812.webp",
+      "source": "https://www.pudurobotics.com/en/case-studies/mnactec-kettybot"
+    }
+  ],
+  "testimonials": [
+    {
+      "brand": "Pizza Hut · Poland",
+      "person": "Jarosław Orłowski",
+      "text": {
+        "es": "Jarosław Orłowski describe cómo BellaBot atrae la atención de los comensales y aporta una experiencia distinta al restaurante.",
+        "en": "Jarosław Orłowski describes BellaBot attracting diners’ attention and adding a distinctive restaurant experience."
+      },
+      "image": "/media/pudu/762c6b1c0b37631d.webp",
+      "source": "https://www.pudurobotics.com/en"
+    },
+    {
+      "brand": "Marriott Warsaw Hotel · Poland",
+      "person": "Dariusz Oleksiak",
+      "text": {
+        "es": "Dariusz Oleksiak destaca el apoyo al personal y la buena recepción de los robots entre los huéspedes.",
+        "en": "Dariusz Oleksiak highlights staff assistance and guests’ positive reception of the robots."
+      },
+      "image": "/media/pudu/c10bd71cec6b4ec9.webp",
+      "source": "https://www.pudurobotics.com/en"
+    },
+    {
+      "brand": "Haidilao · China",
+      "person": "Zeng",
+      "text": {
+        "es": "Zeng Xianghui explica que el apoyo de PuduBot libera tiempo para aprender otras tareas del restaurante.",
+        "en": "Zeng Xianghui explains that PuduBot support frees time to learn other restaurant tasks."
+      },
+      "image": "/media/pudu/82b8fe83c8eac127.webp",
+      "source": "https://www.pudurobotics.com/en"
+    },
+    {
+      "brand": "Magic Natura Resort · Spain",
+      "person": "Fran Benavides",
+      "text": {
+        "es": "Fran Benavides señala que el traslado de platos permite al equipo dedicar más atención al cliente.",
+        "en": "Fran Benavides notes that moving dishes allows the team to dedicate more attention to customers."
+      },
+      "image": "/media/pudu/7513747c8405c799.webp",
+      "source": "https://www.pudurobotics.com/en"
+    },
+    {
+      "brand": "Smiling Park Nursing Home in Japan",
+      "person": "Yoshimura",
+      "text": {
+        "es": "Yoshimura describe menos desplazamientos para entregar artículos y más tiempo disponible para los residentes.",
+        "en": "Yoshimura describes fewer item-delivery trips and more time available for residents."
+      },
+      "image": "/media/pudu/6aaff75fb4a00114.webp",
+      "source": "https://www.pudurobotics.com/en"
+    },
+    {
+      "brand": "Bali Tower Hotel · Japan",
+      "person": "Yukari Yamamoto",
+      "text": {
+        "es": "Yukari Yamamoto relata una reducción del tiempo dedicado a aspirar y trapear, con más atención al huésped.",
+        "en": "Yukari Yamamoto reports less time spent vacuuming and mopping, allowing more guest interaction."
+      },
+      "image": "/media/pudu/bd63f470e6713912.webp",
+      "source": "https://www.pudurobotics.com/en"
+    },
+    {
+      "brand": "Meritum · Poland",
+      "person": "Katarzyna Chajec",
+      "text": {
+        "es": "Katarzyna Chajec destaca el apoyo en recepción y el uso de la pantalla para información interna.",
+        "en": "Katarzyna Chajec highlights reception assistance and on-screen internal information."
+      },
+      "image": "/media/pudu/3ce27469e810e2d2.webp",
+      "source": "https://www.pudurobotics.com/en"
+    },
+    {
+      "brand": "Dim Dou Dok · China",
+      "person": "Zhang Jie",
+      "text": {
+        "es": "Zhang Jie comenta el apoyo de PuduBot al ritmo del servicio y el interés que despierta entre los visitantes.",
+        "en": "Zhang Jie discusses PuduBot’s support for service flow and the interest it sparks among visitors."
+      },
+      "image": "/media/pudu/28189406d8074e08.webp",
+      "source": "https://www.pudurobotics.com/en"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "como-elegir-amr",
+      "title": {
+        "es": "Cómo elegir un AMR para tu almacén",
+        "en": "How to choose a warehouse AMR"
+      },
+      "intro": {
+        "es": "Antes del robot, define el recorrido.",
+        "en": "Define the route before choosing the robot."
+      },
+      "paragraphs": [
+        {
+          "es": "Documenta qué se mueve, cuánto pesa, cómo se carga y con qué frecuencia viaja. Esa información permite comparar un robot de reparto industrial con una solución de manejo de tarimas.",
+          "en": "Document what moves, how much it weighs, how it is loaded and how often it travels. This helps compare an industrial delivery robot with a pallet-handling solution."
+        },
+        {
+          "es": "En la evaluación del sitio, revisa anchos, cruces, cambios de piso, puertas, tráfico de personas y puntos de carga. La capacidad nominal del robot no sustituye la revisión de todo el recorrido.",
+          "en": "During the site assessment, check aisle widths, intersections, floor transitions, doors, pedestrian traffic and charging points. Payload ratings do not replace a full route review."
+        }
+      ],
+      "image": "/media/pudu/c23826b296e73439.webp",
+      "source": "https://www.pudurobotics.com/en/news/warehouse-amr-selection-guide-logistics",
+      "date": "2026-09-13"
+    },
+    {
+      "slug": "amr-vs-agv",
+      "title": {
+        "es": "AMR o AGV: empieza por tu operación",
+        "en": "AMR or AGV: start with your operation"
+      },
+      "intro": {
+        "es": "No todas las rutas necesitan la misma automatización.",
+        "en": "Not every route needs the same automation."
+      },
+      "paragraphs": [
+        {
+          "es": "El recurso de Pudu compara enfoques de transporte automatizado en manufactura automotriz. Para seleccionar una solución, considera cuánto cambia el entorno y cómo se integrará con tus procesos existentes.",
+          "en": "Pudu’s resource compares automated transport approaches in automotive manufacturing. When selecting a solution, consider how often the environment changes and how it integrates with existing processes."
+        },
+        {
+          "es": "Prepara una prueba con una carga representativa y mide los tiempos de recorrido, las intervenciones y las esperas. Estos datos ayudan a evaluar la solución dentro de tu instalación.",
+          "en": "Prepare a trial with a representative load and measure travel times, interventions and waiting. These observations help assess the solution within your facility."
+        }
+      ],
+      "image": "/media/pudu/db3a5698c440944a.webp",
+      "source": "https://www.pudurobotics.com/en/news/amr-vs-agv-automotive-parts-manufacturing",
+      "date": "2026-09-13"
+    },
+    {
+      "slug": "limpieza-espacios-pequenos",
+      "title": {
+        "es": "Limpieza robótica en espacios pequeños",
+        "en": "Robotic cleaning in smaller spaces"
+      },
+      "intro": {
+        "es": "Un espacio compacto también merece atención.",
+        "en": "Compact spaces deserve attention too."
+      },
+      "paragraphs": [
+        {
+          "es": "Pudu presentó ET1 para espacios comerciales pequeños, con una referencia de aplicación de 100 a 800 m². Es una categoría para explorar en tiendas de conveniencia, restaurantes, hoteles y oficinas.",
+          "en": "Pudu introduced ET1 for smaller commercial spaces, with a stated application range of 100 to 800 m². This category can be explored for convenience stores, restaurants, hotels and offices."
+        },
+        {
+          "es": "El área total es sólo el inicio: también importan el tipo de piso, el mobiliario, la suciedad y la ubicación de la estación. Solicita una evaluación antes de definir la configuración.",
+          "en": "Total area is only the starting point: floor type, furniture, dirt and station placement also matter. Request an assessment before defining the configuration."
+        }
+      ],
+      "image": "/media/pudu/9452228a278a3f16.webp",
+      "source": "https://www.pudurobotics.com/en/news/pudu-et1-ai-native-compact-scrubber-dryer-robot",
+      "date": "2026-09-13"
+    },
+    {
+      "slug": "robots-industria-textil",
+      "title": {
+        "es": "Robots en la industria textil",
+        "en": "Robots in textile manufacturing"
+      },
+      "intro": {
+        "es": "Limpieza y logística pueden avanzar juntas.",
+        "en": "Cleaning and logistics can move together."
+      },
+      "paragraphs": [
+        {
+          "es": "Pudu publica aplicaciones de robótica en empresas textiles, combinando cuidado de superficies y movimiento de materiales. La selección del equipo parte de la tarea concreta que necesita apoyo.",
+          "en": "Pudu publishes robotics applications in textile companies, combining surface care and material movement. Equipment selection starts with the specific task that needs support."
+        },
+        {
+          "es": "En Botmate, el siguiente paso es revisar el flujo de materiales, las superficies y las necesidades de limpieza para proponer un piloto con criterios de evaluación definidos.",
+          "en": "At Botmate, the next step is to review material flows, surfaces and cleaning needs to propose a pilot with defined evaluation criteria."
+        }
+      ],
+      "image": "/media/pudu/1e12f586128ff142.webp",
+      "source": "https://www.pudurobotics.com/en/news/pudu-robotics-textile-manufacturing-cleaning-logistics",
+      "date": "2026-09-13"
+    },
+    {
+      "slug": "ia-fisica-pudu",
+      "title": {
+        "es": "IA física: del software al trabajo en el mundo real",
+        "en": "Physical AI: from software to real-world work"
+      },
+      "intro": {
+        "es": "Una nueva categoría de posibilidades.",
+        "en": "A new category of possibilities."
+      },
+      "paragraphs": [
+        {
+          "es": "Pudu presenta PuduFM 1.0 como parte de su trabajo en inteligencia incorporada. Su catálogo incluye robots móviles, cuadrúpedos y humanoides para explorar diferentes tareas.",
+          "en": "Pudu presents PuduFM 1.0 as part of its work in embodied intelligence. Its portfolio includes mobile, quadruped and humanoid robots for exploring different tasks."
+        },
+        {
+          "es": "Una demostración tecnológica no equivale a una implementación lista para cualquier negocio. Para un proyecto en México, confirma disponibilidad, funciones soportadas y alcance de integración con Botmate.",
+          "en": "A technology demonstration is not a ready-made deployment for every business. For a project in Mexico, confirm availability, supported functions and integration scope with Botmate."
+        }
+      ],
+      "image": "/media/pudu/a36649168c414d64.webp",
+      "source": "https://www.pudurobotics.com/en/news/pudu-robotics-unveils-pudufm-1-0-embodied-intelligence-foundation-model",
+      "date": "2026-09-13"
+    }
+  ]
+}

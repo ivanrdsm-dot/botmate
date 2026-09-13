@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Reserva una llamada sobre robots para tu empresa",
   description:
     "Reserva una videollamada de 30 minutos con Botmate en Google Calendar. Conoce robots de entrega, publicidad y limpieza para tu empresa en México.",
-  alternates: { canonical: "/reservar" },
+  alternates: { canonical: "/reservar", languages: {"es-MX": "/reservar", en: "/en/book"} },
 };
 export default function Page() {
   return (

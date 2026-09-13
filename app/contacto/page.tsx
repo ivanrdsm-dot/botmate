@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Contacto · Demostraciones y cotizaciones de robots",
   description:
     "Comparte tu proyecto con Botmate y consulta renta, compra o soporte. Prepara tu solicitud para continuar por WhatsApp, correo o teléfono.",
-  alternates: { canonical: "/contacto" },
+  alternates: { canonical: "/contacto", languages: {"es-MX": "/contacto", en: "/en/contact"} },
 };
 export default async function Page(
   props: {

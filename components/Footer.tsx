@@ -1,54 +1,8 @@
-import Link from "next/link";
-import Logo from "./Logo";
-import { site } from "@/lib/site";
-import { ArrowUpRight } from "lucide-react";
-export default function Footer() {
-  return (
-    <footer className="site-footer">
-      <div className="container-x">
-        <div className="footer-grid">
-          <div>
-            <Link href="/" aria-label="Botmate · Inicio">
-              <Logo />
-            </Link>
-            <p className="footer-description">
-              Robótica que trabaja contigo.
-              <br />
-              Soluciones de servicio para México.
-            </p>
-            <a className="text-link" href={`mailto:${site.email}`}>
-              {site.email}
-              <ArrowUpRight size={16} />
-            </a>
-          </div>
-          <div>
-            <h2>Explorar</h2>
-            <Link href="/robots">Robots</Link>
-            <Link href="/sectores">Soluciones por industria</Link>
-            <Link href="/renta">Renta de robots</Link>
-            <Link href="/venta">Compra de robots</Link>
-          </div>
-          <div>
-            <h2>Acompañamiento</h2>
-            <Link href="/servicios">Implementación y soporte</Link>
-            <Link href="/refacciones">Refacciones</Link>
-            <Link href="/blog">Guías y recursos</Link>
-            <Link href="/casos-de-exito">Galería de aplicaciones</Link>
-          </div>
-          <div>
-            <h2>Conversemos</h2>
-            <Link href="/nosotros">Acerca de Botmate</Link>
-            <Link href="/reservar">Reservar una llamada</Link>
-            <Link href="/contacto">Contacto</Link>
-            <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Botmate · México</span>
-          <Link href="/privacidad">Privacidad y datos</Link>
-          <span>Pudu Robotics es marca de su titular.</span>
-        </div>
-      </div>
-    </footer>
-  );
-}
+'use client';
+import Link from 'next/link';
+import {usePathname} from 'next/navigation';
+import Logo from './Logo';
+import {site} from '@/lib/site';
+import {localPath,isEnglish} from '@/lib/locale';
+import {ArrowUpRight} from 'lucide-react';
+export default function Footer(){const en=isEnglish(usePathname()),locale=en?'en':'es';const groups=[{title:en?'Explore':'Explorar',links:[['/robots','Robots'],['/sectores',en?'Industries':'Soluciones por industria'],['/renta',en?'Robot rental':'Renta de robots'],['/venta',en?'Robot purchases':'Compra de robots']]},{title:en?'Support & resources':'Acompañamiento',links:[['/servicios',en?'Implementation & support':'Implementación y soporte'],['/refacciones',en?'Spare parts & accessories':'Refacciones y accesorios'],['/blog',en?'Insights & guides':'Guías y recursos'],['/casos-de-exito',en?'Pudu case studies':'Casos internacionales Pudu'],['/recursos',en?'Official resource library':'Biblioteca oficial']]},{title:en?'Let’s talk':'Conversemos',links:[['/nosotros',en?'About Botmate':'Acerca de Botmate'],['/reservar',en?'Book a call':'Reservar una llamada'],['/contacto',en?'Contact':'Contacto']]}];return <footer className="site-footer"><div className="container-x"><div className="footer-grid"><div><Link href={localPath('/',locale)} aria-label={en?'Botmate · Home':'Botmate · Inicio'}><Logo/></Link><p className="footer-description">{en?'Robotics that works with you.':'Robótica que trabaja contigo.'}<br/>{en?'Official Pudu Robotics distributor in Mexico.':'Distribuidor oficial de Pudu Robotics en México.'}</p><a className="text-link" href={'mailto:'+site.email}>{site.email}<ArrowUpRight size={16}/></a></div>{groups.map(g=><div key={g.title}><h2>{g.title}</h2>{g.links.map(([url,text])=><Link href={localPath(url,locale)} key={url}>{text}</Link>)}</div>)}</div><div className="footer-bottom"><span>© {new Date().getFullYear()} Botmate · México</span><Link href={localPath('/privacidad',locale)}>{en?'Privacy & data':'Privacidad y datos'}</Link><span>{en?'Pudu Robotics and featured brands belong to their respective owners.':'Pudu Robotics y las marcas mostradas pertenecen a sus titulares.'}</span></div></div></footer>}

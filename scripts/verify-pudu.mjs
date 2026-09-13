@@ -1,0 +1,31 @@
+/** Verify public bilingual pages, metadata, local assets, redirects and attribution. */
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+const base=process.argv[2]||'http://127.0.0.1:3008';
+const get=async(path,options={})=>fetch(base+path,{signal:AbortSignal.timeout(40000),...options});
+const sitemap=await(await get('/sitemap.xml')).text();
+const routes=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname);
+assert(routes.length>=140);assert.equal(new Set(routes).size,routes.length);
+const assets=new Set(),links=new Set(),report=[];
+let cursor=0;
+async function pageWorker(){while(cursor<routes.length){const path=routes[cursor++];const response=await get(path);const html=await response.text();assert.equal(response.status,200,path);assert.equal((html.match(/<h1[ >]/g)||[]).length,1,path+' h1');
+assert(/<meta name="description" content="[^"]+"/.test(html),path+' description');assert(!/googletagmanager.com|connect.facebook.net/.test(html),path+' no unapproved trackers');
+const title=html.match(/<title>(.*?)<\/title>/s)?.[1];assert(title,path+' title');const canonical=html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];assert.equal(new URL(canonical).href,new URL('https://www.botmate.mx'+path).href,path+' canonical');
+const expected=path==='/en'||path.startsWith('/en/')?'en':'es-MX';assert(html.includes('lang="'+expected+'"'),path+' language');assert(html.includes('hrefLang="en"')||html.includes('hreflang="en"'),path+' alternate');
+assert(!/aggregateRating|"availability":"https:\/\/schema.org\/InStock"|127 reseñas/.test(html),path+' no invented rating/stock');
+assert(!/<iframe[^>]*src="https:\/\/calendar.google.com/.test(html),path+' calendar opt-in');
+for(const m of html.matchAll(/<img\s[^>]*>/g)){assert(/\salt="[^"]*"/.test(m[0]),path+' image alt');const src=m[0].match(/\ssrc="([^"]+)"/)?.[1];if(src?.startsWith('/'))assets.add(src.replaceAll('&amp;','&'));}
+for(const m of html.matchAll(/<a\s[^>]*href="([^"#]+)"/g)){const href=m[1].replaceAll('&amp;','&');if(href.startsWith('/'))links.add(href.split('#')[0]);}
+report.push({path,status:response.status,title});}}
+await Promise.all(Array.from({length:6},pageWorker));
+const titles=report.map(x=>x.title);assert.equal(new Set(titles).size,titles.length,'Unique page titles');
+const pending=[...links].filter(p=>!routes.includes(p));cursor=0;await Promise.all(Array.from({length:6},async()=>{while(cursor<pending.length){const p=pending[cursor++];const r=await get(p);await r.arrayBuffer();assert.equal(r.status,200,'Link '+p);}}));
+const assetList=[...assets];cursor=0;await Promise.all(Array.from({length:5},async()=>{while(cursor<assetList.length){const p=assetList[cursor++];const r=await get(p);await r.arrayBuffer();assert.equal(r.status,200,'Image '+p);assert(r.headers.get('content-type')?.startsWith('image/'));}}));
+const catalog=JSON.parse(await fs.readFile('lib/pudu-catalog.json','utf8'));
+assert.equal(catalog.products.length,27);assert.equal(catalog.industries.length,10);assert.equal(catalog.accessories.length,28);assert.equal(catalog.logos.length,30);
+const videos=[...new Set(catalog.products.map(r=>r.video).filter(Boolean))];for(const p of videos){const r=await get(p,{headers:{Range:'bytes=0-1023'}});await r.arrayBuffer();assert.equal(r.status,206,'Video range '+p);}
+for(const p of ['/robots/unknown','/en/robots/unknown','/sectores/unknown','/en/industries/unknown','/en/unknown','/casos-de-exito/grupo-restaurantero-cdmx']){const r=await get(p);await r.text();assert.equal(r.status,404,'Unknown '+p);}
+for(const [from,to] of [['/robots/botmate-serve','/robots/bellabot-pro'],['/robots/botmate-clean','/robots/pudu-cc1'],['/robots/sh1','/robots/pudu-sh1']]){const r=await get(from,{redirect:'manual'});await r.text();assert([301,308].includes(r.status),from);assert(r.headers.get('location')?.endsWith(to),from+' destination');}
+for(const p of ['/privacidad','/en/privacy']){const r=await get(p);const html=await r.text();assert.equal(r.status,200);assert(html.includes('noindex'));}
+const home=await(await get('/')).text();assert(home.includes('Referencias publicadas por Pudu Robotics'));assert(home.includes('No corresponden a la operación de Botmate'));assert(home.includes('Higgsfield'));
+console.log(JSON.stringify({passed:true,routes:routes.length,images:assets.size,internalLinks:links.size,videos:videos.length,checkedAt:new Date().toISOString(),report:report.sort((a,b)=>a.path.localeCompare(b.path))},null,2));

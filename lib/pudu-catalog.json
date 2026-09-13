@@ -1,0 +1,4024 @@
+{
+  "verifiedAt": "2026-09-13",
+  "products": [
+    {
+      "slug": "pudu-gt3",
+      "name": "PUDU GT3",
+      "category": "outdoor",
+      "description": {
+        "es": "Robot compacto de mantenimiento multiuso",
+        "en": "Commercial Compact Robotic Mower"
+      },
+      "features": {
+        "es": [
+          "Corte y aspiración en una sola pasada",
+          "Uso múltiple durante todo el año",
+          "Vaciado automático y reanudación desde punto de interrupción",
+          "Mapeo autónomo y despliegue rápido",
+          "Operación en múltiples zonas y traslado autónomo",
+          "Corte al borde – sin esquinas sin cubrir"
+        ],
+        "en": [
+          "One-Pass Cutting & Collection",
+          "Mowing & Sweeping",
+          "Auto-Dump & Task Resumption",
+          "Auto Mapping & Border Recognition",
+          "Autonomous Cross-Zone Transit",
+          "Ultimate Edge Sweeping"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones (L × An × Al)",
+            "en": "Dimensions (L×W×H)"
+          },
+          "value": {
+            "es": "1602 x 946.6 x 1203 mm / 63 x 37.3 x 47.4 in",
+            "en": "1602 x 946.6 x 1203 mm / 63 x 37.3 x 47.4 in"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso (con baterías)",
+            "en": "Weight (with batteries)"
+          },
+          "value": {
+            "es": "450 kg / 992 lb",
+            "en": "450 kg / 992 lb"
+          }
+        },
+        {
+          "label": {
+            "es": "Anchura de corte",
+            "en": "Width of Cut"
+          },
+          "value": {
+            "es": "36 in / 914.4 mm",
+            "en": "36 in / 914.4 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Altura de corte",
+            "en": "Height of Cut"
+          },
+          "value": {
+            "es": "26~114 mm / 1~4.5 in",
+            "en": "26~114 mm / 1~4.5 in"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad máxima de siega",
+            "en": "Max Mowing Speed"
+          },
+          "value": {
+            "es": "11 km/h / 6.7 mph / 3 m/s",
+            "en": "11 km/h / 6.7 mph / 3 m/s"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "13 kWh",
+            "en": "13 kWh"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía",
+            "en": "Runtime"
+          },
+          "value": {
+            "es": "4～6 h",
+            "en": "4~6 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Superficie por carga completa",
+            "en": "Area per Full Charge"
+          },
+          "value": {
+            "es": "20000 m² / 5 acres / 2 ha",
+            "en": "20000 ㎡ / 5 acres / 2 ha"
+          }
+        }
+      ],
+      "image": "/media/pudu/2a69adc5790d072f.webp",
+      "banner": "/media/pudu/d763f4aa632b46b1.webp",
+      "videoSource": "https://cdn.pudutech.com/GT_3_EN_4775061562.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudu-gt3",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudu-gt3",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/fc459c198c1254a5.mp4",
+      "poster": "/media/pudu/fc459c198c1254a5-poster.jpg"
+    },
+    {
+      "slug": "pudu-gt5",
+      "name": "PUDU GT5",
+      "category": "outdoor",
+      "description": {
+        "es": "Cortacésped Robot Comercial",
+        "en": "Commercial Robotic Mower"
+      },
+      "features": {
+        "es": [
+          "Corte y aspiración en una sola pasada",
+          "Vaciado Automático y Reanudación de Tareas",
+          "Tiempo de Funcionamiento Extendido",
+          "Cartografía Automática y Despliegue Rápido",
+          "Tránsito Autónomo Entre Zonas",
+          "Conciencia Omnidireccional de 360°"
+        ],
+        "en": [
+          "One-Pass Cutting & Collection",
+          "Auto-Dump & Task Resumption",
+          "Extended Run-time",
+          "Auto Mapping & Rapid Deployment",
+          "Autonomous Cross-Zone Transit",
+          "360° Omnidirectional Awareness"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones (L × An × Al)",
+            "en": "Dimensions (L×W×H)"
+          },
+          "value": {
+            "es": "1910 × 1586 × 1293 mm / 75.2 × 62.44 × 50.91 in",
+            "en": "1910 × 1586 × 1293 mm / 75.2 x 62.44 x 50.91 in"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso (con baterías)",
+            "en": "Weight (with batteries)"
+          },
+          "value": {
+            "es": "850 kg / 1873.93 lb",
+            "en": "850 kg / 1873.93 lb"
+          }
+        },
+        {
+          "label": {
+            "es": "Anchura de corte",
+            "en": "Width of Cut"
+          },
+          "value": {
+            "es": "60 in（1.52 m）",
+            "en": "60 in（1.52 m）"
+          }
+        },
+        {
+          "label": {
+            "es": "Altura de corte",
+            "en": "Height of Cut"
+          },
+          "value": {
+            "es": "26 mm~15 2 mm / 1 in ~ 6 in",
+            "en": "26 mm~15 2 mm / 1 in ~ 6 in"
+          }
+        },
+        {
+          "label": {
+            "es": "Rendimiento de siega",
+            "en": "Mowing Rate"
+          },
+          "value": {
+            "es": "2 acre/h / 8000 m²/h",
+            "en": "2 acre/h / 8000 ㎡/h"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad máxima de siega",
+            "en": "Max Mowing Speed"
+          },
+          "value": {
+            "es": "11 km/h / 6.7 mph / 3 m/s",
+            "en": "11 km/h / 6.7 mph / 3 m/s"
+          }
+        },
+        {
+          "label": {
+            "es": "Pendiente máxima durante la siega",
+            "en": "Max Slope – Mowing"
+          },
+          "value": {
+            "es": "20°",
+            "en": "20°"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "26 kWh",
+            "en": "26 kWh"
+          }
+        }
+      ],
+      "image": "/media/pudu/2b6d8d6b1eafd5ff.webp",
+      "banner": "/media/pudu/3b5fc636064b57e6.webp",
+      "videoSource": "https://cdn.pudutech.com/PUDU_GT_5_EN_1080p_bda11133cc.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudu-gt5",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudu-gt5",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/3395b2372f59fbf9.mp4",
+      "poster": "/media/pudu/3395b2372f59fbf9-poster.jpg"
+    },
+    {
+      "slug": "pudu-gt7",
+      "name": "PUDU GT7",
+      "category": "outdoor",
+      "description": {
+        "es": "Robot Cortacésped de Cilindro Trío",
+        "en": "Precision-Cut Robotic Reel Mower"
+      },
+      "features": {
+        "es": [
+          "Fusión Multisensor y Posicionamiento de Precisión",
+          "Corte de Precisión y Control Avanzado de Patrones",
+          "Tránsito Autónomo Entre Zonas",
+          "Cobertura Amplia, Agilidad en Espacios Reducidos",
+          "Tracción 4WD, Domina Terreno Desnivelado",
+          "Tiempo de Funcionamiento Extendido"
+        ],
+        "en": [
+          "Multi-sensor Fusion & Precision Positioning",
+          "Precision Mowing & Advanced Pattern Control",
+          "Autonomous Cross-Zone Transit",
+          "Broad Coverage, Tight-Space Agility",
+          "4WD Traction, Conquer Uneven Turf",
+          "Extended Run-time"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones (L × An × Al)",
+            "en": "Dimensions (L×W×H)"
+          },
+          "value": {
+            "es": "1950 × 1600 × 1400 mm / 76.8 × 63.0 × 55.1 in · 1950 × 1500 × 1400 mm / 76.8 × 59.1 × 55.1 in (elevado)",
+            "en": "1950x1600x1400 mm / 76.8 × 63.0 × 55.1 in · 1950x1500x1400 mm / 76.8 × 59.1 × 55.1 in (lifted)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso (con baterías)",
+            "en": "Weight (with batteries)"
+          },
+          "value": {
+            "es": "900 kg / 1984 lb",
+            "en": "900 kg / 1984 lb"
+          }
+        },
+        {
+          "label": {
+            "es": "Rendimiento de corte",
+            "en": "Mowing Rate"
+          },
+          "value": {
+            "es": "2 acres/h · 8.000 m²/h",
+            "en": "2 acre/h · 8000 ㎡/h"
+          }
+        },
+        {
+          "label": {
+            "es": "Anchura de corte",
+            "en": "Width of Cut"
+          },
+          "value": {
+            "es": "62 in / 1600 mm",
+            "en": "62 in / 1600 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Cuchillas por molinete",
+            "en": "Blades per Reel"
+          },
+          "value": {
+            "es": "8 u 11",
+            "en": "8 or 11"
+          }
+        },
+        {
+          "label": {
+            "es": "Altura de corte (HOC)",
+            "en": "Height of Cut (HOC)"
+          },
+          "value": {
+            "es": "5～50 mm / 0.197～1.97 in",
+            "en": "5 ~ 50 mm / 0.197~1.97 in"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad máxima de siega",
+            "en": "Max Mowing Speed"
+          },
+          "value": {
+            "es": "11 km/h / 6.7 mph / 3 m/s",
+            "en": "11 km/h / 6.7 mph / 3 m/s"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "26 kWh",
+            "en": "26 kWh"
+          }
+        }
+      ],
+      "image": "/media/pudu/62fa91b8638a217c.webp",
+      "banner": "/media/pudu/acab41f773211d31.webp",
+      "videoSource": "https://cdn.pudutech.com/PUDU_GT_7_EN_1080_P_24d21e241a.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudu-gt7",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudu-gt7",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/c2f008d8d3450228.mp4",
+      "poster": "/media/pudu/c2f008d8d3450228-poster.jpg"
+    },
+    {
+      "slug": "pudu-mp2000",
+      "name": "PUDU MP2000",
+      "category": "industrial",
+      "description": {
+        "es": "Robot de manipulación de palés con IA nativa",
+        "en": "AI-Native Pallet Handling Robot"
+      },
+      "features": {
+        "es": [
+          "Plug-and-Play",
+          "Autonomía con IA nativa",
+          "Orquestación de flota",
+          "Inserción de horquillas en 20 s",
+          "Seguridad con detección 360°",
+          "Integración IoT"
+        ],
+        "en": [
+          "Plug-and-Play",
+          "AI-Native Autonomy",
+          "Fleet Orchestration",
+          "20s Fork Insertion",
+          "Omni-Sense Safety",
+          "IoT Integration"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Modelo",
+            "en": "Model"
+          },
+          "value": {
+            "es": "MPID01-M",
+            "en": "MPID01-M"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones totales",
+            "en": "Overall dimensions"
+          },
+          "value": {
+            "es": "1585 x 910 x 1870 mm（62.40 x 35.83 x 73.62 pulgadas）",
+            "en": "1585 x 910 x 1870 mm（62.40 x 35.83 x 73.62 inches）"
+          }
+        },
+        {
+          "label": {
+            "es": "Carga máxima",
+            "en": "Max. load"
+          },
+          "value": {
+            "es": "2000 kg（4409.25 lbs）",
+            "en": "2000 kg（4409.25 lbs）"
+          }
+        },
+        {
+          "label": {
+            "es": "Altura máxima de elevación",
+            "en": "Max. lift height"
+          },
+          "value": {
+            "es": "200±5 mm（7.87±0.20 pulgadas）",
+            "en": "200±5 mm（7.87±0.20 inches）"
+          }
+        },
+        {
+          "label": {
+            "es": "Altura de horquillas bajadas",
+            "en": "Lowered fork height"
+          },
+          "value": {
+            "es": "80±5 mm（3.15±0.20 pulgadas）",
+            "en": "80±5 mm（3.15±0.20 inches）"
+          }
+        },
+        {
+          "label": {
+            "es": "Anchura de pasillo para apilado en ángulo recto",
+            "en": "Right-angle stacking aisle width"
+          },
+          "value": {
+            "es": "≤2000 mm, palé de 1200 × 1000 mm (1200 mm en el sentido de las horquillas)* (≤78.74 pulgadas, palé de 48 × 40 pulgadas (48 pulgadas en el sentido de las horquillas)*) · ≤1960 mm, palé de 1200 × 800 mm (1200 mm en el sentido de las horquillas) (≤77.17 pulgadas, palé de 48 × 31.5 pulgadas (48 pulgadas en el sentido de las horquillas))",
+            "en": "≤2000 mm, 1200*1000 mm Pallet (1200 along forks) (≤78.74 inches, 48*40 inches Pallet (48 along forks) ) · ≤1960 mm, 1200*800 mm Pallet (1200 along forks)(≤77.17 inches, 48*31.5 inches Pallet (48 along forks))"
+          }
+        },
+        {
+          "label": {
+            "es": "Anchura exterior de las horquillas",
+            "en": "Fork outer width"
+          },
+          "value": {
+            "es": "620 mm （24.41 pulgadas)",
+            "en": "620 mm （24.41 inches)"
+          }
+        },
+        {
+          "label": {
+            "es": "Método de navegación",
+            "en": "Navigation method"
+          },
+          "value": {
+            "es": "3D LiDAR-SLAM, VSLAM",
+            "en": "3D LiDAR-SLAM, VSLAM"
+          }
+        }
+      ],
+      "image": "/media/pudu/018647c9bfeaa2fb.webp",
+      "banner": "/media/pudu/e584779de83dfa40.webp",
+      "videoSource": "https://cdn.pudutech.com/PUDU_MP_2000_1080_aa11ea505a.mp4",
+      "source": "https://www.pudurobotics.com/en/products/mp2000",
+      "sourceEs": "https://www.pudurobotics.com/es/products/mp2000",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/2dbf59dc8ab80659.mp4",
+      "poster": "/media/pudu/2dbf59dc8ab80659-poster.jpg"
+    },
+    {
+      "slug": "pudu-et1",
+      "name": "PUDU ET1",
+      "category": "cleaning",
+      "description": {
+        "es": "Robot fregador-secador compacto nativo de IA",
+        "en": "Al-Native Compact Scrubber-Dryer Robot"
+      },
+      "features": {
+        "es": [
+          "Limpieza versátil 4 en 1",
+          "Autolimpieza del rodillo en tiempo real",
+          "Secado sin marcas en una sola pasada",
+          "Estación de autolimpieza 8 en 1",
+          "AI Magic Cleaning",
+          "Diseño compacto y navegación ágil"
+        ],
+        "en": [
+          "4-in-1 Versatile Cleaning",
+          "Real-time Roller Mop Self-cleaning",
+          "Streak-Free in One Pass",
+          "8-in-1 Self-Cleaning Station",
+          "AI Magic Cleaning",
+          "Compact Design, Agile Navigation"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones (L×An×Al)",
+            "en": "Dimensions (L*W*H)"
+          },
+          "value": {
+            "es": "500 × 380 × 580 mm (19,69 × 14,96 × 22,83 in)",
+            "en": "500 * 380 * 580 mm (19.69 * 14.96 * 22.83 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "aprox. 45 kg (99,2 lbs)",
+            "en": "approx. 45 kg (99.2 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de desplazamiento",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "Máx. 1,0 m/s (3,28 ft/s)",
+            "en": "Max 1.0 m/s (3.28 ft/s)"
+          }
+        },
+        {
+          "label": {
+            "es": "Eficiencia de limpieza",
+            "en": "Cleaning Efficiency"
+          },
+          "value": {
+            "es": "300–720 m²/h (3.229–7.750 ft²/h)",
+            "en": "300 - 720 m²/h (3,229 - 7,750 ft²/h)"
+          }
+        },
+        {
+          "label": {
+            "es": "Anchura de limpieza",
+            "en": "Cleaning Width"
+          },
+          "value": {
+            "es": "Fregado/mopa: 30 cm（11.81 in/ 0.98ft） · Barrido/aspirado: 39 cm（15.35 in/ 1.28ft）",
+            "en": "Scrub / Dust-mopping: 30 cm（11.81 in/ 0.98ft） · Sweep / Vacuuming: 39 cm（15.35 in/ 1.28ft）"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad depósito agua limpia/sucia",
+            "en": "Clean Water Tank / Waste Water Tank Capacity"
+          },
+          "value": {
+            "es": "Depósito de agua limpia 8 L (2,11 gal) · Depósito de agua sucia 7,2 L (1,9 gal)",
+            "en": "Clean Water Tank 8 L (2.11 gal) · Waste Water Tank 7.2 L (1.9 gal)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad del depósito de polvo",
+            "en": "Dust Box Capacity"
+          },
+          "value": {
+            "es": "2,5 L (0,66 gal)",
+            "en": "2.5 L (0.66 gal)"
+          }
+        },
+        {
+          "label": {
+            "es": "Paso mínimo (ancho/alto)",
+            "en": "Min. Clearance (Width / Height)"
+          },
+          "value": {
+            "es": "50 cm (19,69 in) / 60 cm (23,62 in)",
+            "en": "50 cm (19.69 in / 1.64 ft) / 60 cm (23.62 in / 1.97 ft)"
+          }
+        }
+      ],
+      "image": "/media/pudu/c97d56e2be64a9e7.webp",
+      "banner": "/media/pudu/611b835ff09e4b9c.webp",
+      "videoSource": "https://cdn.pudutech.com/ET_1_En_cb773c5eee.mp4",
+      "source": "https://www.pudurobotics.com/en/products/et1",
+      "sourceEs": "https://www.pudurobotics.com/es/products/et1",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/94d56f3552955f2e.mp4",
+      "poster": "/media/pudu/94d56f3552955f2e-poster.jpg"
+    },
+    {
+      "slug": "pudu-cc1-pro-disc",
+      "name": "PUDU CC1 Pro Disc",
+      "category": "cleaning",
+      "description": {
+        "es": "Fregador mediano de discos con IA nativa",
+        "en": "AI-Native Mid-Size Disc Scrubber-Dryer Robot"
+      },
+      "features": {
+        "es": [
+          "Fregado con doble cepillo de disco",
+          "25 kg de presión de fregado",
+          "Múltiples cepillos y pads de disco",
+          "movilidad superior",
+          "Limpieza inteligente con IA",
+          "Cepillo de disco de liberación rápida"
+        ],
+        "en": [
+          "Dual-Disc Brush Scrubbing",
+          "25 kg Scrubbing Pressure",
+          "Multiple Disc Brushes & Pads",
+          "Superior Mobility",
+          "AI Magic Cleaning",
+          "Quick-Release Disc Brush"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "69 Ah",
+            "en": "69 Ah"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "Aprox. 4,5 h",
+            "en": "About 4.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "Fregado: máx. 5,3 h (modo estándar: más de 3,8 h)",
+            "en": "Scrubbing: Up to 5.3 h (3.8 h+ in Standard Mode)"
+          }
+        },
+        {
+          "label": {
+            "es": "Función de limpieza",
+            "en": "Cleaning Capabilities"
+          },
+          "value": {
+            "es": "Fregado, pulido",
+            "en": "Scrubbing, Polishing"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "80 kg",
+            "en": "80 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "629 x 552 x 695 mm",
+            "en": "629 x 552 x 695 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Pantalla",
+            "en": "Display"
+          },
+          "value": {
+            "es": "LCD de 10,1\"",
+            "en": "10.1-inch LCD screen"
+          }
+        },
+        {
+          "label": {
+            "es": "Navegación",
+            "en": "Navigation"
+          },
+          "value": {
+            "es": "Localización por fusión LiDAR + VSLAM 3D",
+            "en": "Lidar + 3D VSLAM Fusion Positioning"
+          }
+        }
+      ],
+      "image": "/media/pudu/0a3a71245deef2d8.webp",
+      "banner": "/media/pudu/d556bceff9281060.webp",
+      "videoSource": "https://cdn.pudutech.com/CC_1_final_en_43_08663878691756_3ab3f93c0a.mp4",
+      "source": "https://www.pudurobotics.com/en/products/cc1-pro-disc",
+      "sourceEs": "https://www.pudurobotics.com/es/products/cc1-pro-disc",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/8ecccd8623972d79.mp4",
+      "poster": "/media/pudu/8ecccd8623972d79-poster.jpg"
+    },
+    {
+      "slug": "pudu-bg1-pro",
+      "name": "PUDU BG1 Pro",
+      "category": "cleaning",
+      "description": {
+        "es": "Robot fregador de gran tamaño nativo de IA",
+        "en": "Al-Native Large Scrubber-Dryer Robot"
+      },
+      "features": {
+        "es": [
+          "Barrido y fregado en una sola pasada",
+          "Limpieza de bordes extensible",
+          "Mantenimiento instantáneo y fácil",
+          "Limpieza mágica con IA",
+          "Percepción 3D mejorada",
+          "Funcionamiento continuo Continua"
+        ],
+        "en": [
+          "One-Pass Sweep & Scrub",
+          "Extendable Edge Cleaning",
+          "Instant, User-friendly Maintenance",
+          "AI Magic Cleaning",
+          "3D Perception Enhancement",
+          "Continuous operation with charging support"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "90 Ah (plataforma de 48V, equivalente a 180 Ah a 24V)",
+            "en": "90 Ah (48V platform, equivalent to 180 Ah at 24V)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "Detección automática de voltaje: Alto voltaje (CA≥180V): aprox. 3 h; Bajo voltaje (CA≤180V): aprox. 4,5 h",
+            "en": "High Voltage (AC ≥ 180V): approx. 3 h · Low Voltage (AC ≤ 180V): approx. 4.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de funcionamiento",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "Barrido y fregado: Máx. 7,5 h",
+            "en": "Sweeping & Scrubbing: Max 7.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de limpieza",
+            "en": "Cleaning Capability"
+          },
+          "value": {
+            "es": "Barrido, fregado, mopa para polvo (opcional), admite fregado de bordes, dosificación automática de detergente dual",
+            "en": "Sweeper-Scrubber Integration · Dust Mopping (Optional) · Polishing (Optional) · Supports Edge Scrubbing · Automatic Dual-Agent Dosing"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "aprox. 344 kg",
+            "en": "approx. 344 kg (approx. 758 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "1195 x 760 x 1303 mm (con enjugador) 1120 x 660 x 1303 mm (sin enjugador)",
+            "en": "1195x760 x 1303 mm (with squeegee) 1120x660 x 1303 mm (without squeegee) 47.0x29.9 x 51.3 in (with squeegee) 44.1x25.9 x 51.3 in (without squeegee)"
+          }
+        },
+        {
+          "label": {
+            "es": "Métodos de navegación",
+            "en": "Navigation Methods"
+          },
+          "value": {
+            "es": "Posicionamiento por fusión 3D Lidar + 3D VSLAM",
+            "en": "3D Lidar + 3D VSLAM Fusion Positioning"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de crucero",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "0,2 ~ 1,2 m/s",
+            "en": "0.2~1.2 m/s (0.66~ 3.94 fts)"
+          }
+        }
+      ],
+      "image": "/media/pudu/9855be10d435154e.webp",
+      "banner": "/media/pudu/9cf0e04026b7272c.webp",
+      "videoSource": "https://cdn.pudutech.com/final_version_en_d5a38ba7c7.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudu-bg1-series",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudu-bg1-series",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/5a428e12f7f89cfc.mp4",
+      "poster": "/media/pudu/5a428e12f7f89cfc-poster.jpg"
+    },
+    {
+      "slug": "pudu-bg1",
+      "name": "PUDU BG1",
+      "category": "cleaning",
+      "description": {
+        "es": "Robot fregador de gran tamaño nativo de IA",
+        "en": "Al-Native Large Scrubber-Dryer Robot"
+      },
+      "features": {
+        "es": [
+          "Barrido y fregado en una sola pasada",
+          "Limpieza de bordes extensible",
+          "Mantenimiento instantáneo y fácil",
+          "Limpieza mágica con IA",
+          "Percepción 3D mejorada",
+          "Funcionamiento continuo Continua"
+        ],
+        "en": [
+          "One-Pass Sweep & Scrub",
+          "Extendable Edge Cleaning",
+          "Instant, User-friendly Maintenance",
+          "AI Magic Cleaning",
+          "3D Perception Enhancement",
+          "Continuous operation with charging support"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "90 Ah (plataforma de 48V, equivalente a 180 Ah a 24V)",
+            "en": "90 Ah (48V platform, equivalent to 180 Ah at 24V)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "Detección automática de voltaje: Alto voltaje (CA≥180V): aprox. 3 h; Bajo voltaje (CA≤180V): aprox. 4,5 h",
+            "en": "Automatic Voltage Detection: High voltage (AC≥180V): about 3 h; Low voltage (AC≤180V): about 4.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de funcionamiento",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "Barrido y fregado: Máx. 7,5 h",
+            "en": "Sweeping & Scrubbing: Max 7.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de limpieza",
+            "en": "Cleaning Capability"
+          },
+          "value": {
+            "es": "Barrido, fregado, mopa para polvo (opcional), admite fregado de bordes, dosificación automática de detergente dual",
+            "en": "Sweeper-scrubber integration, Dust Mopping (optional), Polishing( optional), Supports edge scrubbing, automatic dual agent dosing"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "aprox. 344 kg",
+            "en": "approx. 344 kg (approx. 758 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "1195 x 760 x 1303 mm (con enjugador) 1120 x 660 x 1303 mm (sin enjugador)",
+            "en": "1195x760 x 1303 mm (with squeegee) 1120x660 x 1303 mm (without squeegee) 47.0x29.9 x 51.3 in (with squeegee) 44.1x25.9 x 51.3 in (without squeegee)"
+          }
+        },
+        {
+          "label": {
+            "es": "Métodos de navegación",
+            "en": "Navigation Methods"
+          },
+          "value": {
+            "es": "Posicionamiento por fusión Lidar + 3D VSLAM",
+            "en": "Lidar + 3D VSLAM Fusion Positioning"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de crucero",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "0,2 ~ 1,0 m/s",
+            "en": "0.2 ~ 1.0 m/s (0.66 ~ 3.28 ft/s)"
+          }
+        }
+      ],
+      "image": "/media/pudu/69c5191051de85cc.webp",
+      "banner": "/media/pudu/9cf0e04026b7272c.webp",
+      "videoSource": "https://cdn.pudutech.com/final_version_en_d5a38ba7c7.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudu-bg1-series",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudu-bg1-series",
+      "new": true,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/5a428e12f7f89cfc.mp4",
+      "poster": "/media/pudu/5a428e12f7f89cfc-poster.jpg"
+    },
+    {
+      "slug": "pudu-d5-series",
+      "name": "PUDU D5 Series",
+      "category": "ai",
+      "description": {
+        "es": "Robot cuadrúpedo autónomo de grado industrial",
+        "en": "Industry-Grade Autonomous Quadruped Robot"
+      },
+      "features": {
+        "es": [
+          "Plataforma de Computación Potenciada por NVIDIA",
+          "Percepción 360° para Garantía de Seguridad",
+          "Movilidad Todo Terreno",
+          "Adaptabilidad a Todo Clima",
+          "Interacción Intuitiva por Voz y Gestos",
+          "Compatible con Múltiples Periféricos"
+        ],
+        "en": [
+          "NVIDIA-Powered Computing Platform",
+          "360° Perception for Safety Assurance",
+          "All-Terrain Mobility",
+          "All-Weather Adaptability",
+          "Intuitive Voice & Gesture Interaction",
+          "Compatible with Multiple Peripherals"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Variantes de la familia",
+            "en": "Family variants"
+          },
+          "value": {
+            "es": "D5 / D5-W",
+            "en": "D5 / D5-W"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones de pie",
+            "en": "Standing dimensions"
+          },
+          "value": {
+            "es": "900 × 543 × 572 mm",
+            "en": "900 × 543 × 572 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso con batería",
+            "en": "Weight with battery"
+          },
+          "value": {
+            "es": "56 kg",
+            "en": "56 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Batería",
+            "en": "Battery"
+          },
+          "value": {
+            "es": "1,000 Wh",
+            "en": "1,000 Wh"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía por versión",
+            "en": "Runtime by version"
+          },
+          "value": {
+            "es": "D5: 2–2.5 h / D5-W: 2–3 h",
+            "en": "D5: 2–2.5 h / D5-W: 2–3 h"
+          }
+        }
+      ],
+      "image": "/media/pudu/4c32be5c31d727ac.webp",
+      "banner": "/media/pudu/126568e37de17963.webp",
+      "videoSource": "https://cdn.pudutech.com/PUDU_D5_EN_fb2f868529.mp4",
+      "source": "https://www.pudurobotics.com/en/products/d5",
+      "sourceEs": "https://www.pudurobotics.com/es/products/d5",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/9e0d7b60a0d16f5a.mp4",
+      "poster": "/media/pudu/9e0d7b60a0d16f5a-poster.jpg"
+    },
+    {
+      "slug": "pudu-t150",
+      "name": "PUDU T150",
+      "category": "industrial",
+      "description": {
+        "es": "Robot industrial para cargas ligeras",
+        "en": "Light-payload Industrial Delivery Robot"
+      },
+      "features": {
+        "es": [
+          "Despliegue y mapeo",
+          "Navegación de precisión",
+          "Diseño de una pieza",
+          "Operación intuitiva"
+        ],
+        "en": [
+          "Rapid Deployment in 1 Hour",
+          "Precision Navigation & Stability",
+          "Aerospace-Grade Unibody Design",
+          "Intuitive Operation",
+          "Adaptability in Complex Environments",
+          "Continuous operation with charging support"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Modelo",
+            "en": "Model Number"
+          },
+          "value": {
+            "es": "WTIDL0",
+            "en": "WTIDL0"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Machine Dimensions"
+          },
+          "value": {
+            "es": "835mm×500mm×1350mm · (32.8 in × 19.7 in × 53.1 in)",
+            "en": "835mm×500mm×1350mm · (32.8 in × 19.7 in × 53.1 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Machine Weight"
+          },
+          "value": {
+            "es": "81KG · (178.57lbs)",
+            "en": "81KG · (178.57lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Altura de elevación",
+            "en": "Lifting Height"
+          },
+          "value": {
+            "es": "60mm · (2.36 in)",
+            "en": "60mm · (2.36 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Carga máxima",
+            "en": "Maximum load"
+          },
+          "value": {
+            "es": "150KG · (330.7 lbs)",
+            "en": "150KG · (330.7 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "30 AH",
+            "en": "30 AH"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "2h · (0%-90%)",
+            "en": "2h · (0%-90%)"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía",
+            "en": "Operating Time"
+          },
+          "value": {
+            "es": "12h · (sin carga)",
+            "en": "12h · (no-load)"
+          }
+        }
+      ],
+      "image": "/media/pudu/87220823e9694352.webp",
+      "banner": "/media/pudu/8692313ba52951ef.webp",
+      "videoSource": "",
+      "source": "https://www.pudurobotics.com/en/products/puduT150",
+      "sourceEs": "https://www.pudurobotics.com/es/products/puduT150",
+      "new": false,
+      "verifiedAt": "2026-09-13"
+    },
+    {
+      "slug": "pudu-mt1-max",
+      "name": "PUDU MT1 Max",
+      "category": "cleaning",
+      "description": {
+        "es": "Barredora robótica con percepción 3D e IA",
+        "en": "Al-powered 3D Perception Robotic Sweeper"
+      },
+      "features": {
+        "es": [
+          "Percepción tridimensional",
+          "Limpieza con IA",
+          "Interacción activa",
+          "Operación autónoma"
+        ],
+        "en": [
+          "3D Perception Integration",
+          "Magic Cleaning",
+          "Intelligent Active Interaction",
+          "Empty the Facility of Any Dirt & Trash",
+          "Covers Up to 100,000㎡",
+          "Continuous operation with charging support"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "840 × 600 × 675 mm",
+            "en": "840 × 600 × 675 mm · (33*23.6*26.6 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "85 kg",
+            "en": "85 kg · (187.39 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidades de Limpieza",
+            "en": "Cleaning Capabilities"
+          },
+          "value": {
+            "es": "Barrido",
+            "en": "Sweeping"
+          }
+        },
+        {
+          "label": {
+            "es": "Rendimiento de Limpieza",
+            "en": "Cleaning Performance"
+          },
+          "value": {
+            "es": "Cobertura Máx. de Limpieza 2200㎡/h · Limpieza Puntual Máx. 7000㎡/h",
+            "en": "Cover Cleaning Max. 2200㎡/h · (23680.6 ft²/h) · Spot Cleaning Max. 7000㎡/h · (75,347 ft²/h)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de Carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "＜3.5 h",
+            "en": "＜3.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de Funcionamiento",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "5-10 h, Modo Estándar 8 h",
+            "en": "5-10 h, Standard Mode 8 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de la Batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "60 Ah",
+            "en": "60 Ah"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de Crucero",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "0.2 m/s ~ 1.2 m/s (ajustable)",
+            "en": "0.2 m/s ~ 1.2 m/s (adjustable) · (0.66 ft/s–3.94 ft/s)"
+          }
+        }
+      ],
+      "image": "/media/pudu/58b46cf7c81bab7a.webp",
+      "banner": "/media/pudu/6730afed82ac7df2.webp",
+      "videoSource": "https://cdn.pudutech.com/mt1_max_en_e4929448aa.mp4",
+      "source": "https://www.pudurobotics.com/en/products/mt1-max",
+      "sourceEs": "https://www.pudurobotics.com/es/products/mt1-max",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/833ad9704e506175.mp4",
+      "poster": "/media/pudu/833ad9704e506175-poster.jpg"
+    },
+    {
+      "slug": "pudu-mt1-vac",
+      "name": "PUDU MT1 Vac",
+      "category": "cleaning",
+      "description": {
+        "es": "Barredora y aspiradora robótica con IA",
+        "en": "Al-powered Robotic Sweeper & Vacuum"
+      },
+      "features": {
+        "es": [
+          "Aspiración de alta potencia",
+          "Limpieza de grandes superficies",
+          "Autonomía extendida",
+          "Limpieza adaptativa con IA"
+        ],
+        "en": [
+          "Powerful Suction",
+          "High Efficiency",
+          "Extended Run-time",
+          "AI-driven Adaptive Cleaning",
+          "Quick-Release Dust Mop Module",
+          "Hand-vacuum Extension"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "840 x 600 x 490 mm",
+            "en": "840 x 600 x 490 mm · (33*23.6*19.3 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "75 kg",
+            "en": "75 kg · (165.35 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Rendimiento de limpieza",
+            "en": "Cleaning Performance"
+          },
+          "value": {
+            "es": "Máx. 1400 ㎡/h",
+            "en": "Max.1400 ㎡/h · (15,069.47 ft²/h)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidades de limpieza",
+            "en": "Cleaning Capabilities"
+          },
+          "value": {
+            "es": "Barrido, aspirado, mopa de polvo",
+            "en": "Sweeping, Vacuuming, Dust Mopping"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "＜ 3.5 h",
+            "en": "＜ 3.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de funcionamiento",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "3-6.5 h · Modo estándar de barrido y aspirado en suelos duros: 4 h",
+            "en": "3-6.5 h · Standard sweep and vacuum mode on hard floors: 4h"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de crucero",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "0.2 m/s ~ 1.2 m/s (ajustable)",
+            "en": "0.2 m/s ~ 1.2 m/s · (0.66 ft/s – 3.94 ft/s) (adjustable)"
+          }
+        },
+        {
+          "label": {
+            "es": "Nivel de filtración de aire",
+            "en": "Air Filtration Level"
+          },
+          "value": {
+            "es": "H11 (opcional H13)",
+            "en": "H11 (optional H13)"
+          }
+        }
+      ],
+      "image": "/media/pudu/43493f6514990ad9.webp",
+      "banner": "/media/pudu/ee4a9fb42fa3829b.webp",
+      "videoSource": "https://cdn.pudutech.com/mt1_vac_en_2782175e1b.mp4",
+      "source": "https://www.pudurobotics.com/en/products/mt1-vac",
+      "sourceEs": "https://www.pudurobotics.com/es/products/mt1-vac",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/73b968971114d38d.mp4",
+      "poster": "/media/pudu/73b968971114d38d-poster.jpg"
+    },
+    {
+      "slug": "pudu-t600",
+      "name": "PUDU T600",
+      "category": "industrial",
+      "description": {
+        "es": "Robot industrial de reparto de gran carga",
+        "en": "Heavy-payload Industrial Delivery Robot"
+      },
+      "features": {
+        "es": [
+          "Dos modos, seleccionables libremente.",
+          "Capacidad de carga de 600 kg",
+          "Reconocimiento de grupos de estanterías",
+          "Compatibilidad con el protocolo VDA5050",
+          "Programación prioritaria de ascensores libres",
+          "Implementación local (on‑premises)"
+        ],
+        "en": [
+          "Two modes, Freely Selectable",
+          "600 KG Payload Capacity",
+          "Rack Group Recognition",
+          "Support VDA5050 Protocol",
+          "Idle Elevator Priority Scheduling",
+          "On-premises Deployment"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Modelo de producto",
+            "en": "Model Number"
+          },
+          "value": {
+            "es": "WTIDL2",
+            "en": "WTIDL2"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "960 mm * 500 mm * 1350 mm",
+            "en": "960 mm * 500 mm * 1350 mm · (37.8 in * 19.7 in * 53.1 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "112 kg",
+            "en": "112 KG · (247 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Carga máxima",
+            "en": "Maximum load"
+          },
+          "value": {
+            "es": "600 kg",
+            "en": "600 KG · (1322 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "30 Ah",
+            "en": "30 AH"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "2 H (del 0% al 90%)",
+            "en": "2 H (from 0% to 90%)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de funcionamiento",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "12 H (sin carga)",
+            "en": "12 H (none load)"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de crucero",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "0.2~1.2 m/s",
+            "en": "0.2~1.2 m/s · (0.67~3.94 ft/s)"
+          }
+        }
+      ],
+      "image": "/media/pudu/b2ffcacc1073f641.webp",
+      "banner": "/media/pudu/2440becb07b05002.webp",
+      "videoSource": "https://cdn.pudutech.com/pudu_t600_series_en_25f62f37d8.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudut600",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudut600",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/2eeaa59debba187d.mp4",
+      "poster": "/media/pudu/2eeaa59debba187d-poster.jpg"
+    },
+    {
+      "slug": "pudu-t600-underride",
+      "name": "PUDU T600 Underride",
+      "category": "industrial",
+      "description": {
+        "es": "Plataforma de entrega industrial flexible y eficiente",
+        "en": "Flexible & Efficient Industrial Delivery Platform"
+      },
+      "features": {
+        "es": [
+          "Dos modos, seleccionables libremente.",
+          "Capacidad de carga de 600 kg",
+          "Reconocimiento de grupos de estanterías",
+          "Compatibilidad con el protocolo VDA5050",
+          "Programación prioritaria de ascensores inactivos",
+          "Implementación local (on‑premises)"
+        ],
+        "en": [
+          "Two modes, Freely Selectable.",
+          "600 KG Payload Capacity",
+          "Rack Group Recognition",
+          "Support VDA5050 Protocol",
+          "Idle Elevator Priority Scheduling",
+          "On-premises Deployment"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Modelo de producto",
+            "en": "Model Number"
+          },
+          "value": {
+            "es": "WTIDU2",
+            "en": "WTIDU2"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "845 mm * 500 mm * 255 mm",
+            "en": "845 mm * 500 mm * 255 mm · (33.3 in * 19.7 in * 10.0 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "94 kg",
+            "en": "94 KG · (208 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Carga máxima",
+            "en": "Maximum load"
+          },
+          "value": {
+            "es": "600 kg",
+            "en": "600 KG · (1322 lbs)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de la batería",
+            "en": "Lifting Height"
+          },
+          "value": {
+            "es": "30 Ah",
+            "en": "60mm (2.36 in)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Battery Capacity"
+          },
+          "value": {
+            "es": "2 H (del 0% al 90%)",
+            "en": "30 AH"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de funcionamiento",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "12 H (sin carga)",
+            "en": "2 H (from 0% to 90%)"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de crucero",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "0.2~1.2 m/s",
+            "en": "12 H (none load)"
+          }
+        }
+      ],
+      "image": "/media/pudu/c7fb4359339b94b8.webp",
+      "banner": "/media/pudu/2440becb07b05002.webp",
+      "videoSource": "https://cdn.pudutech.com/pudu_t600_series_en_25f62f37d8.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudut600",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudut600",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/2eeaa59debba187d.mp4",
+      "poster": "/media/pudu/2eeaa59debba187d-poster.jpg"
+    },
+    {
+      "slug": "pudu-cc1-pro",
+      "name": "PUDU CC1 Pro",
+      "category": "cleaning",
+      "description": {
+        "es": "Robot de limpieza autónomo con IA",
+        "en": "AI-powered Autonomous Cleaning Robot"
+      },
+      "features": {
+        "es": [
+          "Fregado localizado mediante IA",
+          "Detección del rendimiento de limpieza en tiempo real mediante IA",
+          "Control de intensidad de limpieza mediante IA",
+          "Supervisión automática de componentes mediante IA",
+          "Limpieza versátil 4 en 1",
+          "Posicionamiento VSLAM+"
+        ],
+        "en": [
+          "AI Spot Scrubbing",
+          "AI Real-Time Cleaning Performance Detection",
+          "AI Cleaning Intensity Control",
+          "AI Components Self-Monitoring",
+          "4-in-1 Versatile Cleaning",
+          "VSLAM+ Positioning"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Funciones",
+            "en": "Cleaning functions"
+          },
+          "value": {
+            "es": "Barrido, aspirado, trapeado y fregado",
+            "en": "Sweeping, vacuuming, dust mopping and scrubbing"
+          }
+        },
+        {
+          "label": {
+            "es": "Tanques de agua",
+            "en": "Water tanks"
+          },
+          "value": {
+            "es": "15 L limpia / 15 L residual",
+            "en": "15 L clean / 15 L waste"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "629 × 552 × 695 mm",
+            "en": "629 × 552 × 695 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía de referencia",
+            "en": "Reference runtime"
+          },
+          "value": {
+            "es": "5 h fregado / 9 h trapeado silencioso",
+            "en": "5 h scrubbing / 9 h silent mopping"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging time"
+          },
+          "value": {
+            "es": "Aproximadamente 3 h",
+            "en": "About 3 h"
+          }
+        }
+      ],
+      "image": "/media/pudu/aa9708d48f93b4f8.webp",
+      "banner": "",
+      "videoSource": "https://cdn.pudutech.com/official-website/product/CC1Pro/S-10.mp4",
+      "source": "https://www.pudurobotics.com/en/products/cc1-pro",
+      "sourceEs": "https://www.pudurobotics.com/es/products/cc1-pro",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/20e9d3cea0f54a0d.mp4",
+      "poster": "/media/pudu/20e9d3cea0f54a0d-poster.jpg"
+    },
+    {
+      "slug": "flashbot-arm",
+      "name": "FlashBot Arm",
+      "category": "ai",
+      "description": {
+        "es": "Robot de servicio semihumanoide con brazos",
+        "en": "Semi-Humanoid Embodied AI Service Robot"
+      },
+      "features": {
+        "es": [
+          "Decisiones inteligentes",
+          "Operación autónoma",
+          "Brazos y manos articuladas",
+          "Interacción multimodal"
+        ],
+        "en": [
+          "Intelligent Decision Making",
+          "Autonomous Operation",
+          "Dual Arms & Dexterous Hands",
+          "Proactively Adapt to Scenarios",
+          "Multiple Security Protections",
+          "Multimodal Natural interaction"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Tipo",
+            "en": "Type"
+          },
+          "value": {
+            "es": "Robot semihumanoide de servicio",
+            "en": "Semi-humanoid service robot"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "539 × 515 × 1440 mm",
+            "en": "539 × 515 × 1440 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad publicada",
+            "en": "Published capacity"
+          },
+          "value": {
+            "es": "15 kg",
+            "en": "15 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía sin carga",
+            "en": "Unloaded runtime"
+          },
+          "value": {
+            "es": "8 h",
+            "en": "8 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging time"
+          },
+          "value": {
+            "es": "4 h",
+            "en": "4 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Paso mínimo",
+            "en": "Minimum passage"
+          },
+          "value": {
+            "es": "65 cm",
+            "en": "65 cm"
+          }
+        }
+      ],
+      "image": "/media/pudu/c8b1575b771aa2fd.webp",
+      "banner": "",
+      "videoSource": "https://cdn.pudutech.com/official-website/flashbot_arm/S2-1.mp4",
+      "source": "https://www.pudurobotics.com/en/products/flashbot-arm",
+      "sourceEs": "https://www.pudurobotics.com/es/products/flashbot-arm",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/d933378661f13ba3.mp4",
+      "poster": "/media/pudu/d933378661f13ba3-poster.jpg"
+    },
+    {
+      "slug": "pudu-mt1",
+      "name": "PUDU MT1",
+      "category": "cleaning",
+      "description": {
+        "es": "Barredor robótico con tecnología de IA",
+        "en": "AI Powered Robotic Sweeper"
+      },
+      "features": {
+        "es": [
+          "Ningún desecho es demasiado grande o pequeño",
+          "Reconocimiento de residuos mediante IA",
+          "Limpieza localizada mediante IA",
+          "Adaptación rápida a entornos cambiantes",
+          "Funcionamiento continuo 24 horas al día, 7 días a la semana",
+          "Diseño intuitivo"
+        ],
+        "en": [
+          "No Debris Too Big or Small",
+          "Al Trash Recognition",
+          "AI Spot Cleaning",
+          "Rapid Adaptation to Changing Environments",
+          "Continuous operation with charging support",
+          "User-Friendly Design"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Funciones",
+            "en": "Functions"
+          },
+          "value": {
+            "es": "Barrido autónomo con IA",
+            "en": "AI-powered autonomous sweeping"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "840 × 600 × 490 mm",
+            "en": "840 × 600 × 490 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Depósito de residuos",
+            "en": "Waste bin"
+          },
+          "value": {
+            "es": "35 L",
+            "en": "35 L"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía según nivel de limpieza",
+            "en": "Runtime by cleaning level"
+          },
+          "value": {
+            "es": "4–8 h",
+            "en": "4–8 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging time"
+          },
+          "value": {
+            "es": "<3 h",
+            "en": "<3 h"
+          }
+        }
+      ],
+      "image": "/media/pudu/df3cae0174adb52c.webp",
+      "banner": "",
+      "videoSource": "https://cdn.pudutech.com/official-website/mt1/S2-1.mp4",
+      "source": "https://www.pudurobotics.com/en/products/mt1",
+      "sourceEs": "https://www.pudurobotics.com/es/products/mt1",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/5d67dee024d796b4.mp4",
+      "poster": "/media/pudu/5d67dee024d796b4-poster.jpg"
+    },
+    {
+      "slug": "pudu-d9",
+      "name": "PUDU D9",
+      "category": "ai",
+      "description": {
+        "es": "El primer robot humanoide bípedo de tamaño completo de Pudu Robotics",
+        "en": "The First Full-Size Biped Humanoid Robot by Pudu Robotics"
+      },
+      "features": {
+        "es": [
+          "Diseño bípedo similar al humano",
+          "Solución de navegación semántica visual",
+          "Brazo biónico con alta capacidad de carga",
+          "Capacidad integral escalable",
+          "Percepción multimodal de precisión alta",
+          "Interacción natural entre personas y robots"
+        ],
+        "en": [
+          "Human-like Bipedal Design",
+          "Visual Semantic Navigation Solution",
+          "High Payload Bionic Arm",
+          "Scalable End-to-end Capability",
+          "Multi-modal High-precision Perception",
+          "Natural Human-robot interaction"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Altura",
+            "en": "Height"
+          },
+          "value": {
+            "es": "170 cm",
+            "en": "170 cm"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "65 kg",
+            "en": "65 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Grados de libertad totales",
+            "en": "Total degrees of freedom"
+          },
+          "value": {
+            "es": "42",
+            "en": "42"
+          }
+        },
+        {
+          "label": {
+            "es": "Carga en entorno de prueba",
+            "en": "Payload in test environment"
+          },
+          "value": {
+            "es": "20 kg (10 kg por brazo)",
+            "en": "20 kg (10 kg per arm)"
+          }
+        },
+        {
+          "label": {
+            "es": "Batería",
+            "en": "Battery"
+          },
+          "value": {
+            "es": "15 Ah (0.72 kWh)",
+            "en": "15 Ah (0.72 kWh)"
+          }
+        }
+      ],
+      "image": "/media/pudu/0c0a5ed869b0ef32.webp",
+      "banner": "",
+      "videoSource": "https://cdn.pudutech.com/official-website/d9/section2_bg.mp4",
+      "source": "https://www.pudurobotics.com/en/products/d9",
+      "sourceEs": "https://www.pudurobotics.com/es/products/d9",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/0470cb16002f6397.mp4",
+      "poster": "/media/pudu/0470cb16002f6397-poster.jpg"
+    },
+    {
+      "slug": "pudu-d7",
+      "name": "PUDU D7",
+      "category": "ai",
+      "description": {
+        "es": "Robot inteligente semihumanoide de Pudu Robotics",
+        "en": "Semi-humanoid Intelligent Robot"
+      },
+      "features": {
+        "es": [
+          "Plataforma informática de alto rendimiento",
+          "Chasis omnidireccional de alto rendimiento",
+          "Posicionamiento y navegación de alta precisión",
+          "Alto grado de libertad de movilidad",
+          "Percepción multimodal",
+          "Operaciones de aprendizaje generalizadas"
+        ],
+        "en": [
+          "High-Performance Computing Platform",
+          "High-Performance Omidirectional Chassis",
+          "High-Accuracy Positioning and Navigation",
+          "High Degree of Freedom in Mobility",
+          "Multimodal Perception",
+          "Generalized Learning Operations"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Generación de referencia",
+            "en": "Reference generation"
+          },
+          "value": {
+            "es": "D7 industrial · lanzamiento junio 2026",
+            "en": "Industrial D7 · June 2026 launch"
+          }
+        },
+        {
+          "label": {
+            "es": "Tipo",
+            "en": "Type"
+          },
+          "value": {
+            "es": "Robot semihumanoide industrial",
+            "en": "Industrial semi-humanoid robot"
+          }
+        },
+        {
+          "label": {
+            "es": "Carga publicada",
+            "en": "Published payload"
+          },
+          "value": {
+            "es": "Hasta 14 kg",
+            "en": "Up to 14 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Altura de operación publicada",
+            "en": "Published operating height"
+          },
+          "value": {
+            "es": "Hasta 2 m",
+            "en": "Up to 2 m"
+          }
+        },
+        {
+          "label": {
+            "es": "Modelo de IA del fabricante",
+            "en": "Manufacturer AI model"
+          },
+          "value": {
+            "es": "PuduFM 1.0",
+            "en": "PuduFM 1.0"
+          }
+        }
+      ],
+      "image": "/media/pudu/197545003914be0b.webp",
+      "banner": "",
+      "videoSource": "",
+      "source": "https://www.pudurobotics.com/en/news/pudu-d7-industrial-humanoid-robot-launch",
+      "sourceEs": "https://www.pudurobotics.com/es/news/pudu-d7-industrial-humanoid-robot-launch",
+      "new": false,
+      "verifiedAt": "2026-09-13"
+    },
+    {
+      "slug": "flashbot-max",
+      "name": "FlashBot Max",
+      "category": "delivery",
+      "description": {
+        "es": "Experto de reparto en edificios",
+        "en": "Building Delivery Expert"
+      },
+      "features": {
+        "es": [
+          "Reparto VSLAM+ en algunos exteriores",
+          "Soluciones de hardware y en la nube para el control de ascensores",
+          "Interacción de voz mediante IA",
+          "Integración de IoT completa",
+          "Reinicio remoto",
+          "Compartimentos modulares ajustables"
+        ],
+        "en": [
+          "VSLAM+ Semi-outdoor Delivery",
+          "Cloud & Hardware Solutions for Elevator Control",
+          "AI Voice Interaction",
+          "Full-Scope loT Integration",
+          "Remote Reset",
+          "Modular Adjustable Compartments"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Carga por compartimento",
+            "en": "Payload per compartment"
+          },
+          "value": {
+            "es": "10 kg",
+            "en": "10 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Compartimentos",
+            "en": "Compartments"
+          },
+          "value": {
+            "es": "2–4, configurables",
+            "en": "2–4, configurable"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "538 × 534 × 1052 mm",
+            "en": "538 × 534 × 1052 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía de referencia",
+            "en": "Reference runtime"
+          },
+          "value": {
+            "es": "9 h",
+            "en": "9 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging time"
+          },
+          "value": {
+            "es": "4 h",
+            "en": "4 h"
+          }
+        }
+      ],
+      "image": "/media/pudu/e10a9b917eaa118f.webp",
+      "banner": "",
+      "videoSource": "https://cdn.pudutech.com/official-website/flashbot_new/s10.mp4",
+      "source": "https://www.pudurobotics.com/en/products/flashbot-new",
+      "sourceEs": "https://www.pudurobotics.com/es/products/flashbot-new",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/99705876e487312f.mp4",
+      "poster": "/media/pudu/99705876e487312f-poster.jpg"
+    },
+    {
+      "slug": "pudu-sh1",
+      "name": "PUDU SH1",
+      "category": "cleaning",
+      "description": {
+        "es": "Fregadora y secadora vertical inteligente",
+        "en": "Smart Upright Scrubber Dryer"
+      },
+      "features": {
+        "es": [
+          "Separación de aire-líquido-desechos",
+          "Limpieza medible",
+          "Interfaz de pantalla táctil inteligente",
+          "Supervisión de componentes en tiempo real",
+          "Diseñado para manchas difíciles",
+          "Limpieza multidimensional"
+        ],
+        "en": [
+          "Air-liquid-debris Separation",
+          "Measurable Cleaning",
+          "Smart Touch Screen Interface",
+          "Real-time Components Monitoring",
+          "Built for Stubborn Stains",
+          "Multi-dimensional Cleaning"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Operación",
+            "en": "Operation"
+          },
+          "value": {
+            "es": "Con operador",
+            "en": "Operator-guided"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "49 × 53 × 120 cm",
+            "en": "49 × 53 × 120 cm"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "17 kg",
+            "en": "17 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Tanques de agua",
+            "en": "Water tanks"
+          },
+          "value": {
+            "es": "4 L limpia / 4 L residual",
+            "en": "4 L clean / 4 L waste"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía de referencia",
+            "en": "Reference runtime"
+          },
+          "value": {
+            "es": "70 min estándar / 100 min ECO",
+            "en": "70 min standard / 100 min ECO"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging time"
+          },
+          "value": {
+            "es": "2.5 h",
+            "en": "2.5 h"
+          }
+        }
+      ],
+      "image": "/media/pudu/4a6463dacebe9803.webp",
+      "banner": "",
+      "videoSource": "https://cdn.pudutech.com/official-website/pudush/screen02/1.mp4",
+      "source": "https://www.pudurobotics.com/en/products/sh",
+      "sourceEs": "https://www.pudurobotics.com/es/products/sh",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/e0ec98e6a6eae58b.mp4",
+      "poster": "/media/pudu/e0ec98e6a6eae58b-poster.jpg"
+    },
+    {
+      "slug": "pudu-t300",
+      "name": "PUDU T300",
+      "category": "industrial",
+      "description": {
+        "es": "Robot de reparto industrial",
+        "en": "Industrial Delivery Robot"
+      },
+      "features": {
+        "es": [
+          "Posicionamiento Vslam+ flexible",
+          "Percepción omnidireccional",
+          "Capacidad de carga de 300 kg",
+          "Funcionamiento ininterrumpido las 24 horas del día, los 7 días de la semana",
+          "Serie de aplicaciones diversificadas",
+          "Norma ISO 3691-4"
+        ],
+        "en": [
+          "Flexible Vslam+ Positioning",
+          "Omnidirectional Perception",
+          "300kg Load Capacity",
+          "7/24 Non-stop Operation",
+          "Diversified Application Series",
+          "ISO 3691-4 Standard"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Carga máxima",
+            "en": "Maximum payload"
+          },
+          "value": {
+            "es": "300 kg",
+            "en": "300 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Versión de referencia",
+            "en": "Reference version"
+          },
+          "value": {
+            "es": "T300 Standard · WTID01",
+            "en": "T300 Standard · WTID01"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Weight"
+          },
+          "value": {
+            "es": "65 kg",
+            "en": "65 kg"
+          }
+        },
+        {
+          "label": {
+            "es": "Paso mínimo",
+            "en": "Minimum passage"
+          },
+          "value": {
+            "es": "≥60 cm",
+            "en": "≥60 cm"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía con carga completa",
+            "en": "Runtime at full load"
+          },
+          "value": {
+            "es": "8 h",
+            "en": "8 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging time"
+          },
+          "value": {
+            "es": "2 h",
+            "en": "2 h"
+          }
+        }
+      ],
+      "image": "/media/pudu/0779d93b33a25ddc.webp",
+      "banner": "",
+      "videoSource": "",
+      "source": "https://www.pudurobotics.com/en/products/pudut300",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudut300",
+      "new": false,
+      "verifiedAt": "2026-09-13"
+    },
+    {
+      "slug": "bellabot-pro",
+      "name": "BellaBot Pro",
+      "category": "delivery",
+      "description": {
+        "es": "Robot premium de publicidad y reparto",
+        "en": "Premium Delivery & Advertising Robot"
+      },
+      "features": {
+        "es": [
+          "VSLAM+ actualizado",
+          "Interacción de voz mediante IA",
+          "Movilidad mejorada",
+          "Anuncios personalizados"
+        ],
+        "en": [
+          "Upgraded VSLAM +",
+          "AI Voice Interaction",
+          "Superior Mobility",
+          "Customized Advertisement"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Carga máxima",
+            "en": "Maximum payload"
+          },
+          "value": {
+            "es": "40 kg (10 kg por bandeja)",
+            "en": "40 kg (10 kg per tray)"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Dimensions"
+          },
+          "value": {
+            "es": "57 × 55 × 129 cm",
+            "en": "57 × 55 × 129 cm"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía sin carga",
+            "en": "Unloaded runtime"
+          },
+          "value": {
+            "es": "11 h",
+            "en": "11 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging time"
+          },
+          "value": {
+            "es": "4.5 h",
+            "en": "4.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Paso mínimo",
+            "en": "Minimum passage"
+          },
+          "value": {
+            "es": "65 cm",
+            "en": "65 cm"
+          }
+        }
+      ],
+      "image": "/media/pudu/c86e540a67860d69.webp",
+      "banner": "",
+      "videoSource": "https://cdn.pudutech.com/official-website/bellabotpro/S2_1_2.mp4",
+      "source": "https://www.pudurobotics.com/en/products/bellabotpro",
+      "sourceEs": "https://www.pudurobotics.com/es/products/bellabotpro",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/cdfaba804a89c54e.mp4",
+      "poster": "/media/pudu/cdfaba804a89c54e-poster.jpg"
+    },
+    {
+      "slug": "kettybot-pro",
+      "name": "KettyBot Pro",
+      "category": "delivery",
+      "description": {
+        "es": "Dispositivo multitarea flexible",
+        "en": "Flexible Multitasker"
+      },
+      "features": {
+        "es": [
+          "Pantalla de 18,5\" para publicidad personalizada",
+          "Movilidad mejorada",
+          "Varios modos de reparto",
+          "Detección inteligente de bandejas",
+          "Recarga automática"
+        ],
+        "en": [
+          "18.5\" Display for Customized Advertisemen",
+          "Superior Mobility",
+          "Multiple Delivery Modes",
+          "Smart Tray Detection",
+          "Automatic Recharging"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Machine Size"
+          },
+          "value": {
+            "es": "43.5*45*112 cm · (17.13*17.72*44.09 pulgadas)",
+            "en": "43.5*45*112 cm · (17.13*17.72*44.09 inches)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Machine Weight"
+          },
+          "value": {
+            "es": "38 kg · (83.78 libras)",
+            "en": "38 kg · (83.78 pounds)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de carga",
+            "en": "Loading Capacity"
+          },
+          "value": {
+            "es": "10 kg/nivel · (22.05 libras/nivel)",
+            "en": "10 kg/layer · (22.05 pounds/layer)"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía",
+            "en": "Run-time"
+          },
+          "value": {
+            "es": "9 h · (operación sin carga)",
+            "en": "9 h · (no-load operation)"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de desplazamiento",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "Max 1.2 m/s · (Max 3.94 ft/s)",
+            "en": "Max 1.2 m/s · (Max 3.94 ft/s)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "3.5 h",
+            "en": "3.5 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Paso mínimo",
+            "en": "Clearance"
+          },
+          "value": {
+            "es": "≥52 cm · (≥20.47 pulgadas) · (en condiciones específicas)",
+            "en": "≥52 cm · (≥20.47 inches) · (in specific situations)"
+          }
+        },
+        {
+          "label": {
+            "es": "Pantalla publicitaria",
+            "en": "AD Display Size"
+          },
+          "value": {
+            "es": "18.5″",
+            "en": "18.5″"
+          }
+        }
+      ],
+      "image": "/media/pudu/da01a809e3879666.webp",
+      "banner": "/media/pudu/e2978229bc9c2dfe.webp",
+      "videoSource": "https://cdn.pudutech.com/_ab613de8dc.mp4",
+      "source": "https://www.pudurobotics.com/en/products/kettybot_pro",
+      "sourceEs": "https://www.pudurobotics.com/es/products/kettybot_pro",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/d97122b70a2d57ef.mp4",
+      "poster": "/media/pudu/d97122b70a2d57ef-poster.jpg"
+    },
+    {
+      "slug": "pudu-cc1",
+      "name": "PUDU CC1",
+      "category": "cleaning",
+      "description": {
+        "es": "Robot inteligente de limpieza comercial",
+        "en": "Intelligent Commercial Cleaning Robot"
+      },
+      "features": {
+        "es": [
+          "Limpieza versátil 4 en 1",
+          "Carga automática y recarga de agua",
+          "Capacidades IoT",
+          "Consumibles diversificados",
+          "Tanque de agua móvil, sin modificaciones de plomería",
+          "Percepción dinámica del espacio"
+        ],
+        "en": [
+          "4-in-1 Versatile Cleaning",
+          "Auto Power Charging & Water Refill",
+          "IOT Capabilites",
+          "Diversified Consumables",
+          "Mobile Water Tank, No Plumbing Modification",
+          "Dynamic Space Perception"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Modo de limpieza",
+            "en": "Cleaning Mode"
+          },
+          "value": {
+            "es": "Barrido/Trapeado/Fregado/Aspirado",
+            "en": "Sweeping/Mopping/Scrubbing/Vacuuming"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad del tanque de agua",
+            "en": "Water Tank Capacity"
+          },
+          "value": {
+            "es": "Tanque de agua limpia 15 L · Tanque de agua residual 15 L",
+            "en": "Clean Water Tank 15 L · Waste Water Tank 15 L"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "< 3 h",
+            "en": "< 3 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Duración de la batería",
+            "en": "Battery Life"
+          },
+          "value": {
+            "es": "Fregado: 5 h · Barrido+Aspirado+Trapeado: 5 h · Aspirado de alfombras: 4 h · Trapeado silencioso: 9 h",
+            "en": "Scrubbing: 5 h · Sweeping+Vacuuming+Mopping: 5 h · Carpet vacuuming: 4 h · Silent mopping: 9 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Ruido de operación de limpieza",
+            "en": "Cleaning Operating Noise"
+          },
+          "value": {
+            "es": "< 70 dB(A)",
+            "en": "< 70 dB(A)"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad de crucero",
+            "en": "Cruise Speed"
+          },
+          "value": {
+            "es": "Máx 1.2 m/s · (Máx 3.94 ft/s)",
+            "en": "Max 1.2 m/s · (Max 3.94 ft/s)"
+          }
+        },
+        {
+          "label": {
+            "es": "Succión",
+            "en": "Suction"
+          },
+          "value": {
+            "es": "Máx 17000 Pa",
+            "en": "Max 17000 Pa"
+          }
+        },
+        {
+          "label": {
+            "es": "Eficiencia de limpieza",
+            "en": "Cleaning Efficiency"
+          },
+          "value": {
+            "es": "700-1000 ㎡/h · (7534.74-10763.92 ft²/h)",
+            "en": "700-1000 ㎡/h · (7534.74-10763.92 ft²/h)"
+          }
+        }
+      ],
+      "image": "/media/pudu/f1766ee9d81a1a59.webp",
+      "banner": "/media/pudu/768b10e0a62a394e.webp",
+      "videoSource": "https://cdn.pudutech.com/puducc1_en_ec4c1c8f24.mp4",
+      "source": "https://www.pudurobotics.com/en/products/puduCC1",
+      "sourceEs": "https://www.pudurobotics.com/es/products/puduCC1",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/47fbb65352665af0.mp4",
+      "poster": "/media/pudu/47fbb65352665af0-poster.jpg"
+    },
+    {
+      "slug": "bellabot",
+      "name": "BellaBot",
+      "category": "delivery",
+      "description": {
+        "es": "Robot de entrega para hospitalidad",
+        "en": "Premium Delivery Robot"
+      },
+      "features": {
+        "es": [
+          "Interacción multimodal",
+          "Intercambio de batería",
+          "Detección de obstáculos",
+          "Entrega multifunción"
+        ],
+        "en": [
+          "Multimodal Interaction",
+          "Power Exchange Technology",
+          "High-sense & Obstacle Avoidance",
+          "Intelligent Multifunctional Delivery",
+          "Dual SLAM Technology"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Dimensiones",
+            "en": "Machine Size"
+          },
+          "value": {
+            "es": "56.5*53.7*129 cm · (22.24*21.14*50.79 pulgadas)",
+            "en": "56.5*53.7*129 cm · (22.24*21.14*50.79 inches)"
+          }
+        },
+        {
+          "label": {
+            "es": "Materiales",
+            "en": "Machine Material"
+          },
+          "value": {
+            "es": "ABS/aleación de aluminio de grado aeronáutico",
+            "en": "ABS/aircraft-grade aluminum alloy"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía",
+            "en": "Battery Life"
+          },
+          "value": {
+            "es": "13h (sin carga)",
+            "en": "13h (None load)"
+          }
+        },
+        {
+          "label": {
+            "es": "Capacidad de carga",
+            "en": "Load Capacity"
+          },
+          "value": {
+            "es": "Max 40 kg，10 kg/bandeja · (Max 88.18 libras，22.05 libras/bandeja)",
+            "en": "Max 40 kg，10 kg/tray · (Max 88.18 pounds，22.05 pounds/tray)"
+          }
+        },
+        {
+          "label": {
+            "es": "Dimensiones de bandeja",
+            "en": "Tray Size"
+          },
+          "value": {
+            "es": "41.00*50.01 cm · (16.14*19.69 pulgadas)",
+            "en": "41.00*50.01 cm · (16.14*19.69 inches)"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso",
+            "en": "Robot Weight"
+          },
+          "value": {
+            "es": "55 kg · (121.25 libras)",
+            "en": "55 kg · (121.25 pounds)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "4.5 H",
+            "en": "4.5 H"
+          }
+        },
+        {
+          "label": {
+            "es": "Velocidad y pendiente",
+            "en": "Safety"
+          },
+          "value": {
+            "es": "Velocidad: 0.5-1.2 m/s (ajustable) | Ángulo de subida: ≤ 5° · (Velocidad: 1.64-3.94 ft/s (ajustable) | Ángulo de subida: ≤ 5°)",
+            "en": "Speed: 0.5-1.2 m/s (Adjustable) | Climbing angle: ≤ 5° · (Speed: 1.64-3.94 ft/s (Adjustable) | Climbing angle: ≤ 5°)"
+          }
+        }
+      ],
+      "image": "/media/pudu/e430c62288582071.webp",
+      "banner": "/media/pudu/155515a20d8defc9.webp",
+      "videoSource": "https://cdn.pudutech.com/3_D_2db4d70722.mp4",
+      "source": "https://www.pudurobotics.com/en/products/bellabot",
+      "sourceEs": "https://www.pudurobotics.com/es/products/bellabot",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/db277787300c5f30.mp4",
+      "poster": "/media/pudu/db277787300c5f30-poster.jpg"
+    },
+    {
+      "slug": "pudubot-2",
+      "name": "PuduBot 2",
+      "category": "delivery",
+      "description": {
+        "es": "Robot de entrega universal",
+        "en": "Universal Delivery Robot"
+      },
+      "features": {
+        "es": [
+          "Despliegue sin marcadores",
+          "Diversas formas y accesorios",
+          "Auto-carga",
+          "Diseño totalmente cerrado",
+          "Mayor adaptabilidad ambiental"
+        ],
+        "en": [
+          "Marker-less Deployment",
+          "Various Forms & Accessories",
+          "Auto-charging",
+          "Fully Enclosed Machine Design",
+          "Greater Environmental Adaptability"
+        ]
+      },
+      "specs": [
+        {
+          "label": {
+            "es": "Tamaño de la máquina",
+            "en": "Machine Size"
+          },
+          "value": {
+            "es": "58*53.5*129 cm · (22.83*21.06*50.79 pulgadas)",
+            "en": "58*53.5*129 cm · (22.83*21.06*50.79 inches)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tamaño de la bandeja",
+            "en": "Tray Size"
+          },
+          "value": {
+            "es": "52*43.2 cm · (20.47*17.01 pulgadas)",
+            "en": "52*43.2 cm · (20.47*17.01 inches)"
+          }
+        },
+        {
+          "label": {
+            "es": "N.º de bandejas",
+            "en": "No. of Trays"
+          },
+          "value": {
+            "es": "Por defecto 3 · Máximo 7",
+            "en": "Default 3 · Maximum 7"
+          }
+        },
+        {
+          "label": {
+            "es": "Peso de la máquina",
+            "en": "Machine Weight"
+          },
+          "value": {
+            "es": "39 kg · (85.98 libras)",
+            "en": "39 kg · (85.98 pounds)"
+          }
+        },
+        {
+          "label": {
+            "es": "Carga máxima",
+            "en": "Maximum Loads"
+          },
+          "value": {
+            "es": "40 kg · (88.18 libras)",
+            "en": "40 kg · (88.18 pounds)"
+          }
+        },
+        {
+          "label": {
+            "es": "Duración de la batería",
+            "en": "Battery Life"
+          },
+          "value": {
+            "es": "12h (sin carga)、15h (carga completa)",
+            "en": "12h (None load)、15h (Full load)"
+          }
+        },
+        {
+          "label": {
+            "es": "Tiempo de carga",
+            "en": "Charging Time"
+          },
+          "value": {
+            "es": "4h",
+            "en": "4h"
+          }
+        },
+        {
+          "label": {
+            "es": "Ancho de paso",
+            "en": "Path Width"
+          },
+          "value": {
+            "es": "80 cm · (31.50 pulgadas)",
+            "en": "80 cm · (31.50 inches)"
+          }
+        }
+      ],
+      "image": "/media/pudu/f70fc5f9c3fcf47f.webp",
+      "banner": "/media/pudu/23e19eb8173d31f8.webp",
+      "videoSource": "https://cdn.pudutech.com/video_aaa9e8d6a2.mp4",
+      "source": "https://www.pudurobotics.com/en/products/pudubot2",
+      "sourceEs": "https://www.pudurobotics.com/es/products/pudubot2",
+      "new": false,
+      "verifiedAt": "2026-09-13",
+      "video": "/media/pudu/588d03c2ef1a8ddd.mp4",
+      "poster": "/media/pudu/588d03c2ef1a8ddd-poster.jpg"
+    }
+  ],
+  "aliases": {
+    "botmate-serve": "bellabot-pro",
+    "botmate-ads": "kettybot-pro",
+    "botmate-clean": "pudu-cc1",
+    "botmate-clean-mini": "pudu-sh1",
+    "botmate-flex": "pudubot-2",
+    "botmate-cargo-300": "pudu-t300",
+    "botmate-cargo-600": "pudu-t600"
+  },
+  "industries": [
+    {
+      "slug": "food-and-beverage",
+      "title": {
+        "es": "Restaurantes y alimentos",
+        "en": "Food & Beverage"
+      },
+      "description": {
+        "es": "Entrega de alimentos, recolección de vajilla, recepción y cuidado de pisos. Una operación coordinada entre cocina, comedor y equipo de servicio.",
+        "en": "Food delivery, dish return, reception and floor care. Connect kitchen, dining room and service teams."
+      },
+      "image": "/media/pudu/b02c63435d1c9ed2.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Promoción y reparto",
+            "en": "Promote & Delivery"
+          },
+          "image": "/media/pudu/1a4abc6075691154.webp",
+          "models": [
+            "bellabot-pro"
+          ]
+        },
+        {
+          "title": {
+            "es": "Limpieza de pisos",
+            "en": "Floor Cleaning"
+          },
+          "image": "/media/pudu/d951613fb8e23350.webp",
+          "models": [
+            "pudu-sh1",
+            "pudu-cc1"
+          ]
+        }
+      ],
+      "models": [
+        "bellabot-pro",
+        "pudu-sh1",
+        "pudu-cc1"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/food-and-beverage"
+    },
+    {
+      "slug": "retail",
+      "title": {
+        "es": "Retail y centros comerciales",
+        "en": "Retail"
+      },
+      "description": {
+        "es": "Guía a visitantes, comunica promociones y apoya la reposición de productos y la limpieza de los pasillos.",
+        "en": "Guide visitors, display promotions and support restocking and aisle cleaning."
+      },
+      "image": "/media/pudu/94e1117da252031b.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Acerca de la publicidad",
+            "en": "About Advertising"
+          },
+          "image": "/media/pudu/7a4411760748954d.webp",
+          "models": [
+            "bellabot-pro"
+          ]
+        },
+        {
+          "title": {
+            "es": "Acerca de la limpieza",
+            "en": "About Cleaning"
+          },
+          "image": "/media/pudu/c0b00469644fb1ee.webp",
+          "models": [
+            "pudu-cc1"
+          ]
+        },
+        {
+          "title": {
+            "es": "Reabastecimiento",
+            "en": "Restocking"
+          },
+          "image": "/media/pudu/1ea93d3b9b2a63bb.webp",
+          "models": [
+            "pudu-t300"
+          ]
+        }
+      ],
+      "models": [
+        "bellabot-pro",
+        "pudu-cc1",
+        "pudu-t300"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/retail"
+    },
+    {
+      "slug": "hospitality",
+      "title": {
+        "es": "Hoteles y hospitalidad",
+        "en": "Hospitality"
+      },
+      "description": {
+        "es": "Conecta recepción, habitaciones y áreas comunes con entregas, transporte de blancos y limpieza programada.",
+        "en": "Connect reception, guest rooms and public areas through deliveries, linen transport and scheduled cleaning."
+      },
+      "image": "/media/pudu/5df18acb3f1db603.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Reparto en habitaciones de clientes",
+            "en": "Guest Room Delivery"
+          },
+          "image": "/media/pudu/43a666397552ad0b.webp",
+          "models": [
+            "flashbot-max"
+          ]
+        },
+        {
+          "title": {
+            "es": "Limpieza de áreas públicas",
+            "en": "Public Area Cleaning"
+          },
+          "image": "/media/pudu/10214d6f37a5ecf6.webp",
+          "models": [
+            "pudu-cc1",
+            "pudu-sh1"
+          ]
+        },
+        {
+          "title": {
+            "es": "Reparto de equipaje/ropa de cama",
+            "en": "Luggage/Linen Delivery"
+          },
+          "image": "/media/pudu/07a275b281c60c19.webp",
+          "models": [
+            "pudu-t300"
+          ]
+        },
+        {
+          "title": {
+            "es": "Servicio de restaurante",
+            "en": "Restaurant Service"
+          },
+          "image": "/media/pudu/145c862a27071f75.webp",
+          "models": [
+            "bellabot-pro",
+            "pudu-t300"
+          ]
+        }
+      ],
+      "models": [
+        "flashbot-max",
+        "pudu-cc1",
+        "pudu-sh1",
+        "pudu-t300",
+        "bellabot-pro"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/hospitality"
+    },
+    {
+      "slug": "industrial-warehouse-logistics",
+      "title": {
+        "es": "Manufactura y almacenes",
+        "en": "Industrial Facility"
+      },
+      "description": {
+        "es": "Automatiza recorridos de materiales entre estaciones de trabajo, almacenes y líneas de producción, junto con el cuidado de pisos.",
+        "en": "Automate material routes between workstations, warehouses and production lines, alongside floor care."
+      },
+      "image": "/media/pudu/5b7736638c4fef48.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Acerca de los repartos",
+            "en": "About Deliveries"
+          },
+          "image": "/media/pudu/d236e3871ff31348.webp",
+          "models": [
+            "pudu-t300",
+            "bellabot-pro"
+          ]
+        },
+        {
+          "title": {
+            "es": "Acerca de la limpieza",
+            "en": "About Cleaning"
+          },
+          "image": "/media/pudu/9a0c596993ce9ecc.webp",
+          "models": [
+            "pudu-mt1",
+            "pudu-cc1"
+          ]
+        }
+      ],
+      "models": [
+        "pudu-t300",
+        "bellabot-pro",
+        "pudu-mt1",
+        "pudu-cc1"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/industrial-warehouse-logistics"
+    },
+    {
+      "slug": "health-care",
+      "title": {
+        "es": "Salud y cuidados",
+        "en": "Health Care"
+      },
+      "description": {
+        "es": "Apoya la logística interna, la recepción y la limpieza en las áreas que autorice cada institución.",
+        "en": "Support internal logistics, reception and cleaning in areas approved by each institution."
+      },
+      "image": "/media/pudu/9ff6f9a19a7f746f.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Traslado de materiales",
+            "en": "About Material Delivery"
+          },
+          "image": "/media/pudu/385b0157271e2282.webp",
+          "models": [
+            "pudu-t300",
+            "flashbot-max"
+          ]
+        },
+        {
+          "title": {
+            "es": "Cuidado de pisos",
+            "en": "About Cleaning"
+          },
+          "image": "/media/pudu/b28dfeb4996331bd.webp",
+          "models": [
+            "pudu-cc1",
+            "pudu-mt1",
+            "pudu-sh1"
+          ]
+        },
+        {
+          "title": {
+            "es": "Recepción e información",
+            "en": "Information Service"
+          },
+          "image": "/media/pudu/60cfabce8a6a5364.webp",
+          "models": []
+        }
+      ],
+      "models": [
+        "pudu-t300",
+        "flashbot-max",
+        "pudu-cc1",
+        "pudu-mt1",
+        "pudu-sh1"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/health-care"
+    },
+    {
+      "slug": "transportation-and-related-service",
+      "title": {
+        "es": "Aeropuertos y transporte",
+        "en": "Transportation and Related Service"
+      },
+      "description": {
+        "es": "Limpieza de grandes superficies, reparto e información para pasajeros en terminales y zonas de servicio.",
+        "en": "Large-area cleaning, delivery and passenger information in terminals and service areas."
+      },
+      "image": "/media/pudu/0211d2fe30dbf597.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Marketing móvil y servicio de información",
+            "en": "Mobile Marketing & Information Service"
+          },
+          "image": "/media/pudu/5ebe13196a409272.webp",
+          "models": [
+            "bellabot-pro"
+          ]
+        },
+        {
+          "title": {
+            "es": "Acerca de la limpieza",
+            "en": "About Cleaning"
+          },
+          "image": "/media/pudu/ab8dd9b9ce7abd35.webp",
+          "models": [
+            "pudu-cc1",
+            "pudu-mt1"
+          ]
+        },
+        {
+          "title": {
+            "es": "Transporte de equipaje",
+            "en": "Luggage Transport"
+          },
+          "image": "/media/pudu/5f8fffb2b2bf051f.webp",
+          "models": [
+            "pudu-t300"
+          ]
+        }
+      ],
+      "models": [
+        "bellabot-pro",
+        "pudu-cc1",
+        "pudu-mt1",
+        "pudu-t300"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/transportation-and-related-service"
+    },
+    {
+      "slug": "entertainment-and-sports",
+      "title": {
+        "es": "Entretenimiento y deportes",
+        "en": "Entertainment and Sports"
+      },
+      "description": {
+        "es": "Servicio de alimentos, comunicación en pantalla y limpieza en recintos deportivos, parques y espacios de entretenimiento.",
+        "en": "Food service, on-screen communication and cleaning in sports venues, parks and entertainment spaces."
+      },
+      "image": "/media/pudu/8a291c14f3ca5f3d.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Limpieza de pisos",
+            "en": "Floor Cleaning"
+          },
+          "image": "/media/pudu/52abdabdf7e6ca51.webp",
+          "models": [
+            "pudu-cc1",
+            "pudu-mt1",
+            "pudu-sh1"
+          ]
+        },
+        {
+          "title": {
+            "es": "Promoción y entrega",
+            "en": "Promotion & Delivery"
+          },
+          "image": "/media/pudu/f00ca9a4b9c72854.webp",
+          "models": [
+            "bellabot-pro"
+          ]
+        }
+      ],
+      "models": [
+        "pudu-cc1",
+        "pudu-mt1",
+        "pudu-sh1",
+        "bellabot-pro"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/entertainment-and-sports"
+    },
+    {
+      "slug": "realestate-and-property-services",
+      "title": {
+        "es": "Edificios y servicios inmobiliarios",
+        "en": "Real Estate & Property Services"
+      },
+      "description": {
+        "es": "Coordina entregas, movimiento de carga y cuidado de espacios compartidos en edificios residenciales y corporativos.",
+        "en": "Coordinate deliveries, load transport and shared-space care in residential and office buildings."
+      },
+      "image": "/media/pudu/0979f40ce381a272.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Limpieza de áreas públicas",
+            "en": "Public Area Cleaning"
+          },
+          "image": "/media/pudu/f28b9f7fdee0e538.webp",
+          "models": [
+            "pudu-cc1",
+            "pudu-sh1"
+          ]
+        },
+        {
+          "title": {
+            "es": "Anuncios y promoción",
+            "en": "Ads and Promotion"
+          },
+          "image": "/media/pudu/838a75a16bfd57f1.webp",
+          "models": []
+        }
+      ],
+      "models": [
+        "pudu-cc1",
+        "pudu-sh1"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/realestate-and-property-services"
+    },
+    {
+      "slug": "education",
+      "title": {
+        "es": "Educación",
+        "en": "Education"
+      },
+      "description": {
+        "es": "Cuida pisos y apoya entregas y orientación en campus, comedores y edificios educativos.",
+        "en": "Maintain floors and support delivery and guidance in campuses, cafeterias and educational buildings."
+      },
+      "image": "/media/pudu/ae4ebb97d9b0d841.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Limpieza de pisos",
+            "en": "Floor Cleaning"
+          },
+          "image": "/media/pudu/08a07356d5d810ab.webp",
+          "models": [
+            "pudu-cc1",
+            "pudu-mt1",
+            "pudu-sh1"
+          ]
+        },
+        {
+          "title": {
+            "es": "Reparto en edificios",
+            "en": "Building Delivery"
+          },
+          "image": "/media/pudu/86f2c640ef974504.webp",
+          "models": [
+            "flashbot-max",
+            "bellabot-pro"
+          ]
+        },
+        {
+          "title": {
+            "es": "Guiado",
+            "en": "Guiding"
+          },
+          "image": "/media/pudu/1a94800267f8ac19.webp",
+          "models": []
+        }
+      ],
+      "models": [
+        "pudu-cc1",
+        "pudu-mt1",
+        "pudu-sh1",
+        "flashbot-max",
+        "bellabot-pro"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/education"
+    },
+    {
+      "slug": "public-service",
+      "title": {
+        "es": "Servicios públicos",
+        "en": "Public Service"
+      },
+      "description": {
+        "es": "Recibe visitantes, presenta información y programa el cuidado de pisos en museos, centros de ciencia y espacios públicos.",
+        "en": "Welcome visitors, share information and schedule floor care in museums, science centers and public venues."
+      },
+      "image": "/media/pudu/38f36d635a1df234.webp",
+      "scenes": [
+        {
+          "title": {
+            "es": "Visitas guiadas",
+            "en": "Guided Tours"
+          },
+          "image": "/media/pudu/b4836cb7ff3869e3.webp",
+          "models": []
+        },
+        {
+          "title": {
+            "es": "Limpieza de pisos",
+            "en": "Floor Cleaning"
+          },
+          "image": "/media/pudu/1e1bb7237da49cfb.webp",
+          "models": [
+            "pudu-cc1",
+            "pudu-mt1",
+            "pudu-sh1"
+          ]
+        }
+      ],
+      "models": [
+        "pudu-cc1",
+        "pudu-mt1",
+        "pudu-sh1"
+      ],
+      "source": "https://www.pudurobotics.com/en/solutions/public-service"
+    }
+  ],
+  "accessories": [
+    {
+      "id": "14",
+      "name": {
+        "es": "Separador retráctil de bandeja",
+        "en": "Retractable Tray Baffle"
+      },
+      "image": "/media/pudu/070fd945dbf012b8.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "19",
+      "name": {
+        "es": "Cubierta protectora",
+        "en": "Protection Case"
+      },
+      "image": "/media/pudu/621695ed1207cd1c.webp",
+      "models": [
+        "BellaBot Pro"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "18",
+      "name": {
+        "es": "Cubierta protectora",
+        "en": "Protection Case"
+      },
+      "image": "/media/pudu/b69f9caff385f674.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "17",
+      "name": {
+        "es": "Cubierta protectora",
+        "en": "Protection Case"
+      },
+      "image": "/media/pudu/34d70edc797ce387.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "16",
+      "name": {
+        "es": "Cubierta protectora",
+        "en": "Protection Case"
+      },
+      "image": "/media/pudu/e18eb4fbbc5a202d.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "15",
+      "name": {
+        "es": "Soporte de exhibición",
+        "en": "Display Stand"
+      },
+      "image": "/media/pudu/02ca23965b30a9ec.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "1",
+      "name": {
+        "es": "Portavasos fijo",
+        "en": "Fixed Cup Holder"
+      },
+      "image": "/media/pudu/4c406c3189ce95d8.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "13",
+      "name": {
+        "es": "Cubierta posterior",
+        "en": "Rear Cover"
+      },
+      "image": "/media/pudu/36987c4e80a7be26.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "12",
+      "name": {
+        "es": "Portavasos fijo",
+        "en": "Fixed Cup Holder"
+      },
+      "image": "/media/pudu/f7cab1a70e5bffd0.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "8",
+      "name": {
+        "es": "Estación de carga",
+        "en": "Charging Station"
+      },
+      "image": "/media/pudu/28e6874bde1319f1.webp",
+      "models": [
+        "PUDU CC1"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "2",
+      "name": {
+        "es": "Portavasos fijo",
+        "en": "Fixed Cup Holder"
+      },
+      "image": "/media/pudu/ce79eab5f204df65.webp",
+      "models": [
+        "BellaBot Pro"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "3",
+      "name": {
+        "es": "Portavasos fijo",
+        "en": "Fixed Cup Holder"
+      },
+      "image": "/media/pudu/7aa230371462020d.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "53",
+      "name": {
+        "es": "Transportador de un nivel",
+        "en": "Conveyor-Single Layer"
+      },
+      "image": "/media/pudu/89b4e5894924daa7.webp",
+      "models": [
+        "PUDU T300"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "43",
+      "name": {
+        "es": "Bandeja",
+        "en": "Tray"
+      },
+      "image": "/media/pudu/2231dc00446ef8f0.webp",
+      "models": [
+        "PUDU T300"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "44",
+      "name": {
+        "es": "Dispositivo de arrastre",
+        "en": "Towing Device"
+      },
+      "image": "/media/pudu/e741f5a0e493f334.webp",
+      "models": [
+        "PUDU T300"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "50",
+      "name": {
+        "es": "Poste reflector",
+        "en": "Reflective Post"
+      },
+      "image": "/media/pudu/260dccc5b75a46e2.webp",
+      "models": [
+        "PUDU T300"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "4",
+      "name": {
+        "es": "Reloj 4G",
+        "en": "4G Watch"
+      },
+      "image": "/media/pudu/8a904eaa8fa1df98.webp",
+      "models": [
+        "PUDU T300",
+        "BellaBot Pro"
+      ],
+      "type": "iot",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "6",
+      "name": {
+        "es": "Módulo de control de puertas y accesos",
+        "en": "Turnstiles/Automatic doors Control Components"
+      },
+      "image": "/media/pudu/fdd5e1441c64a627.webp",
+      "models": [
+        "PUDU T300",
+        "BellaBot Pro",
+        "FlashBot Max"
+      ],
+      "type": "iot",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "7",
+      "name": {
+        "es": "Botón de llamada PUDU",
+        "en": "PUDU Pager"
+      },
+      "image": "/media/pudu/f43191657014b65b.webp",
+      "models": [
+        "PUDU T300",
+        "BellaBot Pro",
+        "FlashBot Max"
+      ],
+      "type": "iot",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "telephone-system",
+      "name": {
+        "es": "Sistema telefónico",
+        "en": "Telephone system"
+      },
+      "image": "/media/pudu/f630d170b9ddf551.webp",
+      "models": [
+        "FlashBot Max"
+      ],
+      "type": "iot",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "9",
+      "name": {
+        "es": "Estación de carga",
+        "en": "Charging station"
+      },
+      "image": "/media/pudu/42bbed43729ede5b.webp",
+      "models": [
+        "FlashBot Max"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "flashbot-vending-machine",
+      "name": {
+        "es": "Máquina dispensadora para FlashBot",
+        "en": "Flashbot vending machine"
+      },
+      "image": "/media/pudu/408ddeedf0d7f3ed.webp",
+      "models": [
+        "FlashBot Max"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "cc1-self-cleaning-docking-station",
+      "name": {
+        "es": "Estación de autolimpieza PUDU",
+        "en": "PUDU Self-Cleaning Docking Station"
+      },
+      "image": "/media/pudu/cde29d8c857c4267.webp",
+      "models": [
+        "PUDU CC1"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "40",
+      "name": {
+        "es": "Estación móvil de agua PUDU",
+        "en": "PUDU Mobile Water Station"
+      },
+      "image": "/media/pudu/c23f1120cb5ba25f.webp",
+      "models": [
+        "PUDU CC1"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "5",
+      "name": {
+        "es": "Módulo de control de elevadores",
+        "en": "Elevator Control Module"
+      },
+      "image": "/media/pudu/7b06aa1d1ecd7617.webp",
+      "models": [
+        "PUDU T300",
+        "PUDU CC1",
+        "FlashBot Max"
+      ],
+      "type": "iot",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "10",
+      "name": {
+        "es": "Accesorio de aspiración de alfombras",
+        "en": "Carpet Vacuuming Assembly"
+      },
+      "image": "/media/pudu/443a6cf6ac684c14.webp",
+      "models": [
+        "PUDU CC1"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "49",
+      "name": {
+        "es": "Rack de elevación",
+        "en": "Lifting Rack"
+      },
+      "image": "/media/pudu/2d159cdc0914f333.webp",
+      "models": [
+        "PUDU T300"
+      ],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    },
+    {
+      "id": "66",
+      "name": {
+        "es": "Estación de vaciado automático",
+        "en": "Auto-Empty Station"
+      },
+      "image": "/media/pudu/f8843c9c38d86768.webp",
+      "models": [],
+      "type": "accessory",
+      "source": "https://www.pudurobotics.com/en/accessory"
+    }
+  ],
+  "downloads": [
+    {
+      "title": "Pudu Robotics Product Brochure",
+      "url": "https://cdn.pudutech.com/PD_PB_V2_5_2026_0827_EN_compressed_90499886cf.pdf",
+      "sizeKB": 18419.3
+    },
+    {
+      "title": "PUDU Industrial Product Catalog",
+      "url": "https://cdn.pudutech.com/Pudu_Robotics_Industrial_Product_Brochure_EN_20260420_compressed_0482ced18f.pdf",
+      "sizeKB": 10501.66
+    },
+    {
+      "title": "PUDU Cleaning Product Catalog",
+      "url": "https://cdn.pudutech.com/Pudu_Robotics_Cleaning_Product_Brochure_EN_20260417_compressed_67e532c8e1.pdf",
+      "sizeKB": 8568.33
+    },
+    {
+      "title": "PUDU Delivery Product Catalog",
+      "url": "https://cdn.pudutech.com/PUDU_Delivery_Product_Brochure_EN_compressed_1_3379805284.pdf",
+      "sizeKB": 8870.81
+    },
+    {
+      "title": "PUDU MT1 Max",
+      "url": "https://cdn.pudutech.com/PUDU_MT_1_Max_Product_Flyer_20250819_EN_64933670aa.pdf",
+      "sizeKB": 3163.25
+    },
+    {
+      "title": "PUDU MT1 Vac",
+      "url": "https://cdn.pudutech.com/PUDU_MT_1_Vac_Product_Flyer_20250711_EN_4b1b9fd9be.pdf",
+      "sizeKB": 5931.5
+    },
+    {
+      "title": "PUDU CC1 Pro",
+      "url": "https://cdn.pudutech.com/PUDU_CC_1_Pro_Product_Flyer_20250527_EN_cdf64ad9a4.pdf",
+      "sizeKB": 4983.04
+    },
+    {
+      "title": "PUDU CC1",
+      "url": "https://cdn.pudutech.com/PUDU_CC_1_Product_Flyers_20241030_EN_4cedb1a4da.pdf",
+      "sizeKB": 3073.13
+    },
+    {
+      "title": "PUDU MT1",
+      "url": "https://cdn.pudutech.com/PUDU_MT_1_Flyer_EN_20241227_8d18b6b58f.pdf",
+      "sizeKB": 2641.83
+    },
+    {
+      "title": "PUDU SH1",
+      "url": "https://cdn.pudutech.com/PUDU_SH_1_Product_Flyer_20241105_EN_11ccbc9ef9.pdf",
+      "sizeKB": 13140.83
+    },
+    {
+      "title": "PuduBot 2",
+      "url": "https://cdn.pudutech.com/Pudu_Bot_2_Product_Flyer_20241227_EN_7dc7aa6ba6.pdf",
+      "sizeKB": 1016.37
+    },
+    {
+      "title": "KettyBot Pro",
+      "url": "https://cdn.pudutech.com/Ketty_Bot_Pro_Product_Flyers_20241227_EN_e59df62cf6.pdf",
+      "sizeKB": 1273.61
+    },
+    {
+      "title": "BellaBot Pro",
+      "url": "https://cdn.pudutech.com/Bella_Bot_Pro_Product_Flyer_20250428_EN_c63fac46f5.pdf",
+      "sizeKB": 4096.43
+    },
+    {
+      "title": "FlashBot Max",
+      "url": "https://cdn.pudutech.com/Flash_Bot_Max_Product_Flyer_20250218_EN_08ff8d7af7.pdf",
+      "sizeKB": 5962.15
+    },
+    {
+      "title": "FlashBot Arm",
+      "url": "https://cdn.pudutech.com/Flash_Bot_Arm_Product_Flyer_20250416_EN_317ffcb373.pdf",
+      "sizeKB": 4526.31
+    },
+    {
+      "title": "PUDU T600 Series",
+      "url": "https://cdn.pudutech.com/PUDU_T600_series_Product_Flyer_20250724_EN_dba0baecf6.pdf",
+      "sizeKB": 4764.37
+    },
+    {
+      "title": "PUDU T300",
+      "url": "https://cdn.pudutech.com/PUDU_T300_Product_Flyer_20250303_EN_1e745180a8.pdf",
+      "sizeKB": 4501.27
+    },
+    {
+      "title": "PUDU D5 Series",
+      "url": "https://cdn.pudutech.com/PUDU_D5_Product_Flyer_20251203_EN_fb3c3bd97a.pdf",
+      "sizeKB": 8640.81
+    },
+    {
+      "title": "PUDU D9",
+      "url": "https://cdn.pudutech.com/PUDU_D9_Product_Flyer_20250103_EN_0021e78f68.pdf",
+      "sizeKB": 2316.86
+    },
+    {
+      "title": "Redefining Dining [Part 1]",
+      "url": "https://cdn.pudutech.com/Redefining_Dining_How_Digital_Transformation_and_Robotics_Are_Revolutionizing_Restaurants_Part_1_dc16c50245.pdf",
+      "sizeKB": 1309.64
+    },
+    {
+      "title": "Redefining Dining [Part 2]",
+      "url": "https://cdn.pudutech.com/Redefining_Dining_How_Digital_Transformation_and_Robotics_Are_Revolutionizing_Restaurants_Part_2_c00426ac8b.pdf",
+      "sizeKB": 1382.21
+    },
+    {
+      "title": "An Intro Guide Into Robotics For Future-ready Retailers",
+      "url": "https://cdn.pudutech.com/An_Intro_Guide_Into_Robotics_For_Future_ready_Retailers_ac28a9097a.pdf",
+      "sizeKB": 2073.42
+    },
+    {
+      "title": "Open Full-stack Intelligent Service Robot Ecosystem",
+      "url": "https://cdn.pudutech.com/Open_Full_stack_Intelligent_Service_Robot_Ecosystem_0604192b31.pdf",
+      "sizeKB": 2815.23
+    }
+  ],
+  "logos": [
+    {
+      "image": "/media/pudu/0d0e7f0e6e916c0a.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "KFC"
+    },
+    {
+      "image": "/media/pudu/bfd52e8e42b1294b.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Café de Coral"
+    },
+    {
+      "image": "/media/pudu/342fef45bbc96dda.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Pepsi"
+    },
+    {
+      "image": "/media/pudu/5f894f75c09dc7fa.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Walmart México y Centroamérica"
+    },
+    {
+      "image": "/media/pudu/7e03d8c9cb3a08f3.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Giovanni L."
+    },
+    {
+      "image": "/media/pudu/c482a6cbb23fd383.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Haidilao"
+    },
+    {
+      "image": "/media/pudu/f4a9e678f6a30cdd.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Skylark Group"
+    },
+    {
+      "image": "/media/pudu/4dc3cfcc59fb4386.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Sheraton"
+    },
+    {
+      "image": "/media/pudu/de4702000a1dab61.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Din Tai Fung"
+    },
+    {
+      "image": "/media/pudu/c8b88917d1f0f970.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Dunkin’"
+    },
+    {
+      "image": "/media/pudu/662bce59a68f911b.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Bar-B-Q Plaza"
+    },
+    {
+      "image": "/media/pudu/539dd70bc8217020.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Lao Xiang Ji"
+    },
+    {
+      "image": "/media/pudu/b4eb39431ac1e857.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "M&M’s"
+    },
+    {
+      "image": "/media/pudu/ee215e04a306b3b4.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Tim Ho Wan"
+    },
+    {
+      "image": "/media/pudu/02fd2ad8c180cfa4.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "MediaMarkt"
+    },
+    {
+      "image": "/media/pudu/94598549563e3fc0.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Panasonic"
+    },
+    {
+      "image": "/media/pudu/4fcd0cee80e9e47b.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "PappaRich"
+    },
+    {
+      "image": "/media/pudu/50899b4b9c31a30d.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Pizza Hut"
+    },
+    {
+      "image": "/media/pudu/4820281b90c33ff5.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Black Canyon"
+    },
+    {
+      "image": "/media/pudu/ee9aac0b0e829d84.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Johnny’s"
+    },
+    {
+      "image": "/media/pudu/34a3c955195587fb.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Carrefour"
+    },
+    {
+      "image": "/media/pudu/7de6318383a8be66.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "China Southern Airlines"
+    },
+    {
+      "image": "/media/pudu/5131691e836ac41c.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Coca-Cola"
+    },
+    {
+      "image": "/media/pudu/d403ebbcafdd2c4c.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Gami Chicken & Beer"
+    },
+    {
+      "image": "/media/pudu/2b404b6c5e115f0d.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Jollibee"
+    },
+    {
+      "image": "/media/pudu/e07f60cc94cbcd52.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "MK Restaurants"
+    },
+    {
+      "image": "/media/pudu/d60fe2742e02ba4f.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Maxim’s"
+    },
+    {
+      "image": "/media/pudu/2cf350253cb0be52.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Marriott"
+    },
+    {
+      "image": "/media/pudu/09a314247ff054fd.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Saizeriya"
+    },
+    {
+      "image": "/media/pudu/fee29868d4e9eec0.webp",
+      "source": "https://www.pudurobotics.com/en",
+      "name": "Shell"
+    }
+  ],
+  "families": [
+    {
+      "image": "/media/pudu/642064eb57de85a6.webp",
+      "category": "cleaning"
+    },
+    {
+      "image": "/media/pudu/6bedc526a9591a66.webp",
+      "category": "industrial"
+    },
+    {
+      "image": "/media/pudu/32e2585fb8cdf9aa.webp",
+      "category": "delivery"
+    },
+    {
+      "image": "/media/pudu/2602f6bce1fc497e.webp",
+      "category": "ai"
+    }
+  ]
+}

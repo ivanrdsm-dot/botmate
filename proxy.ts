@@ -18,6 +18,7 @@ export function proxy(request: NextRequest) {
   ].join("; ");
   const headers = new Headers(request.headers);
   headers.set("x-nonce", nonce);
+  headers.set("x-site-locale", request.nextUrl.pathname === "/en" || request.nextUrl.pathname.startsWith("/en/") ? "en" : "es");
   headers.set("Content-Security-Policy", policy);
   const response = NextResponse.next({ request: { headers } });
   response.headers.set("Content-Security-Policy", policy);

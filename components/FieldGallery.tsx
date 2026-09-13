@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {localPath,type Locale} from "@/lib/locale";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import SectionTitle from "./SectionTitle";
@@ -22,29 +23,34 @@ export const fieldPhotos = [
     tag: "Soluciones en campo",
   },
 ];
-export default function FieldGallery() {
+export default function FieldGallery({locale="es"}:{locale?:Locale}) {
+  const en = locale === 'en';
+  const english = [
+    {alt:'Robot carrying drinks at an indoor event',title:'Service in motion.',tag:'Service & events'},
+    {alt:'Advertising screen robot near a green area',title:'Your message, present.',tag:'Advertising'},
+    {alt:'Delivery, advertising and cleaning robots in one venue',title:'Different tasks. One team.',tag:'Field applications'},
+  ];
+  const photos = fieldPhotos.map((p,i)=>({...p,...(en?english[i]:{})}));
   return (
     <section className="section-space field-section">
       <div className="container-x">
         <div className="section-heading-row">
           <SectionTitle
-            eyebrow="Tecnología fuera del catálogo"
+            eyebrow={en?"BOTMATE · FIELD ARCHIVE":"BOTMATE · ARCHIVO DE CAMPO"}
             title={
               <>
-                Robots en espacios
-                <br />
-                como el tuyo.
+                {en?"Robots in spaces":"Robots en espacios"}<br/>{en?"like yours.":"como el tuyo."}
               </>
             }
-            description="Una mirada al archivo de campo de Botmate: servicio, comunicación y equipos de limpieza."
+            description={en?"A look at Botmate’s field archive: service, communication and cleaning equipment.":"Una mirada al archivo de campo de Botmate: servicio, comunicación y equipos de limpieza."}
           />
-          <Link href="/casos-de-exito" className="text-link">
-            Explorar la galería
+          <Link href={localPath("/casos-de-exito",locale)} className="text-link">
+            {en?"Explore the gallery":"Explorar la galería"}
             <ArrowUpRight size={17} />
           </Link>
         </div>
         <div className="field-grid">
-          {fieldPhotos.map((p, i) => (
+          {photos.map((p, i) => (
             <figure key={p.src} className={`field-photo field-photo-${i}`}>
               <Image
                 src={p.src}

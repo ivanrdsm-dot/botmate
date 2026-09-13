@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Servicios · Implementación, capacitación y soporte",
   description:
     "Conoce los pasos para evaluar e implementar robots con Botmate: diagnóstico, configuración, capacitación y seguimiento según tu propuesta.",
-  alternates: { canonical: "/servicios" },
+  alternates: { canonical: "/servicios", languages: {"es-MX": "/servicios", en: "/en/services"} },
 };
 export default function Page() {
   return (

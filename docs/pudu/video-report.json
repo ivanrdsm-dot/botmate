@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "pudu-gt3",
+    "source": "https://cdn.pudutech.com/GT_3_EN_4775061562.mp4",
+    "video": "/media/pudu/fc459c198c1254a5.mp4",
+    "poster": "/media/pudu/fc459c198c1254a5-poster.jpg",
+    "bytes": 6826557,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-gt5",
+    "source": "https://cdn.pudutech.com/PUDU_GT_5_EN_1080p_bda11133cc.mp4",
+    "video": "/media/pudu/3395b2372f59fbf9.mp4",
+    "poster": "/media/pudu/3395b2372f59fbf9-poster.jpg",
+    "bytes": 5689905,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-gt7",
+    "source": "https://cdn.pudutech.com/PUDU_GT_7_EN_1080_P_24d21e241a.mp4",
+    "video": "/media/pudu/c2f008d8d3450228.mp4",
+    "poster": "/media/pudu/c2f008d8d3450228-poster.jpg",
+    "bytes": 5994092,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-mp2000",
+    "source": "https://cdn.pudutech.com/PUDU_MP_2000_1080_aa11ea505a.mp4",
+    "video": "/media/pudu/2dbf59dc8ab80659.mp4",
+    "poster": "/media/pudu/2dbf59dc8ab80659-poster.jpg",
+    "bytes": 7418293,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-et1",
+    "source": "https://cdn.pudutech.com/ET_1_En_cb773c5eee.mp4",
+    "video": "/media/pudu/94d56f3552955f2e.mp4",
+    "poster": "/media/pudu/94d56f3552955f2e-poster.jpg",
+    "bytes": 5134897,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-cc1-pro-disc",
+    "source": "https://cdn.pudutech.com/CC_1_final_en_43_08663878691756_3ab3f93c0a.mp4",
+    "video": "/media/pudu/8ecccd8623972d79.mp4",
+    "poster": "/media/pudu/8ecccd8623972d79-poster.jpg",
+    "bytes": 3659953,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-bg1",
+    "source": "https://cdn.pudutech.com/final_version_en_d5a38ba7c7.mp4",
+    "video": "/media/pudu/5a428e12f7f89cfc.mp4",
+    "poster": "/media/pudu/5a428e12f7f89cfc-poster.jpg",
+    "bytes": 3284532,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-d5-series",
+    "source": "https://cdn.pudutech.com/PUDU_D5_EN_fb2f868529.mp4",
+    "video": "/media/pudu/9e0d7b60a0d16f5a.mp4",
+    "poster": "/media/pudu/9e0d7b60a0d16f5a-poster.jpg",
+    "bytes": 4525431,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-mt1-max",
+    "source": "https://cdn.pudutech.com/mt1_max_en_e4929448aa.mp4",
+    "video": "/media/pudu/833ad9704e506175.mp4",
+    "poster": "/media/pudu/833ad9704e506175-poster.jpg",
+    "bytes": 5719648,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-mt1-vac",
+    "source": "https://cdn.pudutech.com/mt1_vac_en_2782175e1b.mp4",
+    "video": "/media/pudu/73b968971114d38d.mp4",
+    "poster": "/media/pudu/73b968971114d38d-poster.jpg",
+    "bytes": 2912483,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-t600-underride",
+    "source": "https://cdn.pudutech.com/pudu_t600_series_en_25f62f37d8.mp4",
+    "video": "/media/pudu/2eeaa59debba187d.mp4",
+    "poster": "/media/pudu/2eeaa59debba187d-poster.jpg",
+    "bytes": 2789228,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-cc1-pro",
+    "source": "https://cdn.pudutech.com/official-website/product/CC1Pro/S-10.mp4",
+    "video": "/media/pudu/20e9d3cea0f54a0d.mp4",
+    "poster": "/media/pudu/20e9d3cea0f54a0d-poster.jpg",
+    "bytes": 173978,
+    "status": "ready"
+  },
+  {
+    "slug": "flashbot-arm",
+    "source": "https://cdn.pudutech.com/official-website/flashbot_arm/S2-1.mp4",
+    "video": "/media/pudu/d933378661f13ba3.mp4",
+    "poster": "/media/pudu/d933378661f13ba3-poster.jpg",
+    "bytes": 2056242,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-mt1",
+    "source": "https://cdn.pudutech.com/official-website/mt1/S2-1.mp4",
+    "video": "/media/pudu/5d67dee024d796b4.mp4",
+    "poster": "/media/pudu/5d67dee024d796b4-poster.jpg",
+    "bytes": 2863331,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-d9",
+    "source": "https://cdn.pudutech.com/official-website/d9/section2_bg.mp4",
+    "video": "/media/pudu/0470cb16002f6397.mp4",
+    "poster": "/media/pudu/0470cb16002f6397-poster.jpg",
+    "bytes": 849408,
+    "status": "ready"
+  },
+  {
+    "slug": "flashbot-max",
+    "source": "https://cdn.pudutech.com/official-website/flashbot_new/s10.mp4",
+    "video": "/media/pudu/99705876e487312f.mp4",
+    "poster": "/media/pudu/99705876e487312f-poster.jpg",
+    "bytes": 306129,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-sh1",
+    "source": "https://cdn.pudutech.com/official-website/pudush/screen02/1.mp4",
+    "video": "/media/pudu/e0ec98e6a6eae58b.mp4",
+    "poster": "/media/pudu/e0ec98e6a6eae58b-poster.jpg",
+    "bytes": 711323,
+    "status": "ready"
+  },
+  {
+    "slug": "bellabot-pro",
+    "source": "https://cdn.pudutech.com/official-website/bellabotpro/S2_1_2.mp4",
+    "video": "/media/pudu/cdfaba804a89c54e.mp4",
+    "poster": "/media/pudu/cdfaba804a89c54e-poster.jpg",
+    "bytes": 1611014,
+    "status": "ready"
+  },
+  {
+    "slug": "kettybot-pro",
+    "source": "https://cdn.pudutech.com/_ab613de8dc.mp4",
+    "video": "/media/pudu/d97122b70a2d57ef.mp4",
+    "poster": "/media/pudu/d97122b70a2d57ef-poster.jpg",
+    "bytes": 2758561,
+    "status": "ready"
+  },
+  {
+    "slug": "pudu-cc1",
+    "source": "https://cdn.pudutech.com/puducc1_en_ec4c1c8f24.mp4",
+    "video": "/media/pudu/47fbb65352665af0.mp4",
+    "poster": "/media/pudu/47fbb65352665af0-poster.jpg",
+    "bytes": 5072999,
+    "status": "ready"
+  },
+  {
+    "slug": "bellabot",
+    "source": "https://cdn.pudutech.com/3_D_2db4d70722.mp4",
+    "video": "/media/pudu/db277787300c5f30.mp4",
+    "poster": "/media/pudu/db277787300c5f30-poster.jpg",
+    "bytes": 327872,
+    "status": "ready"
+  },
+  {
+    "slug": "pudubot-2",
+    "source": "https://cdn.pudutech.com/video_aaa9e8d6a2.mp4",
+    "video": "/media/pudu/588d03c2ef1a8ddd.mp4",
+    "poster": "/media/pudu/588d03c2ef1a8ddd-poster.jpg",
+    "bytes": 3860930,
+    "status": "ready"
+  }
+]

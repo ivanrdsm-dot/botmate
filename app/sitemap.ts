@@ -1,45 +1,13 @@
-import type { MetadataRoute } from "next";
-import { robots as robotList } from "@/lib/robots";
-import { posts } from "@/lib/posts";
-import { site } from "@/lib/site";
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-09-13T00:00:00Z");
-  const staticPaths = [
-    "",
-    "/robots",
-    "/renta",
-    "/venta",
-    "/refacciones",
-    "/servicios",
-    "/sectores",
-    "/casos-de-exito",
-    "/blog",
-    "/nosotros",
-    "/contacto",
-    "/reservar",
-  ];
-
-  const staticEntries = staticPaths.map((p) => ({
-    url: `${site.url}${p}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: p === "" ? 1 : 0.8,
-  }));
-
-  const robotEntries = robotList.map((r) => ({
-    url: `${site.url}/robots/${r.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  const postEntries = posts.map((p) => ({
-    url: `${site.url}/blog/${p.slug}`,
-    lastModified: new Date(p.date),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  return [...staticEntries, ...robotEntries, ...postEntries];
+import type {MetadataRoute} from 'next';
+import {puduProducts,puduIndustries,puduAliases} from '@/lib/pudu';
+import stories from '@/lib/pudu-stories.json';
+import {robots} from '@/lib/robots';
+import {posts} from '@/lib/posts';
+import {site} from '@/lib/site';
+import {routePairs,localPath} from '@/lib/locale';
+export default function sitemap():MetadataRoute.Sitemap {
+ const paths=[...Object.keys(routePairs).filter(p=>p!=='/privacidad'),...puduProducts.map(p=>'/robots/'+p.slug),...puduIndustries.map(p=>'/sectores/'+p.slug),...stories.cases.map(p=>'/casos-de-exito/'+p.slug),...stories.posts.map(p=>'/blog/'+p.slug),...robots.filter(r=>!puduAliases[r.slug]).map(r=>'/robots/'+r.slug),...posts.map(p=>'/blog/'+p.slug)];
+ const result:MetadataRoute.Sitemap=[];
+ for(const path of paths){const languages={'es-MX':site.url+path,'en':site.url+localPath(path,'en')};for(const locale of ['es','en'] as const)result.push({url:site.url+localPath(path,locale),lastModified:new Date('2026-09-13'),changeFrequency:'monthly',priority:path==='/'?1:0.7,alternates:{languages}});}
+ return result;
 }

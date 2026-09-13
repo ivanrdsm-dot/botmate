@@ -1,0 +1,8 @@
+'use client';
+import {useState} from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import {ArrowUpRight} from 'lucide-react';
+import {puduAccessories} from '@/lib/pudu';
+import {localPath,type Locale} from '@/lib/locale';
+export default function PuduParts({locale='es'}:{locale?:Locale}){const es=locale==='es';const [model,setModel]=useState('all');const models=Array.from(new Set(puduAccessories.flatMap(p=>p.models)));const parts=puduAccessories.filter(p=>model==='all'||p.models.includes(model));return <><label className="pudu-parts-filter">{es?'Compatibilidad publicada por Pudu':'Compatibility published by Pudu'}<select value={model} onChange={e=>setModel(e.target.value)}><option value="all">{es?'Todos los accesorios':'All accessories'}</option>{models.map(m=><option key={m}>{m}</option>)}</select></label><p className="result-count" aria-live="polite">{parts.length} {es?'accesorios':'accessories'}</p><div className="pudu-product-grid">{parts.map(p=><article className="pudu-product-card" key={p.id}><div className="pudu-product-photo pudu-part-photo"><Image src={p.image} alt={p.name[locale]} fill sizes="(min-width:1000px) 30vw, 90vw"/></div><div className="pudu-card-copy"><span className="tiny-label">PUDU ROBOTICS</span><h2>{p.name[locale]}</h2><p>{p.models.length?p.models.join(' · '):(es?'Consultar compatibilidad por versión':'Check compatibility by version')}</p><Link className="text-link" href={localPath('/contacto?interes=Soporte&robot='+encodeURIComponent(p.name[locale]),locale)}>{es?'Consultar accesorio':'Enquire about accessory'}<ArrowUpRight size={17}/></Link></div></article>)}</div></>}

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Compra de robots en México",
   description:
     "Evalúa una inversión en robótica a partir de tu operación real. Consulta el equipo, los accesorios y los servicios necesarios para ponerlo a trabajar.",
-  alternates: { canonical: "/venta" },
+  alternates: { canonical: "/venta", languages: {"es-MX": "/venta", en: "/en/purchase"} },
 };
 const cards = [
   {

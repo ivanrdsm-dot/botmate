@@ -1,3 +1,7 @@
+import {puduProducts,puduAliases} from '@/lib/pudu';
+import {PuduProductDetail} from '@/components/PuduSections';
+import {localizedMetadata} from '@/lib/pudu-seo';
+import {permanentRedirect} from 'next/navigation';
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Image from "next/image";
@@ -8,7 +12,7 @@ import { robots, categoryLabel } from "@/lib/robots";
 import CTA from "@/components/CTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export function generateStaticParams() {
-  return robots.map((r) => ({ slug: r.slug }));
+  return [...robots, ...puduProducts].map((r) => ({ slug: r.slug }));
 }
 export async function generateMetadata(
   props: {
@@ -16,18 +20,23 @@ export async function generateMetadata(
   }
 ): Promise<Metadata> {
   const params = await props.params;
+  const current = puduProducts.find(r => r.slug === params.slug);
+  if (current) return localizedMetadata(current.name + " en México · Botmate", current.name + ": " + current.description.es, "/robots/" + current.slug);
   const r = robots.find((r) => r.slug === params.slug);
   return r
     ? {
         title: `${r.name} · Aplicaciones y características`,
         description: r.description,
-        alternates: { canonical: `/robots/${r.slug}` },
+        alternates: { canonical: `/robots/${r.slug}`, languages: {"es-MX": `/robots/${r.slug}`, en: `/en/robots/${r.slug}`} },
         openGraph: { title: `${r.name} · Botmate`, description: r.description },
       }
     : {};
 }
 export default async function Page(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
+  if (puduAliases[params.slug]) permanentRedirect("/robots/" + puduAliases[params.slug]);
+  const current = puduProducts.find(r => r.slug === params.slug);
+  if (current) return <PuduProductDetail robot={current} locale="es"/>;
   const r = robots.find((r) => r.slug === params.slug);
   if (!r) notFound();
   return (

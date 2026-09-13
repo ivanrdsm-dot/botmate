@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Renta de robots en México",
   description:
     "Consulta un robot para tu operación o evento. El modelo, la duración, la logística y el alcance del servicio se definen en una propuesta a tu medida.",
-  alternates: { canonical: "/renta" },
+  alternates: { canonical: "/renta", languages: {"es-MX": "/renta", en: "/en/rental"} },
 };
 const cards = [
   {

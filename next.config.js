@@ -2,16 +2,16 @@
 
 // Conservar URLs históricas y sus redirecciones.
 const robotRedirects = [
-  ["bellabot-pro", "botmate-serve"],
-  ["kettybot-pro", "botmate-ads"],
+  ["botmate-serve", "bellabot-pro"],
+  ["botmate-ads", "kettybot-pro"],
   ["swiftbot", "botmate-glide"],
   ["flashbot", "botmate-tower"],
   ["holabot", "botmate-carry"],
-  ["pudubot-2", "botmate-flex"],
-  ["cc1", "botmate-clean"],
-  ["sh1", "botmate-clean-mini"],
-  ["t300", "botmate-cargo-300"],
-  ["t600", "botmate-cargo-600"],
+  ["botmate-flex", "pudubot-2"],
+  ["cc1", "pudu-cc1"],
+  ["sh1", "pudu-sh1"],
+  ["t300", "pudu-t300"],
+  ["t600", "pudu-t600"],
 ].map(([from, to]) => ({
   source: `/robots/${from}`,
   destination: `/robots/${to}`,
@@ -29,6 +29,7 @@ const blogRedirects = [
 
 const nextConfig = {
   reactStrictMode: true,
+  allowedDevOrigins: ["127.0.0.1"],
   poweredByHeader: false,
   images: {
     remotePatterns: [],
