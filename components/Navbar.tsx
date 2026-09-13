@@ -15,7 +15,7 @@ export default function Navbar() {
     {href:'/casos-de-exito',label:en?'Case studies':'Casos'},
     {href:'/refacciones',label:en?'Accessories':'Refacciones'},
     {href:'/blog',label:en?'Insights':'Recursos'},
-    {href:'/nosotros',label:'Botmate'},
+    {href:'/soporte',label:en?'Support':'Soporte'},
   ].map(n=>({...n,href:localPath(n.href,locale)}));
   const languageTarget = en ? spanishPath(pathname) : localPath(pathname,'en');
   useEffect(()=>{document.documentElement.lang=en?'en':'es-MX';},[en]);
@@ -77,6 +77,9 @@ export default function Navbar() {
           { href: localPath("/venta",locale), label: en?"Purchase":"Compra" },
           { href: localPath("/reservar",locale), label: en?"Book a call":"Reservar una llamada" },
           { href: localPath("/contacto",locale), label: en?"Contact":"Contacto" },
+          {href:localPath("/encuentra-tu-robot",locale),label:en?"Find your robot":"Encuentra tu robot"},
+          {href:localPath("/preguntas-frecuentes",locale),label:en?"Frequently asked questions":"Preguntas frecuentes"},
+          {href:localPath("/nosotros",locale),label:en?"About Botmate":"Acerca de Botmate"},
           {href:localPath("/recursos",locale),label:en?"Resource library":"Biblioteca oficial"},
         ].map((n) => (
           <Link key={n.href} href={n.href} onClick={() => setOpen(false)}>

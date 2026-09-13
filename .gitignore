@@ -10,3 +10,5 @@ build
 next-env.d.ts
 .pudu-source/
 *.tsbuildinfo
+
+.competition-source/

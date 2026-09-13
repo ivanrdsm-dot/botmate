@@ -41,7 +41,7 @@ export default function Page() {
             {
               title: "Refacciones y mantenimiento",
               desc: "Revisa compatibilidad y opciones de atención para tu equipo actual.",
-              href: "/refacciones",
+              href: "/soporte",
             },
           ].map((c) => (
             <article key={c.href} className="info-card">

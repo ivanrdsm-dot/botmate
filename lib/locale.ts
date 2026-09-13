@@ -1,6 +1,7 @@
 export type Locale = 'es' | 'en';
 export type Localized = { es: string; en: string };
 export const routePairs: Record<string, string> = {
+  '/encuentra-tu-robot':'/en/find-your-robot', '/soporte':'/en/support', '/preguntas-frecuentes':'/en/faq',
   '/': '/en', '/robots':'/en/robots', '/sectores':'/en/industries',
   '/casos-de-exito':'/en/case-studies', '/refacciones':'/en/spare-parts',
   '/blog':'/en/blog', '/nosotros':'/en/about', '/reservar':'/en/book',
