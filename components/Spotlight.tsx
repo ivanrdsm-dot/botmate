@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, type CSSProperties } from "react";
 
 export default function Spotlight({
   children,
@@ -24,7 +24,7 @@ export default function Spotlight({
       ref={ref}
       onMouseMove={onMove}
       className={`group/spot relative ${className}`}
-      style={{ ["--mx" as any]: "50%", ["--my" as any]: "50%" }}
+      style={{ "--mx": "50%", "--my": "50%" } as CSSProperties}
     >
       <div
         aria-hidden

@@ -1,91 +1,80 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import SectionTitle from "@/components/SectionTitle";
+import PageIntro from "@/components/PageIntro";
 import CTA from "@/components/CTA";
-import { Wrench, Package, Clock, ShieldCheck, Cpu, Battery } from "lucide-react";
-
+import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
-  title: "Refacciones y mantenimiento de robots de servicio BotMate en México",
+  title: "Refacciones y mantenimiento en México",
   description:
-    "Refacciones originales y servicio técnico certificado para robots de servicio BotMate en México. Baterías, sensores LiDAR, cámaras 3D, ruedas y kits de mantenimiento para BotMate Serve, BotMate Ads, BotMate Glide, BotMate Tower y BotMate Clean.",
+    "Comparte el modelo, la versión y la necesidad de servicio para revisar compatibilidad, disponibilidad y opciones de atención.",
   alternates: { canonical: "/refacciones" },
-  keywords: [
-    "refacciones BotMate",
-    "mantenimiento BotMate Serve",
-    "servicio técnico robot México",
-    "batería robot de servicio",
-    "sensor LiDAR",
-    "kit limpieza BotMate Clean",
-    "póliza mantenimiento robot",
-  ],
 };
-
-const parts = [
-  { icon: Battery, t: "Baterías de litio originales", d: "Reposición con garantía de fábrica." },
-  { icon: Cpu, t: "Tarjetas y módulos electrónicos", d: "Sensores LiDAR, cámaras 3D y controladores." },
-  { icon: Package, t: "Componentes mecánicos", d: "Bandejas, ruedas, motores, carcasas y más." },
-  { icon: Wrench, t: "Kits de mantenimiento", d: "Cepillos, escobillas, mopas y filtros para BotMate Clean." },
+const cards = [
+  {
+    tag: "01 / IDENTIFICAR",
+    title: "Empecemos por el modelo",
+    desc: "Una fotografía del equipo y su número de serie ayudan al asesor a identificar la versión correcta.",
+    items: [
+      "Modelo y año aproximado",
+      "Síntoma o mensaje de error",
+      "Ubicación del equipo",
+    ],
+  },
+  {
+    tag: "02 / REVISAR",
+    title: "Consumibles y componentes",
+    desc: "Consulta compatibilidad antes de comprar o instalar una pieza. La disponibilidad se confirma en la cotización.",
+    items: [
+      "Cepillos, filtros y consumibles",
+      "Bandejas y componentes mecánicos",
+      "Batería y módulos según diagnóstico",
+    ],
+  },
+  {
+    tag: "03 / COTIZAR",
+    title: "Atención según diagnóstico",
+    desc: "El alcance del mantenimiento depende del estado del robot y las condiciones de operación.",
+    items: [
+      "Revisión de la incidencia",
+      "Propuesta de atención",
+      "Recomendaciones de cuidado",
+    ],
+  },
 ];
-
-const services = [
-  { icon: Clock, t: "Mantenimiento preventivo", d: "Diagnóstico, actualización de firmware, calibración SLAM, limpieza interna y reporte ejecutivo." },
-  { icon: Wrench, t: "Mantenimiento correctivo", d: "Reparación en sitio o en laboratorio con técnicos certificados BotMate y refacciones originales." },
-  { icon: ShieldCheck, t: "Pólizas de servicio", d: "Pólizas anuales con visitas programadas, SLA garantizado y refacciones consumibles incluidas." },
-];
-
-export default function RefaccionesPage() {
+export default function Page() {
   return (
     <>
-      <section className="pt-32">
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Refacciones y servicio"
-            title={<>Mantén tus robots <span className="gradient-text">siempre operando</span></>}
-            description="Stock de refacciones originales BotMate y servicio técnico certificado en todo México. Ya seas cliente de BotMate o no, te apoyamos."
-          />
+      <PageIntro
+        eyebrow="Refacciones y mantenimiento"
+        title="Cuida el equipo que ya trabaja contigo."
+        description="Comparte el modelo, la versión y la necesidad de servicio para revisar compatibilidad, disponibilidad y opciones de atención."
+      />
+      <section className="section-space section-compact">
+        <div className="container-x info-grid">
+          {cards.map((c) => (
+            <article className="info-card" key={c.tag}>
+              <p className="eyebrow">{c.tag}</p>
+              <h2>{c.title}</h2>
+              <p>{c.desc}</p>
+              <ul>
+                {c.items.map((i) => (
+                  <li key={i}>{i}</li>
+                ))}
+              </ul>
+              <Link href="/contacto?interes=Soporte" className="text-link">
+                Consultar opciones
+                <ArrowUpRight size={16} />
+              </Link>
+            </article>
+          ))}
         </div>
       </section>
-
-      <section className="py-12">
-        <div className="container-x">
-          <h2 className="font-display text-2xl font-semibold">Refacciones disponibles</h2>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {parts.map((p) => (
-              <div key={p.t} className="card-tech">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent-violet/20 ring-1 ring-white/10">
-                  <p.icon className="h-5 w-5 text-accent" />
-                </div>
-                <h3 className="font-display text-base font-semibold">{p.t}</h3>
-                <p className="mt-1 text-sm text-white/60">{p.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12">
-        <div className="container-x">
-          <h2 className="font-display text-2xl font-semibold">Servicios de mantenimiento</h2>
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
-            {services.map((s) => (
-              <div key={s.t} className="card-tech">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent-violet/20 ring-1 ring-white/10">
-                  <s.icon className="h-5 w-5 text-accent" />
-                </div>
-                <h3 className="font-display text-lg font-semibold">{s.t}</h3>
-                <p className="mt-2 text-sm text-white/60">{s.d}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Link href="/contacto" className="btn-primary">Cotizar refacciones</Link>
-            <Link href="/contacto" className="btn-ghost">Agendar mantenimiento</Link>
-          </div>
-        </div>
-      </section>
-
-      <CTA title="¿Tu robot necesita servicio?" subtitle="Atendemos robots de servicio de cualquier marca con técnicos certificados." waMessage="Hola BotMate, mi robot necesita servicio o refacciones. ¿Me apoyan?" primaryLabel="Solicitar servicio" />
+      <CTA
+        title="Una propuesta que considere cada detalle."
+        subtitle="Precios, disponibilidad, plazos y condiciones se confirman directamente con Botmate para tu proyecto."
+        primaryLabel="Solicitar una cotización"
+        primaryHref="/contacto?interes=Soporte"
+      />
     </>
   );
 }

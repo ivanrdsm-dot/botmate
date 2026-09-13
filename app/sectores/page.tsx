@@ -1,115 +1,106 @@
 import type { Metadata } from "next";
-import SectionTitle from "@/components/SectionTitle";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import PageIntro from "@/components/PageIntro";
 import CTA from "@/components/CTA";
-import {
-  UtensilsCrossed,
-  BedDouble,
-  Hospital,
-  ShoppingBag,
-  Factory,
-  Building2,
-} from "lucide-react";
-
+import { robots } from "@/lib/robots";
 export const metadata: Metadata = {
-  title: "Sectores que atendemos — Restaurantes, Hoteles, Hospitales, Retail y Logística",
+  title: "Soluciones de robótica por industria en México",
   description:
-    "Soluciones de robots de servicio BotMate para restaurantes, hoteles, hospitales, plazas comerciales, manufactura y corporativos en México. Implementación, capacitación y soporte 24/7.",
+    "Explora aplicaciones para restaurantes, hoteles, retail, oficinas, logística y áreas de servicio. Evalúa tu espacio y proyecto con Botmate.",
   alternates: { canonical: "/sectores" },
-  keywords: [
-    "robot para restaurante México",
-    "robot hotel México",
-    "robot hospital",
-    "robot centro comercial",
-    "robot manufactura CEDIS",
-    "robot corporativo oficina",
-    "automatización sector hospitalario",
-  ],
 };
-
 const sectors = [
   {
-    icon: UtensilsCrossed,
-    name: "Restaurantes",
-    desc: "BotMate Serve, BotMate Ads y BotMate Carry reducen el tiempo de servicio y aumentan la propina.",
-    kpis: ["+40% productividad", "-60% pasos de mesero", "+35% experiencia"],
-    robots: ["BotMate Serve", "BotMate Ads", "BotMate Carry"],
+    id: "restaurantes",
+    title: "Restaurantes y hospitalidad",
+    desc: "Apoya el traslado de alimentos, bebidas y vajilla en recorridos repetitivos. Tu equipo conserva la carga, descarga y atención al comensal.",
+    evaluate:
+      "Revisar pasillos con sillas ocupadas, cruces, acceso a cocina y volumen de servicio.",
+    models: [0, 1, 4],
   },
   {
-    icon: BedDouble,
-    name: "Hoteles",
-    desc: "BotMate Tower entrega amenidades multi-piso 24/7 y BotMate Glide eleva el room service.",
-    kpis: ["Entrega 24/7", "Integración PMS", "Experiencia premium"],
-    robots: ["BotMate Tower", "BotMate Glide", "BotMate Serve"],
+    id: "hoteles",
+    title: "Hoteles y edificios",
+    desc: "Evalúa la entrega de artículos y amenidades entre áreas. Las rutas entre pisos necesitan una revisión específica del edificio.",
+    evaluate:
+      "Confirmar compatibilidad de elevadores, puertas y configuración de compartimentos.",
+    models: [3, 2],
   },
   {
-    icon: Hospital,
-    name: "Hospitales y clínicas",
-    desc: "Distribución de medicamentos, muestras y limpieza autónoma de áreas críticas.",
-    kpis: ["Cero contacto", "Trazabilidad", "Higiene continua"],
-    robots: ["BotMate Tower", "BotMate Flex", "BotMate Clean"],
+    id: "retail",
+    title: "Retail, marcas y eventos",
+    desc: "Combina recepción y contenido en pantalla con la presencia del robot en el recorrido del visitante.",
+    evaluate:
+      "Definir contenido autorizado, puntos de interacción, aforo y condiciones del recinto.",
+    models: [1, 0],
   },
   {
-    icon: ShoppingBag,
-    name: "Retail y centros comerciales",
-    desc: "BotMate Ads publicita marcas mientras BotMate Clean mantiene los pisos impecables.",
-    kpis: ["Marketing 360°", "Limpieza 4 en 1", "+ tráfico convertido"],
-    robots: ["BotMate Ads", "BotMate Clean", "BotMate Clean Mini"],
+    id: "oficinas",
+    title: "Oficinas y espacios comerciales",
+    desc: "Incorpora equipos para el cuidado de pisos y organiza la limpieza según las necesidades de cada área.",
+    evaluate:
+      "Distinguir limpieza autónoma con CC1 de limpieza con operador mediante SH1.",
+    models: [5, 6],
   },
   {
-    icon: Factory,
-    name: "Manufactura y logística",
-    desc: "BotMate Cargo 300 y BotMate Cargo 600 transportan piezas, tarimas y materia prima entre estaciones.",
-    kpis: ["-60% tiempo picking", "Carga 600 kg", "Integración WMS/MES"],
-    robots: ["BotMate Cargo 300", "BotMate Cargo 600", "BotMate Flex"],
+    id: "logistica",
+    title: "Manufactura y logística",
+    desc: "Evalúa el traslado de materiales entre estaciones, almacenes y áreas de producción.",
+    evaluate:
+      "Verificar carga, dimensiones, rutas, superficies y compatibilidad de accesorios.",
+    models: [8, 9, 7],
   },
   {
-    icon: Building2,
-    name: "Corporativos",
-    desc: "Recepción inteligente, room service interno y limpieza nocturna automatizada.",
-    kpis: ["Empleados felices", "Limpieza off-peak", "Ahorro operativo"],
-    robots: ["BotMate Ads", "BotMate Clean", "BotMate Glide"],
+    id: "salud",
+    title: "Áreas de servicio en salud",
+    desc: "Explora tareas de logística general y cuidado de pisos en áreas autorizadas por la institución.",
+    evaluate:
+      "La institución debe validar protocolos, zonas y materiales. No se atribuyen capacidades de desinfección o esterilización a estos equipos.",
+    models: [7, 5],
   },
 ];
-
-export default function SectoresPage() {
+export default function Page() {
   return (
     <>
-      <section className="pt-32">
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Industrias"
-            title={<>Soluciones por <span className="gradient-text">sector</span></>}
-            description="Cada industria tiene retos distintos. Adaptamos la flota, la integración y el soporte a tu operación."
-          />
-        </div>
-      </section>
-
-      <section className="py-12">
-        <div className="container-x grid gap-6 md:grid-cols-2">
-          {sectors.map((s) => (
-            <div key={s.name} className="card-tech">
-              <div className="flex items-start justify-between">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent-violet/20 ring-1 ring-white/10">
-                  <s.icon className="h-5 w-5 text-accent" />
-                </div>
-                <div className="flex flex-wrap justify-end gap-1.5">
-                  {s.robots.map((r) => (
-                    <span key={r} className="chip">{r}</span>
+      <PageIntro
+        eyebrow="Soluciones por industria"
+        title={
+          <>
+            Tu industria.
+            <br />
+            Sus retos. <span>Tu solución.</span>
+          </>
+        }
+        description="Los robots pueden apoyar distintas tareas. Selecciona un contexto para explorar aplicaciones y los puntos que conviene evaluar."
+      />
+      <section className="section-space section-compact">
+        <div className="container-x sector-list">
+          {sectors.map((s, i) => (
+            <article id={s.id} className="sector-row" key={s.id}>
+              <span className="sector-number">0{i + 1}</span>
+              <div>
+                <h2>{s.title}</h2>
+                <p>{s.desc}</p>
+                <Link href="/contacto?interes=Demo" className="text-link">
+                  Evaluar mi espacio
+                  <ArrowUpRight size={17} />
+                </Link>
+              </div>
+              <div>
+                <div className="sector-models">
+                  {s.models.map((n) => (
+                    <Link key={n} href={`/robots/${robots[n].slug}`}>
+                      {robots[n].name}
+                    </Link>
                   ))}
                 </div>
+                <p>{s.evaluate}</p>
               </div>
-              <h3 className="mt-5 font-display text-2xl font-semibold">{s.name}</h3>
-              <p className="mt-2 text-white/70">{s.desc}</p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {s.kpis.map((k) => (
-                  <span key={k} className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">{k}</span>
-                ))}
-              </div>
-            </div>
+            </article>
           ))}
         </div>
       </section>
-
       <CTA />
     </>
   );

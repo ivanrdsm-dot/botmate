@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, type CSSProperties } from "react";
 
 export default function TiltCard({
   children,
@@ -37,11 +37,13 @@ export default function TiltCard({
       onMouseMove={onMove}
       onMouseLeave={onLeave}
       className={`relative transition-transform duration-300 ease-out will-change-transform ${className}`}
-      style={{
-        transformStyle: "preserve-3d",
-        ["--mx" as any]: "50%",
-        ["--my" as any]: "50%",
-      }}
+      style={
+        {
+          transformStyle: "preserve-3d",
+          "--mx": "50%",
+          "--my": "50%",
+        } as CSSProperties
+      }
     >
       <div
         aria-hidden

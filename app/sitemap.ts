@@ -1,22 +1,23 @@
 import type { MetadataRoute } from "next";
 import { robots as robotList } from "@/lib/robots";
-import { cases } from "@/lib/cases";
 import { posts } from "@/lib/posts";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = new Date("2026-09-13T00:00:00Z");
   const staticPaths = [
     "",
     "/robots",
     "/renta",
     "/venta",
     "/refacciones",
+    "/servicios",
     "/sectores",
     "/casos-de-exito",
     "/blog",
     "/nosotros",
     "/contacto",
+    "/reservar",
   ];
 
   const staticEntries = staticPaths.map((p) => ({
@@ -33,13 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const caseEntries = cases.map((c) => ({
-    url: `${site.url}/casos-de-exito/${c.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
   const postEntries = posts.map((p) => ({
     url: `${site.url}/blog/${p.slug}`,
     lastModified: new Date(p.date),
@@ -47,5 +41,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...robotEntries, ...caseEntries, ...postEntries];
+  return [...staticEntries, ...robotEntries, ...postEntries];
 }

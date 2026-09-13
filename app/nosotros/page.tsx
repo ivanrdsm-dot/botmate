@@ -1,157 +1,88 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import SectionTitle from "@/components/SectionTitle";
+import PageIntro from "@/components/PageIntro";
 import CTA from "@/components/CTA";
-import Reveal from "@/components/Reveal";
-import Counter from "@/components/Counter";
-import { Award, Globe2, HeartHandshake, Rocket, Target, Users } from "lucide-react";
-
+import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
-  title: "Nosotros — BotMate, líder en robots de servicio en México",
+  title: "Acerca de Botmate · Robótica para negocios en México",
   description:
-    "BotMate es la empresa mexicana líder en robótica de servicio, con marca y tecnología propias. Misión, valores, equipo y compromiso con la automatización inteligente del negocio mexicano.",
+    "Botmate acerca soluciones de robótica de servicio a negocios en México. Conoce nuestro enfoque para evaluar tareas, equipos y aplicaciones.",
   alternates: { canonical: "/nosotros" },
-  keywords: [
-    "BotMate empresa",
-    "robots de servicio en México",
-    "líderes robótica servicio México",
-    "empresa robots CDMX",
-  ],
 };
-
-const values = [
-  { icon: Target, t: "Resultados medibles", d: "Cada implementación tiene KPIs claros desde el día 1. Si no movemos la aguja, no cumplimos." },
-  { icon: HeartHandshake, t: "Cliente primero", d: "Soporte 24/7 en español, sin call centers offshore. Nuestro número lo contesta un humano." },
-  { icon: Rocket, t: "Velocidad", d: "Del primer contacto al go-live en menos de 30 días promedio. La burocracia mata la innovación." },
-  { icon: Award, t: "Excelencia técnica", d: "Equipo certificado por BotMate con horas reales de implementación, no solo teoría." },
-];
-
-const stats = [
-  { value: 500, suffix: "+", label: "Robots desplegados" },
-  { value: 80, suffix: "+", label: "Clientes activos" },
-  { value: 24, suffix: "/7", label: "Soporte técnico" },
-  { value: 99, suffix: ".7%", label: "Uptime promedio", decimals: 1 },
-];
-
-export default function NosotrosPage() {
+export default function Page() {
   return (
     <>
-      <section className="relative isolate overflow-hidden pt-32">
-        <div className="absolute inset-0 -z-10 grid-bg opacity-50" />
-        <div className="absolute -top-32 left-1/2 -z-10 h-[600px] w-[1100px] -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Sobre BotMate"
-            title={<>Hacemos que la <span className="gradient-text">robótica</span> trabaje para el negocio mexicano</>}
-            description="Somos una empresa mexicana fundada para acercar la mejor tecnología de robótica de servicio del mundo a las operaciones reales de restaurantes, hoteles, hospitales, plazas y fábricas en toda la República."
-          />
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container-x">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((s) => (
-              <Reveal key={s.label}>
-                <div className="card-tech text-center">
-                  <p className="font-display text-4xl font-bold gradient-text">
-                    <Counter value={s.value} suffix={s.suffix} decimals={(s as any).decimals} />
-                  </p>
-                  <p className="mt-2 text-sm uppercase tracking-wider text-white/60">{s.label}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container-x grid items-center gap-12 lg:grid-cols-2">
-          <Reveal>
-            <span className="chip"><Globe2 className="h-3.5 w-3.5 text-accent" /> Marca mexicana · Tecnología global</span>
-            <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">
-              Tecnología de clase mundial,<br />
-              <span className="gradient-text">marca 100% mexicana</span>.
+      <PageIntro
+        eyebrow="Acerca de Botmate"
+        title={
+          <>
+            La robótica tiene
+            <br />
+            <span>un lado humano.</span>
+          </>
+        }
+        description="Creemos en la tecnología que deja más espacio para atender, crear y conectar. Acercamos robots de servicio a las necesidades del negocio mexicano."
+      />
+      <section className="section-space section-compact">
+        <div className="container-x editorial-grid">
+          <figure className="editorial-image">
+            <Image
+              src="/media/booth-field.webp"
+              alt="Exhibición de equipos y banner de Botmate en un espacio interior"
+              fill
+              sizes="(min-width: 900px) 45vw, 100vw"
+              className="object-cover"
+            />
+          </figure>
+          <div className="editorial-copy">
+            <p className="eyebrow">Botmate · México</p>
+            <h2>
+              Entender tu negocio
+              <br />
+              es el punto de partida.
             </h2>
-            <p className="mt-4 text-white/70 leading-relaxed">
-              BotMate integra la mejor tecnología de robótica de servicio del mundo —probada en más de 80,000 despliegues en 60 países— y la lleva a México como marca propia, con ingeniería local, roadmap y refacciones originales.
+            <p>
+              La selección de un robot comienza por una pregunta concreta: ¿qué
+              tarea quieres mejorar? A partir de ahí, revisamos las
+              posibilidades de entrega, publicidad y limpieza.
             </p>
-            <p className="mt-4 text-white/70 leading-relaxed">
-              Combinamos esa tecnología de clase mundial con un servicio profundamente local: hablamos tu idioma, conocemos al SAT, tenemos refacciones en bodegas en CDMX, GDL y MTY, y entendemos cómo funciona realmente un restaurante o un hospital mexicano.
+            <p>
+              Botmate acompaña la evaluación comercial de soluciones de Pudu
+              Robotics en México. El fabricante desarrolla los equipos; contigo
+              definimos qué modelo y configuración tiene sentido para tu
+              proyecto.
             </p>
-          </Reveal>
-          <Reveal delay={1}>
-            <div className="relative">
-              <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-accent/20 to-accent-violet/20 blur-2xl" />
-              <div className="card-tech">
-                <Users className="h-8 w-8 text-accent" />
-                <h3 className="mt-4 font-display text-2xl font-semibold">Equipo BotMate</h3>
-                <p className="mt-2 text-white/60">Ingenieros, fiscalistas, hosteleros y operadores. Un equipo multidisciplinario que entiende tu negocio desde el primer email.</p>
-                <div className="mt-6 grid grid-cols-3 gap-3">
-                  {["IO", "MC", "RS", "PN", "AC", "LR"].map((i) => (
-                    <div key={i} className="grid aspect-square place-items-center rounded-xl border border-white/10 bg-white/[0.03] font-display text-sm font-semibold">
-                      {i}
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <Link href="/contacto" className="btn-primary">
+              Conversemos
+              <ArrowUpRight size={17} />
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="section-space soft-section">
+        <div className="container-x info-grid">
+          {[
+            {
+              title: "Claridad para decidir",
+              desc: "Aplicaciones concretas y condiciones de la propuesta por escrito.",
+            },
+            {
+              title: "Personas al centro",
+              desc: "La tecnología como apoyo para las tareas del equipo y la experiencia de tus clientes.",
+            },
+            {
+              title: "Atención al contexto",
+              desc: "Cada espacio, recorrido y ritmo de trabajo merece una evaluación propia.",
+            },
+          ].map((v) => (
+            <div className="info-card" key={v.title}>
+              <h2>{v.title}</h2>
+              <p>{v.desc}</p>
             </div>
-          </Reveal>
+          ))}
         </div>
       </section>
-
-      <section className="py-16">
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Nuestros valores"
-            title={<>Cómo <span className="gradient-text">trabajamos</span></>}
-          />
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {values.map((v) => (
-              <Reveal key={v.t}>
-                <div className="card-tech h-full">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent-violet/20 ring-1 ring-white/10">
-                    <v.icon className="h-5 w-5 text-accent" />
-                  </div>
-                  <h3 className="font-display text-lg font-semibold">{v.t}</h3>
-                  <p className="mt-1 text-sm text-white/60">{v.d}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container-x">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <Reveal>
-              <h2 className="font-display text-3xl font-bold sm:text-4xl">Nuestra misión</h2>
-              <p className="mt-4 text-white/75 leading-relaxed">
-                Hacer la robótica de servicio accesible, rentable y operativa para cualquier empresa mexicana —desde el restaurante familiar de barrio hasta la cadena hotelera global— para que su gente humana se dedique a lo único que las máquinas no pueden hacer: crear experiencias humanas memorables.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/contacto" className="btn-primary">Habla con nosotros</Link>
-                <Link href="/casos-de-exito" className="btn-ghost">Ver casos de éxito</Link>
-              </div>
-            </Reveal>
-            <Reveal delay={1}>
-              <div className="card-tech">
-                <h3 className="font-display text-xl font-semibold">Compromiso BotMate</h3>
-                <ul className="mt-4 space-y-3 text-sm text-white/75">
-                  <li>· Respuesta a cotizaciones en menos de 24 hrs hábiles</li>
-                  <li>· Soporte técnico 24/7 con SLA garantizado</li>
-                  <li>· Refacciones originales con stock en México</li>
-                  <li>· Capacitación continua durante toda la renta</li>
-                  <li>· Documentación fiscal Plan México lista para tu contador</li>
-                  <li>· Mejora continua de rutas y métricas operativas</li>
-                </ul>
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
       <CTA />
     </>
   );

@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "routes": 27,
+  "internalLinks": 51,
+  "images": 16,
+  "checkedAt": "2026-09-13T05:49:39.378Z",
+  "report": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Botmate · Robots que trabajan contigo en México",
+      "canonical": "https://botmate.mx"
+    },
+    {
+      "path": "/robots",
+      "status": 200,
+      "title": "Catálogo de robots Pudu Robotics en México | Botmate",
+      "canonical": "https://botmate.mx/robots"
+    },
+    {
+      "path": "/renta",
+      "status": 200,
+      "title": "Renta de robots en México | Botmate",
+      "canonical": "https://botmate.mx/renta"
+    },
+    {
+      "path": "/venta",
+      "status": 200,
+      "title": "Compra de robots en México | Botmate",
+      "canonical": "https://botmate.mx/venta"
+    },
+    {
+      "path": "/refacciones",
+      "status": 200,
+      "title": "Refacciones y mantenimiento en México | Botmate",
+      "canonical": "https://botmate.mx/refacciones"
+    },
+    {
+      "path": "/servicios",
+      "status": 200,
+      "title": "Servicios · Implementación, capacitación y soporte | Botmate",
+      "canonical": "https://botmate.mx/servicios"
+    },
+    {
+      "path": "/sectores",
+      "status": 200,
+      "title": "Soluciones de robótica por industria en México | Botmate",
+      "canonical": "https://botmate.mx/sectores"
+    },
+    {
+      "path": "/casos-de-exito",
+      "status": 200,
+      "title": "Galería · Robots en espacios de servicio y eventos | Botmate",
+      "canonical": "https://botmate.mx/casos-de-exito"
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "title": "Guías para elegir e implementar robots de servicio | Botmate",
+      "canonical": "https://botmate.mx/blog"
+    },
+    {
+      "path": "/nosotros",
+      "status": 200,
+      "title": "Acerca de Botmate · Robótica para negocios en México | Botmate",
+      "canonical": "https://botmate.mx/nosotros"
+    },
+    {
+      "path": "/contacto",
+      "status": 200,
+      "title": "Contacto · Demostraciones y cotizaciones de robots | Botmate",
+      "canonical": "https://botmate.mx/contacto"
+    },
+    {
+      "path": "/robots/botmate-serve",
+      "status": 200,
+      "title": "BellaBot Pro · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-serve"
+    },
+    {
+      "path": "/robots/botmate-ads",
+      "status": 200,
+      "title": "KettyBot Pro · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-ads"
+    },
+    {
+      "path": "/robots/botmate-glide",
+      "status": 200,
+      "title": "SwiftBot · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-glide"
+    },
+    {
+      "path": "/robots/botmate-tower",
+      "status": 200,
+      "title": "FlashBot · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-tower"
+    },
+    {
+      "path": "/robots/botmate-carry",
+      "status": 200,
+      "title": "Pudu HolaBot · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-carry"
+    },
+    {
+      "path": "/robots/botmate-clean",
+      "status": 200,
+      "title": "PUDU CC1 · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-clean"
+    },
+    {
+      "path": "/robots/botmate-clean-mini",
+      "status": 200,
+      "title": "PUDU SH1 · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-clean-mini"
+    },
+    {
+      "path": "/robots/botmate-flex",
+      "status": 200,
+      "title": "PuduBot 2 · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-flex"
+    },
+    {
+      "path": "/robots/botmate-cargo-300",
+      "status": 200,
+      "title": "PUDU T300 · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-cargo-300"
+    },
+    {
+      "path": "/robots/botmate-cargo-600",
+      "status": 200,
+      "title": "PUDU T600 · Aplicaciones y características | Botmate",
+      "canonical": "https://botmate.mx/robots/botmate-cargo-600"
+    },
+    {
+      "path": "/blog/botmate-serve-vs-botmate-ads-cual-elegir",
+      "status": 200,
+      "title": "Entrega o publicidad: cómo definir la prioridad de tu robot | Botmate",
+      "canonical": "https://botmate.mx/blog/botmate-serve-vs-botmate-ads-cual-elegir"
+    },
+    {
+      "path": "/blog/roi-renta-de-robots-restaurantes",
+      "status": 200,
+      "title": "Cómo evaluar el costo de incorporar un robot | Botmate",
+      "canonical": "https://botmate.mx/blog/roi-renta-de-robots-restaurantes"
+    },
+    {
+      "path": "/blog/como-implementar-robot-en-restaurante",
+      "status": 200,
+      "title": "Prepara tu restaurante para una demostración | Botmate",
+      "canonical": "https://botmate.mx/blog/como-implementar-robot-en-restaurante"
+    },
+    {
+      "path": "/blog/limpieza-autonoma-botmate-clean-vs-tradicional",
+      "status": 200,
+      "title": "Limpieza autónoma y con operador: tareas distintas | Botmate",
+      "canonical": "https://botmate.mx/blog/limpieza-autonoma-botmate-clean-vs-tradicional"
+    },
+    {
+      "path": "/blog/futuro-robotica-mexico-2026",
+      "status": 200,
+      "title": "Qué preguntar antes de elegir un proveedor de robótica | Botmate",
+      "canonical": "https://botmate.mx/blog/futuro-robotica-mexico-2026"
+    },
+    {
+      "path": "/privacidad",
+      "status": 200,
+      "title": "Privacidad y uso de datos | Botmate",
+      "canonical": "https://botmate.mx/privacidad"
+    }
+  ]
+}

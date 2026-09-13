@@ -1,115 +1,48 @@
-# BotMate — Sitio oficial
+# Botmate — sitio web
 
-Sitio web de **BotMate**: renta y venta de robots de servicio en México (BellaBot, KettyBot, SwiftBot, CC1, FlashBot, T300/T600 y más). Construido con Next.js 14, TypeScript, Tailwind CSS y Framer Motion, listo para Vercel.
+Sitio de robótica de servicio en México, construido con Next.js 16.3.5, React 19, TypeScript y CSS/Tailwind. Rediseño local de septiembre de 2026: blanco, gris, índigo Botmate y Manrope.
 
-- **Contacto:** contacto@botmate.mx
-- **WhatsApp:** +52 55 3149 1986
-- **Stack:** Next.js 14 (App Router) · TypeScript · Tailwind · Framer Motion · lucide-react
+## Desarrollo
 
-## ✨ Características
-
-- Diseño tecnológico oscuro con gradientes, glow y animaciones suaves
-- SEO profundo: metadata, OpenGraph, Twitter Cards, JSON-LD (Organization + LocalBusiness + Product + WebSite), sitemap dinámico, robots.txt
-- Catálogo de robots con páginas dinámicas y schema.org de producto
-- Formulario de contacto que abre WhatsApp con mensaje pre-llenado
-- FAB de WhatsApp flotante en todas las páginas
-- Páginas dedicadas: `/robots`, `/renta`, `/venta`, `/refacciones`, `/sectores`, `/contacto`
-- 100% responsive, dark mode nativo, optimizado para Core Web Vitals
-
-## 🚀 Desarrollo local
-
-```bash
+```sh
 npm install
 npm run dev
-# → http://localhost:3000
 ```
 
-## 🛠 Producción
+## Verificación y vista de producción
 
-```bash
+```sh
+npm run lint
 npm run build
-npm run start
+npm run start -- --hostname 127.0.0.1 --port 3006
+node scripts/verify-site.mjs http://127.0.0.1:3006
 ```
 
-## ☁️ Deploy en Vercel + GitHub (paso a paso)
+Detener el servidor de desarrollo antes de compilar: ambos usan `.next`. No ejecutar tareas de otro proyecto en esta carpeta.
 
-### 1. Sube el código a GitHub
+## Contenido y funcionamiento
 
-```bash
-cd "/Users/ivancadavieeco/PAGINA BOTMATE"
-git init
-git add .
-git commit -m "BotMate: sitio inicial Next.js"
-git branch -M main
-# Crea el repo vacío en https://github.com/new (ej. botmate-web)
-git remote add origin https://github.com/<TU_USUARIO>/botmate-web.git
-git push -u origin main
-```
+- Inicio editorial, catálogo con búsqueda/filtros/comparación, diez fichas de referencia, soluciones por industria, servicios, renta, compra, refacciones, Botmate, galería, cinco guías y contacto.
+- `lib/robots.ts`: fichas con fabricante, fuentes y datos de referencia. URLs antiguas conservadas; no representan confirmación de stock ni de catálogo vigente.
+- `lib/site.ts`: datos de contacto conservados del proyecto. Confirmar vigencia antes de publicar.
+- `components/ContactForm.tsx`: construye una consulta local, permite revisarla y abre WhatsApp al pulsar el enlace. No hay almacenamiento de prospectos ni confirmación de envío. Las reservas se gestionan por separado en la agenda pública de Google Calendar.
+- Fotografías WebP con procedencia en `docs/redesign/selected-media.json`; wordmark copiado sin redibujar de la carpeta de marca.
+- Cuatro secuencias en `lib/films.ts`: dos animaciones IA de fotografías reales y dos movimientos de cámara por transformación de píxeles, producidos en Higgsfield. Carga según visibilidad, sin audio, controles de pausa, póster y respeto a movimiento reducido/ahorro de datos. Se conserva el video original de galería a petición.
+- `/reservar`: citas reales de 30 minutos por Google Meet; Google Calendar se carga al pulsar el botón. Enlaces públicos en `lib/booking.ts`.
+- `GOOGLE_BUSINESS_PROFILE_URL`: enlace del perfil auténtico para activar el módulo de opiniones; aún pendiente. No se inventan estrellas ni testimonios.
+- CSP con nonce por respuesta, cabeceras de protección y bloqueo de recursos externos salvo el iframe de la agenda. HTML dinámico sin caché compartida por seguridad del nonce.
+- Newsletter, Google Analytics y Meta Pixel desactivados. La medición requiere una implementación y condiciones de privacidad aprobadas.
+- Los casos/testimonios no respaldados se retiraron. Las URLs de detalles de casos y el artículo fiscal devuelven 404; no se encuentran en el sitemap.
 
-### 2. Conecta a Vercel
+## Documentación de entrega
 
-1. Entra a https://vercel.com/new
-2. Importa el repo `botmate-web`
-3. Vercel detecta automáticamente Next.js → **Deploy**
-4. Agrega variables de entorno (opcional):
-   - `NEXT_PUBLIC_SITE_URL=https://botmate.mx`
-   - `NEXT_PUBLIC_WHATSAPP=525531491986`
-   - `NEXT_PUBLIC_EMAIL=contacto@botmate.mx`
+- [Auditoría y arquitectura](docs/redesign/01-auditoria-y-propuesta.md)
+- [Fuentes y pendientes de validación](docs/redesign/02-fuentes-y-validacion.md)
+- [Guion de Higgsfield](docs/redesign/03-guion-higgsfield.md)
+- [Inventario de 149 recursos](docs/redesign/media-inventory.json)
+- [Reporte de la primera entrega](docs/redesign/04-entrega-y-qa.md)
+- [Segunda dirección, medios y pruebas](docs/redesign/05-movimiento-reservas-seguridad.md)
 
-### 3. Conectar dominio botmate.mx
+## Estado de publicación
 
-1. En Vercel → Project → Settings → Domains → Add → `botmate.mx`
-2. En tu proveedor DNS (donde tienes registrado el dominio):
-   - Para el dominio raíz: registro `A` apuntando a `76.76.21.21`
-   - Para `www`: registro `CNAME` apuntando a `cname.vercel-dns.com`
-3. Apaga WordPress y espera propagación DNS (5 min – 24 h)
-
-### 4. Indexación
-
-Después de deploy:
-- Da de alta el dominio en [Google Search Console](https://search.google.com/search-console)
-- Envía el sitemap: `https://botmate.mx/sitemap.xml`
-- Da de alta en [Bing Webmaster Tools](https://www.bing.com/webmasters)
-
-## 📁 Estructura
-
-```
-app/
-  layout.tsx              # Layout raíz con metadata global + JSON-LD
-  page.tsx                # Home
-  sitemap.ts              # Sitemap dinámico
-  robots.ts               # robots.txt
-  robots/
-    page.tsx              # Catálogo
-    [slug]/page.tsx       # Detalle de robot
-  renta/page.tsx
-  venta/page.tsx
-  refacciones/page.tsx
-  sectores/page.tsx
-  contacto/page.tsx
-components/               # Hero, Navbar, Footer, FAQ, etc.
-lib/
-  site.ts                 # Config global (contacto, métricas)
-  robots.ts               # Catálogo y datos de los robots
-public/                   # og.svg, logo.svg
-```
-
-## 🔧 Personalización rápida
-
-- **Datos de contacto:** `lib/site.ts`
-- **Catálogo de robots:** `lib/robots.ts`
-- **Colores y tema:** `tailwind.config.ts` + `app/globals.css`
-- **FAQ:** `components/FAQ.tsx`
-
-## 🧠 SEO incluido
-
-- Metadata por página con title templates y canonical
-- JSON-LD: Organization, LocalBusiness, WebSite, Product
-- Sitemap XML automático con todas las rutas y robots
-- robots.txt apuntando al sitemap
-- OpenGraph + Twitter Cards con imagen 1200×630
-- `lang="es-MX"`, theme-color, viewport y favicons SVG
-
-## 📞 Soporte
-
-Cualquier cambio en el catálogo, sectores, FAQ o textos se edita en los archivos correspondientes y se hace `git push` — Vercel redespliega automáticamente.
+El proyecto Vercel `botmate` está vinculado a `ivanrdsm-dot/botmate`, con `main` como rama de producción y `botmate.mx` como dominio. El usuario autorizó publicar este rediseño y usar y transformar sus fotografías en Higgsfield/OpenAI. El enlace de Google Maps y el aviso integral de privacidad continúan pendientes; las fichas muestran datos de referencia, con condiciones comerciales por confirmar. Los reportes de `docs/redesign` registran la revisión previa al despliegue.

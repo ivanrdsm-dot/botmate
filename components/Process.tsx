@@ -1,32 +1,50 @@
 import SectionTitle from "./SectionTitle";
-import { Search, ClipboardCheck, Truck, Headset } from "lucide-react";
-
-const steps = [
-  { icon: Search, title: "Diagnóstico", desc: "Visitamos tu sitio o analizamos planos para recomendar el robot ideal." },
-  { icon: ClipboardCheck, title: "Propuesta", desc: "Cotización transparente con planes de renta, venta o leasing." },
-  { icon: Truck, title: "Instalación", desc: "Mapeo SLAM, configuración, capacitación y go-live en 48-72 hrs." },
-  { icon: Headset, title: "Soporte 24/7", desc: "Mantenimiento, refacciones y monitoreo remoto continuo." },
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+export const steps = [
+  {
+    title: "Entendemos tu operación",
+    desc: "Partimos de la tarea, el espacio y las necesidades de tu equipo.",
+  },
+  {
+    title: "Evaluamos la solución",
+    desc: "Revisamos el modelo, las rutas y las condiciones de implementación.",
+  },
+  {
+    title: "Preparamos a tu equipo",
+    desc: "Definimos la puesta en marcha y el alcance de la capacitación.",
+  },
+  {
+    title: "Damos seguimiento",
+    desc: "Acordamos los canales de soporte y el plan de mantenimiento.",
+  },
 ];
-
 export default function Process() {
   return (
-    <section className="py-20">
+    <section className="section-space process-section">
       <div className="container-x">
-        <SectionTitle
-          eyebrow="Proceso"
-          title={<>De la idea a la operación en <span className="gradient-text">72 horas</span></>}
-        />
-        <div className="mt-12 grid gap-5 md:grid-cols-4">
+        <div className="section-heading-row">
+          <SectionTitle
+            eyebrow="El valor de hacerlo con Botmate"
+            title={
+              <>
+                Un robot. Todo un
+                <br />
+                proceso a tu lado.
+              </>
+            }
+          />
+          <Link href="/servicios" className="text-link">
+            Conoce el acompañamiento
+            <ArrowUpRight size={17} />
+          </Link>
+        </div>
+        <div className="process-grid">
           {steps.map((s, i) => (
-            <div key={s.title} className="card-tech">
-              <div className="flex items-center justify-between">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent-violet/20 ring-1 ring-white/10">
-                  <s.icon className="h-5 w-5 text-accent" />
-                </div>
-                <span className="font-display text-3xl font-bold text-white/10">0{i + 1}</span>
-              </div>
-              <h3 className="mt-4 font-display text-lg font-semibold">{s.title}</h3>
-              <p className="mt-1 text-sm text-white/60">{s.desc}</p>
+            <div key={s.title}>
+              <span className="step-number">0{i + 1}</span>
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
             </div>
           ))}
         </div>

@@ -1,112 +1,55 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
-import Script from "next/script";
+import { Manrope } from "next/font/google";
+import { headers } from "next/headers";
 import "./globals.css";
 import { site } from "@/lib/site";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
-import Analytics from "@/components/Analytics";
-import SmartCursor from "@/components/SmartCursor";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
-const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
-
+import MotionProvider from "@/components/MotionProvider";
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Renta y venta de robots de servicio en México · BotMate`,
-    template: `%s | ${site.name}`,
+    default: "Botmate · Robots de servicio en México",
+    template: "%s | Botmate",
   },
   description: site.description,
   applicationName: site.name,
-  generator: "Next.js",
-  keywords: [
-    "robots en renta México",
-    "renta de robots",
-    "venta de robots México",
-    "robot mesero",
-    "robot para restaurante",
-    "BotMate Serve México",
-    "BotMate Serve",
-    "BotMate Ads México",
-    "BotMate Ads",
-    "BotMate Glide",
-    "BotMate Tower",
-    "BotMate Carry",
-    "robot limpieza autónoma",
-    "BotMate Clean",
-    "BotMate México",
-    "robots de servicio México",
-    "robots de servicio",
-    "robot hotelero",
-    "robot hospital",
-    "robot logística",
-    "BotMate Cargo 300",
-    "BotMate Cargo 600",
-    "renta de robots CDMX",
-    "renta de robots Guadalajara",
-    "renta de robots Monterrey",
-    "refacciones robots de servicio",
-    "mantenimiento robots",
-    "automatización restaurantes",
-    "Plan México deducción",
-    "estímulo fiscal robótica",
-  ],
-  alternates: {
-    canonical: "/",
-    languages: { "es-MX": "/", "x-default": "/" },
-  },
-  verification: {
-    google: "-VmDBYxlipsg1I6kHsexB9DDvfEG8y6qoFe_z5_nSYQ",
-  },
+  verification: { google: "-VmDBYxlipsg1I6kHsexB9DDvfEG8y6qoFe_z5_nSYQ" },
   openGraph: {
     type: "website",
     locale: "es_MX",
-    url: site.url,
     siteName: site.name,
-    title: `${site.name} — Renta y venta de robots de servicio en México`,
+    title: "Botmate · Robótica que trabaja contigo",
     description: site.description,
-    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "BotMate — Robots de servicio en México" }],
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Botmate · Robótica que trabaja contigo",
+      },
+    ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `${site.name} — Robots de servicio en México`,
-    description: site.description,
-    images: ["/og.svg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  authors: [{ name: site.name, url: site.url }],
-  creator: site.name,
-  publisher: site.name,
-  category: "Robótica · Automatización · México",
-  other: {
-    "geo.region": "MX",
-    "geo.placename": "Ciudad de México",
-    "geo.position": "19.3673;-99.1872",
-    ICBM: "19.3673, -99.1872",
-  },
+  twitter: { card: "summary_large_image", images: ["/opengraph-image"] },
+  robots: { index: true, follow: true },
 };
-
 export const viewport: Viewport = {
-  themeColor: "#04060B",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
 };
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
   const ld = {
     "@context": "https://schema.org",
     "@graph": [
@@ -115,69 +58,46 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "@id": `${site.url}/#org`,
         name: site.name,
         url: site.url,
-        logo: `${site.url}/logo.svg`,
-        sameAs: Object.values(site.social),
-        contactPoint: [
-          {
-            "@type": "ContactPoint",
-            telephone: site.phone,
-            email: site.email,
-            contactType: "sales",
-            areaServed: "MX",
-            availableLanguage: ["Spanish", "English"],
-          },
-        ],
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": `${site.url}/#business`,
-        name: site.name,
-        image: `${site.url}/og.svg`,
-        url: site.url,
-        telephone: site.phone,
-        email: site.email,
-        priceRange: "$$",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: site.address.street,
-          addressLocality: site.address.locality,
-          addressRegion: site.address.region,
-          postalCode: site.address.postal,
-          addressCountry: site.address.country,
+        logo: `${site.url}/media/botmate-wordmark.png`,
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: site.phone,
+          email: site.email,
+          contactType: "sales",
+          availableLanguage: "Spanish",
         },
-        areaServed: { "@type": "Country", name: "México" },
-        geo: { "@type": "GeoCoordinates", latitude: 19.3673, longitude: -99.1872 },
       },
       {
         "@type": "WebSite",
-        "@id": `${site.url}/#website`,
-        url: site.url,
         name: site.name,
+        url: site.url,
         publisher: { "@id": `${site.url}/#org` },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${site.url}/buscar?q={search_term_string}`,
-          "query-input": "required name=search_term_string",
-        },
       },
     ],
   };
-
   return (
-    <html lang="es-MX" className={`${inter.variable} ${grotesk.variable}`}>
+    <html
+      lang="es-MX"
+      className={manrope.variable}
+      data-scroll-behavior="smooth"
+    >
       <body>
-        <SmartCursor />
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <WhatsAppFab />
-        <Script
-          id="ld-json"
+        <MotionProvider>
+          <a className="skip-link" href="#contenido">
+            Saltar al contenido
+          </a>
+          <Navbar />
+          <main id="contenido" tabIndex={-1}>
+            {children}
+          </main>
+          <Footer />
+          <WhatsAppFab />
+        </MotionProvider>
+        <script
+          nonce={nonce}
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
         />
-        <Analytics />
       </body>
     </html>
   );

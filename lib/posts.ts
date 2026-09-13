@@ -7,169 +7,251 @@ export type Post = {
   date: string; // ISO
   author: { name: string; role: string };
   cover: string;
-  body: { type: "h2" | "p" | "ul" | "quote" | "callout"; content: string | string[] }[];
+  body: {
+    type: "h2" | "p" | "ul" | "quote" | "callout";
+    content: string | string[];
+  }[];
   tags: string[];
 };
 
 export const posts: Post[] = [
   {
     slug: "botmate-serve-vs-botmate-ads-cual-elegir",
-    title: "BotMate Serve vs BotMate Ads: ¿Cuál es el robot ideal para tu restaurante?",
+    title: "Entrega o publicidad: cómo definir la prioridad de tu robot",
     excerpt:
-      "Comparativa exhaustiva entre los dos modelos más populares de BotMate. Analizamos capacidad de carga, navegación, marketing y ROI para que tomes la mejor decisión.",
+      "Una guía para elegir según la tarea, el recorrido y el contenido que necesita tu negocio.",
     category: "Comparativas",
-    readMin: 7,
-    date: "2026-04-22",
-    author: { name: "Equipo BotMate", role: "Robotics Specialists" },
+    readMin: 2,
+    date: "2026-09-13",
+    author: {
+      name: "Botmate",
+      role: "Guías de evaluación",
+    },
     cover: "compare",
-    tags: ["BotMate Serve", "BotMate Ads", "Restaurantes", "Comparativa"],
+    tags: ["Evaluación", "Robótica de servicio"],
     body: [
-      { type: "p", content: "Elegir entre BotMate Serve y BotMate Ads es la pregunta más frecuente entre nuestros clientes restauranteros. Ambos son íconos de BotMate, pero responden a operaciones distintas. Esta guía resuelve la duda con datos." },
-      { type: "h2", content: "Diferencias clave en 30 segundos" },
-      { type: "ul", content: [
-        "BotMate Serve: 4 bandejas · 40 kg · pantalla facial expresiva · ancho 53 cm",
-        "BotMate Ads: 3 bandejas · 15 kg · pantalla publicitaria 18.5\" · ancho 47 cm",
-        "BotMate Serve es para volumen y rotación. BotMate Ads es para marketing y pasillos angostos.",
-      ]},
-      { type: "h2", content: "Cuando elegir BotMate Serve" },
-      { type: "p", content: "Si tu restaurante mueve más de 250 platos por hora pico, BotMate Serve es la elección. Su capacidad de 4 bandejas permite servir 4 mesas simultáneamente sin regresar a cocina." },
-      { type: "h2", content: "Cuando elegir BotMate Ads" },
-      { type: "p", content: "Si tu modelo de negocio incluye monetizar pantalla publicitaria (cadenas de café, food courts, plazas) o tienes pasillos menores a 70 cm, BotMate Ads suma marketing al servicio." },
-      { type: "callout", content: "ROI promedio: BotMate Serve paga su renta con +9 mesas servidas al día. BotMate Ads lo hace con +6 mesas + ingresos publicitarios. En cadenas con marca propia, BotMate Serve suele ganar." },
-      { type: "h2", content: "Veredicto" },
-      { type: "p", content: "No es una decisión binaria. En el 38% de nuestras implementaciones recomendamos flota mixta: BotMate Serve para entrega masiva, BotMate Ads como anfitrión y marketing en entrada." },
+      {
+        type: "h2",
+        content: "Empieza por la tarea",
+      },
+      {
+        type: "p",
+        content:
+          "Anota qué se transporta, cuántas veces se repite el recorrido y quién carga y descarga. Si tu prioridad es comunicar, define el contenido, el público y el punto de interacción antes de elegir la pantalla.",
+      },
+      {
+        type: "h2",
+        content: "Compara el espacio de trabajo",
+      },
+      {
+        type: "ul",
+        content: [
+          "Mide los pasillos con mobiliario en su posición habitual.",
+          "Considera cruces con personas y zonas de espera.",
+          "Identifica pisos, desniveles y puntos de carga.",
+        ],
+      },
+      {
+        type: "h2",
+        content: "Pide una demostración relevante",
+      },
+      {
+        type: "p",
+        content:
+          "La demostración debe representar la tarea que necesitas resolver. Observa el recorrido completo, la interacción con el equipo humano y lo que sucede cuando el robot encuentra un obstáculo. Un accesorio publicitario o una bandeja puede cambiar la configuración necesaria.",
+      },
     ],
   },
   {
     slug: "roi-renta-de-robots-restaurantes",
-    title: "El ROI real de rentar robots en un restaurante mexicano",
+    title: "Cómo evaluar el costo de incorporar un robot",
     excerpt:
-      "Hicimos los números con 14 clientes reales: cuánto ahorras, cuánto vendes más y en qué mes pagas la renta. Spoiler: el break-even es más rápido de lo que crees.",
-    category: "ROI",
-    readMin: 8,
-    date: "2026-04-10",
-    author: { name: "Equipo BotMate", role: "Robotics Specialists" },
+      "Organiza los costos y las mediciones de tu operación antes de comparar renta y compra.",
+    category: "Guías",
+    readMin: 2,
+    date: "2026-09-13",
+    author: {
+      name: "Botmate",
+      role: "Guías de evaluación",
+    },
     cover: "roi",
-    tags: ["ROI", "Renta", "Restaurantes", "Métricas"],
+    tags: ["Evaluación", "Robótica de servicio"],
     body: [
-      { type: "p", content: "El argumento más común contra automatizar un restaurante es: 'cuesta caro'. Lo es solo si calculas mal. Esta guía descompone el ROI con números reales de 14 clientes BotMate en CDMX, GDL y MTY." },
-      { type: "h2", content: "Costos: renta vs sueldo mesero" },
-      { type: "ul", content: [
-        "Renta promedio BotMate Serve: $11,400 MXN/mes (todo incluido)",
-        "Sueldo promedio mesero CDMX + prestaciones: $14,800 MXN/mes",
-        "El robot no es sustituto, es multiplicador: libera al mesero para vender",
-      ]},
-      { type: "h2", content: "Ingresos incrementales" },
-      { type: "p", content: "Con BotMate Serve, el mesero deja de cargar platos y pasa a sugerir postres, vinos y experiencias. Nuestros 14 clientes reportan en promedio +14% en ticket por la mesa atendida." },
-      { type: "callout", content: "Break-even típico: mes 4-6. A partir del mes 7, cada peso de renta genera $2.30 MXN de utilidad incremental." },
-      { type: "h2", content: "Deducción fiscal Plan México" },
-      { type: "p", content: "La renta es 100% deducible. Si compras bajo el estímulo del Plan México, puedes deducir hasta 89% de la inversión en el ejercicio fiscal." },
-      { type: "h2", content: "Cómo medir el tuyo" },
-      { type: "p", content: "Pídenos una simulación gratuita: con tu ticket promedio, cubierto promedio y horario pico calculamos tu ROI estimado en menos de 10 minutos." },
+      {
+        type: "h2",
+        content: "Define qué quieres medir",
+      },
+      {
+        type: "p",
+        content:
+          "Elige una tarea concreta y registra cómo se realiza hoy: frecuencia, duración de los recorridos y personas involucradas. Evita atribuir a la robótica cambios que también pueden deberse al horario, al personal o a la demanda.",
+      },
+      {
+        type: "h2",
+        content: "Compara el costo completo",
+      },
+      {
+        type: "ul",
+        content: [
+          "Equipo y accesorios de la versión seleccionada.",
+          "Traslado, instalación e integraciones.",
+          "Capacitación, mantenimiento y consumibles.",
+          "Tiempo de preparación y seguimiento del equipo.",
+        ],
+      },
+      {
+        type: "h2",
+        content: "Repite la medición en condiciones comparables",
+      },
+      {
+        type: "p",
+        content:
+          "Evalúa el mismo recorrido y una carga de trabajo semejante durante la prueba. Documenta tanto las tareas completadas como las intervenciones del personal. Ese registro ayuda a decidir si la solución tiene sentido para tu proyecto; no sustituye una cotización ni garantiza un ahorro.",
+      },
     ],
   },
   {
     slug: "como-implementar-robot-en-restaurante",
-    title: "Implementar un robot en tu restaurante: guía paso a paso (sin estrés)",
+    title: "Prepara tu restaurante para una demostración",
     excerpt:
-      "Desde el mapeo SLAM hasta el primer turno con clientes. Te enseñamos qué esperar, qué preparar y los 5 errores que NO debes cometer.",
+      "Qué conviene revisar antes de probar un robot de servicio en tu espacio.",
     category: "Guías",
-    readMin: 10,
-    date: "2026-03-28",
-    author: { name: "Equipo BotMate", role: "Implementación" },
+    readMin: 2,
+    date: "2026-09-13",
+    author: {
+      name: "Botmate",
+      role: "Guías de evaluación",
+    },
     cover: "guide",
-    tags: ["Implementación", "Guía", "Restaurantes"],
+    tags: ["Evaluación", "Robótica de servicio"],
     body: [
-      { type: "p", content: "Implementar bien un robot de servicio es 80% preparación y 20% tecnología. Aquí te resumimos el proceso completo de BotMate." },
-      { type: "h2", content: "1. Diagnóstico del sitio (día 1)" },
-      { type: "p", content: "Visitamos tu local, medimos pasillos, identificamos zonas conflictivas (puertas batientes, alfombras gruesas, desniveles) y entendemos tu flujo de servicio." },
-      { type: "h2", content: "2. Mapeo SLAM (día 2)" },
-      { type: "p", content: "El robot navega tu restaurante con LiDAR y crea un mapa 3D. Configuramos rutas, puntos de pickup en cocina y mesas destino." },
-      { type: "h2", content: "3. Capacitación al equipo (día 3-4)" },
-      { type: "p", content: "Hosts, meseros y cocineros aprenden a operar pantalla, comandos por voz y protocolos de excepción. La mayoría aprende en menos de 30 minutos." },
-      { type: "h2", content: "4. Soft launch (día 5-7)" },
-      { type: "p", content: "Operación en sombra durante los servicios. El robot funciona, pero un mesero acompaña por si hay ajustes." },
-      { type: "callout", content: "Errores comunes: pasillos saturados con sillas mal acomodadas, WiFi inestable, falta de pickup point claro en cocina, no informar al cliente que el robot llegará a su mesa, no usar las funciones de marketing." },
-      { type: "h2", content: "5. Go-live y mejora continua" },
-      { type: "p", content: "BotMate monitorea métricas semanales el primer mes: entregas exitosas, tiempo promedio, intervenciones humanas. Optimizamos rutas hasta obtener +95% de éxito autónomo." },
+      {
+        type: "h2",
+        content: "Dibuja el recorrido habitual",
+      },
+      {
+        type: "p",
+        content:
+          "Marca el origen, los destinos y las zonas de espera. Incluye puertas, mobiliario y cualquier punto donde se crucen clientes y personal. Lleva medidas de los pasos más estrechos para compararlas con la ficha del modelo.",
+      },
+      {
+        type: "h2",
+        content: "Organiza a las personas",
+      },
+      {
+        type: "ul",
+        content: [
+          "Define quién carga, descarga y solicita el recorrido.",
+          "Prepara una tarea representativa del servicio habitual.",
+          "Acuerda cómo se atenderán bloqueos o pausas.",
+          "Asigna un responsable de recopilar observaciones.",
+        ],
+      },
+      {
+        type: "h2",
+        content: "Observa más que la llegada",
+      },
+      {
+        type: "p",
+        content:
+          "Revisa la estabilidad de la carga, los cruces, los tiempos de espera y la facilidad de uso para el personal. Al terminar, identifica qué condiciones hay que ajustar y pide una propuesta que explique el alcance de puesta en marcha y capacitación.",
+      },
     ],
   },
   {
     slug: "limpieza-autonoma-botmate-clean-vs-tradicional",
-    title: "Limpieza autónoma BotMate Clean vs cuadrilla tradicional: el caso financiero",
+    title: "Limpieza autónoma y con operador: tareas distintas",
     excerpt:
-      "Una plaza comercial de 80,000 m² descubrió que el BotMate Clean ahorra 44% en costo de limpieza y libera al personal humano para tareas de mayor valor.",
-    category: "Comparativas",
-    readMin: 6,
-    date: "2026-03-12",
-    author: { name: "Equipo BotMate", role: "Operations" },
+      "Cómo preparar la evaluación de equipos de limpieza sin confundir sus formas de uso.",
+    category: "Guías",
+    readMin: 2,
+    date: "2026-09-13",
+    author: {
+      name: "Botmate",
+      role: "Guías de evaluación",
+    },
     cover: "cleaning",
-    tags: ["BotMate Clean", "Limpieza", "Retail"],
+    tags: ["Evaluación", "Robótica de servicio"],
     body: [
-      { type: "p", content: "El BotMate Clean barre, aspira, friega y trapea de forma autónoma. ¿Realmente vale la pena vs un equipo de limpieza humano? Hicimos el ejercicio." },
-      { type: "h2", content: "Costo total por m²/año" },
-      { type: "ul", content: [
-        "Cuadrilla tradicional: $48 MXN/m²/año (mano de obra + supervisión + insumos)",
-        "BotMate Clean en renta: $27 MXN/m²/año (renta + electricidad + agua)",
-        "Ahorro: 44% sostenido y predecible",
-      ]},
-      { type: "h2", content: "Lo que NO sustituye" },
-      { type: "p", content: "El BotMate Clean no reemplaza a tu equipo humano: lo libera. Los humanos siguen siendo necesarios para detalle, baños, vidrios y vaciado de basureros. El BotMate Clean hace el trabajo pesado y repetitivo." },
-      { type: "callout", content: "En plazas de >50,000 m² el ROI del BotMate Clean se materializa en 11-14 meses. En oficinas grandes, en 9-11 meses." },
+      {
+        type: "h2",
+        content: "Clasifica tus superficies",
+      },
+      {
+        type: "p",
+        content:
+          "Registra el tipo de piso, el área y las restricciones de horario. Considera obstáculos, materiales delicados, alfombras y zonas que requieren protocolos específicos de tu organización.",
+      },
+      {
+        type: "h2",
+        content: "Distingue cómo se opera el equipo",
+      },
+      {
+        type: "p",
+        content:
+          "Una solución autónoma necesita rutas y condiciones de trabajo definidas. Una fregadora conducida por una persona depende de la dirección del operador. Consulta la forma de uso del modelo exacto antes de planear turnos o reasignar tareas.",
+      },
+      {
+        type: "h2",
+        content: "Revisa los consumibles y el servicio",
+      },
+      {
+        type: "ul",
+        content: [
+          "Compatibilidad de cepillos, filtros y productos de limpieza.",
+          "Acceso a carga, agua y disposición de residuos.",
+          "Trabajo de detalle que permanece a cargo del personal.",
+          "Mantenimiento y capacitación incluidos en la propuesta.",
+        ],
+      },
     ],
   },
   {
     slug: "futuro-robotica-mexico-2026",
-    title: "El estado de la robótica de servicio en México 2026",
+    title: "Qué preguntar antes de elegir un proveedor de robótica",
     excerpt:
-      "Análisis del mercado mexicano: adopción por sector, principales jugadores, regulación y tendencias para los próximos 24 meses.",
-    category: "Tendencias",
-    readMin: 9,
-    date: "2026-02-28",
-    author: { name: "Equipo BotMate", role: "Research" },
+      "Una lista práctica para comparar propuestas por alcance y claridad.",
+    category: "Guías",
+    readMin: 2,
+    date: "2026-09-13",
+    author: {
+      name: "Botmate",
+      role: "Guías de evaluación",
+    },
     cover: "future",
-    tags: ["Mercado", "Tendencias", "México"],
+    tags: ["Evaluación", "Robótica de servicio"],
     body: [
-      { type: "p", content: "México vive el momento más interesante en adopción de robótica de servicio de su historia. El Plan México, el nearshoring y el costo creciente de mano de obra empujan a empresas de todos los sectores a explorar automatización." },
-      { type: "h2", content: "Crecimiento por sector" },
-      { type: "ul", content: [
-        "Restaurantes: +210% YoY en flota desplegada",
-        "Hotelería: +140% YoY, principalmente Cancún-Riviera y CDMX",
-        "Manufactura: AMR de carga creció 360% por nearshoring",
-        "Salud: aún incipiente, pero con 5 hospitales pioneros en CDMX y MTY",
-      ]},
-      { type: "h2", content: "El factor Plan México" },
-      { type: "p", content: "El estímulo fiscal de hasta 89% de deducción está acelerando decisiones que tomarían meses. Las empresas están aprovechando el ejercicio fiscal 2026 para automatizar." },
-      { type: "h2", content: "Predicciones BotMate" },
-      { type: "ul", content: [
-        "2026: 5,000+ robots de servicio operando en México",
-        "2027: integración masiva con IA generativa (robots que conversan)",
-        "2028: primeros robots con piernas en hotelería premium",
-      ]},
-    ],
-  },
-  {
-    slug: "guia-fiscal-plan-mexico-robots",
-    title: "Plan México: cómo deducir hasta 89% al comprar robots",
-    excerpt:
-      "Te explicamos paso a paso cómo aplicar el estímulo fiscal del Plan México a tu inversión en robots de servicio, sin letra pequeña.",
-    category: "ROI",
-    readMin: 6,
-    date: "2026-02-14",
-    author: { name: "Equipo BotMate", role: "Finance" },
-    cover: "tax",
-    tags: ["Fiscal", "Plan México", "Deducción"],
-    body: [
-      { type: "p", content: "El Plan México incluye estímulos fiscales para empresas que invierten en innovación, automatización y tecnologías limpias. Los robots de servicio aplican en ambas categorías." },
-      { type: "h2", content: "Quién puede aplicar" },
-      { type: "ul", content: [
-        "Personas morales bajo régimen general",
-        "MIPYMES con activos elegibles",
-        "Empresas que demuestren impacto en productividad o sostenibilidad",
-      ]},
-      { type: "h2", content: "Cómo se aplica" },
-      { type: "p", content: "Se trata de una deducción inmediata acelerada que permite restar hasta 89% del costo de adquisición del activo en el ejercicio fiscal donde se compra. Aplica también a renta financiera." },
-      { type: "callout", content: "Importante: consulta siempre con tu contador o fiscalista. BotMate proporciona la documentación técnica que respalda el activo." },
+      {
+        type: "h2",
+        content: "Identifica el equipo exacto",
+      },
+      {
+        type: "p",
+        content:
+          "Pide el fabricante, el nombre completo del modelo, la versión y los accesorios. La fotografía o el nombre comercial por sí solos no definen la configuración que recibirás.",
+      },
+      {
+        type: "h2",
+        content: "Deja las condiciones por escrito",
+      },
+      {
+        type: "ul",
+        content: [
+          "Precio y conceptos incluidos en la cotización.",
+          "Disponibilidad, entrega y requisitos del sitio.",
+          "Garantía, mantenimiento y canales de soporte.",
+          "Responsabilidades del proveedor y del cliente.",
+        ],
+      },
+      {
+        type: "h2",
+        content: "Solicita evidencia relacionada con tu tarea",
+      },
+      {
+        type: "p",
+        content:
+          "Si una propuesta incluye porcentajes de ahorro o productividad, pregunta cómo se midieron, en qué condiciones y con qué plazo. La experiencia de otra operación puede orientar la conversación, pero no reemplaza la evaluación de tu espacio.",
+      },
     ],
   },
 ];

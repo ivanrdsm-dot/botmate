@@ -7,12 +7,12 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Renta y venta de robots de servicio BotMate en México.",
     start_url: "/",
     display: "standalone",
-    background_color: "#04060B",
-    theme_color: "#04060B",
+    background_color: "#ffffff",
+    theme_color: "#ffffff",
     lang: "es-MX",
     icons: [
       { src: "/icon.svg", sizes: "any", type: "image/svg+xml" },
-      { src: "/logo.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+
     ],
   };
 }

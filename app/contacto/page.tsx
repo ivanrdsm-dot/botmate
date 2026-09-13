@@ -1,110 +1,85 @@
 import type { Metadata } from "next";
-import SectionTitle from "@/components/SectionTitle";
+import { Mail, Phone, MessageCircle } from "lucide-react";
+import PageIntro from "@/components/PageIntro";
 import ContactForm from "@/components/ContactForm";
-import DemoScheduler from "@/components/DemoScheduler";
 import { site, waLink } from "@/lib/site";
-import { Mail, MessageCircle, MapPin, Phone, Clock } from "lucide-react";
-
 export const metadata: Metadata = {
-  title: "Contacto BotMate — Cotiza robots y agenda demo gratis en México",
+  title: "Contacto · Demostraciones y cotizaciones de robots",
   description:
-    "Cotiza renta o venta de robots de servicio BotMate, agenda demo gratuita o solicita servicio técnico. Respuesta en menos de 24 horas. WhatsApp +52 55 3149 1986 · contacto@botmate.mx · CDMX y toda la República.",
+    "Comparte tu proyecto con Botmate y consulta renta, compra o soporte. Prepara tu solicitud para continuar por WhatsApp, correo o teléfono.",
   alternates: { canonical: "/contacto" },
-  keywords: [
-    "cotizar robot México",
-    "agendar demo robot",
-    "contacto BotMate",
-    "WhatsApp robots de servicio",
-    "soporte técnico robot México",
-  ],
 };
-
-export default function ContactoPage() {
+export default async function Page(
+  props: {
+    searchParams: Promise<{ interes?: string | string[]; robot?: string | string[] }>;
+  }
+) {
+  const searchParams = await props.searchParams;
+  const intent =
+    typeof searchParams.interes === "string" &&
+    ["Demo", "Cotizacion", "Renta", "Compra", "Soporte"].includes(
+      searchParams.interes,
+    )
+      ? searchParams.interes
+      : "Demo";
+  const robot =
+    typeof searchParams.robot === "string"
+      ? searchParams.robot.slice(0, 100)
+      : "";
   return (
     <>
-      <section className="pt-32">
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Contacto"
-            title={<>Hablemos de tu <span className="gradient-text">próximo robot</span></>}
-            description="Te respondemos en menos de 24 horas hábiles. Si prefieres atención inmediata, escríbenos por WhatsApp."
-          />
+      <PageIntro
+        eyebrow="Contacto"
+        title={
+          <>
+            Hablemos de lo
+            <br />
+            que <span>quieres mejorar.</span>
+          </>
+        }
+        description="Cuéntanos cómo funciona tu negocio y qué tarea te gustaría automatizar. Ese es el primer paso para encontrar la solución adecuada."
+      />
+      <section className="section-space section-compact">
+        <div className="container-x contact-layout">
+          <aside className="contact-aside">
+            <h2>Conversemos a tu manera.</h2>
+            <div className="contact-options">
+              <a href={waLink()} target="_blank" rel="noopener noreferrer">
+                <MessageCircle size={22} />
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>{site.whatsappDisplay}</span>
+                </div>
+              </a>
+              <a href={`mailto:${site.email}`}>
+                <Mail size={22} />
+                <div>
+                  <strong>Correo electrónico</strong>
+                  <span>{site.email}</span>
+                </div>
+              </a>
+              <a href={`tel:${site.phone}`}>
+                <Phone size={22} />
+                <div>
+                  <strong>Por teléfono</strong>
+                  <span>{site.phoneDisplay}</span>
+                </div>
+              </a>
+            </div>
+            <p className="eyebrow">Para preparar tu demostración</p>
+            <p>
+              Ten a la mano tu ubicación, el tipo de espacio y la tarea que
+              quieres resolver. Coordinaremos contigo el modelo, la modalidad y
+              las condiciones de la visita.
+            </p>
+            <p>
+              La fecha y disponibilidad se confirman directamente con el equipo
+              comercial.
+            </p>
+          </aside>
+          <ContactForm key={`${intent}-${robot}`} initialInterest={intent} initialRobot={robot} />
         </div>
       </section>
-
-      <section className="py-12">
-        <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.2fr]">
-          <div className="space-y-4">
-            <ContactInfo
-              icon={Phone}
-              title="WhatsApp & Teléfono"
-              value={site.whatsappDisplay}
-              href={`tel:${site.phone}`}
-            />
-            <ContactInfo
-              icon={MessageCircle}
-              title="Chat directo"
-              value="Abrir conversación"
-              href={waLink()}
-              external
-            />
-            <ContactInfo
-              icon={Mail}
-              title="Correo"
-              value={site.email}
-              href={`mailto:${site.email}`}
-            />
-            <ContactInfo
-              icon={MapPin}
-              title="Oficina CDMX"
-              value={`${site.address.street}, ${site.address.locality}`}
-            />
-            <ContactInfo
-              icon={Clock}
-              title="Horario"
-              value="Lun a Vie · 9:00 – 18:00 · Soporte 24/7"
-            />
-          </div>
-
-          <div>
-            <ContactForm />
-          </div>
-        </div>
-      </section>
-
-      <DemoScheduler />
     </>
-  );
-}
-
-function ContactInfo({
-  icon: Icon,
-  title,
-  value,
-  href,
-  external,
-}: {
-  icon: React.ComponentType<{ className?: string }>;
-  title: string;
-  value: string;
-  href?: string;
-  external?: boolean;
-}) {
-  const inner = (
-    <div className="card-tech flex items-start gap-4">
-      <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-accent/20 to-accent-violet/20 ring-1 ring-white/10">
-        <Icon className="h-5 w-5 text-accent" />
-      </div>
-      <div>
-        <p className="text-xs uppercase tracking-wider text-white/50">{title}</p>
-        <p className="mt-0.5 text-white">{value}</p>
-      </div>
-    </div>
-  );
-  if (!href) return inner;
-  return (
-    <a href={href} target={external ? "_blank" : undefined} rel={external ? "noopener" : undefined} className="block">
-      {inner}
-    </a>
   );
 }

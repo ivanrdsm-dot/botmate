@@ -1,72 +1,52 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
 import Logo from "./Logo";
 import { site } from "@/lib/site";
-
+import { ArrowUpRight } from "lucide-react";
 export default function Footer() {
   return (
-    <footer className="relative mt-24 border-t border-white/10 bg-bg-soft">
-      <div className="absolute inset-x-0 -top-px mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-accent to-transparent" />
-      <div className="container-x py-16">
-        <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <Logo className="h-7" />
-            <p className="mt-4 max-w-md text-sm text-white/60">
-              El compañero robot ideal para tu marca. Renta y venta de robots de servicio para publicidad interactiva, eventos, exposiciones y limpieza en todo México. Robots de servicio de vanguardia.
+    <footer className="site-footer">
+      <div className="container-x">
+        <div className="footer-grid">
+          <div>
+            <Link href="/" aria-label="Botmate · Inicio">
+              <Logo />
+            </Link>
+            <p className="footer-description">
+              Robótica que trabaja contigo.
+              <br />
+              Soluciones de servicio para México.
             </p>
-            <div className="mt-6 flex gap-3">
-              <a href={site.social.instagram} aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href={site.social.linkedin} aria-label="LinkedIn" className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10">
-                <Linkedin className="h-4 w-4" />
-              </a>
-            </div>
+            <a className="text-link" href={`mailto:${site.email}`}>
+              {site.email}
+              <ArrowUpRight size={16} />
+            </a>
           </div>
-
-          <div className="md:col-span-2">
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50">Soluciones</h4>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li><Link href="/robots" className="text-white/70 hover:text-white">Catálogo</Link></li>
-              <li><Link href="/renta" className="text-white/70 hover:text-white">Renta</Link></li>
-              <li><Link href="/venta" className="text-white/70 hover:text-white">Venta</Link></li>
-              <li><Link href="/refacciones" className="text-white/70 hover:text-white">Refacciones</Link></li>
-              <li><Link href="/sectores" className="text-white/70 hover:text-white">Sectores</Link></li>
-            </ul>
+          <div>
+            <h2>Explorar</h2>
+            <Link href="/robots">Robots</Link>
+            <Link href="/sectores">Soluciones por industria</Link>
+            <Link href="/renta">Renta de robots</Link>
+            <Link href="/venta">Compra de robots</Link>
           </div>
-
-          <div className="md:col-span-2">
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50">Empresa</h4>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li><Link href="/nosotros" className="text-white/70 hover:text-white">Nosotros</Link></li>
-              <li><Link href="/casos-de-exito" className="text-white/70 hover:text-white">Casos de éxito</Link></li>
-              <li><Link href="/blog" className="text-white/70 hover:text-white">Blog</Link></li>
-              <li><Link href="/contacto" className="text-white/70 hover:text-white">Contacto</Link></li>
-            </ul>
+          <div>
+            <h2>Acompañamiento</h2>
+            <Link href="/servicios">Implementación y soporte</Link>
+            <Link href="/refacciones">Refacciones</Link>
+            <Link href="/blog">Guías y recursos</Link>
+            <Link href="/casos-de-exito">Galería de aplicaciones</Link>
           </div>
-
-          <div className="md:col-span-3">
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50">Contacto</h4>
-            <ul className="mt-4 space-y-3 text-sm">
-              <li className="flex items-start gap-2 text-white/70">
-                <Phone className="mt-0.5 h-4 w-4 text-accent" />
-                <a href={`tel:${site.phone}`}>{site.whatsappDisplay}</a>
-              </li>
-              <li className="flex items-start gap-2 text-white/70">
-                <Mail className="mt-0.5 h-4 w-4 text-accent" />
-                <a href={`mailto:${site.email}`}>{site.email}</a>
-              </li>
-              <li className="flex items-start gap-2 text-white/70">
-                <MapPin className="mt-0.5 h-4 w-4 text-accent" />
-                <span>{site.address.street}, {site.address.locality}, {site.address.region}</span>
-              </li>
-            </ul>
+          <div>
+            <h2>Conversemos</h2>
+            <Link href="/nosotros">Acerca de Botmate</Link>
+            <Link href="/reservar">Reservar una llamada</Link>
+            <Link href="/contacto">Contacto</Link>
+            <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
           </div>
         </div>
-
-        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} {site.legalName}. Todos los derechos reservados.</p>
-          <p>Marca mexicana · Tecnología BotMate de clase mundial</p>
+        <div className="footer-bottom">
+          <span>© {new Date().getFullYear()} Botmate · México</span>
+          <Link href="/privacidad">Privacidad y datos</Link>
+          <span>Pudu Robotics es marca de su titular.</span>
         </div>
       </div>
     </footer>

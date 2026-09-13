@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-// Robots renombrados a marca BotMate — redirige las URLs viejas (301/308)
+// Conservar URLs históricas y sus redirecciones.
 const robotRedirects = [
   ["bellabot-pro", "botmate-serve"],
   ["kettybot-pro", "botmate-ads"],
@@ -31,9 +31,9 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   images: {
-    remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com" },
-    ],
+    remotePatterns: [],
+    formats: ["image/webp"],
+    qualities: [75, 85, 90],
   },
   async redirects() {
     return [...robotRedirects, ...blogRedirects];
@@ -46,6 +46,9 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
+          { key: "Strict-Transport-Security", value: "max-age=31536000" },
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
         ],
       },
     ];

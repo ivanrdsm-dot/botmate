@@ -1,0 +1,226 @@
+[
+  {
+    "route": "/robots",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/sectores",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/servicios",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/renta",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/venta",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/refacciones",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/nosotros",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/casos-de-exito",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/blog",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/privacidad",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/robots/botmate-clean-mini",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/blog/como-implementar-robot-en-restaurante",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/robots",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/sectores",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/servicios",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/renta",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/venta",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/refacciones",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/nosotros",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/casos-de-exito",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/blog",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/privacidad",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/robots/botmate-clean-mini",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/blog/como-implementar-robot-en-restaurante",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 320
+  },
+  {
+    "route": "/contacto?robot=PUDU%20CC1&interes=Demo",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 320
+  },
+  {
+    "route": "/",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/contacto?robot=PUDU%20CC1&interes=Demo",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 390
+  },
+  {
+    "route": "/",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 768
+  },
+  {
+    "route": "/contacto?robot=PUDU%20CC1&interes=Demo",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 768
+  },
+  {
+    "route": "/",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "route": "/contacto?robot=PUDU%20CC1&interes=Demo",
+    "errors": false,
+    "overflow": false,
+    "violations": [],
+    "width": 1440
+  }
+]

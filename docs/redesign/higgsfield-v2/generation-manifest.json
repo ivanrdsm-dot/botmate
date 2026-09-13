@@ -1,0 +1,94 @@
+{
+  "reviewedAt": "2026-09-13",
+  "images": [
+    {
+      "index": 0,
+      "job_id": "9e035d66-59b2-4468-b88f-fe89ed0255d8",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/hf_20260913_060940_9e035d66-59b2-4468-b88f-fe89ed0255d8.png",
+      "decision": "Robot rejected; only empty left background reused"
+    },
+    {
+      "index": 1,
+      "job_id": "d465b185-34e4-47dd-aafb-e25fa3cf3475",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/hf_20260913_060939_d465b185-34e4-47dd-aafb-e25fa3cf3475.png",
+      "decision": "Rejected: product fidelity changes"
+    },
+    {
+      "index": 2,
+      "job_id": "1bfc0e4c-4a2b-43d8-80d0-769294744e54",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/hf_20260913_060939_1bfc0e4c-4a2b-43d8-80d0-769294744e54.png",
+      "decision": "Rejected: product fidelity changes"
+    }
+  ],
+  "videos": [
+    {
+      "index": 3,
+      "job_id": "cf8378dd-f183-42c3-ac72-30f03e938ea6",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/hf_20260913_061213_cf8378dd-f183-42c3-ac72-30f03e938ea6.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/309eab76-3ec9-4ead-81d4-5c31508572a3.webp",
+      "decision": "Rejected: base leaves frame; replaced with exact-pixel camera motion"
+    },
+    {
+      "index": 4,
+      "job_id": "2966c3dd-f733-466b-a786-b5ad72053231",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/hf_20260913_061213_2966c3dd-f733-466b-a786-b5ad72053231.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/7149fa08-84fe-4147-8f51-9f570be78d33.webp",
+      "decision": "Accepted as labelled AI animation based on original photo"
+    },
+    {
+      "index": 5,
+      "job_id": "80f18c08-7c26-48d4-80bd-2fd730288bf3",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/hf_20260913_061213_80f18c08-7c26-48d4-80bd-2fd730288bf3.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/cfb9c541-49dc-4994-8aff-885b3171f96a.webp",
+      "decision": "Accepted as labelled AI animation based on original photo"
+    }
+  ],
+  "outputs": {
+    "studio": [
+      {
+        "media_id": "38ef09f7-8e3d-4349-8173-f74a51923499",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/38ef09f7-8e3d-4349-8173-f74a51923499.webp"
+      },
+      {
+        "media_id": "23a0863f-338a-493d-8c11-8668b05b0b18",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/23a0863f-338a-493d-8c11-8668b05b0b18.mp4"
+      },
+      {
+        "media_id": "262e01d3-3460-4559-b42f-bcf2a5513908",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/262e01d3-3460-4559-b42f-bcf2a5513908.webp"
+      }
+    ],
+    "exact": [
+      {
+        "media_id": "9f4d28b6-4cdf-42c5-9147-bef3f604f04a",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/9f4d28b6-4cdf-42c5-9147-bef3f604f04a.mp4"
+      },
+      {
+        "media_id": "7b3881e4-6e67-41a7-8b33-905f0ae1d9b9",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/7b3881e4-6e67-41a7-8b33-905f0ae1d9b9.webp"
+      },
+      {
+        "media_id": "52596dd7-ddd8-48b3-822f-27653fd06d57",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNBMxs2kqEX8aw5HaSBzvCnxgy/52596dd7-ddd8-48b3-822f-27653fd06d57.webp"
+      }
+    ]
+  }
+}

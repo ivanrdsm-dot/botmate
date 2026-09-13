@@ -1,91 +1,56 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import SectionTitle from "@/components/SectionTitle";
+import PageIntro from "@/components/PageIntro";
+import FieldGallery from "@/components/FieldGallery";
+import FieldVideo from "@/components/FieldVideo";
 import CTA from "@/components/CTA";
-import TiltCard from "@/components/TiltCard";
-import Reveal from "@/components/Reveal";
-import { cases } from "@/lib/cases";
-import { getCaseCover } from "@/lib/media";
-import { ArrowUpRight, MapPin } from "lucide-react";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
-
 export const metadata: Metadata = {
-  title: "Casos de éxito — Empresas mexicanas que escalaron con BotMate",
+  title: "Galería · Robots en espacios de servicio y eventos",
   description:
-    "Casos reales de restaurantes, hoteles, hospitales, plazas comerciales, CEDIS y corporativos en México que aumentaron productividad y redujeron costos con robots de servicio BotMate.",
+    "Explora el archivo de campo de Botmate con fotografías y un recorrido en video. Conoce aplicaciones sin atribuir resultados comerciales no documentados.",
   alternates: { canonical: "/casos-de-exito" },
-  keywords: [
-    "casos de éxito robots México",
-    "ROI robots restaurantes",
-    "robot hotelero caso real",
-    "automatización hospital México",
-    "BotMate Cargo 600 CEDIS caso",
-  ],
 };
-
-export default function CasosPage() {
+export default function Page() {
   return (
     <>
-      <BreadcrumbSchema items={[{ name: "Inicio", url: "/" }, { name: "Casos de éxito", url: "/casos-de-exito" }]} />
-      <section className="pt-32">
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Casos de éxito"
-            title={<>Resultados que se <span className="gradient-text">miden</span></>}
-            description="Implementaciones reales de BotMate en distintos sectores. KPIs verificados, plazos cumplidos y clientes que repiten."
-          />
+      <PageIntro
+        eyebrow="Galería de aplicaciones"
+        title={
+          <>
+            La tecnología
+            <br />
+            <span>sale al mundo.</span>
+          </>
+        }
+        description="Fotografías del archivo de Botmate en espacios de servicio y eventos. Una referencia visual para imaginar las posibilidades de tu proyecto."
+      />
+      <FieldGallery />
+      <section className="section-space soft-section">
+        <div className="container-x video-panel">
+          <FieldVideo />
+          <div className="video-copy">
+            <p className="eyebrow">Un recorrido en video</p>
+            <h2>
+              Una tarea cotidiana.
+              <br />
+              Otra forma de hacerla.
+            </h2>
+            <p>
+              Observa un robot con bandejas de productos recorriendo el pasillo
+              de una tienda. El video se carga cuando decides reproducirlo.
+            </p>
+            <p>
+              Descripción del clip: un robot avanza con productos acomodados en
+              sus bandejas; la cámara lo acompaña por un pasillo interior. Sin
+              narración.
+            </p>
+            <p>
+              Estas imágenes muestran aplicaciones; no representan una medición
+              de resultados ni una recomendación de las marcas visibles.
+            </p>
+          </div>
         </div>
       </section>
-
-      <section className="py-12">
-        <div className="container-x grid gap-6 lg:grid-cols-2">
-          {cases.map((c, i) => (
-            <Reveal key={c.slug} delay={i}>
-              <TiltCard className="rounded-3xl" max={5}>
-                <Link href={`/casos-de-exito/${c.slug}`} className="card-tech group flex h-full flex-col">
-                  <div className="relative mb-5 aspect-[16/9] overflow-hidden rounded-2xl bg-gradient-to-br from-[#10162E] to-[#070A14]">
-                    <Image
-                      src={getCaseCover(c.hero).src}
-                      alt={getCaseCover(c.hero).alt}
-                      fill
-                      sizes="(min-width: 1024px) 50vw, 100vw"
-                      className="object-cover transition duration-700 group-hover:scale-[1.04]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/25 to-transparent" />
-                    <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-black/50 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white backdrop-blur">
-                      {c.industry}
-                    </span>
-                  </div>
-
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="text-accent">{c.client}</span>
-                    <span className="inline-flex items-center gap-1 text-white/40"><MapPin className="h-3 w-3" /> {c.city}</span>
-                  </div>
-
-                  <h3 className="mt-3 flex items-start justify-between gap-3 font-display text-xl font-semibold leading-tight">
-                    {c.title}
-                    <ArrowUpRight className="h-5 w-5 shrink-0 text-white/40 transition group-hover:rotate-12 group-hover:text-accent" />
-                  </h3>
-                  <p className="mt-2 text-sm text-white/60">{c.summary}</p>
-
-                  <div className="mt-5 grid grid-cols-2 gap-3 border-t border-white/5 pt-5">
-                    {c.results.slice(0, 4).map((r) => (
-                      <div key={r.label}>
-                        <p className="font-display text-xl font-bold gradient-text">{r.value}</p>
-                        <p className="text-[11px] uppercase tracking-wider text-white/50">{r.label}</p>
-                      </div>
-                    ))}
-                  </div>
-                </Link>
-              </TiltCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <CTA title="¿Listo para escribir tu caso de éxito?" subtitle="Te conectamos con un cliente actual de tu industria para que platiquen sin filtros." />
+      <CTA />
     </>
   );
 }
-

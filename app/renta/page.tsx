@@ -1,138 +1,80 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import SectionTitle from "@/components/SectionTitle";
+import PageIntro from "@/components/PageIntro";
 import CTA from "@/components/CTA";
-import FAQ from "@/components/FAQ";
-import { Check, Calendar, Wrench, GraduationCap, Headphones, BadgeDollarSign } from "lucide-react";
-
+import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
-  title: "Renta de robots en México — Planes flexibles desde 1 mes · BotMate",
+  title: "Renta de robots en México",
   description:
-    "Renta robots meseros, de limpieza y de carga en México con planes mensuales, semestrales o anuales. Instalación, capacitación, mantenimiento, refacciones y soporte 24/7 incluidos. BotMate Serve, BotMate Ads, BotMate Clean, BotMate Tower.",
+    "Consulta un robot para tu operación o evento. El modelo, la duración, la logística y el alcance del servicio se definen en una propuesta a tu medida.",
   alternates: { canonical: "/renta" },
-  keywords: [
-    "renta de robots México",
-    "renta robot mesero",
-    "renta BotMate Serve",
-    "renta BotMate Ads",
-    "renta BotMate Clean limpieza",
-    "plan renta robot de servicio",
-    "leasing robots México",
-    "robot mesero precio renta",
-  ],
 };
-
-const plans = [
+const cards = [
   {
-    name: "Mensual",
-    eyebrow: "Sin compromiso",
-    desc: "Prueba el impacto del robot en tu operación con un plan flexible mes a mes.",
-    features: [
-      "Instalación y capacitación incluidas",
-      "Mantenimiento preventivo",
-      "Soporte técnico remoto",
-      "Reemplazo en 24 hrs por falla mayor",
+    tag: "01 / TU NECESIDAD",
+    title: "Un evento o activación",
+    desc: "Comparte la fecha, la sede y la experiencia que quieres crear. Así podemos revisar opciones de servicio y publicidad.",
+    items: [
+      "Tipo de audiencia y evento",
+      "Duración y horario de operación",
+      "Acceso y condiciones del recinto",
     ],
   },
   {
-    name: "Semestral",
-    eyebrow: "Más popular",
-    desc: "El equilibrio ideal entre flexibilidad y tarifa preferencial. Incluye mantenimiento ampliado.",
-    features: [
-      "Hasta 20% de descuento vs mensual",
-      "Mantenimiento preventivo y correctivo",
-      "Refacciones consumibles incluidas",
-      "Soporte prioritario 24/7",
-      "Capacitación continua de personal",
+    tag: "02 / TU OPERACIÓN",
+    title: "Uso en tu negocio",
+    desc: "Evalúa cómo encaja el robot en los recorridos habituales de tu equipo antes de definir un plazo.",
+    items: [
+      "Tarea y volumen de trabajo",
+      "Superficies y rutas",
+      "Disponibilidad del equipo",
     ],
-    highlight: true,
   },
   {
-    name: "Anual + Opción a compra",
-    eyebrow: "Máximo ahorro",
-    desc: "Plan anual con la mejor tarifa y opción a comprar el equipo al final del contrato.",
-    features: [
-      "Hasta 35% de descuento vs mensual",
-      "Garantía extendida total",
-      "Renovación o compra al cierre",
-      "Hasta 89% deducible Plan México",
-      "Cuenta dedicada de éxito",
+    tag: "03 / LA PROPUESTA",
+    title: "El alcance por escrito",
+    desc: "Una buena cotización deja claros los equipos, accesorios, servicios y responsabilidades.",
+    items: [
+      "Entrega y puesta en marcha",
+      "Capacitación y mantenimiento",
+      "Garantía y condiciones de renta",
     ],
   },
 ];
-
-const includes = [
-  { icon: Wrench, t: "Mantenimiento", d: "Preventivo y correctivo con técnicos certificados." },
-  { icon: GraduationCap, t: "Capacitación", d: "Onboarding y refreshers para tu equipo." },
-  { icon: Headphones, t: "Soporte 24/7", d: "Atención remota inmediata y SLA garantizado." },
-  { icon: Calendar, t: "Flexibilidad", d: "Cambia de modelo, escala flota o pausa la renta." },
-  { icon: BadgeDollarSign, t: "Sin inversión inicial", d: "CapEx convertido en OpEx 100% deducible." },
-];
-
-export default function RentaPage() {
+export default function Page() {
   return (
     <>
-      <section className="pt-32">
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Renta de robots"
-            title={<>Automatiza sin <span className="gradient-text">inversión inicial</span></>}
-            description="Accede a la flota más avanzada de robots de servicio, limpieza y carga con planes desde 1 mes. Todo incluido: instalación, mantenimiento, refacciones y soporte."
-          />
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container-x grid gap-6 lg:grid-cols-3">
-          {plans.map((p) => (
-            <div
-              key={p.name}
-              className={`card-tech flex flex-col ${
-                p.highlight ? "ring-2 ring-accent shadow-[0_0_60px_-10px_rgba(34,211,238,0.4)]" : ""
-              }`}
-            >
-              <span className="chip w-fit">{p.eyebrow}</span>
-              <h3 className="mt-4 font-display text-2xl font-bold">{p.name}</h3>
-              <p className="mt-2 text-sm text-white/60">{p.desc}</p>
-              <ul className="mt-6 space-y-3 text-sm">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-white/80">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" /> {f}
-                  </li>
+      <PageIntro
+        eyebrow="Renta de robots"
+        title="Prueba una nueva forma de operar."
+        description="Consulta un robot para tu operación o evento. El modelo, la duración, la logística y el alcance del servicio se definen en una propuesta a tu medida."
+      />
+      <section className="section-space section-compact">
+        <div className="container-x info-grid">
+          {cards.map((c) => (
+            <article className="info-card" key={c.tag}>
+              <p className="eyebrow">{c.tag}</p>
+              <h2>{c.title}</h2>
+              <p>{c.desc}</p>
+              <ul>
+                {c.items.map((i) => (
+                  <li key={i}>{i}</li>
                 ))}
               </ul>
-              <div className="mt-auto pt-8">
-                <Link href="/contacto" className={p.highlight ? "btn-primary w-full" : "btn-ghost w-full"}>
-                  Solicitar cotización
-                </Link>
-              </div>
-            </div>
+              <Link href="/contacto?interes=Renta" className="text-link">
+                Consultar opciones
+                <ArrowUpRight size={16} />
+              </Link>
+            </article>
           ))}
         </div>
       </section>
-
-      <section className="py-12">
-        <div className="container-x">
-          <SectionTitle
-            eyebrow="Todo incluido"
-            title={<>Qué incluye tu <span className="gradient-text">renta</span></>}
-          />
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {includes.map((i) => (
-              <div key={i.t} className="card-tech">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent-violet/20 ring-1 ring-white/10">
-                  <i.icon className="h-5 w-5 text-accent" />
-                </div>
-                <h3 className="font-display text-lg font-semibold">{i.t}</h3>
-                <p className="mt-1 text-sm text-white/60">{i.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <FAQ />
-      <CTA title="Cotiza tu renta hoy" subtitle="Recibe propuesta en menos de 24 horas con el plan que más conviene a tu operación." waMessage="Hola BotMate, quiero rentar un robot. ¿Me comparten planes y disponibilidad?" primaryLabel="Cotizar renta" />
+      <CTA
+        title="Una propuesta que considere cada detalle."
+        subtitle="Precios, disponibilidad, plazos y condiciones se confirman directamente con Botmate para tu proyecto."
+        primaryLabel="Solicitar una cotización"
+        primaryHref="/contacto?interes=Renta"
+      />
     </>
   );
 }

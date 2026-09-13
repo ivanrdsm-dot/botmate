@@ -1,0 +1,58 @@
+[
+  {
+    "source": "/Users/ivancadavieeco/fotos botmate/Imagenes_Robots/BOTMATE_FOTOS__CHAROLAS__IMG_2949.jpeg",
+    "output": "public/media/hero-field.webp",
+    "width": 960,
+    "height": 1280,
+    "bytes": 185856,
+    "use": "User authorized transformation in Higgsfield/OpenAI and use on website on 2026-09-13; local implementation, not deployed."
+  },
+  {
+    "source": "/Users/ivancadavieeco/IMAGENES BOTMATE/VIDEOS E IMAGENES /DSC00151.JPG",
+    "output": "public/media/service-field.webp",
+    "width": 722,
+    "height": 1080,
+    "bytes": 63192,
+    "use": "User authorized transformation in Higgsfield/OpenAI and use on website on 2026-09-13; local implementation, not deployed."
+  },
+  {
+    "source": "/Users/ivancadavieeco/IMAGENES BOTMATE/VIDEOS E IMAGENES /DSC00193.JPG",
+    "output": "public/media/hospitality-field.webp",
+    "width": 722,
+    "height": 1080,
+    "bytes": 79026,
+    "use": "User authorized transformation in Higgsfield/OpenAI and use on website on 2026-09-13; local implementation, not deployed."
+  },
+  {
+    "source": "/Users/ivancadavieeco/IMAGENES BOTMATE/VIDEOS E IMAGENES /DSC00205.JPG",
+    "output": "public/media/display-field.webp",
+    "width": 722,
+    "height": 1080,
+    "bytes": 142818,
+    "use": "User authorized transformation in Higgsfield/OpenAI and use on website on 2026-09-13; local implementation, not deployed."
+  },
+  {
+    "source": "/Users/ivancadavieeco/IMAGENES BOTMATE/VIDEOS E IMAGENES /DSC00209.JPG",
+    "output": "public/media/booth-field.webp",
+    "width": 722,
+    "height": 1080,
+    "bytes": 62126,
+    "use": "User authorized transformation in Higgsfield/OpenAI and use on website on 2026-09-13; local implementation, not deployed."
+  },
+  {
+    "source": "/Users/ivancadavieeco/IMAGENES BOTMATE/VIDEOS E IMAGENES /DSC00491.JPG",
+    "output": "public/media/expo-field.webp",
+    "width": 722,
+    "height": 1080,
+    "bytes": 70960,
+    "use": "User authorized transformation in Higgsfield/OpenAI and use on website on 2026-09-13; local implementation, not deployed."
+  },
+  {
+    "source": "/Users/ivancadavieeco/IMAGENES BOTMATE/DSCF5002.JPG",
+    "output": "public/media/fleet-field.webp",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 136446,
+    "use": "User authorized transformation in Higgsfield/OpenAI and use on website on 2026-09-13; local implementation, not deployed."
+  }
+]

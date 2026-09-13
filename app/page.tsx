@@ -1,112 +1,127 @@
-import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
-import RobotCarousel from "@/components/RobotCarousel";
-import Pillars from "@/components/Pillars";
-import Metrics from "@/components/Metrics";
-import Bento from "@/components/Bento";
-import Gallery from "@/components/Gallery";
-import VideoShowcase from "@/components/VideoShowcase";
-import Compare from "@/components/Compare";
-import Testimonials from "@/components/Testimonials";
-import Process from "@/components/Process";
-import CTA from "@/components/CTA";
-import FAQ from "@/components/FAQ";
-import Newsletter from "@/components/Newsletter";
-import RobotCard from "@/components/RobotCard";
-import ROICalculator from "@/components/ROICalculator";
-import DemoScheduler from "@/components/DemoScheduler";
-import SectionTitle from "@/components/SectionTitle";
-import Reveal from "@/components/Reveal";
-import { robots } from "@/lib/robots";
-import { cases } from "@/lib/cases";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
-
+import {
+  ArrowUpRight,
+  ArrowRight,
+  UtensilsCrossed,
+  MonitorPlay,
+  Sparkles,
+} from "lucide-react";
+import Hero from "@/components/Hero";
+import GoogleReviews from "@/components/GoogleReviews";
+import RobotCard from "@/components/RobotCard";
+import SectionTitle from "@/components/SectionTitle";
+import FieldGallery from "@/components/FieldGallery";
+import FilmGallery from "@/components/FilmGallery";
+import Process from "@/components/Process";
+import FAQ from "@/components/FAQ";
+import CTA from "@/components/CTA";
+import { robots } from "@/lib/robots";
+export const metadata: Metadata = {
+  title: "Robots en México · Renta, venta y soluciones Botmate",
+  description:
+    "Robots de servicio para entrega, publicidad y limpieza. Explora soluciones Pudu Robotics y consulta una demostración con Botmate en México.",
+  alternates: { canonical: "/" },
+};
+const solutions = [
+  {
+    icon: UtensilsCrossed,
+    title: "Servicio que acompaña.",
+    desc: "Apoya el traslado de alimentos y artículos para que tu equipo se concentre en atender.",
+    tag: "ENTREGA Y HOSPITALIDAD",
+    href: "/sectores#restaurantes",
+  },
+  {
+    icon: MonitorPlay,
+    title: "Marcas que conectan.",
+    desc: "Lleva tu contenido al recorrido de los visitantes con pantallas y experiencias de recepción.",
+    tag: "PUBLICIDAD Y EVENTOS",
+    href: "/sectores#retail",
+  },
+  {
+    icon: Sparkles,
+    title: "Espacios que se cuidan.",
+    desc: "Encuentra equipos para el cuidado de pisos, de la limpieza autónoma al trabajo con operador.",
+    tag: "LIMPIEZA COMERCIAL",
+    href: "/sectores#oficinas",
+  },
+];
 export default function HomePage() {
-  const featured = ["botmate-serve", "botmate-ads", "botmate-glide", "botmate-clean", "botmate-tower", "botmate-cargo-600"];
-  const featuredRobots = robots.filter((r) => featured.includes(r.slug));
-  const featuredCases = cases.slice(0, 3);
-
   return (
     <>
       <Hero />
-      <Marquee />
-      <Pillars />
-      <RobotCarousel />
-      <VideoShowcase />
-      <Metrics />
-
-      <section className="pb-24">
+      <div className="technology-ribbon" aria-label="Soluciones Botmate"><span>ENTREGA</span><i/><span>PUBLICIDAD</span><i/><span>LIMPIEZA</span><i/><span>EXPERIENCIA HUMANA</span></div>
+      <section id="soluciones" className="section-space solutions-section">
         <div className="container-x">
-          <div className="flex flex-wrap items-end justify-between gap-6">
+          <div className="section-heading-row">
             <SectionTitle
-              eyebrow="Catálogo completo"
-              title={<>Toda la <span className="gradient-text">flota</span></>}
-              description="Robots de servicio inteligentes para publicidad, eventos, exposiciones y limpieza autónoma en toda la República."
+              eyebrow="Una tarea. Una solución."
+              title={
+                <>
+                  Haz espacio para
+                  <br />
+                  una mejor operación.
+                </>
+              }
             />
-            <Link href="/robots" className="btn-ghost">
-              Ver todos <ArrowRight className="h-4 w-4" />
-            </Link>
+            <p className="section-side-copy">
+              La robótica tiene sentido cuando resuelve
+              <br className="desktop-break" /> algo concreto en tu día a día.
+            </p>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredRobots.map((r, i) => (
-              <Reveal key={r.slug} delay={i}>
-                <RobotCard robot={r} />
-              </Reveal>
+          <div className="solution-grid">
+            {solutions.map((s, i) => (
+              <Link key={s.tag} href={s.href} className="solution-card">
+                <div className="solution-card-top">
+                  <s.icon size={26} strokeWidth={1.4} />
+                  <span>0{i + 1}</span>
+                </div>
+                <p className="tiny-label">{s.tag}</p>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
+                <span className="text-link">
+                  Descubrir solución
+                  <ArrowUpRight size={18} />
+                </span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
-
-      <Gallery />
-      <Bento />
-
-      <section className="py-24">
+      <section className="section-space catalog-section">
         <div className="container-x">
-          <div className="flex flex-wrap items-end justify-between gap-6">
+          <div className="section-heading-row">
             <SectionTitle
-              eyebrow="Casos de éxito"
-              title={<>Marcas que <span className="gradient-text">multiplicaron</span> resultados</>}
-              description="Resultados verificados con Universidad Anáhuac, Red Bull, TECMA, AMDM y más."
+              eyebrow="Conoce las posibilidades"
+              title={
+                <>
+                  Cada robot tiene
+                  <br />
+                  su especialidad.
+                </>
+              }
             />
-            <Link href="/casos-de-exito" className="btn-ghost">
-              Todos los casos <ArrowRight className="h-4 w-4" />
+            <Link href="/robots" className="text-link">
+              Explorar el catálogo
+              <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {featuredCases.map((c, i) => (
-              <Reveal key={c.slug} delay={i}>
-                <Link href={`/casos-de-exito/${c.slug}`} className="card-tech group flex h-full flex-col">
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="text-brand-300">{c.industry}</span>
-                    <span className="inline-flex items-center gap-1 text-white/40"><MapPin className="h-3 w-3" /> {c.city}</span>
-                  </div>
-                  <h3 className="mt-3 flex items-start justify-between gap-3 font-display text-lg font-semibold leading-tight">
-                    {c.title}
-                    <ArrowUpRight className="h-4 w-4 shrink-0 text-white/40 transition group-hover:rotate-12 group-hover:text-brand-300" />
-                  </h3>
-                  <div className="mt-5 grid grid-cols-2 gap-3 border-t border-white/5 pt-5">
-                    {c.results.slice(0, 2).map((r) => (
-                      <div key={r.label}>
-                        <p className="font-display text-2xl font-bold gradient-text">{r.value}</p>
-                        <p className="text-[10px] uppercase tracking-wider text-white/50">{r.label}</p>
-                      </div>
-                    ))}
-                  </div>
-                </Link>
-              </Reveal>
+          <div className="catalog-grid">
+            {[robots[0], robots[1], robots[5]].map((r) => (
+              <RobotCard key={r.slug} robot={r} />
             ))}
           </div>
+          <p className="catalog-note">
+            La selección del modelo, su configuración y disponibilidad se
+            confirman con tu asesor.
+          </p>
         </div>
       </section>
-
-      <Compare />
-      <ROICalculator />
-      <Testimonials />
+      <FilmGallery />
+      <FieldGallery />
       <Process />
+      <GoogleReviews />
       <FAQ />
-      <DemoScheduler />
-      <Newsletter />
       <CTA />
     </>
   );

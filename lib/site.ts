@@ -1,9 +1,9 @@
 export const site = {
   name: "BotMate",
   legalName: "BotMate México",
-  tagline: "El compañero robot ideal para tu marca · México",
+  tagline: "Robótica que trabaja contigo.",
   description:
-    "BotMate es el compañero robot ideal para tu marca en México. Renta y venta de robots para publicidad interactiva, navegación en eventos, exposiciones, ferias y limpieza. Confianza de Universidad Anáhuac, Red Bull, TECMA, AMDM y más.",
+    "Robots de servicio para entrega, publicidad y limpieza en México. Explora soluciones Pudu Robotics y consulta renta, compra e implementación con Botmate.",
   url: "https://botmate.mx",
   email: "contacto@botmate.mx",
   whatsapp: "525531491986",
@@ -23,15 +23,10 @@ export const site = {
     tiktok: "https://tiktok.com/@botmate.mx",
     facebook: "https://facebook.com/botmate.mx",
   },
-  metrics: [
-    { label: "Productividad", value: "+40%" },
-    { label: "Satisfacción del cliente", value: "+35%" },
-    { label: "Reducción de costos", value: "-20%" },
-    { label: "Robots operando en México", value: "+500" },
-  ],
+  metrics: [] as { label: string; value: string }[],
 } as const;
 
 export const waLink = (msg?: string) =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
-    msg ?? "Hola BotMate, me interesa información sobre sus robots."
+    msg ?? "Hola BotMate, me interesa información sobre sus robots.",
   )}`;
