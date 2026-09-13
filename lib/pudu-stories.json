@@ -289,6 +289,114 @@
   ],
   "posts": [
     {
+      "slug": "modernizacion-industrial-mexico-equipo-botmate",
+      "title": {
+        "es": "México moderno: la transformación industrial se construye en equipo",
+        "en": "A modern Mexico: industrial transformation is built together"
+      },
+      "intro": {
+        "es": "Nuestra visión para conectar robótica, talento mexicano y operación industrial, con el equipo coordinado por Ivan Cadavieco.",
+        "en": "Our vision for connecting robotics, Mexican talent and industrial operations, with the team coordinated by Ivan Cadavieco."
+      },
+      "image": "/media/pudu/b2ffcacc1073f641.webp",
+      "date": "2026-09-13",
+      "source": "Botmate · Dirección editorial, septiembre 2026",
+      "paragraphs": [
+        {
+          "es": "México tiene la capacidad de desarrollar una industria moderna y automatizada. En Botmate trabajamos para acercar la robótica a plantas, fábricas y almacenes, con una visión que conecta tecnología con el conocimiento de las personas que hacen funcionar cada operación.",
+          "en": "Mexico has the capacity to develop a modern, automated industry. At Botmate, we work to bring robotics to plants, factories and warehouses, with a vision that connects technology to the knowledge of the people running each operation."
+        },
+        {
+          "es": "Ivan Cadavieco coordina al equipo de Botmate. Su papel es conectar a las personas, los objetivos del proyecto y las posibilidades tecnológicas. La modernización requiere trabajo compartido con operadores, mantenimiento y responsables de planta.",
+          "en": "Ivan Cadavieco coordinates the Botmate team. His role is to connect people, project objectives and technological possibilities. Modernization requires shared work with operators, maintenance teams and plant managers."
+        },
+        {
+          "es": "Nuestro punto de partida es entender la tarea: qué material se mueve, por dónde, con qué frecuencia y bajo qué condiciones. Después se evalúan el robot, los accesorios y la integración que puede responder a esa necesidad.",
+          "en": "Our starting point is understanding the task: what material moves, where it goes, how often and under what conditions. We then assess the robot, accessories and integration that can meet that need."
+        },
+        {
+          "es": "La visión abarca logística interna, manejo de tarimas, limpieza y cuidado de exteriores. Una operación industrial también incluye espacios compartidos, áreas de servicio y zonas verdes; cada una necesita una evaluación propia.",
+          "en": "This vision covers internal logistics, pallet handling, cleaning and grounds care. An industrial operation also includes shared spaces, service areas and green zones; each needs its own assessment."
+        },
+        {
+          "es": "Creemos en una transformación con identidad mexicana, construida con equipos que aprenden, se coordinan y documentan su trabajo. Para iniciar, comparte con Botmate el contexto de tu planta y los objetivos que quieres trabajar junto con tu equipo.",
+          "en": "We believe in transformation with a Mexican identity, built by teams that learn, coordinate and document their work. To begin, share your plant’s context and the objectives you want to work on together with Botmate."
+        }
+      ]
+    },
+    {
+      "slug": "robots-cargas-pesadas-almacenes",
+      "title": {
+        "es": "Robots para almacenes, tarimas y cargas pesadas",
+        "en": "Robots for warehouses, pallets and heavy loads"
+      },
+      "intro": {
+        "es": "Cómo organizar la evaluación de T150, T300, T600, T600 Underride y MP2000 con Botmate.",
+        "en": "How to organize an assessment of T150, T300, T600, T600 Underride and MP2000 with Botmate."
+      },
+      "image": "/media/pudu/018647c9bfeaa2fb.webp",
+      "date": "2026-09-13",
+      "source": "https://www.pudurobotics.com/en/products/mp2000",
+      "paragraphs": [
+        {
+          "es": "El peso es una parte de la selección, pero también importan el volumen, el centro de gravedad y la forma de transferir la carga. Describe el material, su recipiente y la tarea antes de comparar modelos.",
+          "en": "Weight is one part of selection, but volume, center of gravity and the transfer method matter too. Describe the material, its container and the task before comparing models."
+        },
+        {
+          "es": "El catálogo industrial de Botmate incluye T150, T300, T600 y T600 Underride, además de MP2000 para manejo de tarimas. Cada ficha conserva las especificaciones del fabricante y permite consultar la configuración con nuestro equipo.",
+          "en": "Botmate’s industrial catalog includes T150, T300, T600 and T600 Underride, as well as MP2000 for pallet handling. Each page retains manufacturer specifications and lets you discuss the configuration with our team."
+        },
+        {
+          "es": "Distingue el traslado sobre una plataforma, el trabajo con carros y el manejo de tarimas. No son intercambiables: puntos de acoplamiento, altura de transferencia y accesorios deben corresponder al proceso.",
+          "en": "Distinguish transport on a platform, work with carts and pallet handling. They are not interchangeable: docking points, transfer height and accessories must match the process."
+        },
+        {
+          "es": "Revisa pasillos, cruces, piso y áreas de espera durante el turno habitual. La prueba necesita una carga representativa y debe incluir las tareas de preparación, recepción y supervisión del personal.",
+          "en": "Review aisles, crossings, flooring and waiting areas during the normal shift. A trial needs a representative load and should include staff preparation, receiving and supervision tasks."
+        },
+        {
+          "es": "Coordina con Botmate y con tu equipo de planta un alcance por etapas. Define recorridos, responsables, integración y criterios de aceptación para decidir sobre una base documentada.",
+          "en": "Coordinate a phased scope with Botmate and your plant team. Define routes, responsibilities, integration and acceptance criteria to make a documented decision."
+        }
+      ]
+    },
+    {
+      "slug": "robots-jardineria-grandes-exteriores",
+      "title": {
+        "es": "GT3, GT5 y GT7: robótica para jardinería y grandes exteriores",
+        "en": "GT3, GT5 and GT7: robotics for landscaping and large outdoor spaces"
+      },
+      "intro": {
+        "es": "El cuidado de áreas verdes también forma parte de una operación moderna. Explora la familia GT en Botmate.",
+        "en": "Grounds care is part of a modern operation, too. Explore the GT family on Botmate."
+      },
+      "image": "/media/pudu/62fa91b8638a217c.webp",
+      "date": "2026-09-13",
+      "source": "https://www.pudurobotics.com/en/products/pudu-gt7",
+      "paragraphs": [
+        {
+          "es": "La automatización también puede evaluarse fuera del edificio. GT3, GT5 y GT7 forman parte del catálogo de cuidado de césped que Botmate presenta para empresas y responsables de grandes espacios verdes.",
+          "en": "Automation can also be assessed outside the building. GT3, GT5 and GT7 are part of the turf-care catalog Botmate presents for businesses and managers of large green spaces."
+        },
+        {
+          "es": "Empieza con un levantamiento del terreno: superficie, pendientes, obstáculos, accesos y límites de trabajo. Registra las zonas con tránsito de personas y las condiciones que cambian por clima o mantenimiento.",
+          "en": "Start with a site survey: area, slopes, obstacles, access and working boundaries. Record areas with pedestrian traffic and conditions that change with weather or maintenance."
+        },
+        {
+          "es": "Compara cada modelo según su ficha y la tarea concreta. Las dimensiones, el tipo de corte y los requisitos de operación deben revisarse para la versión y configuración que se proponga.",
+          "en": "Compare each model against its specifications and the specific task. Dimensions, cutting type and operating requirements should be reviewed for the proposed version and configuration."
+        },
+        {
+          "es": "La preparación del sitio, el cuidado del equipo y la supervisión necesitan responsables. Define rutinas de revisión y criterios para detener o reprogramar el trabajo cuando las condiciones lo requieran.",
+          "en": "Site preparation, equipment care and supervision need identified owners. Define inspection routines and criteria for stopping or rescheduling work when conditions require it."
+        },
+        {
+          "es": "Puedes consultar los tres modelos, sus imágenes y sus videos desde Botmate. Comparte el contexto de tus áreas verdes para evaluar un proyecto con el equipo, sin salir de nuestra página.",
+          "en": "You can review all three models, their images and videos on Botmate. Share the context of your green spaces to assess a project with the team without leaving our website."
+        }
+      ]
+    },
+    {
       "slug": "como-elegir-amr",
       "title": {
         "es": "Cómo elegir un AMR para tu almacén",
@@ -306,6 +414,22 @@
         {
           "es": "En la evaluación del sitio, revisa anchos, cruces, cambios de piso, puertas, tráfico de personas y puntos de carga. La capacidad nominal del robot no sustituye la revisión de todo el recorrido.",
           "en": "During the site assessment, check aisle widths, intersections, floor transitions, doors, pedestrian traffic and charging points. Payload ratings do not replace a full route review."
+        },
+        {
+          "es": "Empieza por documentar qué se mueve: peso, dimensiones, estabilidad y frecuencia. Un recorrido de materiales entre estaciones y el traslado de una tarima requieren configuraciones distintas; el nombre de una familia no sustituye esa revisión.",
+          "en": "Start by documenting what moves: weight, dimensions, stability and frequency. Moving materials between stations and handling a pallet require different configurations; a family name does not replace that assessment."
+        },
+        {
+          "es": "En Botmate puedes explorar T150, T300, T600 y T600 Underride para logística industrial, así como MP2000 para manejo de tarimas. Revisa la ficha de cada modelo en este sitio y confirma con el equipo cuál corresponde a tu carga y forma de transferencia.",
+          "en": "On Botmate you can explore T150, T300, T600 and T600 Underride for industrial logistics, as well as MP2000 for pallet handling. Review each model’s page on this site and confirm which matches your load and transfer method."
+        },
+        {
+          "es": "Traza origen, destino, cruces, puntos de espera y zona de carga. Mide los pasos con el mobiliario y los equipos en su posición habitual. Incluye al personal que opera esos recorridos para identificar excepciones que un plano por sí solo no muestra.",
+          "en": "Map origins, destinations, crossings, waiting points and the charging area. Measure passages with furniture and equipment in their normal positions. Involve the staff who work these routes to identify exceptions a drawing alone cannot reveal."
+        },
+        {
+          "es": "La propuesta debe definir quién solicita la tarea, quién carga y descarga, qué ocurre ante un bloqueo y cómo se registra una intervención. Acuerda una prueba con carga representativa y criterios de aceptación antes de ampliar el proyecto.",
+          "en": "The proposal should define who requests a task, who loads and unloads, how a blockage is handled and how interventions are recorded. Agree on a trial with a representative load and acceptance criteria before expanding the project."
         }
       ],
       "image": "/media/pudu/c23826b296e73439.webp",
@@ -330,6 +454,22 @@
         {
           "es": "Prepara una prueba con una carga representativa y mide los tiempos de recorrido, las intervenciones y las esperas. Estos datos ayudan a evaluar la solución dentro de tu instalación.",
           "en": "Prepare a trial with a representative load and measure travel times, interventions and waiting. These observations help assess the solution within your facility."
+        },
+        {
+          "es": "Describe primero el flujo de tu planta: estaciones, frecuencia de viajes, variaciones de ruta y puntos de encuentro con personas. La selección parte de la tarea y del entorno, además de la tecnología de navegación.",
+          "en": "First describe your plant’s flow: stations, trip frequency, route variations and encounters with people. Selection starts with the task and environment as well as navigation technology."
+        },
+        {
+          "es": "Pregunta qué cambios necesita el espacio, cómo se gestionan obstáculos y de qué manera se actualizan los recorridos. Revisa también las restricciones de carga, piso, pendientes y pasos de la versión concreta que estás considerando.",
+          "en": "Ask what changes the space needs, how obstacles are handled and how routes are updated. Also review payload, floor, slope and passage limits for the exact version you are considering."
+        },
+        {
+          "es": "Compara propuestas con el mismo escenario. Una demostración sin carga o fuera de turno no describe por sí sola el comportamiento durante la operación. Define viajes completados, intervenciones y tiempos de espera que tu equipo pueda registrar.",
+          "en": "Compare proposals using the same scenario. An unloaded or off-shift demonstration alone does not describe behavior during operations. Define completed trips, interventions and waiting times your team can record."
+        },
+        {
+          "es": "Botmate coordina esta evaluación con las personas responsables del proceso. Puedes revisar los modelos industriales y solicitar una conversación técnica sin salir de nuestra biblioteca.",
+          "en": "Botmate coordinates this assessment with the people responsible for the process. You can review industrial models and request a technical conversation without leaving our library."
         }
       ],
       "image": "/media/pudu/db3a5698c440944a.webp",
@@ -354,6 +494,22 @@
         {
           "es": "El área total es sólo el inicio: también importan el tipo de piso, el mobiliario, la suciedad y la ubicación de la estación. Solicita una evaluación antes de definir la configuración.",
           "en": "Total area is only the starting point: floor type, furniture, dirt and station placement also matter. Request an assessment before defining the configuration."
+        },
+        {
+          "es": "Un espacio pequeño puede tener muchos obstáculos: mesas, sillas, puertas y zonas de espera. Registra las dimensiones útiles del recorrido y las variaciones que se producen durante el día.",
+          "en": "A small space can contain many obstacles: tables, chairs, doors and waiting areas. Record the usable route dimensions and how the layout changes throughout the day."
+        },
+        {
+          "es": "Identifica el tipo de suciedad y superficie. No todas las tareas requieren el mismo proceso: aspirar, barrer, trapear y fregar deben evaluarse según el piso y la ficha del equipo.",
+          "en": "Identify the debris and surface type. Different tasks require different processes: vacuuming, sweeping, dust mopping and scrubbing should be assessed against the floor and equipment specifications."
+        },
+        {
+          "es": "Reserva espacio para carga, agua, residuos y mantenimiento cuando corresponda. La rutina de preparación y cuidado del equipo debe tener responsables identificados, incluso cuando la limpieza se realiza de forma autónoma.",
+          "en": "Allow space for charging, water, waste and maintenance where applicable. Preparation and equipment-care routines need identified owners even when cleaning runs autonomously."
+        },
+        {
+          "es": "Revisa ET1 y las familias CC1 en Botmate. Si necesitas una fregadora guiada por una persona, SH1 se presenta por separado como equipo con operador. La demostración debe reproducir el espacio y la tarea que quieres atender.",
+          "en": "Review ET1 and the CC1 families on Botmate. If you need a person-guided scrubber, SH1 is identified separately as operator-guided equipment. A demonstration should represent the space and task you need to address."
         }
       ],
       "image": "/media/pudu/9452228a278a3f16.webp",
@@ -378,6 +534,22 @@
         {
           "es": "En Botmate, el siguiente paso es revisar el flujo de materiales, las superficies y las necesidades de limpieza para proponer un piloto con criterios de evaluación definidos.",
           "en": "At Botmate, the next step is to review material flows, surfaces and cleaning needs to propose a pilot with defined evaluation criteria."
+        },
+        {
+          "es": "Organiza un mapa de movimientos entre recepción, almacenamiento, producción y despacho. Identifica los recorridos repetitivos, el tipo de recipiente y la manera en que el material se entrega en cada estación.",
+          "en": "Map movements between receiving, storage, production and dispatch. Identify repetitive routes, container types and how materials are transferred at each station."
+        },
+        {
+          "es": "La limpieza necesita su propia evaluación: materiales presentes, superficies y restricciones del proceso. Consulta los límites de cada equipo y valida condiciones especiales con los responsables de la planta.",
+          "en": "Cleaning needs its own assessment: materials present, surfaces and process restrictions. Review each product’s limits and validate special conditions with the plant’s responsible teams."
+        },
+        {
+          "es": "Integra a producción, mantenimiento y operadores desde el diagnóstico. La robótica debe encajar con sus rutinas, espacios de trabajo y procedimientos, con responsabilidades claras para supervisión e intervenciones.",
+          "en": "Involve production, maintenance and operators from the assessment stage. Robotics should fit their routines, working areas and procedures, with clear responsibilities for supervision and interventions."
+        },
+        {
+          "es": "Botmate ayuda a estructurar la conversación entre tecnología y operación. Explora en este sitio las fichas de logística industrial y limpieza, y prepara un proyecto por etapas con tu equipo.",
+          "en": "Botmate helps structure the conversation between technology and operations. Explore industrial-logistics and cleaning specifications on this site and prepare a phased project with your team."
         }
       ],
       "image": "/media/pudu/1e12f586128ff142.webp",
@@ -402,6 +574,22 @@
         {
           "es": "Una demostración tecnológica no equivale a una implementación lista para cualquier negocio. Para un proyecto en México, confirma disponibilidad, funciones soportadas y alcance de integración con Botmate.",
           "en": "A technology demonstration is not a ready-made deployment for every business. For a project in Mexico, confirm availability, supported functions and integration scope with Botmate."
+        },
+        {
+          "es": "Las demostraciones permiten explorar posibilidades, pero una tarea comercial exige definir condiciones de trabajo, límites y criterios de aceptación. Una capacidad mostrada en video debe confirmarse para el equipo y la versión incluidos en la propuesta.",
+          "en": "Demonstrations explore possibilities, but a commercial task requires defined working conditions, limits and acceptance criteria. A capability shown in a video must be confirmed for the equipment and version included in the proposal."
+        },
+        {
+          "es": "En Botmate puedes conocer D5 Series, D7, D9 y FlashBot Arm. Cada ficha identifica el tipo de plataforma y presenta imágenes oficiales; las aplicaciones de estos equipos se evalúan con su alcance comercial disponible.",
+          "en": "On Botmate you can explore D5 Series, D7, D9 and FlashBot Arm. Each page identifies the platform type and presents official images; applications are assessed against the equipment’s available commercial scope."
+        },
+        {
+          "es": "Para preparar una evaluación, describe el objeto o espacio de trabajo, la tarea esperada, su frecuencia y las condiciones que pueden cambiar. Señala dónde intervienen personas y qué procedimiento debe seguirse ante una excepción.",
+          "en": "To prepare an assessment, describe the object or working space, expected task, frequency and conditions that may change. Identify where people intervene and what procedure should handle an exception."
+        },
+        {
+          "es": "El siguiente paso es una conversación técnica y una prueba acordada. La coordinación entre el equipo de Botmate y los responsables de tu operación ayuda a separar expectativas, demostración y alcance de implementación.",
+          "en": "The next step is a technical conversation and an agreed trial. Coordination between Botmate and the people responsible for your operation helps distinguish expectations, demonstration and implementation scope."
         }
       ],
       "image": "/media/pudu/a36649168c414d64.webp",

@@ -3091,10 +3091,37 @@
             "pudu-mt1",
             "pudu-cc1"
           ]
+        },
+        {
+          "title": {
+            "es": "Movimiento de tarimas y cargas pesadas",
+            "en": "Pallet handling and heavy loads"
+          },
+          "image": "/media/pudu/018647c9bfeaa2fb.webp",
+          "models": [
+            "pudu-mp2000",
+            "pudu-t600",
+            "pudu-t600-underride"
+          ]
+        },
+        {
+          "title": {
+            "es": "Abastecimiento entre estaciones de trabajo",
+            "en": "Material supply between workstations"
+          },
+          "image": "/media/pudu/87220823e9694352.webp",
+          "models": [
+            "pudu-t150",
+            "pudu-t300"
+          ]
         }
       ],
       "models": [
+        "pudu-mp2000",
+        "pudu-t150",
         "pudu-t300",
+        "pudu-t600",
+        "pudu-t600-underride",
         "bellabot-pro",
         "pudu-mt1",
         "pudu-cc1"
@@ -3379,6 +3406,56 @@
         "pudu-sh1"
       ],
       "source": "https://www.pudurobotics.com/en/solutions/public-service"
+    },
+    {
+      "slug": "jardineria-y-exteriores",
+      "title": {
+        "es": "Jardinería y grandes exteriores",
+        "en": "Landscaping and large outdoor spaces"
+      },
+      "description": {
+        "es": "Cuidado de césped con GT3, GT5 y GT7. Evalúa superficies verdes, pendientes, obstáculos y rutas de trabajo con el equipo de Botmate.",
+        "en": "Turf care with GT3, GT5 and GT7. Assess green areas, slopes, obstacles and working routes with the Botmate team."
+      },
+      "image": "/media/pudu/62fa91b8638a217c.webp",
+      "models": [
+        "pudu-gt3",
+        "pudu-gt5",
+        "pudu-gt7"
+      ],
+      "source": "https://www.pudurobotics.com/en/products/pudu-gt7",
+      "scenes": [
+        {
+          "title": {
+            "es": "PUDU GT3 · Cuidado de césped",
+            "en": "PUDU GT3 · Turf care"
+          },
+          "image": "/media/pudu/2a69adc5790d072f.webp",
+          "models": [
+            "pudu-gt3"
+          ]
+        },
+        {
+          "title": {
+            "es": "PUDU GT5 · Cuidado de césped",
+            "en": "PUDU GT5 · Turf care"
+          },
+          "image": "/media/pudu/2b6d8d6b1eafd5ff.webp",
+          "models": [
+            "pudu-gt5"
+          ]
+        },
+        {
+          "title": {
+            "es": "PUDU GT7 · Cuidado de césped",
+            "en": "PUDU GT7 · Turf care"
+          },
+          "image": "/media/pudu/62fa91b8638a217c.webp",
+          "models": [
+            "pudu-gt7"
+          ]
+        }
+      ]
     }
   ],
   "accessories": [
@@ -3738,117 +3815,140 @@
     {
       "title": "Pudu Robotics Product Brochure",
       "url": "https://cdn.pudutech.com/PD_PB_V2_5_2026_0827_EN_compressed_90499886cf.pdf",
-      "sizeKB": 18419.3
+      "sizeKB": 18419.3,
+      "localPath": "/documentos/pudu/08805d5edde57b59.pdf"
     },
     {
       "title": "PUDU Industrial Product Catalog",
       "url": "https://cdn.pudutech.com/Pudu_Robotics_Industrial_Product_Brochure_EN_20260420_compressed_0482ced18f.pdf",
-      "sizeKB": 10501.66
+      "sizeKB": 10501.66,
+      "localPath": "/documentos/pudu/bcb87ed520dd2f11.pdf"
     },
     {
       "title": "PUDU Cleaning Product Catalog",
       "url": "https://cdn.pudutech.com/Pudu_Robotics_Cleaning_Product_Brochure_EN_20260417_compressed_67e532c8e1.pdf",
-      "sizeKB": 8568.33
+      "sizeKB": 8568.33,
+      "localPath": "/documentos/pudu/b483faa3eb00ff91.pdf"
     },
     {
       "title": "PUDU Delivery Product Catalog",
       "url": "https://cdn.pudutech.com/PUDU_Delivery_Product_Brochure_EN_compressed_1_3379805284.pdf",
-      "sizeKB": 8870.81
+      "sizeKB": 8870.81,
+      "localPath": "/documentos/pudu/7a206eb58bbbfe22.pdf"
     },
     {
       "title": "PUDU MT1 Max",
       "url": "https://cdn.pudutech.com/PUDU_MT_1_Max_Product_Flyer_20250819_EN_64933670aa.pdf",
-      "sizeKB": 3163.25
+      "sizeKB": 3163.25,
+      "localPath": "/documentos/pudu/c655beb1ebd09893.pdf"
     },
     {
       "title": "PUDU MT1 Vac",
       "url": "https://cdn.pudutech.com/PUDU_MT_1_Vac_Product_Flyer_20250711_EN_4b1b9fd9be.pdf",
-      "sizeKB": 5931.5
+      "sizeKB": 5931.5,
+      "localPath": "/documentos/pudu/f27e7461f0a0eec4.pdf"
     },
     {
       "title": "PUDU CC1 Pro",
       "url": "https://cdn.pudutech.com/PUDU_CC_1_Pro_Product_Flyer_20250527_EN_cdf64ad9a4.pdf",
-      "sizeKB": 4983.04
+      "sizeKB": 4983.04,
+      "localPath": "/documentos/pudu/6cdc52386078e936.pdf"
     },
     {
       "title": "PUDU CC1",
       "url": "https://cdn.pudutech.com/PUDU_CC_1_Product_Flyers_20241030_EN_4cedb1a4da.pdf",
-      "sizeKB": 3073.13
+      "sizeKB": 3073.13,
+      "localPath": "/documentos/pudu/ed0bd4f15afe9fe3.pdf"
     },
     {
       "title": "PUDU MT1",
       "url": "https://cdn.pudutech.com/PUDU_MT_1_Flyer_EN_20241227_8d18b6b58f.pdf",
-      "sizeKB": 2641.83
+      "sizeKB": 2641.83,
+      "localPath": "/documentos/pudu/536f1c5cce9ab555.pdf"
     },
     {
       "title": "PUDU SH1",
       "url": "https://cdn.pudutech.com/PUDU_SH_1_Product_Flyer_20241105_EN_11ccbc9ef9.pdf",
-      "sizeKB": 13140.83
+      "sizeKB": 13140.83,
+      "localPath": "/documentos/pudu/012f834595ef7c4f.pdf"
     },
     {
       "title": "PuduBot 2",
       "url": "https://cdn.pudutech.com/Pudu_Bot_2_Product_Flyer_20241227_EN_7dc7aa6ba6.pdf",
-      "sizeKB": 1016.37
+      "sizeKB": 1016.37,
+      "localPath": "/documentos/pudu/d2e8777f470e8e6e.pdf"
     },
     {
       "title": "KettyBot Pro",
       "url": "https://cdn.pudutech.com/Ketty_Bot_Pro_Product_Flyers_20241227_EN_e59df62cf6.pdf",
-      "sizeKB": 1273.61
+      "sizeKB": 1273.61,
+      "localPath": "/documentos/pudu/2965a420128ae43c.pdf"
     },
     {
       "title": "BellaBot Pro",
       "url": "https://cdn.pudutech.com/Bella_Bot_Pro_Product_Flyer_20250428_EN_c63fac46f5.pdf",
-      "sizeKB": 4096.43
+      "sizeKB": 4096.43,
+      "localPath": "/documentos/pudu/027090cdbaf1a04a.pdf"
     },
     {
       "title": "FlashBot Max",
       "url": "https://cdn.pudutech.com/Flash_Bot_Max_Product_Flyer_20250218_EN_08ff8d7af7.pdf",
-      "sizeKB": 5962.15
+      "sizeKB": 5962.15,
+      "localPath": "/documentos/pudu/6eeabc73608cb523.pdf"
     },
     {
       "title": "FlashBot Arm",
       "url": "https://cdn.pudutech.com/Flash_Bot_Arm_Product_Flyer_20250416_EN_317ffcb373.pdf",
-      "sizeKB": 4526.31
+      "sizeKB": 4526.31,
+      "localPath": "/documentos/pudu/6310265fbea79a50.pdf"
     },
     {
       "title": "PUDU T600 Series",
       "url": "https://cdn.pudutech.com/PUDU_T600_series_Product_Flyer_20250724_EN_dba0baecf6.pdf",
-      "sizeKB": 4764.37
+      "sizeKB": 4764.37,
+      "localPath": "/documentos/pudu/6a47fe1ec8ef3155.pdf"
     },
     {
       "title": "PUDU T300",
       "url": "https://cdn.pudutech.com/PUDU_T300_Product_Flyer_20250303_EN_1e745180a8.pdf",
-      "sizeKB": 4501.27
+      "sizeKB": 4501.27,
+      "localPath": "/documentos/pudu/e0d7635f9338c9ab.pdf"
     },
     {
       "title": "PUDU D5 Series",
       "url": "https://cdn.pudutech.com/PUDU_D5_Product_Flyer_20251203_EN_fb3c3bd97a.pdf",
-      "sizeKB": 8640.81
+      "sizeKB": 8640.81,
+      "localPath": "/documentos/pudu/40c0062b05036877.pdf"
     },
     {
       "title": "PUDU D9",
       "url": "https://cdn.pudutech.com/PUDU_D9_Product_Flyer_20250103_EN_0021e78f68.pdf",
-      "sizeKB": 2316.86
+      "sizeKB": 2316.86,
+      "localPath": "/documentos/pudu/e6adbfa245e3bcbe.pdf"
     },
     {
       "title": "Redefining Dining [Part 1]",
       "url": "https://cdn.pudutech.com/Redefining_Dining_How_Digital_Transformation_and_Robotics_Are_Revolutionizing_Restaurants_Part_1_dc16c50245.pdf",
-      "sizeKB": 1309.64
+      "sizeKB": 1309.64,
+      "localPath": "/documentos/pudu/d9b4d8e61f1b78b7.pdf"
     },
     {
       "title": "Redefining Dining [Part 2]",
       "url": "https://cdn.pudutech.com/Redefining_Dining_How_Digital_Transformation_and_Robotics_Are_Revolutionizing_Restaurants_Part_2_c00426ac8b.pdf",
-      "sizeKB": 1382.21
+      "sizeKB": 1382.21,
+      "localPath": "/documentos/pudu/9b8a40f43c851dd6.pdf"
     },
     {
       "title": "An Intro Guide Into Robotics For Future-ready Retailers",
       "url": "https://cdn.pudutech.com/An_Intro_Guide_Into_Robotics_For_Future_ready_Retailers_ac28a9097a.pdf",
-      "sizeKB": 2073.42
+      "sizeKB": 2073.42,
+      "localPath": "/documentos/pudu/08df159451408120.pdf"
     },
     {
       "title": "Open Full-stack Intelligent Service Robot Ecosystem",
       "url": "https://cdn.pudutech.com/Open_Full_stack_Intelligent_Service_Robot_Ecosystem_0604192b31.pdf",
-      "sizeKB": 2815.23
+      "sizeKB": 2815.23,
+      "localPath": "/documentos/pudu/1fb4750c4d58e01c.pdf"
     }
   ],
   "logos": [

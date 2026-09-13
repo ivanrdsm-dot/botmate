@@ -144,15 +144,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
               carga y la configuración. Confirma la versión y los accesorios en
               tu propuesta.
             </p>
-            <a
-              href={r.source}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-link"
-            >
-              Consultar fuente Pudu
-              <ArrowUpRight size={17} />
-            </a>
+            <Link href="/contacto" className="text-link">Consultar con Botmate<ArrowUpRight size={17} /></Link>
             <p className="fine-print">
               Consulta de fuente: 13 de septiembre de 2026.
             </p>

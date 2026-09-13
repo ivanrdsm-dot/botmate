@@ -1,5 +1,7 @@
 # Botmate × Pudu Robotics: investigación e implementación
 
+Actualización vigente: [navegación dentro de Botmate, equipo mexicano y cobertura industrial](02-navegacion-equipo-mexico.md). El informe de abajo documenta la primera entrega; los enlaces de salida y las cifras de páginas fueron modificados posteriormente.
+
 Fecha de consulta: 13 de septiembre de 2026. Fuentes públicas oficiales de Pudu Robotics. El usuario declara ser distribuidor oficial y contar con autorización comercial para imágenes y publicidad.
 
 ## Cobertura
