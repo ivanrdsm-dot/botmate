@@ -1,0 +1,67 @@
+/* Botmate showroom: real product artwork on a dimensional stage. */
+.immersive-showroom{position:relative;background:#0c111e;color:#f7f8ff;isolation:isolate;border:0;--exhibit-line:#ffffff20}
+.showroom-texture{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 84% 25%,#5161ff25,transparent 48%),radial-gradient(ellipse at 15% 100%,#29395935,transparent 50%)}
+.showroom-texture:after{content:"";position:absolute;inset:0;opacity:.14;background-image:linear-gradient(#91a4d530 1px,transparent 1px),linear-gradient(90deg,#91a4d530 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(90deg,transparent,#000)}
+.immersive-showroom .pudu-hero-grid{min-height:740px;grid-template-columns:1.05fr 1fr;gap:52px;padding-top:30px;padding-bottom:30px}
+.immersive-showroom .pudu-hero-copy{padding:40px 0}
+.immersive-showroom .eyebrow{color:#b4bdff;font-size:9px}
+.immersive-showroom h1{font-size:clamp(56px,6.1vw,92px);letter-spacing:-.065em;line-height:1.06;margin:30px 0 22px;font-weight:550}
+.immersive-showroom h1 span{color:#99a6ff}
+.immersive-showroom .pudu-hero-copy>p:not(.eyebrow){color:#aeb8cc;font-size:15px;max-width:440px}
+.immersive-showroom .pudu-hero-copy>p.showroom-lead{font-size:22px;color:#f0f2ff;margin-bottom:18px;line-height:1.4}
+.immersive-showroom .hero-actions{flex-direction:column;align-items:flex-start;gap:20px;margin-top:32px}
+.immersive-showroom .btn-primary{padding:17px 23px;font-size:13px;background:#596aff;border-color:#8592ff;box-shadow:0 8px 38px #5161ff35}
+.immersive-showroom .text-link{color:#f0f2ff;font-size:13px}
+.showroom-film-link{display:inline-flex;align-items:center;gap:12px;font-size:12px;margin-top:25px;color:#b9c4de}
+.showroom-film-link>span{height:32px;width:32px;border:1px solid #8092bc60;display:grid;place-items:center;border-radius:50%}
+.showroom-film-link:hover{color:#fff}
+.immersive-showroom .distributor-note{margin-top:34px;color:#aeb8cc;font-size:9px}
+.immersive-showroom .distributor-note img{background:white;padding:6px;border-radius:3px;width:82px}
+.immersive-showroom .distributor-note span{border-color:#ffffff30}
+.showroom-exhibit{min-width:0;position:relative;padding-top:132px}
+.spatial-logo{position:absolute;left:50%;top:25px;width:300px;height:76px;transform:translateX(-50%);perspective:1000px}
+.spatial-logo-object{height:76px;width:100%;position:relative;transform-style:preserve-3d;transform:rotateX(-12deg) rotateY(-18deg)}
+.spatial-logo-face{position:absolute;inset:0;border:1px solid #d7defd;background:#fff;backface-visibility:hidden;padding:9px 12px;display:flex;align-items:center;border-radius:5px;box-shadow:inset 0 0 10px #9bafff30}
+.spatial-logo-face img{width:100%;height:auto}
+.spatial-logo-front{transform:translateZ(9px)}
+.spatial-logo-back{transform:rotateY(180deg) translateZ(9px)}
+.spatial-logo-edge{position:absolute;display:block;background:linear-gradient(90deg,#8190bd,#e5eaff 40%,#758ad0);backface-visibility:hidden}
+.spatial-logo-top,.spatial-logo-bottom{width:100%;height:18px;left:0;top:50%;margin-top:-9px}
+.spatial-logo-top{transform:rotateX(90deg) translateZ(38px)}
+.spatial-logo-bottom{transform:rotateX(-90deg) translateZ(38px)}
+.spatial-logo-left,.spatial-logo-right{width:18px;height:100%;left:50%;margin-left:-9px}
+.spatial-logo-left{transform:rotateY(-90deg) translateZ(150px)}
+.spatial-logo-right{transform:rotateY(90deg) translateZ(150px)}
+.spatial-logo-shadow{position:absolute;top:110px;left:12%;width:76%;height:16px;background:#697fff70;filter:blur(18px);border-radius:50%}
+html[data-motion=on] .spatial-logo-object{animation:brand-revolve 20s linear infinite}
+@keyframes brand-revolve{0%,12%{transform:rotateX(-12deg) rotateY(-18deg)}45%,58%{transform:rotateX(10deg) rotateY(162deg)}92%,100%{transform:rotateX(-12deg) rotateY(342deg)}}
+.immersive-showroom .pudu-stage{height:480px;margin:0;background:radial-gradient(ellipse at 50% 32%,#fff 15%,#e9edf7 72%,#bfcbe5);border:1px solid #b8c7e680;border-radius:26px 26px 12px 12px;box-shadow:0 24px 90px #0004,inset 0 1px 0 #fff;color:#182239;overflow:hidden;isolation:isolate}
+.immersive-showroom .stage-coordinate{top:23px;right:24px;font-size:8px;z-index:3;color:#4e5c79}
+.showroom-depth{position:absolute;inset:40px 0 123px;transform-style:preserve-3d}
+.immersive-showroom .stage-product{inset:0 5% 0;filter:drop-shadow(0 22px 12px #1d2d4d30);transform:translateZ(25px)}
+.immersive-showroom .stage-product img{padding:5px;object-fit:contain;mix-blend-mode:multiply}
+.immersive-showroom .stage-orbit{top:56%;height:42%;border-color:#7285b55c;left:10%;width:80%}
+.immersive-showroom .stage-orbit-two{top:49%;height:50%;width:96%;left:2%;border-style:dashed}
+.immersive-showroom .stage-floor{bottom:-8px;left:12%;right:12%;height:30px;border-radius:50%;background:#7084b533;filter:blur(12px)}
+.immersive-showroom .stage-caption{left:25px;right:25px;bottom:63px;max-width:100%}
+.immersive-showroom .stage-caption>span{font-size:8px;color:#536079;letter-spacing:.13em}
+.immersive-showroom .stage-caption h2{font-size:25px;margin-top:7px;color:#172139}
+.immersive-showroom .stage-caption p{display:none}
+.immersive-showroom .stage-controls{bottom:16px;right:22px;left:22px;gap:10px;justify-content:flex-end}
+.immersive-showroom .stage-controls>span{margin-right:auto;order:-1;color:#536079}
+.immersive-showroom .stage-controls button{width:36px;height:36px;background:#fff9;border-color:#8193b75c;color:#253556}
+.showroom-applications{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-bottom:30px}
+.showroom-applications button{min-height:64px;padding:12px 13px;border:1px solid #ffffff22;background:#ffffff04;border-radius:6px;color:#b5c0d7;display:flex;align-items:center;gap:9px;font-size:11px;transition:background .25s,border-color .25s,transform .25s}
+.showroom-applications button>span{font-size:9px;color:#8e9dba}.showroom-applications button>svg{margin-left:auto}
+.showroom-applications button[aria-pressed=true]{background:#5265ff22;border-color:#8392ff;color:#fff;box-shadow:inset 0 -2px #7d8fff}
+.showroom-applications button:hover{background:#5265ff30;transform:translateY(-3px)}
+.immersive-showroom .pudu-hero-bottom{border-color:#ffffff18;color:#a8b5cf;padding-block:19px}.immersive-showroom .pudu-hero-bottom a{color:#dce3f6}
+.experience-cinema{background:#101725;color:#f3f6ff;padding:88px 0 72px;position:relative}
+.cinema-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:35px}.cinema-heading .eyebrow{color:#aebaff}.cinema-heading h2{font-size:clamp(29px,3.4vw,49px);font-weight:500}.cinema-heading h2 span{color:#9bacd0}.cinema-heading>p{max-width:285px;font-size:13px;color:#acb8ce}
+.cinema-choices{display:flex;gap:6px;margin-bottom:18px}.cinema-choices button{border:1px solid #ffffff25;background:transparent;color:#b6c0d4;padding:13px 20px;font-size:12px;border-radius:6px;min-height:44px;display:flex;gap:13px;align-items:center}.cinema-choices button span{font-size:9px;opacity:.7}.cinema-choices button[aria-pressed=true]{color:#151d30;background:#e9edff;border-color:#e9edff}
+.cinema-screen{aspect-ratio:16/8.5;background:#070b12;border:1px solid #ffffff20;border-radius:12px;overflow:hidden}.cinema-screen .cinematic-media{height:100%;background:#070b12}.cinema-screen .pudu-video{margin:0;height:100%}.cinema-screen .pudu-video-frame{height:100%;aspect-ratio:auto}.cinema-screen .pudu-video figcaption{display:none}.cinema-screen .pudu-video-cover img,.cinema-screen video{object-fit:contain!important}.cinema-screen .film-control{width:46px;height:46px;bottom:20px;right:20px}
+.cinema-caption{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:24px}.cinema-caption span{font-size:8px;letter-spacing:.15em;color:#acb8d0}.cinema-caption h3{font-size:22px;font-weight:500;margin-top:8px}.cinema-caption .text-link{color:#dce3ff;font-size:12px}
+@media(min-width:1500px){.immersive-showroom .pudu-hero-grid{min-height:790px}.immersive-showroom .pudu-stage{height:530px}}
+@media(max-width:1050px){.immersive-showroom .pudu-hero-grid{gap:25px}.immersive-showroom h1{font-size:61px}.showroom-applications{grid-template-columns:repeat(3,minmax(0,1fr))}.immersive-showroom .pudu-hero-copy>p.showroom-lead{font-size:19px}.spatial-logo{width:260px}.spatial-logo-left{transform:rotateY(-90deg) translateZ(130px)}.spatial-logo-right{transform:rotateY(90deg) translateZ(130px)}}
+@media(max-width:760px){.immersive-showroom .pudu-hero-grid{grid-template-columns:1fr;gap:12px;padding-top:7px;padding-bottom:27px}.immersive-showroom .pudu-hero-copy{padding:36px 0 0}.immersive-showroom h1{font-size:clamp(53px,11vw,82px);margin-block:24px 18px}.immersive-showroom .pudu-hero-copy>p:not(.eyebrow){max-width:500px}.immersive-showroom .hero-actions{gap:19px;margin-top:26px}.immersive-showroom .distributor-note{margin-top:25px}.showroom-exhibit{width:100%;max-width:510px;margin:0 auto;padding-top:135px}.immersive-showroom .pudu-stage{height:445px}.showroom-applications{gap:7px;padding-bottom:23px}.showroom-applications button{font-size:10px;padding:12px 10px;min-height:57px}.showroom-applications button>svg{display:none}.cinema-heading{display:block;margin-bottom:27px}.cinema-heading>p{margin-top:20px;max-width:420px}.experience-cinema{padding:55px 0}.cinema-choices{gap:6px}.cinema-choices button{padding:12px 10px;font-size:10px;flex:1;justify-content:center;gap:7px}.cinema-screen{aspect-ratio:4/3}.cinema-caption{align-items:flex-start;flex-direction:column;gap:16px}.cinema-caption h3{font-size:20px}.cinema-caption span{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.spatial-logo-object{animation:none!important}.showroom-applications button:hover{transform:none}}

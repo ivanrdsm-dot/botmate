@@ -5,8 +5,10 @@ import { useState,useRef,useCallback } from 'react';
 import { ArrowUpRight, ArrowLeft, ArrowRight,Pause,Play } from 'lucide-react';
 import { puduProducts } from '@/lib/pudu';
 import { localPath, type Locale } from '@/lib/locale';
+import SpatialLogo from './SpatialLogo';
+import DepthCard from './DepthCard';
 import {useAutoplay} from './useAutoplay';
-const featured = ['pudu-mp2000','pudu-t600','pudu-gt7','pudu-cc1-pro','bellabot-pro','pudu-d5-series'];
+const featured = ['pudu-cc1','pudu-t600','pudu-gt7','pudu-mp2000','bellabot-pro','pudu-d5-series'];
 export default function PuduHero({locale='es'}:{locale?:Locale}) {
  const [index,setIndex]=useState(0);
  const root=useRef<HTMLElement>(null);
@@ -15,24 +17,26 @@ export default function PuduHero({locale='es'}:{locale?:Locale}) {
  const {playing,enabled}=useAutoplay(root,advance,paused||hovered,6500);
  const robot=puduProducts.find(r=>r.slug===featured[index])!;
  const es=locale==='es';
- const words=es?['Mueve.','Escala.','Cultiva.','Cuida.','Conecta.','Explora.']:['Move.','Scale.','Grow.','Care.','Connect.','Explore.'];
- return <section ref={root} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onFocusCapture={e=>{if(!(e.target as HTMLElement).closest("[data-rotation-control]"))setPaused(true);}} className="pudu-hero" aria-label={es?'Robótica Pudu con Botmate':'Pudu robotics with Botmate'}>
+ const labels=es?['Limpieza','Industria','Jardinería','Almacenes','Servicio','Exploración']:['Cleaning','Industry','Landscaping','Warehouses','Service','Exploration'];
+ return <section ref={root} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onFocusCapture={e=>{if(!(e.target as HTMLElement).closest("[data-rotation-control]"))setPaused(true);}} className="pudu-hero immersive-showroom" aria-label={es?'Robótica Pudu con Botmate':'Pudu robotics with Botmate'}>
+  <div className="showroom-texture" aria-hidden="true"/>
   <div className="container-x pudu-hero-grid">
    <div className="pudu-hero-copy">
     <p className="eyebrow"><span className="live-dot"/>{es?'BOTMATE × PUDU ROBOTICS · MÉXICO':'BOTMATE × PUDU ROBOTICS · MEXICO'}</p>
-    <h1>{es?'El siguiente':'The next'}<br/>{es?'movimiento.':'move.'}<br/><span key={index}>{words[index]}</span></h1>
+    <h1>{es?'El futuro':'The future'}<br/><span>{es?'ya trabaja.':'is at work.'}</span></h1><p className="showroom-lead">{es?'Ahora, imagínalo en tu empresa.':'Now, imagine it in your business.'}</p>
     <p>{es?'Robótica para plantas, almacenes, jardines y espacios de servicio. Tecnología Pudu y talento mexicano para impulsar la modernización de tu empresa.':'Robotics for plants, warehouses, grounds and service spaces. Pudu technology and Mexican talent to drive the modernization of your business.'}</p>
-    <div className="hero-actions"><Link className="btn-primary" href={localPath('/encuentra-tu-robot',locale)}>{es?'Encuentra tu robot':'Find your robot'}<ArrowUpRight size={18}/></Link><Link className="text-link" href={localPath('/reservar',locale)}>{es?'Hablemos de tu proyecto':'Let’s talk about your project'}<ArrowUpRight size={17}/></Link></div>
-    <div className="distributor-note"><Image src="/media/pudu/pudu-logo.webp" alt="Pudu Robotics" width={100} height={30}/><span>{es?'Distribuidor oficial en México':'Official distributor in Mexico'}</span></div>
+    <div className="hero-actions"><Link className="btn-primary" href={localPath('/encuentra-tu-robot',locale)}>{es?'Encuentra tu robot':'Find your robot'}<ArrowUpRight size={18}/></Link><Link className="text-link" href={localPath('/reservar',locale)}>{es?'Reserva una demostración':'Book a demonstration'}<ArrowUpRight size={17}/></Link></div>
+    <a className="showroom-film-link" href="#en-accion"><span><Play size={13} fill="currentColor"/></span>{es?'Mira lo que pueden hacer':'See what they can do'}</a><div className="distributor-note"><Image src="/media/pudu/pudu-logo.webp" alt="Pudu Robotics" width={100} height={30}/><span>{es?'Distribuidor oficial en México':'Official distributor in Mexico'}</span></div>
    </div>
-   <div className="pudu-stage">
+   <div className="showroom-exhibit"><SpatialLogo/><div className="pudu-stage">
     <div className="stage-coordinate">MX / PUDU / {String(index+1).padStart(2,'0')}</div>
-    <div className="stage-orbit stage-orbit-one"/><div className="stage-orbit stage-orbit-two"/><div className="stage-floor"/>
-    <Link className="stage-product" href={localPath('/robots/'+robot.slug,locale)} aria-label={robot.name} key={robot.slug}><Image src={robot.image} alt={robot.name+' · Pudu Robotics'} fill sizes="(min-width: 1000px) 52vw, 95vw" priority={index===0}/></Link>
+    <DepthCard className="showroom-depth"><div className="stage-orbit stage-orbit-one"/><div className="stage-orbit stage-orbit-two"/><div className="stage-floor"/>
+    <Link className="stage-product" href={localPath('/robots/'+robot.slug,locale)} aria-label={robot.name} key={robot.slug}><Image src={robot.image} alt={robot.name+' · Pudu Robotics'} fill sizes="(min-width: 1000px) 52vw, 95vw" priority={index===0}/></Link></DepthCard>
     <div className="stage-caption" aria-live={playing?"off":"polite"}><span>{es?'INGENIERÍA EN MOVIMIENTO':'ENGINEERING IN MOTION'}</span><h2>{robot.name}</h2><p>{robot.description[locale]}</p></div>
     <div className="stage-controls"><button type="button" aria-label={es?'Modelo anterior':'Previous model'} onClick={()=>{setPaused(true);setIndex(i=>(i+featured.length-1)%featured.length);}}><ArrowLeft size={20}/></button><button type="button" data-rotation-control disabled={!enabled} aria-label={paused?(es?'Reproducir modelos':'Play models'):(es?'Pausar modelos':'Pause models')} onClick={()=>setPaused(v=>!v)}>{paused||!enabled?<Play size={15}/>:<Pause size={15}/>}</button><span>0{index+1} / {String(featured.length).padStart(2,'0')}</span><button type="button" aria-label={es?'Siguiente modelo':'Next model'} onClick={()=>{setPaused(true);setIndex(i=>(i+1)%featured.length);}}><ArrowRight size={20}/></button></div>
-   </div>
+   </div></div>
   </div>
+  <div className="container-x showroom-applications" role="group" aria-label={es?'Elegir aplicación':'Choose application'}>{labels.map((label,i)=><button key={label} type="button" aria-pressed={i===index} onClick={()=>{setPaused(true);setIndex(i);}}><span>0{i+1}</span>{label}<ArrowUpRight size={14}/></button>)}</div>
   <div className="pudu-hero-bottom container-x"><span>{es?'TECNOLOGÍA GLOBAL. TALENTO MEXICANO.':'GLOBAL TECHNOLOGY. MEXICAN TALENT.'}</span><a href="#ecosistema">{es?'Descubre el ecosistema':'Discover the ecosystem'} ↓</a></div>
  </section>
 }
