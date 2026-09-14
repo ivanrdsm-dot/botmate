@@ -13,8 +13,6 @@ export default function Navbar() {
     {href:'/robots',label:en?'Robots':'Robots'},
     {href:'/sectores',label:en?'Industries':'Soluciones'},
     {href:'/casos-de-exito',label:en?'Case studies':'Casos'},
-    {href:'/refacciones',label:en?'Accessories':'Refacciones'},
-    {href:'/blog',label:en?'Insights':'Recursos'},
     {href:'/soporte',label:en?'Support':'Soporte'},
   ].map(n=>({...n,href:localPath(n.href,locale)}));
   const languageTarget = en ? spanishPath(pathname) : localPath(pathname,'en');
@@ -71,22 +69,12 @@ export default function Navbar() {
         className="mobile-nav"
         hidden={!open}
       >
-        {[
-          ...nav,
-          { href: localPath("/renta",locale), label: en?"Rental":"Renta" },
-          { href: localPath("/venta",locale), label: en?"Purchase":"Compra" },
-          { href: localPath("/reservar",locale), label: en?"Book a call":"Reservar una llamada" },
-          { href: localPath("/contacto",locale), label: en?"Contact":"Contacto" },
-          {href:localPath("/encuentra-tu-robot",locale),label:en?"Find your robot":"Encuentra tu robot"},
-          {href:localPath("/preguntas-frecuentes",locale),label:en?"Frequently asked questions":"Preguntas frecuentes"},
-          {href:localPath("/nosotros",locale),label:en?"About Botmate":"Acerca de Botmate"},
-          {href:localPath("/recursos",locale),label:en?"Resource library":"Biblioteca oficial"},
-        ].map((n) => (
-          <Link key={n.href} href={n.href} onClick={() => setOpen(false)}>
-            {n.label}
-            <ArrowUpRight size={17} />
-          </Link>
-        ))}
+        {[...nav, {href:localPath('/reservar',locale),label:en?'Book a call':'Reservar llamada'}].map(n=><Link key={n.href} href={n.href} onClick={()=>setOpen(false)}>{n.label}<ArrowUpRight size={17}/></Link>)}
+        <details className="mobile-more" key={pathname+String(open)}><summary>{en?'More options':'Más opciones'}</summary>{[
+          ['/renta',en?'Rental':'Renta'], ['/venta',en?'Purchase':'Compra'],
+          ['/refacciones',en?'Spare parts':'Refacciones'], ['/blog',en?'Blog':'Blog'],
+          ['/recursos',en?'Resource library':'Biblioteca'], ['/nosotros',en?'About Botmate':'Acerca de Botmate'],
+        ].map(([path,label])=><Link key={path} href={localPath(path,locale)} onClick={()=>setOpen(false)}>{label}<ArrowUpRight size={17}/></Link>)}</details>
       </nav>
     </header>
   );
