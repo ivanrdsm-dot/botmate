@@ -1,3 +1,4 @@
+import AutoCarousel from './AutoCarousel';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
@@ -10,17 +11,17 @@ export function BotmateClients({locale='es'}:{locale?:Locale}) {
   const es=locale==='es';
   return <section className="botmate-clients"><div className="container-x">
     <div className="client-heading"><p className="eyebrow">BOTMATE / {es?'RELACIONES QUE NOS MUEVEN':'RELATIONSHIPS THAT MOVE US'}</p><Link className="text-link" href={localPath('/casos-de-exito',locale)+'#botmate'}>{es?'Conoce nuestros proyectos':'Explore our projects'}<ArrowUpRight size={16}/></Link></div>
-    <ul className="botmate-brand-list" aria-label={es?'Marcas con relación confirmada por Botmate':'Brand relationships confirmed by Botmate'}>{botmateBrands.map(b=><li key={b}>{b}</li>)}</ul>
+    <div className="brand-marquee"><div className="brand-marquee-track"><ul className="botmate-brand-list" aria-label={es?'Marcas con relación confirmada por Botmate':'Brand relationships confirmed by Botmate'}>{botmateBrands.map(b=><li key={b}>{b}</li>)}</ul><ul className="botmate-brand-list brand-marquee-copy" aria-hidden="true">{botmateBrands.map(b=><li key={b}>{b}</li>)}</ul></div></div>
     <p className="fine-print">{es?'Relaciones comerciales confirmadas por el equipo de Botmate. Consulta el alcance y estado de los proyectos documentados.':'Commercial relationships confirmed by the Botmate team. Explore the scope and status of documented projects.'}</p>
   </div></section>;
 }
 export function BotmateCaseCards({locale='es',compact=false}:{locale?:Locale;compact?:boolean}) {
-  const es=locale==='es';const entries=compact?botmateCases.filter(c=>c.brand!=='Mabe'):botmateCases;
+  const es=locale==='es';const entries=botmateCases;
   return <section id="botmate" className="section-space botmate-projects"><div className="container-x"><div className="section-heading-row"><div><p className="eyebrow">{es?'PROYECTOS PROPIOS / MÉXICO':'OUR PROJECTS / MEXICO'}</p><h2>{es?'Las marcas tienen historias.':'Brands have stories.'}<br/>{es?'Nosotros ayudamos a moverlas.':'We help set them in motion.'}</h2></div><p className="section-side-copy">{es?'Del contenido en pantalla al trabajo en campo. Explora el alcance de nuestros proyectos, propuestas y próximas participaciones.':'From on-screen content to work in the field. Explore the scope of our projects, proposals and upcoming events.'}</p></div>
-    <div className="botmate-project-grid">{entries.map((c,i)=><Link className="botmate-project-card" href={localPath('/casos-de-exito/'+c.slug,locale)} key={c.slug}>
+    <AutoCarousel locale={locale} label={es?'Proyectos Botmate':'Botmate projects'}>{entries.map((c,i)=><Link className="botmate-project-card" href={localPath('/casos-de-exito/'+c.slug,locale)} key={c.slug}>
       <div className="project-brand-panel"><span className="tiny-label">BOTMATE ×</span><strong>{c.brand}</strong><span className="project-index">0{i+1}<ArrowUpRight size={28}/></span></div>
       <div className="project-card-body"><span className="project-status">{c.status[locale]}</span><h3>{c.title[locale]}</h3><p>{c.description[locale]}</p><span className="text-link">{es?'Ver el proyecto':'Explore the project'}<ArrowUpRight size={17}/></span></div>
-    </Link>)}</div>
+    </Link>)}</AutoCarousel>
     {compact&&<Link className="text-link project-all" href={localPath('/casos-de-exito',locale)}>{es?'Proyectos Botmate y referencias internacionales':'Botmate projects and international references'}<ArrowUpRight size={18}/></Link>}
   </div></section>;
 }
