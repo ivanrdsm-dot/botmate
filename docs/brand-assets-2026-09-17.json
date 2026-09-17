@@ -1,0 +1,42 @@
+[
+  {
+    "file": "public/media/brands/purina.png",
+    "source": "https://www.purina.com.mx/themes/custom/purina/purina/Content/img/logo/red/logo.png",
+    "page": "https://www.purina.com.mx"
+  },
+  {
+    "file": "public/media/brands/meximold.png",
+    "source": "https://static.wixstatic.com/media/abb9b2_93c05bf81b0148e8a0027f2627e9621a~mv2.png",
+    "page": "https://meximold.com"
+  },
+  {
+    "file": "public/media/brands/mpi.png",
+    "source": "https://www.mpi.org/images/default-source/chapterlogos/chapter_114_dark.png",
+    "page": "https://www.mpi.org/chapters/mexico"
+  },
+  {
+    "file": "public/media/brands/sams.svg",
+    "source": "https://i5.walmartimages.com/dfw/63fd9f59-8639/5d9d7fc0-adce-4835-a8a9-3c98989a580a/v1/sams-logo-white.svg",
+    "page": "https://www.sams.com.mx"
+  },
+  {
+    "file": "public/media/brands/mabe.jpg",
+    "source": "https://mabeglobal.com/medias/logo-mabe-centrado-1040x202.jpg?context=bWFzdGVyfHJvb3R8MjgxMTh8aW1hZ2UvanBlZ3xhR0U1TDJobU5TOHhNelEwTURZNU56TXpOVGd6T0M5c2IyZHZYMjFoWW1WZlkyVnVkSEpoWkc5Zk1UQTBNSGd5TURJdWFuQm58YzUxYTk4OGNiYWJjNTI5YmQ5YjlhNzFjNGI0YzQ0YTY5OTYwOThkY2VjOTRmZTVkYmFlM2UzZGU4MDRjNmJhZA",
+    "page": "https://mabeglobal.com"
+  },
+  {
+    "file": "public/media/brands/walmart.webp",
+    "source": "existing official Pudu media",
+    "page": "https://www.pudurobotics.com/en"
+  },
+  {
+    "file": "public/media/brands/loreal.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/9d/L%27Or%C3%A9al_logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:L%27Or%C3%A9al_logo.svg"
+  },
+  {
+    "file": "public/media/brands/alpura.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/5/52/Alpura_logo.png/250px-Alpura_logo.png",
+    "page": "https://en.wikipedia.org/wiki/Alpura_(company)"
+  }
+]

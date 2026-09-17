@@ -118,3 +118,24 @@ html[data-motion=on] .spatial-logo-object{animation:brand-revolve 20s linear inf
 .mobile-more a{padding-left:15px;font-size:12px}
 @media(max-width:1000px){.home-area-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.compact-home .pudu-hero-grid{gap:26px}.compact-home .experience-cinema>.container-x{gap:20px 25px;grid-template-columns:.85fr 1.15fr}.home-case-card{padding:18px}}
 @media(max-width:760px){.compact-home .pudu-hero-grid{gap:0;padding-top:0;padding-bottom:26px}.compact-home .pudu-hero-copy{padding-top:30px;padding-bottom:0}.compact-home .pudu-hero h1{font-size:clamp(49px,11vw,72px);margin-block:20px}.compact-home .pudu-hero-copy>p:not(.eyebrow){font-size:14px}.compact-home .showroom-exhibit{padding-top:114px;margin-top:17px}.compact-home .pudu-stage{height:370px}.compact-home .showroom-depth{inset:30px 0 106px}.home-section{padding-block:38px}.home-heading{gap:15px;align-items:flex-start}.home-heading h2,.home-next h2,.compact-home .cinema-heading h2{font-size:27px}.home-heading>.text-link{font-size:10px;gap:5px;min-height:33px}.home-area-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-area-card{padding:9px 12px 15px}.home-area-image{height:120px;margin-bottom:11px}.home-area-card h3{font-size:12px}.home-area-card p{font-size:10px}.home-area-card:last-child{grid-column:1/-1;display:grid;grid-template-columns:95px 1fr;gap:0 18px;align-items:center}.home-area-card:last-child .home-area-image{grid-row:1/3;height:90px;margin:0}.home-area-card:last-child h3{align-self:end}.home-area-card:last-child p{align-self:start}.compact-home .experience-cinema{padding-block:36px}.compact-home .experience-cinema>.container-x{display:flex;flex-direction:column;gap:18px}.compact-home .cinema-heading>p{max-width:100%;font-size:12px}.compact-home .cinema-choices{width:100%;flex-wrap:nowrap}.compact-home .cinema-choices button{font-size:10px;padding:10px 9px}.compact-home .cinema-screen{aspect-ratio:16/10}.compact-home .cinema-caption{width:100%;flex-direction:row;align-items:center;gap:12px}.compact-home .cinema-caption h3{font-size:15px}.compact-home .cinema-caption .text-link{font-size:10px;gap:6px;flex-shrink:0}.compact-home .cinema-caption span{font-size:6px;letter-spacing:0}.home-case-grid{grid-template-columns:1fr;gap:10px}.home-case-card{padding:18px;display:grid;grid-template-columns:1fr auto;gap:12px}.home-case-brand{font-size:23px;margin:0}.home-case-brand svg{display:none}.home-case-card .project-status{align-self:center;margin:0}.home-case-card h3{grid-column:1/-1;margin:0;max-width:100%;font-size:12px}.home-next-main{align-items:flex-start;flex-direction:column;gap:20px}.home-next-links{gap:12px 25px;margin-top:24px;padding-top:18px}}
+.brand-logo{display:inline-flex;width:160px;height:64px;align-items:center;justify-content:center;background:#fff;border-radius:6px;padding:10px;flex-shrink:0}
+.brand-logo img{width:100%;height:100%;max-height:100%;object-fit:contain;background:transparent;border-radius:0}
+.brand-logo-dark{background:#133b65}
+.case-visual{margin:0;background:#eef0f7}
+.case-visual-image{position:relative;height:230px;overflow:hidden}
+.case-visual-image img{object-fit:contain;transition:transform .35s}
+.case-visual figcaption{margin:0;padding:8px 14px;font-size:10px;line-height:1.5;color:#545f73;background:#f4f5f9}
+.project-card-body>.brand-logo{margin-bottom:18px}
+.home-case-card{padding:0;overflow:hidden}
+.home-case-body{padding:18px}
+.home-case-card .case-visual-image{height:190px}
+.home-case-brand{margin-bottom:12px}
+.home-case-brand .brand-logo{width:140px;height:47px;padding:5px}
+.home-brands{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.home-brands>p{font-size:11px;color:var(--muted);margin:0 0 14px}
+.home-brands ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding:0;margin:0}
+.home-brands .brand-logo{width:125px;height:53px}
+.case-aside>.brand-logo{margin-bottom:20px}
+.case-aside .case-visual-image{height:420px}
+.case-aside .case-visual-image img{height:100%;max-height:none}
+@media(max-width:760px){.home-case-card{display:block;padding:0}.home-case-card .case-visual-image{height:180px}.home-case-brand svg{display:block}.home-case-card h3{margin-top:10px}.home-brands ul{justify-content:flex-start}.home-brands .brand-logo{width:100px;height:47px}.case-aside .case-visual-image{height:360px}}

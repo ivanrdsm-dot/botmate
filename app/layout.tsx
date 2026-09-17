@@ -63,6 +63,8 @@ export default async function RootLayout({
         name: site.name,
         url: site.url,
         logo: `${site.url}/media/botmate-wordmark.png`,
+        sameAs: ["https://www.google.com/maps/place/BOTMATE/data=!4m2!3m1!1s0x0:0xaec3244ce320d15f"],
+        areaServed: {"@type":"Country",name:"Mexico"},
         contactPoint: {
           "@type": "ContactPoint",
           telephone: site.phone,

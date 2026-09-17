@@ -2,7 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { puduProducts } from '@/lib/pudu';
-import { botmateCases } from '@/lib/botmate-cases';
+import { BrandLogo, CaseVisual } from './CaseVisual';
+import { botmateBrands, botmateCases } from '@/lib/botmate-cases';
 import { localPath, type Locale } from '@/lib/locale';
 
 const areas = [
@@ -28,7 +29,8 @@ export function HomeCases({locale}: {locale: Locale}) {
   const es = locale === 'es';
   return <section className="home-cases home-section"><div className="container-x">
     <div className="home-heading"><div><h2>{es ? 'Proyectos de Botmate' : 'Botmate projects'}</h2><p>{es ? 'Conoce el alcance y estado de cada proyecto.' : 'Explore the scope and status of each project.'}</p></div><Link className="text-link" href={localPath('/casos-de-exito',locale)}>{es ? 'Ver todos' : 'View all'}<ArrowUpRight size={17}/></Link></div>
-    <div className="home-case-grid">{botmateCases.slice(0,3).map(c => <Link key={c.slug} href={localPath('/casos-de-exito/'+c.slug,locale)} className="home-case-card"><span className="home-case-brand">{c.brand}<ArrowUpRight size={20}/></span><span className="project-status">{c.status[locale]}</span><h3>{c.title[locale]}</h3></Link>)}</div>
+    <div className="home-case-grid">{botmateCases.slice(0,3).map(c => <Link key={c.slug} href={localPath('/casos-de-exito/'+c.slug,locale)} className="home-case-card"><CaseVisual entry={c} locale={locale}/><div className="home-case-body"><span className="home-case-brand"><BrandLogo brand={c.brand}/><ArrowUpRight size={20}/></span><span className="project-status">{c.status[locale]}</span><h3>{c.title[locale]}</h3></div></Link>)}</div>
+    <div className="home-brands"><p>{es?'Marcas con las que nos relacionamos':'Brands we work with'}</p><ul aria-label={es?'Relaciones confirmadas por Botmate':'Relationships confirmed by Botmate'}>{botmateBrands.map(brand=><li key={brand}><BrandLogo brand={brand}/></li>)}</ul></div>
   </div></section>;
 }
 
