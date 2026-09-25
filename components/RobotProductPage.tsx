@@ -9,6 +9,7 @@ import stories from '@/lib/pudu-stories.json';
 import { site } from '@/lib/site';
 import JsonLd from './JsonLd';
 import PuduVideo from './PuduVideo';
+import Robot3DShowcase from './Robot3DShowcase';
 import { FactoryExplorer, RobotChapters, RobotModelImage } from './RobotExperience';
 
 function normalized(name: string) { return name.toLowerCase().replace(/pudu|[^a-z0-9]/g, ''); }
@@ -32,7 +33,7 @@ export default function RobotProductPage({ robot: r, locale = 'es' }: { robot: P
         <div className="robot-product-actions"><Link href={contact} className="btn-primary">{es ? 'Cotizar este robot' : 'Enquire about this robot'}<ArrowUpRight size={18}/></Link><a href="#funcionamiento" className="text-link">{es ? 'Explorar funciones' : 'Explore functions'}<ArrowDown size={17}/></a></div>
         <div className="robot-hero-facts">{metrics.map(s => <div key={s.label.en}><strong>{s.value[locale]}</strong><span>{s.label[locale]}</span></div>)}</div>
         <p className="robot-fine-print">{es ? 'Datos del fabricante. Configuración y disponibilidad en México por confirmar.' : 'Manufacturer data. Configuration and availability in Mexico require confirmation.'}</p>
-      </div><RobotModelImage src={r.image} name={r.name} locale={locale}/></div>
+      </div>{r.slug === 'pudu-d5-series' ? <Robot3DShowcase src={r.image} name={r.name} locale={locale}/> : <RobotModelImage src={r.image} name={r.name} locale={locale}/>}</div>
     </div></section>
     <nav className="robot-product-nav" aria-label={es ? 'Explorar este robot' : 'Explore this robot'}><div className="container-x"><span>{r.name}</span><div>{[['funcionamiento', es ? 'Funciones' : 'Functions'], ['aplicaciones', es ? 'Aplicaciones' : 'Applications'], ['ficha', es ? 'Ficha técnica' : 'Specifications'], ['refacciones', es ? 'Refacciones' : 'Parts']].map(([id, label]) => <a href={`#${id}`} key={id}>{label}</a>)}</div><Link href={localPath('/reservar', locale)}>{es ? 'Agendar' : 'Book'}<ArrowUpRight size={15}/></Link></div></nav>
     {experience?.chapters.length > 0 && <RobotChapters chapters={experience.chapters} locale={locale} name={r.name}/>}
