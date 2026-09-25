@@ -1,0 +1,776 @@
+[
+  {
+    "source": "https://cdn.pudutech.com/S3_9a91ecea8c.webp",
+    "src": "/media/experience/0c5fbe9d021358ea.webp",
+    "kind": "image",
+    "poster": "/media/experience/0c5fbe9d021358ea.webp",
+    "bytes": 398998,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S5_ea441dba46.webp",
+    "src": "/media/experience/8bdc65cac21ea753.webp",
+    "kind": "image",
+    "poster": "/media/experience/8bdc65cac21ea753.webp",
+    "bytes": 183828,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S6_2_f9a9595ed5.webp",
+    "src": "/media/experience/946bec01eeb64281.webp",
+    "kind": "image",
+    "poster": "/media/experience/946bec01eeb64281.webp",
+    "bytes": 221072,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S3_b592761d1a.webp",
+    "src": "/media/experience/b1572e65f573f16e.webp",
+    "kind": "image",
+    "poster": "/media/experience/b1572e65f573f16e.webp",
+    "bytes": 160786,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S4_f7523e2299.webp",
+    "src": "/media/experience/071a8f7e1c190306.webp",
+    "kind": "image",
+    "poster": "/media/experience/071a8f7e1c190306.webp",
+    "bytes": 177072,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S7_be2e5b33f5.webp",
+    "src": "/media/experience/ab0e3f6ad54f916b.webp",
+    "kind": "image",
+    "poster": "/media/experience/ab0e3f6ad54f916b.webp",
+    "bytes": 366162,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S4_c88937d4df.mp4",
+    "src": "/media/experience/cc679707f011dd34.mp4",
+    "kind": "video",
+    "poster": "/media/experience/cc679707f011dd34.jpg",
+    "bytes": 478916,
+    "duration": 4.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S6_1_492d34d588.mp4",
+    "src": "/media/experience/6e3848081a919cd5.mp4",
+    "kind": "video",
+    "poster": "/media/experience/6e3848081a919cd5.jpg",
+    "bytes": 653928,
+    "duration": 3.666667,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S11_ce593ad114.mp4",
+    "src": "/media/experience/985f68c17cd5d076.mp4",
+    "kind": "video",
+    "poster": "/media/experience/985f68c17cd5d076.jpg",
+    "bytes": 1780858,
+    "duration": 4.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S4_2_en_a36dcf51a5.webp",
+    "src": "/media/experience/c76148df67bde5da.webp",
+    "kind": "image",
+    "poster": "/media/experience/c76148df67bde5da.webp",
+    "bytes": 67004,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s4_5_937b888963.mp4",
+    "src": "/media/experience/ba0c6957e65182fb.mp4",
+    "kind": "video",
+    "poster": "/media/experience/ba0c6957e65182fb.jpg",
+    "bytes": 402663,
+    "duration": 3.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s5_1_14b9012651.mp4",
+    "src": "/media/experience/2e947194d392b4af.mp4",
+    "kind": "video",
+    "poster": "/media/experience/2e947194d392b4af.jpg",
+    "bytes": 535460,
+    "duration": 3.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S4_EN_6ab082c9c7.mp4",
+    "src": "/media/experience/341b7c5bf3b95d70.mp4",
+    "kind": "video",
+    "poster": "/media/experience/341b7c5bf3b95d70.jpg",
+    "bytes": 646744,
+    "duration": 1.8,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s5_36783cb2c9.mp4",
+    "src": "/media/experience/44f7fdd75bb3cd8c.mp4",
+    "kind": "video",
+    "poster": "/media/experience/44f7fdd75bb3cd8c.jpg",
+    "bytes": 913508,
+    "duration": 3.466667,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s8_132710d11f.mp4",
+    "src": "/media/experience/2c2b6c04b4c82677.mp4",
+    "kind": "video",
+    "poster": "/media/experience/2c2b6c04b4c82677.jpg",
+    "bytes": 510267,
+    "duration": 3.5,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/20260728_175010_59cb92f3ce.webp",
+    "src": "/media/experience/25e2b970d65fd5e0.webp",
+    "kind": "image",
+    "poster": "/media/experience/25e2b970d65fd5e0.webp",
+    "bytes": 101424,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s4_4daac644b1.webp",
+    "src": "/media/experience/3e44bde5aec21578.webp",
+    "kind": "image",
+    "poster": "/media/experience/3e44bde5aec21578.webp",
+    "bytes": 43108,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s6_b8e941be00.webp",
+    "src": "/media/experience/71bfbce816150b04.webp",
+    "kind": "image",
+    "poster": "/media/experience/71bfbce816150b04.webp",
+    "bytes": 52450,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S3_cc41f45e9b.mp4",
+    "src": "/media/experience/7218ffd1394c30d8.mp4",
+    "kind": "video",
+    "poster": "/media/experience/7218ffd1394c30d8.jpg",
+    "bytes": 3850554,
+    "duration": 14.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S604_cbf134100f.mp4",
+    "src": "/media/experience/6df6479b76304277.mp4",
+    "kind": "video",
+    "poster": "/media/experience/6df6479b76304277.jpg",
+    "bytes": 1209593,
+    "duration": 6.76,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S7_e04552f266.mp4",
+    "src": "/media/experience/af9d078ca58370f5.mp4",
+    "kind": "video",
+    "poster": "/media/experience/af9d078ca58370f5.jpg",
+    "bytes": 1633870,
+    "duration": 8.96,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_179a69f8e9.mp4",
+    "src": "/media/experience/71ebd2572ffbdc2f.mp4",
+    "kind": "video",
+    "poster": "/media/experience/71ebd2572ffbdc2f.jpg",
+    "bytes": 1971884,
+    "duration": 7.96,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_0770cb9c27.mp4",
+    "src": "/media/experience/1b7df2c31c08b1ce.mp4",
+    "kind": "video",
+    "poster": "/media/experience/1b7df2c31c08b1ce.jpg",
+    "bytes": 4503888,
+    "duration": 11.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_0bc23ef7b4.mp4",
+    "src": "/media/experience/10729311d6140c5f.mp4",
+    "kind": "video",
+    "poster": "/media/experience/10729311d6140c5f.jpg",
+    "bytes": 1276306,
+    "duration": 6.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S4_pc_3f99cc7122.jpg",
+    "src": "/media/experience/5c3774042f4c6597.webp",
+    "kind": "image",
+    "poster": "/media/experience/5c3774042f4c6597.webp",
+    "bytes": 125062,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S7_01_pc_b0462791a8.webp",
+    "src": "/media/experience/cb877264d2c88922.webp",
+    "kind": "image",
+    "poster": "/media/experience/cb877264d2c88922.webp",
+    "bytes": 50016,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S8_01_edb770af5c.webp",
+    "src": "/media/experience/0ccdc60333ad2716.webp",
+    "kind": "image",
+    "poster": "/media/experience/0ccdc60333ad2716.webp",
+    "bytes": 12524,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/3_D_251d4da32b.mp4",
+    "src": "/media/experience/b735e5410c32b7ff.mp4",
+    "kind": "video",
+    "poster": "/media/experience/b735e5410c32b7ff.jpg",
+    "bytes": 1643070,
+    "duration": 3.78,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_52ee0d8785.mp4",
+    "src": "/media/experience/124d12654042c4ef.mp4",
+    "kind": "video",
+    "poster": "/media/experience/124d12654042c4ef.jpg",
+    "bytes": 1213353,
+    "duration": 3.42,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/Ai_8750fac080.mp4",
+    "src": "/media/experience/b440b6cc7d751345.mp4",
+    "kind": "video",
+    "poster": "/media/experience/b440b6cc7d751345.jpg",
+    "bytes": 1504921,
+    "duration": 8.7,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_85130ee9d1.mp4",
+    "src": "/media/experience/225d02a4d1b45378.mp4",
+    "kind": "video",
+    "poster": "/media/experience/225d02a4d1b45378.jpg",
+    "bytes": 1411777,
+    "duration": 3.88,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_5fa17b9140.mp4",
+    "src": "/media/experience/a4d56169ec1af4fb.mp4",
+    "kind": "video",
+    "poster": "/media/experience/a4d56169ec1af4fb.jpg",
+    "bytes": 312644,
+    "duration": 2.266016,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_885c0f5515.mp4",
+    "src": "/media/experience/577392109d0c0116.mp4",
+    "kind": "video",
+    "poster": "/media/experience/577392109d0c0116.jpg",
+    "bytes": 394719,
+    "duration": 1.966016,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S3_1f96584c4f.webp",
+    "src": "/media/experience/e066a2eef9faf16d.webp",
+    "kind": "image",
+    "poster": "/media/experience/e066a2eef9faf16d.webp",
+    "bytes": 61190,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S4_4b156ce2fb.webp",
+    "src": "/media/experience/77c873fbbf3a5b76.webp",
+    "kind": "image",
+    "poster": "/media/experience/77c873fbbf3a5b76.webp",
+    "bytes": 75918,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S6_1_1_a04e76156f.webp",
+    "src": "/media/experience/6f3682be3cb3b639.webp",
+    "kind": "image",
+    "poster": "/media/experience/6f3682be3cb3b639.webp",
+    "bytes": 177324,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S2_2_2889668bb3.webp",
+    "src": "/media/experience/a3adaa78d2702cf5.webp",
+    "kind": "image",
+    "poster": "/media/experience/a3adaa78d2702cf5.webp",
+    "bytes": 31236,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/attract_en_ae71822926.mp4",
+    "src": "/media/experience/12c910085d5899d2.mp4",
+    "kind": "video",
+    "poster": "/media/experience/12c910085d5899d2.jpg",
+    "bytes": 979564,
+    "duration": 14.125,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/video_in1_5e6bd85f02.mp4",
+    "src": "/media/experience/3d8254f41b1373c2.mp4",
+    "kind": "video",
+    "poster": "/media/experience/3d8254f41b1373c2.jpg",
+    "bytes": 494552,
+    "duration": 3.76,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_6b8c9d04f2.mp4",
+    "src": "/media/experience/35ca67f214a97205.mp4",
+    "kind": "video",
+    "poster": "/media/experience/35ca67f214a97205.jpg",
+    "bytes": 1306872,
+    "duration": 6.88,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/screen2_robot_de14101c38.mp4",
+    "src": "/media/experience/1c6aebe47830a0dd.mp4",
+    "kind": "video",
+    "poster": "/media/experience/1c6aebe47830a0dd.jpg",
+    "bytes": 420959,
+    "duration": 3.04,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s3_6083161632.mp4",
+    "src": "/media/experience/7aed1e433da99e49.mp4",
+    "kind": "video",
+    "poster": "/media/experience/7aed1e433da99e49.jpg",
+    "bytes": 153316,
+    "duration": 3.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_8c9af929f4.mp4",
+    "src": "/media/experience/a073e75b45a3136c.mp4",
+    "kind": "video",
+    "poster": "/media/experience/a073e75b45a3136c.jpg",
+    "bytes": 88539,
+    "duration": 11.92,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/slam_b1b4e58ff3.mp4",
+    "src": "/media/experience/8caf3db22e13d61d.mp4",
+    "kind": "video",
+    "poster": "/media/experience/8caf3db22e13d61d.jpg",
+    "bytes": 703889,
+    "duration": 6.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/slam_81edd07844.mp4",
+    "src": "/media/experience/46738ced77dd93bc.mp4",
+    "kind": "video",
+    "poster": "/media/experience/46738ced77dd93bc.jpg",
+    "bytes": 174571,
+    "duration": 6.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/3_D_2db4d70722.mp4",
+    "src": "/media/experience/db277787300c5f30.mp4",
+    "kind": "video",
+    "poster": "/media/experience/db277787300c5f30.jpg",
+    "bytes": 327872,
+    "duration": 3.92,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/_d939cf225e.png",
+    "src": "/media/experience/78163301492136c7.webp",
+    "kind": "image",
+    "poster": "/media/experience/78163301492136c7.webp",
+    "bytes": 41960,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s4_7f7b8dc4ed.mp4",
+    "src": "/media/experience/6a9f7b071c2bca1d.mp4",
+    "kind": "video",
+    "poster": "/media/experience/6a9f7b071c2bca1d.jpg",
+    "bytes": 5263121,
+    "duration": 52.36,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s8_1_662b54f03f.webp",
+    "src": "/media/experience/b35e3dc47af09205.webp",
+    "kind": "image",
+    "poster": "/media/experience/b35e3dc47af09205.webp",
+    "bytes": 14070,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/s9_573533bac8.mp4",
+    "src": "/media/experience/7253dcbff60b4c0d.mp4",
+    "kind": "video",
+    "poster": "/media/experience/7253dcbff60b4c0d.jpg",
+    "bytes": 2490403,
+    "duration": 11.76,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudut300/Auto-transport.webp",
+    "src": "/media/experience/248c5979af0e35e7.webp",
+    "kind": "image",
+    "poster": "/media/experience/248c5979af0e35e7.webp",
+    "bytes": 28890,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudut300/follow.webp",
+    "src": "/media/experience/b0cdfbefa930870a.webp",
+    "kind": "image",
+    "poster": "/media/experience/b0cdfbefa930870a.webp",
+    "bytes": 36360,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudut300/Power-assist.webp",
+    "src": "/media/experience/e76e57f75802f106.webp",
+    "kind": "image",
+    "poster": "/media/experience/e76e57f75802f106.webp",
+    "bytes": 45816,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudut300/robot-function-2.webp",
+    "src": "/media/experience/0367df93f3806f14.webp",
+    "kind": "image",
+    "poster": "/media/experience/0367df93f3806f14.webp",
+    "bytes": 19094,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/mt1/S3-1.mp4",
+    "src": "/media/experience/a63ed81ffa730086.mp4",
+    "kind": "video",
+    "poster": "/media/experience/a63ed81ffa730086.jpg",
+    "bytes": 1063857,
+    "duration": 4.24,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/mt1/S3-2.mp4",
+    "src": "/media/experience/3892bb9066194841.mp4",
+    "kind": "video",
+    "poster": "/media/experience/3892bb9066194841.jpg",
+    "bytes": 1580886,
+    "duration": 4.08,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/mt1/S6-1.mp4",
+    "src": "/media/experience/6e65dd8269e6e595.mp4",
+    "kind": "video",
+    "poster": "/media/experience/6e65dd8269e6e595.jpg",
+    "bytes": 1334879,
+    "duration": 8.6,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/product/CC1Pro/S-10.mp4",
+    "src": "/media/experience/20e9d3cea0f54a0d.mp4",
+    "kind": "video",
+    "poster": "/media/experience/20e9d3cea0f54a0d.jpg",
+    "bytes": 217154,
+    "duration": 2.033008,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/product/CC1Pro/S1-2H5.webp",
+    "src": "/media/experience/231ce756fda31542.webp",
+    "kind": "image",
+    "poster": "/media/experience/231ce756fda31542.webp",
+    "bytes": 33642,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/flashbot_arm/S2-1.mp4",
+    "src": "/media/experience/d933378661f13ba3.mp4",
+    "kind": "video",
+    "poster": "/media/experience/d933378661f13ba3.jpg",
+    "bytes": 2229748,
+    "duration": 18.96,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/flashbot_arm/S3-3.webp",
+    "src": "/media/experience/ec4dba7870291250.webp",
+    "kind": "image",
+    "poster": "/media/experience/ec4dba7870291250.webp",
+    "bytes": 7358,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/flashbot_arm/S3-4.webp",
+    "src": "/media/experience/549b230e8707639b.webp",
+    "kind": "image",
+    "poster": "/media/experience/549b230e8707639b.webp",
+    "bytes": 10594,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/d9/section3_front_en.webp",
+    "src": "/media/experience/4786dd5079948771.webp",
+    "kind": "image",
+    "poster": "/media/experience/4786dd5079948771.webp",
+    "bytes": 34604,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/d9/section4_back_hand.webp",
+    "src": "/media/experience/c4cfe35148ce999f.webp",
+    "kind": "image",
+    "poster": "/media/experience/c4cfe35148ce999f.webp",
+    "bytes": 18444,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/d9/section6_1.webp",
+    "src": "/media/experience/d7ec3c691443c4f4.webp",
+    "kind": "image",
+    "poster": "/media/experience/d7ec3c691443c4f4.webp",
+    "bytes": 31760,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudush/screen10/1_en.webp",
+    "src": "/media/experience/7a7bf239580b2901.webp",
+    "kind": "image",
+    "poster": "/media/experience/7a7bf239580b2901.webp",
+    "bytes": 34722,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudush/screen12/1.webp",
+    "src": "/media/experience/06d51c70882c6f30.webp",
+    "kind": "image",
+    "poster": "/media/experience/06d51c70882c6f30.webp",
+    "bytes": 19848,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/bellabotpro/S5_1.mp4",
+    "src": "/media/experience/63361f70faaada51.mp4",
+    "kind": "video",
+    "poster": "/media/experience/63361f70faaada51.jpg",
+    "bytes": 1303479,
+    "duration": 12.878049,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/bellabotpro/S8_1.mp4",
+    "src": "/media/experience/96692b8b339257cc.mp4",
+    "kind": "video",
+    "poster": "/media/experience/96692b8b339257cc.jpg",
+    "bytes": 857655,
+    "duration": 6.125874,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/bellabotpro/S7_1.webp",
+    "src": "/media/experience/0713114e3535e833.webp",
+    "kind": "image",
+    "poster": "/media/experience/0713114e3535e833.webp",
+    "bytes": 328642,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/flashbot_new/s3-h5.mp4",
+    "src": "/media/experience/f204a838b0650c7d.mp4",
+    "kind": "video",
+    "poster": "/media/experience/f204a838b0650c7d.jpg",
+    "bytes": 1038456,
+    "duration": 9.0,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/flashbot_new/s6-en.mp4",
+    "src": "/media/experience/ca4dda0c6c58775f.mp4",
+    "kind": "video",
+    "poster": "/media/experience/ca4dda0c6c58775f.jpg",
+    "bytes": 1062792,
+    "duration": 7.466667,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/flashbot_new/s10.mp4",
+    "src": "/media/experience/99705876e487312f.mp4",
+    "kind": "video",
+    "poster": "/media/experience/99705876e487312f.jpg",
+    "bytes": 502730,
+    "duration": 2.633333,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudut300/section2-pc.webp",
+    "src": "/media/experience/510bee26bc95620f.webp",
+    "kind": "image",
+    "poster": "/media/experience/510bee26bc95620f.webp",
+    "bytes": 69084,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudut300/product-body-size.webp",
+    "src": "/media/experience/e74530e63a7246f6.webp",
+    "kind": "image",
+    "poster": "/media/experience/e74530e63a7246f6.webp",
+    "bytes": 19694,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S1201_6ad3d0faec.webp",
+    "src": "/media/experience/82a155615284198d.webp",
+    "kind": "image",
+    "poster": "/media/experience/82a155615284198d.webp",
+    "bytes": 23408,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S1202_787a8200d7.webp",
+    "src": "/media/experience/5af8c190be853e77.webp",
+    "kind": "image",
+    "poster": "/media/experience/5af8c190be853e77.webp",
+    "bytes": 21380,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S1203_7f45fc4979.webp",
+    "src": "/media/experience/03e57437d8e83d08.webp",
+    "kind": "image",
+    "poster": "/media/experience/03e57437d8e83d08.webp",
+    "bytes": 21338,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S12_06_1_d85d97bb0f.webp",
+    "src": "/media/experience/e068dd3a22739ab5.webp",
+    "kind": "image",
+    "poster": "/media/experience/e068dd3a22739ab5.webp",
+    "bytes": 11720,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S12_07_1_95762dbb41.webp",
+    "src": "/media/experience/6815e286d900a264.webp",
+    "kind": "image",
+    "poster": "/media/experience/6815e286d900a264.webp",
+    "bytes": 6814,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/S12_08_1_a893656983.webp",
+    "src": "/media/experience/d3000a5cc1d753ec.webp",
+    "kind": "image",
+    "poster": "/media/experience/d3000a5cc1d753ec.webp",
+    "bytes": 4614,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/1_440162cb7c.webp",
+    "src": "/media/experience/ad8f8c5d3923ec59.webp",
+    "kind": "image",
+    "poster": "/media/experience/ad8f8c5d3923ec59.webp",
+    "bytes": 135752,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/2_a135f8a335.webp",
+    "src": "/media/experience/f1acaea245c152e9.webp",
+    "kind": "image",
+    "poster": "/media/experience/f1acaea245c152e9.webp",
+    "bytes": 82638,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/3_9c7814aeae.webp",
+    "src": "/media/experience/190c2eca3129303d.webp",
+    "kind": "image",
+    "poster": "/media/experience/190c2eca3129303d.webp",
+    "bytes": 35074,
+    "duration": null,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudut300/t300_en.mp4",
+    "src": "/media/experience/5afc7d7ed4b26c8d.mp4",
+    "kind": "video",
+    "poster": "/media/experience/5afc7d7ed4b26c8d.jpg",
+    "bytes": 20449914,
+    "duration": 120.64,
+    "status": "ready"
+  },
+  {
+    "source": "https://cdn.pudutech.com/official-website/pudush/screen02/1.mp4",
+    "src": "/media/experience/e0ec98e6a6eae58b.mp4",
+    "kind": "video",
+    "poster": "/media/experience/e0ec98e6a6eae58b.jpg",
+    "bytes": 711323,
+    "duration": 4.76,
+    "status": "ready"
+  }
+]

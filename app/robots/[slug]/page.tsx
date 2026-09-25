@@ -21,7 +21,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const params = await props.params;
   const current = puduProducts.find(r => r.slug === params.slug);
-  if (current) return localizedMetadata(current.name + " en México · Botmate", current.name + ": " + current.description.es, "/robots/" + current.slug);
+  if (current) return localizedMetadata(current.name + " en México · Funciones y aplicaciones", "Explora " + current.name + ": videos oficiales, funciones, aplicaciones, especificaciones y accesorios. Cotiza o agenda con Botmate en México.", "/robots/" + current.slug, "es", {url: current.image, alt: current.name});
   const r = robots.find((r) => r.slug === params.slug);
   return r
     ? {

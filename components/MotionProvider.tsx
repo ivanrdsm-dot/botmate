@@ -66,7 +66,7 @@ export default function MotionProvider({
     );
     document
       .querySelectorAll(
-        ".section-heading-row, .solution-card, .robot-card, .process-card, .motion-reveal, .decision-cards > a, .pudu-family-card, .pudu-industry-card, .pudu-showcase-grid > article",
+        ".robot-section-heading, .section-heading-row, .solution-card, .robot-card, .process-card, .motion-reveal, .decision-cards > a, .pudu-family-card, .pudu-industry-card, .pudu-showcase-grid > article",
       )
       .forEach((el) => observer.observe(el));
     return () => observer.disconnect();

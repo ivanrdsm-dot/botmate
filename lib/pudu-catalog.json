@@ -2333,6 +2333,36 @@
             "es": "2 h",
             "en": "2 h"
           }
+        },
+        {
+          "label": {
+            "es": "Dimensiones (L × An × Al)",
+            "en": "Dimensions (L × W × H)"
+          },
+          "value": {
+            "es": "835 × 500 × 1350 mm",
+            "en": "835 × 500 × 1350 mm"
+          }
+        },
+        {
+          "label": {
+            "es": "Autonomía sin carga",
+            "en": "Runtime without load"
+          },
+          "value": {
+            "es": "12 h",
+            "en": "12 h"
+          }
+        },
+        {
+          "label": {
+            "es": "Navegación",
+            "en": "Navigation"
+          },
+          "value": {
+            "es": "VSLAM y LiDAR SLAM",
+            "en": "VSLAM & LiDAR SLAM"
+          }
         }
       ],
       "image": "/media/pudu/0779d93b33a25ddc.webp",
@@ -2341,7 +2371,7 @@
       "source": "https://www.pudurobotics.com/en/products/pudut300",
       "sourceEs": "https://www.pudurobotics.com/es/products/pudut300",
       "new": false,
-      "verifiedAt": "2026-09-13"
+      "verifiedAt": "2026-09-24"
     },
     {
       "slug": "bellabot-pro",

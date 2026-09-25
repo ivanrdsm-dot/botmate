@@ -1,0 +1,1324 @@
+{
+  "pudu-gt3": {
+    "source": "https://www.pudurobotics.com/en/products/pudu-gt3",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Corte y recolección en una pasada",
+          "en": "One-Pass Cutting & Collection"
+        },
+        "description": {
+          "es": "Corte, aspiración y recogida de césped se realizan simultáneamente. Durante el corte rotativo en grandes superficies, se recogen de inmediato recortes, hojas y residuos ligeros, reduciendo limpiezas posteriores y segundas intervenciones.",
+          "en": "The GT3 cuts, vacuums, and collects grass clippings, fallen leaves, and light turf debris simultaneously during large-scale rotary mowing. This continuous system leaves behind a spotless field, completely eliminating the need for secondary cleanups or follow-up crews."
+        },
+        "source": "https://cdn.pudutech.com/S3_9a91ecea8c.webp",
+        "src": "/media/experience/0c5fbe9d021358ea.webp",
+        "kind": "image",
+        "poster": "/media/experience/0c5fbe9d021358ea.webp"
+      },
+      {
+        "title": {
+          "es": "Vaciado automático y reanudación",
+          "en": "Auto-Dump & Task Resumption"
+        },
+        "description": {
+          "es": "Al llenarse, se dirige automáticamente al punto de descarga designado, se vacía y regresa al punto de interrupción para continuar la tarea – reduce la intervención manual y permite una operación autónoma continua.",
+          "en": "The GT3 autonomously transits to empty its hopper when full, then returns precisely to the breakpoint to continue its task. This built-in feature ensures seamless performance without requiring operator intervention."
+        },
+        "source": "https://cdn.pudutech.com/S5_ea441dba46.webp",
+        "src": "/media/experience/8bdc65cac21ea753.webp",
+        "kind": "image",
+        "poster": "/media/experience/8bdc65cac21ea753.webp"
+      },
+      {
+        "title": {
+          "es": "Operación en múltiples zonas y traslado autónomo",
+          "en": "Autonomous Cross-Zone Transit"
+        },
+        "description": {
+          "es": "Varias áreas de césped dispersas en un recinto pueden configurarse como una tarea continua. Al finalizar la zona actual, el robot se desplaza autónomamente por rutas autorizadas hacia la siguiente área – sin necesidad de traslado manual.",
+          "en": "The GT3 moves seamlessly between different pitches or turf zones along pre-mapped routes. Eliminating the need for manual handling, the GT3 automatically transits and resumes mowing upon arrival to effortlessly cover multiple fields."
+        },
+        "source": "https://cdn.pudutech.com/S6_2_f9a9595ed5.webp",
+        "src": "/media/experience/946bec01eeb64281.webp",
+        "kind": "image",
+        "poster": "/media/experience/946bec01eeb64281.webp"
+      }
+    ]
+  },
+  "pudu-gt5": {
+    "source": "https://www.pudurobotics.com/en/products/pudu-gt5",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Corte y recolección en una pasada",
+          "en": "One-Pass Cutting & Collection"
+        },
+        "description": {
+          "es": "Corte, aspiración y recogida de césped se realizan simultáneamente. Durante el corte rotativo en grandes superficies, se recogen de inmediato recortes, hojas y residuos ligeros, reduciendo limpiezas posteriores y segundas intervenciones.",
+          "en": "The GT5 cuts, vacuums, and collects grass clippings, fallen leaves, and light turf debris simultaneously during large-scale rotary mowing. This continuous system leaves behind a spotless field, completely eliminating the need for secondary cleanups or follow-up crews."
+        },
+        "source": "https://cdn.pudutech.com/S3_b592761d1a.webp",
+        "src": "/media/experience/b1572e65f573f16e.webp",
+        "kind": "image",
+        "poster": "/media/experience/b1572e65f573f16e.webp"
+      },
+      {
+        "title": {
+          "es": "Vaciado automático y reanudación",
+          "en": "Auto-Dump & Task Resumption"
+        },
+        "description": {
+          "es": "El GT5 transita autónomamente para vaciar su tolva cuando está llena, y luego regresa con precisión al punto de interrupción para continuar su tarea. Esta función integrada garantiza un rendimiento continuo sin requerir intervención del operador.",
+          "en": "The GT5 autonomously transits to empty its hopper when full, then returns precisely to the breakpoint to continue its task. This built-in feature ensures seamless performance without requiring operator intervention."
+        },
+        "source": "https://cdn.pudutech.com/S4_f7523e2299.webp",
+        "src": "/media/experience/071a8f7e1c190306.webp",
+        "kind": "image",
+        "poster": "/media/experience/071a8f7e1c190306.webp"
+      },
+      {
+        "title": {
+          "es": "Tránsito Autónomo Entre Zonas",
+          "en": "Autonomous Cross-Zone Transit"
+        },
+        "description": {
+          "es": "El GT5 se desplaza sin problemas entre diferentes campos o zonas de césped a lo largo de rutas internas premapeadas. Eliminando la necesidad de manipulación manual, el GT5 transita y reanuda el corte automáticamente al llegar para cubrir múltiples campos sin esfuerzo.",
+          "en": "The GT5 moves seamlessly between different pitches or turf zones along pre-mapped internal routes. Eliminating the need for manual handling, the GT5 automatically transits and resumes mowing upon arrival to effortlessly cover multiple fields."
+        },
+        "source": "https://cdn.pudutech.com/S7_be2e5b33f5.webp",
+        "src": "/media/experience/ab0e3f6ad54f916b.webp",
+        "kind": "image",
+        "poster": "/media/experience/ab0e3f6ad54f916b.webp"
+      }
+    ]
+  },
+  "pudu-gt7": {
+    "source": "https://www.pudurobotics.com/en/products/pudu-gt7",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Corte de precisión y patrones",
+          "en": "Precision Mowing & Advanced Pattern Control"
+        },
+        "description": {
+          "es": "El GT7 admite configuraciones avanzadas para ángulos de corte, rotación direccional y desplazamiento de calles. Esto permite una planificación de ruta automatizada, permitiendo al GT7 ofrecer un rayado de césped impecable y de grado profesional que cumple con los estrictos estándares de los campos deportivos profesionales.",
+          "en": "The GT7 supports advanced configurations for cutting angles, directional rotation, and lane offsets. This enables automated path planning, allowing the GT7 to deliver immaculate, professional-grade turf striping that meets the strict standards of professional athletic fields."
+        },
+        "source": "https://cdn.pudutech.com/S4_c88937d4df.mp4",
+        "src": "/media/experience/cc679707f011dd34.mp4",
+        "kind": "video",
+        "poster": "/media/experience/cc679707f011dd34.jpg"
+      },
+      {
+        "title": {
+          "es": "Cobertura amplia y maniobrabilidad",
+          "en": "Broad Coverage, Tight-Space Agility"
+        },
+        "description": {
+          "es": "Con un amplio conjunto de corte triple de 62 pulgadas, el GT7 combina una elevada eficiencia de corte con una excelente agilidad en espacios reducidos. El GT7 se desplaza sin esfuerzo por caminos estrechos y sinuosos, garantizando una cobertura continua en instalaciones deportivas de diseño complejo。",
+          "en": "With a wide 62-inch triplex cutting unit, the GT7 perfectly pairs massive cutting efficiency with tight-space agility. The GT7 glides through narrow, twisting paths effortlessly, ensuring seamless coverage across complex sports field layouts."
+        },
+        "source": "https://cdn.pudutech.com/S6_1_492d34d588.mp4",
+        "src": "/media/experience/6e3848081a919cd5.mp4",
+        "kind": "video",
+        "poster": "/media/experience/6e3848081a919cd5.jpg"
+      },
+      {
+        "title": {
+          "es": "Plataformas de corte flotantes con seguimiento del contorno",
+          "en": "Contour-Following Floating Cutting Units"
+        },
+        "description": {
+          "es": "El GT7 cuenta con tres unidades de corte independientemente flotantes que siguen de cerca los contornos del suelo. Esta suspensión articulada garantiza una altura de corte (HOC) ultraconsistente, ofreciendo una calidad de corte uniforme incluso en césped deportivo muy ondulado.",
+          "en": "The GT7 features three independently floating cutting units that closely track ground contours. This articulated suspension ensures an ultra-consistent height-of-cut (HOC), delivering uniform cut quality even across highly undulating sports turf."
+        },
+        "source": "https://cdn.pudutech.com/S11_ce593ad114.mp4",
+        "src": "/media/experience/985f68c17cd5d076.mp4",
+        "kind": "video",
+        "poster": "/media/experience/985f68c17cd5d076.jpg"
+      }
+    ]
+  },
+  "pudu-mp2000": {
+    "source": "https://www.pudurobotics.com/en/products/mp2000",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Reconocimiento de palés con IA",
+          "en": "AI Load Carrier Recognition"
+        },
+        "description": {
+          "es": "Compatible con palés de tres largueros y de base perimetral",
+          "en": "Compatible with Three-Runner and Perimeter-Base Pallets"
+        },
+        "source": "https://cdn.pudutech.com/S4_2_en_a36dcf51a5.webp",
+        "src": "/media/experience/c76148df67bde5da.webp",
+        "kind": "image",
+        "poster": "/media/experience/c76148df67bde5da.webp"
+      },
+      {
+        "title": {
+          "es": "Alineación adaptativa, inserción precisa de horquillas",
+          "en": "Adaptive Alignment, Precise Fork Engagement"
+        },
+        "description": {
+          "es": "Se adapta automáticamente a palés colocados manualmente con desplazamientos de hasta 15 cm y desviaciones angulares de hasta 15°, reduciendo la intervención del operador para un funcionamiento fiable incluso en entornos complejos.",
+          "en": "Automatically adapts to manually placed pallets offset by up to 15 cm and angled by up to 15°, minimizing manual intervention for reliable operation in complex environments."
+        },
+        "source": "https://cdn.pudutech.com/s4_5_937b888963.mp4",
+        "src": "/media/experience/ba0c6957e65182fb.mp4",
+        "kind": "video",
+        "poster": "/media/experience/ba0c6957e65182fb.jpg"
+      },
+      {
+        "title": {
+          "es": "Coordinación de flotas",
+          "en": "Intelligent Fleet Orchestration"
+        },
+        "description": {
+          "es": "La orquestación distribuida permite que cada robot tome decisiones y planifique rutas de forma autónoma, mientras la comunicación entre robots garantiza una coordinación eficiente. Incluso sin conexión, la flota sigue operando de forma sincronizada.",
+          "en": "Distributed fleet orchestration enables each robot to make decisions and plan routes, with inter-robot communication ensuring efficient coordination. Even offline, the fleet continues operating in sync."
+        },
+        "source": "https://cdn.pudutech.com/s5_1_14b9012651.mp4",
+        "src": "/media/experience/2e947194d392b4af.mp4",
+        "kind": "video",
+        "poster": "/media/experience/2e947194d392b4af.jpg"
+      }
+    ]
+  },
+  "pudu-et1": {
+    "source": "https://www.pudurobotics.com/en/products/et1",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Fregado de alta potencia",
+          "en": "Unleash Ultimate Scrubbing Power"
+        },
+        "description": {
+          "es": "El rodillo gira hasta 800 rpm para generar una fricción intensa y eliminar rápidamente grasa, huellas y otras manchas difíciles. Una presión sobre el suelo de 5.000 Pa mantiene el rodillo en contacto constante para una limpieza más profunda.",
+          "en": "Max. 800 rpm roller speed generates intensive scrubbing power to tackle grease, footprints and other stubborn stains. 5000 Pa of downward pressure maintains constant floor contact, enhancing soil removal for superior cleaning performance."
+        },
+        "source": "https://cdn.pudutech.com/S4_EN_6ab082c9c7.mp4",
+        "src": "/media/experience/341b7c5bf3b95d70.mp4",
+        "kind": "video",
+        "poster": "/media/experience/341b7c5bf3b95d70.jpg"
+      },
+      {
+        "title": {
+          "es": "Fregado con agua caliente a 85 °C",
+          "en": "85℃ Hot Scrubbing"
+        },
+        "description": {
+          "es": "La estación de carga suministra automáticamente agua caliente a 85 °C al PUDU ET1, mientras el calentamiento a bordo mantiene la temperatura durante la limpieza para disolver eficazmente la grasa y eliminar residuos pegajosos.",
+          "en": "The docking station fills PUDU ET1 with 85°C hot water, while onboard heating keeps it hot throughout cleaning to dissolve tough grease and sticky residues."
+        },
+        "source": "https://cdn.pudutech.com/s5_36783cb2c9.mp4",
+        "src": "/media/experience/44f7fdd75bb3cd8c.mp4",
+        "kind": "video",
+        "poster": "/media/experience/44f7fdd75bb3cd8c.jpg"
+      },
+      {
+        "title": {
+          "es": "Recolección automática de polvo",
+          "en": "Auto Dust Collection, Empty Once a Week"
+        },
+        "description": {
+          "es": "El depósito interno de 2,5 L permite recoger automáticamente el polvo después de cada tarea. Polvo, cabellos y residuos se transfieren rápidamente al depósito, reduciendo la frecuencia de vaciado a aproximadamente una vez por semana.",
+          "en": "2.5L high-capacity onboard dustbox enables automatic dust collection after every run. Dust, hair, and debris are swiftly transferred into the internal container, minimizing disposal frequency to once a week."
+        },
+        "source": "https://cdn.pudutech.com/s8_132710d11f.mp4",
+        "src": "/media/experience/2c2b6c04b4c82677.mp4",
+        "kind": "video",
+        "poster": "/media/experience/2c2b6c04b4c82677.jpg"
+      }
+    ]
+  },
+  "pudu-cc1-pro-disc": {
+    "source": "https://www.pudurobotics.com/en/products/cc1-pro-disc",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Cepillos de doble disco con 25 kg de presión de fregado",
+          "en": "Dual-Disc Brushes with 25 kg Scrubbing Pressure"
+        },
+        "description": {
+          "es": "Los cepillos dobles de alta velocidad, combinados con una presión constante de 25 kg, proporcionan una limpieza profunda de gran potencia, eliminando eficazmente manchas difíciles y residuos.",
+          "en": "High-speed dual-disc brushes combine with a consistent 25 kg of down pressure to deliver powerful deep cleaning, effectively removing stubborn stains and debris."
+        },
+        "source": "https://cdn.pudutech.com/20260728_175010_59cb92f3ce.webp",
+        "src": "/media/experience/25e2b970d65fd5e0.webp",
+        "kind": "image",
+        "poster": "/media/experience/25e2b970d65fd5e0.webp"
+      },
+      {
+        "title": {
+          "es": "Diseño de cepillo de disco de liberación rápida",
+          "en": "Quick-Release Disc Brush Design"
+        },
+        "description": {
+          "es": "El sistema de fijación magnética permite una alineación, instalación y extracción rápidas.",
+          "en": "Magnetic attachment enables quick alignment, installation, and removal."
+        },
+        "source": "https://cdn.pudutech.com/s4_4daac644b1.webp",
+        "src": "/media/experience/3e44bde5aec21578.webp",
+        "kind": "image",
+        "poster": "/media/experience/3e44bde5aec21578.webp"
+      },
+      {
+        "title": {
+          "es": "Fregado localizado con IA",
+          "en": "AI Spot Scrubbing"
+        },
+        "description": {
+          "es": "Limpieza dirigida para una mayor precisión y eficiencia Al combinar el reconocimiento visual mediante IA con la planificación dinámica de rutas, el sistema detecta en tiempo real durante las inspecciones manchas húmedas comunes, como café derramado, salsas o charcos, y genera de inmediato la ruta de limpieza óptima. Con una capacidad de limpieza de 1.500–3.000 m²/h, ofrece tiempos de respuesta más rápidos y una cobertura más eficiente.",
+          "en": "Targeted Cleaning for Precision & Efficiency:Combining AI vision recognition with dynamic path planning, the system detects common wet stains—like coffee spills, sauces, and puddles—in real time during inspections and instantly generates optimal cleaning routes. With a cleaning rate of 1,500–3,000 m²/h, it delivers faster response times and more efficient coverage."
+        },
+        "source": "https://cdn.pudutech.com/s6_b8e941be00.webp",
+        "src": "/media/experience/71bfbce816150b04.webp",
+        "kind": "image",
+        "poster": "/media/experience/71bfbce816150b04.webp"
+      }
+    ]
+  },
+  "pudu-bg1-pro": {
+    "source": "https://www.pudurobotics.com/en/products/pudu-bg1-series",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Barrido y fregado en una pasada",
+          "en": "One-Pass Sweep & Scrub"
+        },
+        "description": {
+          "es": "Combina el barrido y el fregado profundo en un solo flujo de trabajo eficiente. Cuenta con dosificación inteligente, presión superior y una trayectoria ultra ancha para cubrir más superficie en menos tiempo.",
+          "en": "Combine sweeping and deep scrubbing into one efficient workflow. Featuring smart dosing, superior down pressure, and an ultra-wide path to cover more ground in less time."
+        },
+        "source": "https://cdn.pudutech.com/S3_cc41f45e9b.mp4",
+        "src": "/media/experience/7218ffd1394c30d8.mp4",
+        "kind": "video",
+        "poster": "/media/experience/7218ffd1394c30d8.jpg"
+      },
+      {
+        "title": {
+          "es": "Cepillo extensible para bordes",
+          "en": "Extendable Edge Cleaning"
+        },
+        "description": {
+          "es": "El cepillo fregador puede extenderse físicamente para alcanzar paredes y bordes de estanterías, eliminando a fondo el polvo y la suciedad de los bordes, mejorando la cobertura y minimizando los retoques manuales.",
+          "en": "The scrubbing brush can physically extend to reach walls and shelving edges, thoroughly removing dust and dirt along edges, improving coverage, and minimizing manual touch-ups."
+        },
+        "source": "https://cdn.pudutech.com/S604_cbf134100f.mp4",
+        "src": "/media/experience/6df6479b76304277.mp4",
+        "kind": "video",
+        "poster": "/media/experience/6df6479b76304277.jpg"
+      },
+      {
+        "title": {
+          "es": "Mantenimiento y cambio de cepillos",
+          "en": "Instant, User-friendly Maintenance"
+        },
+        "description": {
+          "es": "La serie PUDU BG1 cuenta con un acoplamiento automático del cepillo de disco, eliminando el posicionamiento y la configuración manual. Combinado con un diseño de ajuste a presión fácil de usar para todos los consumibles críticos, el mantenimiento de rutina se puede completar en menos de 1 minuto. Este enfoque optimizado minimiza el tiempo de inactividad y maximiza el tiempo de actividad operativo de la máquina.",
+          "en": "The PUDU BG1 features automatic disc-brush attachment, eliminating manual positioning and setup. Coupled with a user-friendly snap-on design for all critical consumables, routine maintenance can be completed in under 1 minute. This streamlined approach minimizes downtime and maximizes machine operational uptime."
+        },
+        "source": "https://cdn.pudutech.com/S7_e04552f266.mp4",
+        "src": "/media/experience/af9d078ca58370f5.mp4",
+        "kind": "video",
+        "poster": "/media/experience/af9d078ca58370f5.jpg"
+      }
+    ]
+  },
+  "pudu-bg1": {
+    "source": "https://www.pudurobotics.com/en/products/pudu-bg1-series",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Barrido y fregado en una pasada",
+          "en": "One-Pass Sweep & Scrub"
+        },
+        "description": {
+          "es": "Combina el barrido y el fregado profundo en un solo flujo de trabajo eficiente. Cuenta con dosificación inteligente, presión superior y una trayectoria ultra ancha para cubrir más superficie en menos tiempo.",
+          "en": "Combine sweeping and deep scrubbing into one efficient workflow. Featuring smart dosing, superior down pressure, and an ultra-wide path to cover more ground in less time."
+        },
+        "source": "https://cdn.pudutech.com/S3_cc41f45e9b.mp4",
+        "src": "/media/experience/7218ffd1394c30d8.mp4",
+        "kind": "video",
+        "poster": "/media/experience/7218ffd1394c30d8.jpg"
+      },
+      {
+        "title": {
+          "es": "Cepillo extensible para bordes",
+          "en": "Extendable Edge Cleaning"
+        },
+        "description": {
+          "es": "El cepillo fregador puede extenderse físicamente para alcanzar paredes y bordes de estanterías, eliminando a fondo el polvo y la suciedad de los bordes, mejorando la cobertura y minimizando los retoques manuales.",
+          "en": "The scrubbing brush can physically extend to reach walls and shelving edges, thoroughly removing dust and dirt along edges, improving coverage, and minimizing manual touch-ups."
+        },
+        "source": "https://cdn.pudutech.com/S604_cbf134100f.mp4",
+        "src": "/media/experience/6df6479b76304277.mp4",
+        "kind": "video",
+        "poster": "/media/experience/6df6479b76304277.jpg"
+      },
+      {
+        "title": {
+          "es": "Mantenimiento y cambio de cepillos",
+          "en": "Instant, User-friendly Maintenance"
+        },
+        "description": {
+          "es": "La serie PUDU BG1 cuenta con un acoplamiento automático del cepillo de disco, eliminando el posicionamiento y la configuración manual. Combinado con un diseño de ajuste a presión fácil de usar para todos los consumibles críticos, el mantenimiento de rutina se puede completar en menos de 1 minuto. Este enfoque optimizado minimiza el tiempo de inactividad y maximiza el tiempo de actividad operativo de la máquina.",
+          "en": "The PUDU BG1 features automatic disc-brush attachment, eliminating manual positioning and setup. Coupled with a user-friendly snap-on design for all critical consumables, routine maintenance can be completed in under 1 minute. This streamlined approach minimizes downtime and maximizes machine operational uptime."
+        },
+        "source": "https://cdn.pudutech.com/S7_e04552f266.mp4",
+        "src": "/media/experience/af9d078ca58370f5.mp4",
+        "kind": "video",
+        "poster": "/media/experience/af9d078ca58370f5.jpg"
+      }
+    ]
+  },
+  "pudu-d5-series": {
+    "source": "https://www.pudurobotics.com/en/products/d5",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Navegación Autónoma con Percepción 360°",
+          "en": "Autonomous Navigation with 360° Perception"
+        },
+        "description": {
+          "es": "Observa esta función de PUDU D5 Series en el material del fabricante. Botmate confirma su configuración para tu operación.",
+          "en": "Explore this function in the manufacturer’s demonstration. Botmate confirms the configuration for your operation."
+        },
+        "source": "https://cdn.pudutech.com/_179a69f8e9.mp4",
+        "src": "/media/experience/71ebd2572ffbdc2f.mp4",
+        "kind": "video",
+        "poster": "/media/experience/71ebd2572ffbdc2f.jpg"
+      },
+      {
+        "title": {
+          "es": "Movilidad en terrenos complejos",
+          "en": "All-Terrain Mobility for Complex Environments"
+        },
+        "description": {
+          "es": "Supera fácilmente escalones de 25 cm y pendientes de 45°. Alcanza hasta 5 m/s para desplazamiento rápido y estable en entornos urbanos y fuera de carretera.",
+          "en": "Easily handles 25 cm steps and 45° slopes. Cruises at up to 5 m/s for fast, stable movement across urban and off-road environments."
+        },
+        "source": "https://cdn.pudutech.com/_0770cb9c27.mp4",
+        "src": "/media/experience/1b7df2c31c08b1ce.mp4",
+        "kind": "video",
+        "poster": "/media/experience/1b7df2c31c08b1ce.jpg"
+      },
+      {
+        "title": {
+          "es": "Seguimiento Inteligente",
+          "en": "Intelligent Follow"
+        },
+        "description": {
+          "es": "Con evasión dinámica de obstáculos y predicción de trayectorias, D5 sigue al usuario con precisión en espacios concurridos, ajustando su ruta en tiempo real para un movimiento seguro y fluido.",
+          "en": "With dynamic obstacle avoidance and trajectory prediction, D5 follows users precisely in crowded spaces, adjusting its path in real time for smooth and safe movement."
+        },
+        "source": "https://cdn.pudutech.com/_0bc23ef7b4.mp4",
+        "src": "/media/experience/10729311d6140c5f.mp4",
+        "kind": "video",
+        "poster": "/media/experience/10729311d6140c5f.jpg"
+      }
+    ]
+  },
+  "pudu-t150": {
+    "source": "https://www.pudurobotics.com/en/products/puduT150",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Navegación y posicionamiento preciso",
+          "en": "Precision Navigation & Stability"
+        },
+        "description": {
+          "es": "Combina SLAM visual y LiDAR para ubicarse en el entorno y transportar materiales.",
+          "en": "VSLAM + LiDAR SLAM localization enables real-time adaptation to dynamic environments, delivering precise positioning and stable operation in complex conditions for uninterrupted production."
+        },
+        "source": "https://cdn.pudutech.com/S4_pc_3f99cc7122.jpg",
+        "src": "/media/experience/5c3774042f4c6597.webp",
+        "kind": "image",
+        "poster": "/media/experience/5c3774042f4c6597.webp"
+      },
+      {
+        "title": {
+          "es": "Recorridos entre estanterías",
+          "en": "Stable Navigation in Narrow Aisle Racking"
+        },
+        "description": {
+          "es": "Explora cómo se desplaza entre estanterías y rutas compartidas. La anchura útil debe validarse en sitio.",
+          "en": "Integrating dual RGBD cameras and 360° dual LiDAR with AI-driven multi-level navigation and obstacle avoidance, this robot ensures precise positioning and seamless, stable operation in complex industrial environments."
+        },
+        "source": "https://cdn.pudutech.com/S7_01_pc_b0462791a8.webp",
+        "src": "/media/experience/cb877264d2c88922.webp",
+        "kind": "image",
+        "poster": "/media/experience/cb877264d2c88922.webp"
+      },
+      {
+        "title": {
+          "es": "Cambio rápido de batería",
+          "en": "Rapid Battery Swapping"
+        },
+        "description": {
+          "es": "La batería intercambiable permite planificar la continuidad del trabajo. Confirma baterías y cargadores incluidos.",
+          "en": "With rapid battery swapping, auto-charging, and wired power options, the T150 delivers 24/7 uptime. This flexible power ecosystem optimizes factory throughput and maximizes production ROI."
+        },
+        "source": "https://cdn.pudutech.com/S8_01_edb770af5c.webp",
+        "src": "/media/experience/0ccdc60333ad2716.webp",
+        "kind": "image",
+        "poster": "/media/experience/0ccdc60333ad2716.webp"
+      }
+    ]
+  },
+  "pudu-mt1-max": {
+    "source": "https://www.pudurobotics.com/en/products/mt1-max",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Mejora de Percepción 3D",
+          "en": "3D Perception Enhancement"
+        },
+        "description": {
+          "es": "Equipado con un sistema de percepción 3D (3D LiDAR + fusión de múltiples sensores), MT1 Max mapea entornos con precisión, detecta obstáculos en tiempo real y navega eficientemente incluso en techos altos, de noche o con fuertes interferencias, garantizando un rendimiento fiable en tareas de limpieza complejas.",
+          "en": "Equipped with a 3D perception system (3D LiDAR + multi-sensor fusion), MT1 Max maps environments accurately, detects obstacles in real time, and navigates efficiently even in high ceilings, nighttime, or heavy interference, ensuring reliable performance in complex cleaning tasks."
+        },
+        "source": "https://cdn.pudutech.com/3_D_251d4da32b.mp4",
+        "src": "/media/experience/b735e5410c32b7ff.mp4",
+        "kind": "video",
+        "poster": "/media/experience/b735e5410c32b7ff.jpg"
+      },
+      {
+        "title": {
+          "es": "Barrido de residuos",
+          "en": "Empty the Facility of Any Dirt & Trash"
+        },
+        "description": {
+          "es": "MT1 Max elimina desde colillas y papeles hasta botellas grandes en una sola pasada.",
+          "en": "MT1 Max removes everything from cigarette butts and paper scraps to large bottles in a single sweep."
+        },
+        "source": "https://cdn.pudutech.com/_52ee0d8785.mp4",
+        "src": "/media/experience/124d12654042c4ef.mp4",
+        "kind": "video",
+        "poster": "/media/experience/124d12654042c4ef.jpg"
+      },
+      {
+        "title": {
+          "es": "Limpieza adaptativa con IA",
+          "en": "AI Adaptive Cleaning Strategy"
+        },
+        "description": {
+          "es": "Adaptación de modo de limpieza: residuos ligeros reducen automáticamente la potencia para evitar dispersión; residuos pesados aumentan la potencia para limpieza profunda. Adaptación de postura: ajusta automáticamente el ángulo para guiar residuos al hueco de doble cepillo, reduciendo omisiones.",
+          "en": "Cleaning mode adaptation: Light debris triggers automatic power reduction to prevent scattering; heavy debris increases power for thorough cleaning. Cleaning posture adaptation: Automatically adjusts angle to guide debris into the dual brush gap, reducing misses."
+        },
+        "source": "https://cdn.pudutech.com/Ai_8750fac080.mp4",
+        "src": "/media/experience/b440b6cc7d751345.mp4",
+        "kind": "video",
+        "poster": "/media/experience/b440b6cc7d751345.jpg"
+      }
+    ]
+  },
+  "pudu-mt1-vac": {
+    "source": "https://www.pudurobotics.com/en/products/mt1-vac",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Potente Succión para una Limpieza Profunda",
+          "en": "Powerful Suction for Deep Cleaning"
+        },
+        "description": {
+          "es": "Capacidad de Limpieza Profunda A continuación, se presenta la traducción de la descripción proporcionada sobre la capacidad de limpieza: La gran potencia de succión del robot elimina con facilidad la suciedad incrustada y los residuos más difíciles.",
+          "en": "Strong vacuum power easily removes embedded dirt and stubborn debris."
+        },
+        "source": "https://cdn.pudutech.com/_85130ee9d1.mp4",
+        "src": "/media/experience/225d02a4d1b45378.mp4",
+        "kind": "video",
+        "poster": "/media/experience/225d02a4d1b45378.jpg"
+      },
+      {
+        "title": {
+          "es": "Filtración fina del aire",
+          "en": "Ultra-fine Air Filtration"
+        },
+        "description": {
+          "es": "El PUDU MT1 Vac está equipado con un sistema de filtración de grado HEPA de alta eficiencia, una tecnología clave para entornos que requieren un alto nivel de higiene. Este sistema avanzado ofrece los siguientes beneficios: Captura más del 98% de las partículas microscópicas de hasta 0.3 µm, como polvo fino, alérgenos y otros contaminantes. Su principal función es ayudar a mantener el aire limpio y puro durante todo el proceso de limpieza, previniendo la contaminación secundaria.",
+          "en": "The HEPA-grade filtration system captures over 98% of particles as small as 0.3 µm, helping maintain clean air throughout the cleaning process. For higher filtration needs, an optional HEPA 13 filter is available, offering up to 99.97% efficiency."
+        },
+        "source": "https://cdn.pudutech.com/_5fa17b9140.mp4",
+        "src": "/media/experience/a4d56169ec1af4fb.mp4",
+        "kind": "video",
+        "poster": "/media/experience/a4d56169ec1af4fb.jpg"
+      },
+      {
+        "title": {
+          "es": "Limpieza Exhaustiva de Borde a Borde",
+          "en": "Edge-to-Edge Cleaning"
+        },
+        "description": {
+          "es": "Gracias a sus cepillos laterales de largo alcance y a su sistema de navegación preciso, el robot es capaz de eliminar eficazmente la suciedad y el polvo acumulados en las zonas más difíciles, como zócalos, esquinas y alrededor de los muebles. Esta capacidad asegura que no queden áreas sin limpiar, ofreciendo un resultado impecable en toda la superficie.",
+          "en": "Powered by high-precision sensors and dynamic algorithms, it maintains close alignment with walls and pillars to ensure edge-to-edge cleaning with no missed spots."
+        },
+        "source": "https://cdn.pudutech.com/_885c0f5515.mp4",
+        "src": "/media/experience/577392109d0c0116.mp4",
+        "kind": "video",
+        "poster": "/media/experience/577392109d0c0116.jpg"
+      }
+    ]
+  },
+  "pudu-t600": {
+    "source": "https://www.pudurobotics.com/en/products/pudut600",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Capacidad de carga de 600 kg",
+          "en": "600 KG Payload Capacity"
+        },
+        "description": {
+          "es": "PUDU T600 es la solución definitiva para la logística industrial pesada. Perteneciente a la serie T600, ha sido construido específicamente para el transporte de materiales de carga pesada, optimizando la eficiencia en el almacén o la planta de producción. Su característica más destacada es su impresionante capacidad de carga de 600 kg, que le permite manejar las tareas más exigentes con facilidad.",
+          "en": "With a 600 KG payload capacity, the T600 series is built for heavy-payload material transport, greatly reducing delivery frequency and improving efficiency per trip."
+        },
+        "source": "https://cdn.pudutech.com/S3_1f96584c4f.webp",
+        "src": "/media/experience/e066a2eef9faf16d.webp",
+        "kind": "image",
+        "poster": "/media/experience/e066a2eef9faf16d.webp"
+      },
+      {
+        "title": {
+          "es": "Reconocimiento de estanterías",
+          "en": "Rack Group Recognition"
+        },
+        "description": {
+          "es": "La serie T600, a la que pertenece el PUDU T600, está equipada con sistemas avanzados de navegación y percepción. Gracias a esta tecnología, el robot puede identificar de forma inteligente las ubicaciones de almacenamiento deseadas, garantizando una operativa precisa y eficiente en todo momento.",
+          "en": "Powered by advanced navigation and perception systems, the T600 series intelligently identifies target storage locations and autonomously performs pick-and-place operations. This enables fully unmanned workflows, ensuring efficient and reliable warehouse operations."
+        },
+        "source": "https://cdn.pudutech.com/S4_4b156ce2fb.webp",
+        "src": "/media/experience/77c873fbbf3a5b76.webp",
+        "kind": "image",
+        "poster": "/media/experience/77c873fbbf3a5b76.webp"
+      },
+      {
+        "title": {
+          "es": "Coordinación en pasillos estrechos",
+          "en": "Narrow Aisle Intelligent Traffic Strategy"
+        },
+        "description": {
+          "es": "El sistema del PUDU T600 demuestra una capacidad de navegación superior al tomar decisiones basadas en el entorno inmediato. El proceso es el siguiente: Análisis dinámico: El sistema evalúa el ancho del pasillo o la ruta junto con las dimensiones de la carga que el robot transporta en tiempo real.",
+          "en": "Based on path width and the robots‘ real-time load dimensions, the system intelligently determines whether to apply single-lane or dual-lane traffic modes. It dynamically adjusts routing strategies to maximize space utilization and improve multi-robot coordination efficiency in narrow environments."
+        },
+        "source": "https://cdn.pudutech.com/S6_1_1_a04e76156f.webp",
+        "src": "/media/experience/6f3682be3cb3b639.webp",
+        "kind": "image",
+        "poster": "/media/experience/6f3682be3cb3b639.webp"
+      }
+    ]
+  },
+  "pudu-t600-underride": {
+    "source": "https://www.pudurobotics.com/en/products/pudut600",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "PUDU T600 Underride",
+          "en": "PUDU T600 Underride"
+        },
+        "description": {
+          "es": "La versión Under-Ride del PUDU T600 es un robot industrial de transporte de tipo chasis, con una altura de elevación de hasta 60 mm (2,36 In) Su diseño de perfil ultrabajo le permite desplazarse por debajo de estanterías o bastidores, elevarlos y transportar mercancías de forma autónoma. Características: El formato compacto le permite desplazarse bajo las estanterías, ofreciendo una navegación flexible. Capaz de elevar la carga desde la parte inferior central, lo que requiere un espacio mínimo en el pasillo.",
+          "en": "The PUDU T600 Under-Ride Version is a pure chassis-type industrial delivery robot with a lifting height of up to 60 mm(2.36 in). Its ultra-low-profile design enables it to drive underneath racks or shelves, lift them, and autonomously transport goods. Features: Compact form allows it to travel underneath rack units, enabling flexible navigation. Capable of lifting cargo from the center underneath, requiring minimal path clearance."
+        },
+        "source": "https://cdn.pudutech.com/S2_2_2889668bb3.webp",
+        "src": "/media/experience/a3adaa78d2702cf5.webp",
+        "kind": "image",
+        "poster": "/media/experience/a3adaa78d2702cf5.webp"
+      },
+      {
+        "title": {
+          "es": "Reconocimiento de estanterías",
+          "en": "Rack Group Recognition"
+        },
+        "description": {
+          "es": "La serie T600, a la que pertenece el PUDU T600, está equipada con sistemas avanzados de navegación y percepción. Gracias a esta tecnología, el robot puede identificar de forma inteligente las ubicaciones de almacenamiento deseadas, garantizando una operativa precisa y eficiente en todo momento.",
+          "en": "Powered by advanced navigation and perception systems, the T600 series intelligently identifies target storage locations and autonomously performs pick-and-place operations. This enables fully unmanned workflows, ensuring efficient and reliable warehouse operations."
+        },
+        "source": "https://cdn.pudutech.com/S4_4b156ce2fb.webp",
+        "src": "/media/experience/77c873fbbf3a5b76.webp",
+        "kind": "image",
+        "poster": "/media/experience/77c873fbbf3a5b76.webp"
+      },
+      {
+        "title": {
+          "es": "Coordinación en pasillos estrechos",
+          "en": "Narrow Aisle Intelligent Traffic Strategy"
+        },
+        "description": {
+          "es": "El sistema del PUDU T600 demuestra una capacidad de navegación superior al tomar decisiones basadas en el entorno inmediato. El proceso es el siguiente: Análisis dinámico: El sistema evalúa el ancho del pasillo o la ruta junto con las dimensiones de la carga que el robot transporta en tiempo real.",
+          "en": "Based on path width and the robots‘ real-time load dimensions, the system intelligently determines whether to apply single-lane or dual-lane traffic modes. It dynamically adjusts routing strategies to maximize space utilization and improve multi-robot coordination efficiency in narrow environments."
+        },
+        "source": "https://cdn.pudutech.com/S6_1_1_a04e76156f.webp",
+        "src": "/media/experience/6f3682be3cb3b639.webp",
+        "kind": "image",
+        "poster": "/media/experience/6f3682be3cb3b639.webp"
+      }
+    ]
+  },
+  "pudu-cc1-pro": {
+    "source": "https://www.pudurobotics.com/en/products/cc1-pro",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Limpieza multifunción",
+          "en": "Versatile Cleaning"
+        },
+        "description": {
+          "es": "Explora los modos de limpieza del CC1 Pro.",
+          "en": "Explore the CC1 Pro cleaning modes."
+        },
+        "source": "https://cdn.pudutech.com/official-website/product/CC1Pro/S-10.mp4",
+        "src": "/media/experience/20e9d3cea0f54a0d.mp4",
+        "kind": "video",
+        "poster": "/media/experience/20e9d3cea0f54a0d.jpg"
+      },
+      {
+        "title": {
+          "es": "Fregado localizado con IA",
+          "en": "AI Spot Scrubbing"
+        },
+        "description": {
+          "es": "Identifica áreas que requieren una intervención de limpieza.",
+          "en": "Identifies areas that require cleaning."
+        },
+        "source": "https://cdn.pudutech.com/official-website/product/CC1Pro/S1-2H5.webp",
+        "src": "/media/experience/231ce756fda31542.webp",
+        "kind": "image",
+        "poster": "/media/experience/231ce756fda31542.webp"
+      },
+      {
+        "title": {
+          "es": "Monitoreo de componentes",
+          "en": "AI Components Self-Monitoring"
+        },
+        "description": {
+          "es": "Consulta el estado de los componentes para planificar el mantenimiento.",
+          "en": "Check component status to plan maintenance."
+        },
+        "source": "https://cdn.pudutech.com/official-website/product/CC1Pro/S1-2H5.webp",
+        "src": "/media/experience/231ce756fda31542.webp",
+        "kind": "image",
+        "poster": "/media/experience/231ce756fda31542.webp"
+      }
+    ]
+  },
+  "flashbot-arm": {
+    "source": "https://www.pudurobotics.com/en/products/flashbot-arm",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Manipulación y servicio",
+          "en": "Next Generation Embodied AI for Services"
+        },
+        "description": {
+          "es": "Demostración tecnológica del fabricante. Confirma con Botmate las funciones comercialmente disponibles.",
+          "en": "Manufacturer technology demonstration. Confirm commercially available functions with Botmate."
+        },
+        "source": "https://cdn.pudutech.com/official-website/flashbot_arm/S2-1.mp4",
+        "src": "/media/experience/d933378661f13ba3.mp4",
+        "kind": "video",
+        "poster": "/media/experience/d933378661f13ba3.jpg"
+      },
+      {
+        "title": {
+          "es": "Interacción con el entorno",
+          "en": "Independent Operation"
+        },
+        "description": {
+          "es": "Explora las tareas mostradas por el fabricante para este modelo.",
+          "en": "Explore the tasks demonstrated by the manufacturer for this model."
+        },
+        "source": "https://cdn.pudutech.com/official-website/flashbot_arm/S3-3.webp",
+        "src": "/media/experience/ec4dba7870291250.webp",
+        "kind": "image",
+        "poster": "/media/experience/ec4dba7870291250.webp"
+      },
+      {
+        "title": {
+          "es": "Interacción con las personas",
+          "en": "User-Friendly Interaction"
+        },
+        "description": {
+          "es": "Conoce la propuesta de interacción de FlashBot Arm.",
+          "en": "Explore the interaction capabilities presented for FlashBot Arm."
+        },
+        "source": "https://cdn.pudutech.com/official-website/flashbot_arm/S3-4.webp",
+        "src": "/media/experience/549b230e8707639b.webp",
+        "kind": "image",
+        "poster": "/media/experience/549b230e8707639b.webp"
+      }
+    ]
+  },
+  "pudu-mt1": {
+    "source": "https://www.pudurobotics.com/en/products/mt1",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Recoge distintos residuos",
+          "en": "No Debris Too Big or Small"
+        },
+        "description": {
+          "es": "Observa el sistema de barrido y recolección de residuos.",
+          "en": "See the sweeping and waste collection system."
+        },
+        "source": "https://cdn.pudutech.com/official-website/mt1/S3-1.mp4",
+        "src": "/media/experience/a63ed81ffa730086.mp4",
+        "kind": "video",
+        "poster": "/media/experience/a63ed81ffa730086.jpg"
+      },
+      {
+        "title": {
+          "es": "Control activo del polvo",
+          "en": "Active Dust Control"
+        },
+        "description": {
+          "es": "La secuencia muestra el control de polvo durante la limpieza.",
+          "en": "This sequence shows dust control during cleaning."
+        },
+        "source": "https://cdn.pudutech.com/official-website/mt1/S3-2.mp4",
+        "src": "/media/experience/3892bb9066194841.mp4",
+        "kind": "video",
+        "poster": "/media/experience/3892bb9066194841.jpg"
+      },
+      {
+        "title": {
+          "es": "Limpieza localizada",
+          "en": "AI Spot Cleaning"
+        },
+        "description": {
+          "es": "Dirige la limpieza a las zonas donde detecta residuos.",
+          "en": "Targets cleaning where debris is detected."
+        },
+        "source": "https://cdn.pudutech.com/official-website/mt1/S6-1.mp4",
+        "src": "/media/experience/6e65dd8269e6e595.mp4",
+        "kind": "video",
+        "poster": "/media/experience/6e65dd8269e6e595.jpg"
+      }
+    ]
+  },
+  "pudu-d9": {
+    "source": "https://www.pudurobotics.com/en/products/d9",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Diseño humanoide",
+          "en": "Full-Scale Humanoid Design"
+        },
+        "description": {
+          "es": "Estructura de tamaño completo mostrada por el fabricante.",
+          "en": "Full-size structure presented by the manufacturer."
+        },
+        "source": "https://cdn.pudutech.com/official-website/d9/section3_front_en.webp",
+        "src": "/media/experience/4786dd5079948771.webp",
+        "kind": "image",
+        "poster": "/media/experience/4786dd5079948771.webp"
+      },
+      {
+        "title": {
+          "es": "Manos de precisión",
+          "en": "High-Precision End Effector"
+        },
+        "description": {
+          "es": "Pudu presenta manos DH11 para tareas de manipulación. Alcance comercial sujeto a evaluación.",
+          "en": "Pudu presents DH11 hands for manipulation tasks. Commercial scope requires assessment."
+        },
+        "source": "https://cdn.pudutech.com/official-website/d9/section4_back_hand.webp",
+        "src": "/media/experience/c4cfe35148ce999f.webp",
+        "kind": "image",
+        "poster": "/media/experience/c4cfe35148ce999f.webp"
+      },
+      {
+        "title": {
+          "es": "IA física en desarrollo",
+          "en": "Continuously Evolving"
+        },
+        "description": {
+          "es": "Aplicaciones de investigación y demostración; valida la disponibilidad para tu proyecto.",
+          "en": "Research and demonstration applications; confirm availability for your project."
+        },
+        "source": "https://cdn.pudutech.com/official-website/d9/section6_1.webp",
+        "src": "/media/experience/d7ec3c691443c4f4.webp",
+        "kind": "image",
+        "poster": "/media/experience/d7ec3c691443c4f4.webp"
+      }
+    ]
+  },
+  "pudu-d7": {
+    "source": "https://www.pudurobotics.com/en/news/pudu-d7-industrial-humanoid-robot-launch",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Plataforma semihumanoide",
+          "en": "Semi-humanoid platform"
+        },
+        "description": {
+          "es": "Robot inteligente semihumanoide de Pudu Robotics",
+          "en": "Semi-humanoid Intelligent Robot"
+        },
+        "kind": "image",
+        "src": "/media/pudu/197545003914be0b.webp",
+        "poster": "/media/pudu/197545003914be0b.webp",
+        "source": "https://www.pudurobotics.com/en/news/pudu-d7-industrial-humanoid-robot-launch"
+      }
+    ]
+  },
+  "flashbot-max": {
+    "source": "https://www.pudurobotics.com/en/products/flashbot-new",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Navegación entre espacios",
+          "en": "VSLAM+ Semi-outdoor Delivery"
+        },
+        "description": {
+          "es": "Explora los recorridos semiexteriores que muestra el fabricante.",
+          "en": "Explore the semi-outdoor routes shown by the manufacturer."
+        },
+        "source": "https://cdn.pudutech.com/official-website/flashbot_new/s3-h5.mp4",
+        "src": "/media/experience/f204a838b0650c7d.mp4",
+        "kind": "video",
+        "poster": "/media/experience/f204a838b0650c7d.jpg"
+      },
+      {
+        "title": {
+          "es": "Acceso a compartimentos",
+          "en": "Multiple Compartment Access Verifications"
+        },
+        "description": {
+          "es": "Conoce las opciones de verificación para recibir una entrega.",
+          "en": "See the verification options for receiving a delivery."
+        },
+        "source": "https://cdn.pudutech.com/official-website/flashbot_new/s6-en.mp4",
+        "src": "/media/experience/ca4dda0c6c58775f.mp4",
+        "kind": "video",
+        "poster": "/media/experience/ca4dda0c6c58775f.jpg"
+      },
+      {
+        "title": {
+          "es": "Ventilación de compartimentos",
+          "en": "Compartment Ventilation System"
+        },
+        "description": {
+          "es": "La animación explica la ventilación de los compartimentos de entrega.",
+          "en": "This animation explains the delivery compartment ventilation."
+        },
+        "source": "https://cdn.pudutech.com/official-website/flashbot_new/s10.mp4",
+        "src": "/media/experience/99705876e487312f.mp4",
+        "kind": "video",
+        "poster": "/media/experience/99705876e487312f.jpg"
+      }
+    ]
+  },
+  "pudu-sh1": {
+    "source": "https://www.pudurobotics.com/en/products/sh",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Fregado con operador",
+          "en": "Operator-guided scrubbing"
+        },
+        "description": {
+          "es": "Observa la mecánica de limpieza de SH1. Una persona guía el equipo durante su uso.",
+          "en": "See the SH1 cleaning mechanism. A person guides the unit during operation."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudush/screen02/1.mp4",
+        "src": "/media/experience/e0ec98e6a6eae58b.mp4",
+        "kind": "video",
+        "poster": "/media/experience/e0ec98e6a6eae58b.jpg"
+      },
+      {
+        "title": {
+          "es": "Control desde la pantalla",
+          "en": "Touch Screen Interface"
+        },
+        "description": {
+          "es": "Fregadora con operador: consulta funciones y ajustes desde la interfaz.",
+          "en": "Operator-guided scrubber: access functions and settings through its interface."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudush/screen10/1_en.webp",
+        "src": "/media/experience/7a7bf239580b2901.webp",
+        "kind": "image",
+        "poster": "/media/experience/7a7bf239580b2901.webp"
+      },
+      {
+        "title": {
+          "es": "Mantenimiento modular",
+          "en": "Modular Design"
+        },
+        "description": {
+          "es": "Conoce los componentes desmontables para el mantenimiento del equipo.",
+          "en": "Explore removable components for equipment maintenance."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudush/screen12/1.webp",
+        "src": "/media/experience/06d51c70882c6f30.webp",
+        "kind": "image",
+        "poster": "/media/experience/06d51c70882c6f30.webp"
+      }
+    ]
+  },
+  "pudu-t300": {
+    "source": "https://www.pudurobotics.com/en/products/pudut300",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Transporte industrial en acción",
+          "en": "Industrial delivery in action"
+        },
+        "description": {
+          "es": "Conoce el T300 en la demostración oficial: transporte de materiales y modos de trabajo. Elige los siguientes capítulos para explorar cada función.",
+          "en": "See T300 in the official demonstration: material transport and operating modes. Choose the next chapters to explore each function."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudut300/t300_en.mp4",
+        "src": "/media/experience/5afc7d7ed4b26c8d.mp4",
+        "kind": "video",
+        "poster": "/media/experience/5afc7d7ed4b26c8d.jpg"
+      },
+      {
+        "title": {
+          "es": "Entrega autónoma",
+          "en": "Auto-delivery Mode"
+        },
+        "description": {
+          "es": "Define un destino para transportar materiales entre estaciones.",
+          "en": "Set a destination to move materials between workstations."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudut300/Auto-transport.webp",
+        "src": "/media/experience/248c5979af0e35e7.webp",
+        "kind": "image",
+        "poster": "/media/experience/248c5979af0e35e7.webp"
+      },
+      {
+        "title": {
+          "es": "Modo seguimiento",
+          "en": "Follow Mode"
+        },
+        "description": {
+          "es": "El fabricante muestra seguimiento visual para preparar y transportar materiales.",
+          "en": "The manufacturer demonstrates visual following for material preparation and transport."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudut300/follow.webp",
+        "src": "/media/experience/b0cdfbefa930870a.webp",
+        "kind": "image",
+        "poster": "/media/experience/b0cdfbefa930870a.webp"
+      },
+      {
+        "title": {
+          "es": "Asistencia al operador",
+          "en": "Power-assist Mode"
+        },
+        "description": {
+          "es": "Asistencia eléctrica para desplazar manualmente el equipo cuando la tarea lo requiere.",
+          "en": "Power assistance for moving the unit manually when the task requires it."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudut300/Power-assist.webp",
+        "src": "/media/experience/e76e57f75802f106.webp",
+        "kind": "image",
+        "poster": "/media/experience/e76e57f75802f106.webp"
+      },
+      {
+        "title": {
+          "es": "Configuración con estantería",
+          "en": "Shelf Mode"
+        },
+        "description": {
+          "es": "Evalúa el accesorio, la carga y los puntos de entrega con Botmate.",
+          "en": "Assess the attachment, payload and delivery points with Botmate."
+        },
+        "source": "https://cdn.pudutech.com/official-website/pudut300/robot-function-2.webp",
+        "src": "/media/experience/0367df93f3806f14.webp",
+        "kind": "image",
+        "poster": "/media/experience/0367df93f3806f14.webp"
+      }
+    ],
+    "process": {
+      "source": "https://cdn.pudutech.com/official-website/pudut300/section2-pc.webp",
+      "src": "/media/experience/510bee26bc95620f.webp",
+      "kind": "image",
+      "poster": "/media/experience/510bee26bc95620f.webp"
+    },
+    "dimensions": {
+      "source": "https://cdn.pudutech.com/official-website/pudut300/product-body-size.webp",
+      "src": "/media/experience/e74530e63a7246f6.webp",
+      "kind": "image",
+      "poster": "/media/experience/e74530e63a7246f6.webp"
+    }
+  },
+  "bellabot-pro": {
+    "source": "https://www.pudurobotics.com/en/products/bellabotpro",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Entrega y recolección",
+          "en": "A Whole New Level of Meal Pick-up"
+        },
+        "description": {
+          "es": "Observa la interacción durante la recogida de alimentos.",
+          "en": "See the interaction during meal collection."
+        },
+        "source": "https://cdn.pudutech.com/official-website/bellabotpro/S5_1.mp4",
+        "src": "/media/experience/63361f70faaada51.mp4",
+        "kind": "video",
+        "poster": "/media/experience/63361f70faaada51.jpg"
+      },
+      {
+        "title": {
+          "es": "Servicio en movimiento",
+          "en": "Experience Enhanced: A Fresh Twist on Delivery"
+        },
+        "description": {
+          "es": "Una secuencia oficial de BellaBot Pro en servicio.",
+          "en": "An official sequence of BellaBot Pro in service."
+        },
+        "source": "https://cdn.pudutech.com/official-website/bellabotpro/S8_1.mp4",
+        "src": "/media/experience/96692b8b339257cc.mp4",
+        "kind": "video",
+        "poster": "/media/experience/96692b8b339257cc.jpg"
+      },
+      {
+        "title": {
+          "es": "Percepción del entorno",
+          "en": "Omni-Sense Safety - Obstacles Detected, Journey Perfected"
+        },
+        "description": {
+          "es": "Explora la detección de obstáculos del fabricante.",
+          "en": "Explore the manufacturer’s obstacle detection system."
+        },
+        "source": "https://cdn.pudutech.com/official-website/bellabotpro/S7_1.webp",
+        "src": "/media/experience/0713114e3535e833.webp",
+        "kind": "image",
+        "poster": "/media/experience/0713114e3535e833.webp"
+      }
+    ]
+  },
+  "kettybot-pro": {
+    "source": "https://www.pudurobotics.com/en/products/kettybot_pro",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Publicidad en movimiento",
+          "en": "A New Way to Attract Customers"
+        },
+        "description": {
+          "es": "La pantalla convierte el recorrido del robot en un punto de comunicación para tu negocio.",
+          "en": "KettyBot Pro intelligently greets and interacts with customers using its screen content. Such a cute and smart KettyBot Pro would draw more attention than traditional approaches!"
+        },
+        "source": "https://cdn.pudutech.com/attract_en_ae71822926.mp4",
+        "src": "/media/experience/12c910085d5899d2.mp4",
+        "kind": "video",
+        "poster": "/media/experience/12c910085d5899d2.jpg"
+      },
+      {
+        "title": {
+          "es": "Entregas a varias mesas",
+          "en": "Multi-table Delivery"
+        },
+        "description": {
+          "es": "Organiza entregas a diferentes mesas desde una misma ruta.",
+          "en": "Multiple tables can be served in one run with accurate positioning and optimal path planning. Achieve more with less!"
+        },
+        "source": "https://cdn.pudutech.com/video_in1_5e6bd85f02.mp4",
+        "src": "/media/experience/3d8254f41b1373c2.mp4",
+        "kind": "video",
+        "poster": "/media/experience/3d8254f41b1373c2.jpg"
+      },
+      {
+        "title": {
+          "es": "Modo de recorrido",
+          "en": "Cruise Mode"
+        },
+        "description": {
+          "es": "Recorre el espacio con contenido en pantalla. Botmate revisa la ruta y el contexto de uso.",
+          "en": "KettyBot Pro can cruise in specific areas to provide customers with free snacks and drinks and broadcast services and promotions at the same time."
+        },
+        "source": "https://cdn.pudutech.com/_6b8c9d04f2.mp4",
+        "src": "/media/experience/35ca67f214a97205.mp4",
+        "kind": "video",
+        "poster": "/media/experience/35ca67f214a97205.jpg"
+      }
+    ]
+  },
+  "pudu-cc1": {
+    "source": "https://www.pudurobotics.com/en/products/puduCC1",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Limpieza versátil cuatro en uno",
+          "en": "Four-in-1 Versatile Cleaning"
+        },
+        "description": {
+          "es": "Funciones de barrido, fregado, aspirado y trapeado en un solo equipo. Satisface todas tus necesidades de limpieza con una sola máquina.",
+          "en": "Sweeping, scrubbing, vacuuming, and mopping functions in one. Meet all your cleaning needs with one machine."
+        },
+        "source": "https://cdn.pudutech.com/screen2_robot_de14101c38.mp4",
+        "src": "/media/experience/1c6aebe47830a0dd.mp4",
+        "kind": "video",
+        "poster": "/media/experience/1c6aebe47830a0dd.jpg"
+      },
+      {
+        "title": {
+          "es": "Potencia de succión super 17000 PA",
+          "en": "17000 PA Super Suction Power"
+        },
+        "description": {
+          "es": "No deja manchas",
+          "en": "No stain left behind"
+        },
+        "source": "https://cdn.pudutech.com/s3_6083161632.mp4",
+        "src": "/media/experience/7aed1e433da99e49.mp4",
+        "kind": "video",
+        "poster": "/media/experience/7aed1e433da99e49.jpg"
+      },
+      {
+        "title": {
+          "es": "Reanudación de limpieza desde el punto de interrupción",
+          "en": "Breakpoint Resume Cleaning"
+        },
+        "description": {
+          "es": "Si la batería está baja y la tarea no ha terminado, CC1 recuerda el progreso y reanuda la limpieza pendiente tras recargarse por completo.",
+          "en": "If the power is low but the cleaning task hasn't been completed, CC1 can remember the cleaning progress and resume the previously unfinished task after being fully charged."
+        },
+        "source": "https://cdn.pudutech.com/_8c9af929f4.mp4",
+        "src": "/media/experience/a073e75b45a3136c.mp4",
+        "kind": "video",
+        "poster": "/media/experience/a073e75b45a3136c.jpg"
+      },
+      {
+        "title": {
+          "es": "Solución de navegación PUDU SLAM",
+          "en": "PUDU SLAM Navigation Solution"
+        },
+        "description": {
+          "es": "Impulsado por el sistema de posicionamiento PUDU SLAM, CC1 soporta SLAM visual y láser para mayor eficiencia en escenarios complejos.",
+          "en": "Powered by the PUDU SLAM positioning system, CC1 supports both visual SLAM and laser SLAM to perform tasks more efficiently in complex scenarios."
+        },
+        "source": "https://cdn.pudutech.com/slam_b1b4e58ff3.mp4",
+        "src": "/media/experience/8caf3db22e13d61d.mp4",
+        "kind": "video",
+        "poster": "/media/experience/8caf3db22e13d61d.jpg"
+      }
+    ]
+  },
+  "bellabot": {
+    "source": "https://www.pudurobotics.com/en/products/bellabot",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Navegación visual SLAM",
+          "en": "Visual SLAM"
+        },
+        "description": {
+          "es": "El sistema visual SLAM ayuda al robot a ubicarse durante sus recorridos.",
+          "en": "BellaBot supports both LiDAR and visual SLAM positioning and navigation to adapt to more scenarios. Both solutions are accurate and easy to use, providing an excellent and customer-centered experience to end-users."
+        },
+        "source": "https://cdn.pudutech.com/slam_81edd07844.mp4",
+        "src": "/media/experience/46738ced77dd93bc.mp4",
+        "kind": "video",
+        "poster": "/media/experience/46738ced77dd93bc.jpg"
+      },
+      {
+        "title": {
+          "es": "Detección de obstáculos en 3D",
+          "en": "3D Omnidirectional Obstacle Avoidance"
+        },
+        "description": {
+          "es": "La percepción tridimensional ayuda a identificar obstáculos durante la entrega.",
+          "en": "For higher safety, BellaBot comes with 3D sensors and a new modular chassis. It can stop when it encounters obstacles at any angle and then move away. With 3 RGBD cameras and the LiDAR, BellaBot can smoothly avoid low-lying and overhanging obstacles."
+        },
+        "source": "https://cdn.pudutech.com/3_D_2db4d70722.mp4",
+        "src": "/media/experience/db277787300c5f30.mp4",
+        "kind": "video",
+        "poster": "/media/experience/db277787300c5f30.jpg"
+      },
+      {
+        "title": {
+          "es": "Detección de bandejas por infrarrojos",
+          "en": "Infrared Tray Sensor"
+        },
+        "description": {
+          "es": "Los sensores infrarrojos detectan la interacción con las bandejas.",
+          "en": "Modular quick-disassembly structures and infrared tray sensors empower smarter trays and higher delivery efficiency."
+        },
+        "source": "https://cdn.pudutech.com/_d939cf225e.png",
+        "src": "/media/experience/78163301492136c7.webp",
+        "kind": "image",
+        "poster": "/media/experience/78163301492136c7.webp"
+      }
+    ]
+  },
+  "pudubot-2": {
+    "source": "https://www.pudurobotics.com/en/products/pudubot2",
+    "verifiedAt": "2026-09-24",
+    "chapters": [
+      {
+        "title": {
+          "es": "Navegación PUDU VSLAM+",
+          "en": "PUDU VSLAM+, New Generation of PUDU VSLAM Technology"
+        },
+        "description": {
+          "es": "Tecnología sin marcadores que reduce el tiempo de despliegue en un 75%. Capaz de operar en entornos con techos altos de hasta 30m.",
+          "en": "Marker-less technology reducing 75% deployment time. Capable of operating in high-ceiling environments up to 30m."
+        },
+        "source": "https://cdn.pudutech.com/s4_7f7b8dc4ed.mp4",
+        "src": "/media/experience/6a9f7b071c2bca1d.mp4",
+        "kind": "video",
+        "poster": "/media/experience/6a9f7b071c2bca1d.jpg"
+      },
+      {
+        "title": {
+          "es": "Carga automática, siempre en espera",
+          "en": "Automatic Charging, Always Stand-by"
+        },
+        "description": {
+          "es": "Soporta recarga automática sin intervención manual.",
+          "en": "Support auto-recharging without manual intervention."
+        },
+        "source": "https://cdn.pudutech.com/s8_1_662b54f03f.webp",
+        "src": "/media/experience/b35e3dc47af09205.webp",
+        "kind": "image",
+        "poster": "/media/experience/b35e3dc47af09205.webp"
+      },
+      {
+        "title": {
+          "es": "Diseño de estructura cerrada",
+          "en": "Fully Enclosed Machine Design"
+        },
+        "description": {
+          "es": "Observa esta función de PuduBot 2 en el material del fabricante. Botmate confirma su configuración para tu operación.",
+          "en": "Explore this function in the manufacturer’s demonstration. Botmate confirms the configuration for your operation."
+        },
+        "source": "https://cdn.pudutech.com/s9_573533bac8.mp4",
+        "src": "/media/experience/7253dcbff60b4c0d.mp4",
+        "kind": "video",
+        "poster": "/media/experience/7253dcbff60b4c0d.jpg"
+      }
+    ]
+  }
+}

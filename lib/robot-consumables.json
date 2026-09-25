@@ -1,0 +1,125 @@
+[
+  {
+    "models": [
+      "pudu-bg1",
+      "pudu-bg1-pro"
+    ],
+    "name": {
+      "es": "Cepillo de disco fregador",
+      "en": "Scrubbing Disc Brush"
+    },
+    "source": "https://cdn.pudutech.com/S1201_6ad3d0faec.webp",
+    "src": "/media/experience/82a155615284198d.webp",
+    "kind": "image",
+    "poster": "/media/experience/82a155615284198d.webp"
+  },
+  {
+    "models": [
+      "pudu-bg1",
+      "pudu-bg1-pro"
+    ],
+    "name": {
+      "es": "Labio de goma",
+      "en": "Rubber Blade"
+    },
+    "source": "https://cdn.pudutech.com/S1202_787a8200d7.webp",
+    "src": "/media/experience/5af8c190be853e77.webp",
+    "kind": "image",
+    "poster": "/media/experience/5af8c190be853e77.webp"
+  },
+  {
+    "models": [
+      "pudu-bg1",
+      "pudu-bg1-pro"
+    ],
+    "name": {
+      "es": "Almohadilla de fregado",
+      "en": "Scrubbing Pad"
+    },
+    "source": "https://cdn.pudutech.com/S1203_7f45fc4979.webp",
+    "src": "/media/experience/03e57437d8e83d08.webp",
+    "kind": "image",
+    "poster": "/media/experience/03e57437d8e83d08.webp"
+  },
+  {
+    "models": [
+      "pudu-bg1",
+      "pudu-bg1-pro"
+    ],
+    "name": {
+      "es": "Cepillo lateral",
+      "en": "Side Brush"
+    },
+    "source": "https://cdn.pudutech.com/S12_06_1_d85d97bb0f.webp",
+    "src": "/media/experience/e068dd3a22739ab5.webp",
+    "kind": "image",
+    "poster": "/media/experience/e068dd3a22739ab5.webp"
+  },
+  {
+    "models": [
+      "pudu-bg1",
+      "pudu-bg1-pro"
+    ],
+    "name": {
+      "es": "Cepillo de rodillo barredor",
+      "en": "Sweeping Roller Brush"
+    },
+    "source": "https://cdn.pudutech.com/S12_07_1_95762dbb41.webp",
+    "src": "/media/experience/6815e286d900a264.webp",
+    "kind": "image",
+    "poster": "/media/experience/6815e286d900a264.webp"
+  },
+  {
+    "models": [
+      "pudu-bg1",
+      "pudu-bg1-pro"
+    ],
+    "name": {
+      "es": "Depósito de residuos",
+      "en": "Trashbin"
+    },
+    "source": "https://cdn.pudutech.com/S12_08_1_a893656983.webp",
+    "src": "/media/experience/d3000a5cc1d753ec.webp",
+    "kind": "image",
+    "poster": "/media/experience/d3000a5cc1d753ec.webp"
+  },
+  {
+    "models": [
+      "pudu-d5-series"
+    ],
+    "name": {
+      "es": "Caja Metálica de Entrega",
+      "en": "Metal Delivery Crate"
+    },
+    "source": "https://cdn.pudutech.com/1_440162cb7c.webp",
+    "src": "/media/experience/ad8f8c5d3923ec59.webp",
+    "kind": "image",
+    "poster": "/media/experience/ad8f8c5d3923ec59.webp"
+  },
+  {
+    "models": [
+      "pudu-d5-series"
+    ],
+    "name": {
+      "es": "Kit de Inspección",
+      "en": "Inspection Kit"
+    },
+    "source": "https://cdn.pudutech.com/2_a135f8a335.webp",
+    "src": "/media/experience/f1acaea245c152e9.webp",
+    "kind": "image",
+    "poster": "/media/experience/f1acaea245c152e9.webp"
+  },
+  {
+    "models": [
+      "pudu-d5-series"
+    ],
+    "name": {
+      "es": "Estación de Carga",
+      "en": "Charging Station"
+    },
+    "source": "https://cdn.pudutech.com/3_9c7814aeae.webp",
+    "src": "/media/experience/190c2eca3129303d.webp",
+    "kind": "image",
+    "poster": "/media/experience/190c2eca3129303d.webp"
+  }
+]
