@@ -1,0 +1,11 @@
+# Research originals and local verification artifacts are not part of the website.
+.pudu-source/
+.competition-source/
+docs/
+scripts/
+.next/
+node_modules/
+.git/
+*.tsbuildinfo
+*.log
+.env*
