@@ -1,0 +1,1016 @@
+{
+  "passed": true,
+  "pages": 168,
+  "sitemapImages": 141,
+  "failures": [],
+  "report": [
+    {
+      "path": "/",
+      "title": "Robots Pudu en México: venta y renta | Botmate",
+      "descriptionLength": 151,
+      "status": 200
+    },
+    {
+      "path": "/blog",
+      "title": "Blog de robótica · Guías Pudu para empresas en México | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/blog/amr-vs-agv",
+      "title": "AMR o AGV: empieza por tu operación | Botmate",
+      "descriptionLength": 53,
+      "status": 200
+    },
+    {
+      "path": "/blog/botmate-serve-vs-botmate-ads-cual-elegir",
+      "title": "Entrega o publicidad: cómo definir la prioridad de tu robot | Botmate",
+      "descriptionLength": 89,
+      "status": 200
+    },
+    {
+      "path": "/blog/como-elegir-amr",
+      "title": "Cómo elegir un AMR para tu almacén | Botmate",
+      "descriptionLength": 37,
+      "status": 200
+    },
+    {
+      "path": "/blog/como-implementar-robot-en-restaurante",
+      "title": "Prepara tu restaurante para una demostración | Botmate",
+      "descriptionLength": 72,
+      "status": 200
+    },
+    {
+      "path": "/blog/futuro-robotica-mexico-2026",
+      "title": "Qué preguntar antes de elegir un proveedor de robótica | Botmate",
+      "descriptionLength": 67,
+      "status": 200
+    },
+    {
+      "path": "/blog/ia-fisica-pudu",
+      "title": "IA física: del software al trabajo en el mundo real | Botmate",
+      "descriptionLength": 37,
+      "status": 200
+    },
+    {
+      "path": "/blog/limpieza-autonoma-botmate-clean-vs-tradicional",
+      "title": "Limpieza autónoma y con operador: tareas distintas | Botmate",
+      "descriptionLength": 83,
+      "status": 200
+    },
+    {
+      "path": "/blog/limpieza-espacios-pequenos",
+      "title": "Limpieza robótica en espacios pequeños | Botmate",
+      "descriptionLength": 44,
+      "status": 200
+    },
+    {
+      "path": "/blog/modernizacion-industrial-mexico-equipo-botmate",
+      "title": "México moderno: la transformación industrial se construye en equipo | Botmate",
+      "descriptionLength": 124,
+      "status": 200
+    },
+    {
+      "path": "/blog/robots-cargas-pesadas-almacenes",
+      "title": "Robots para almacenes, tarimas y cargas pesadas | Botmate",
+      "descriptionLength": 86,
+      "status": 200
+    },
+    {
+      "path": "/blog/robots-industria-textil",
+      "title": "Robots en la industria textil | Botmate",
+      "descriptionLength": 43,
+      "status": 200
+    },
+    {
+      "path": "/blog/robots-jardineria-grandes-exteriores",
+      "title": "GT3, GT5 y GT7: robótica para jardinería y grandes exteriores | Botmate",
+      "descriptionLength": 106,
+      "status": 200
+    },
+    {
+      "path": "/blog/roi-renta-de-robots-restaurantes",
+      "title": "Cómo evaluar el costo de incorporar un robot | Botmate",
+      "descriptionLength": 86,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito",
+      "title": "Proyectos Botmate en México y casos de robótica Pudu",
+      "descriptionLength": 136,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/botmate-mabe",
+      "title": "Mabe · Proyecto Botmate en México",
+      "descriptionLength": 113,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/botmate-meximold-2026",
+      "title": "Meximold 2026 · Proyecto Botmate en México",
+      "descriptionLength": 105,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/botmate-purina",
+      "title": "Purina · Proyecto Botmate en México",
+      "descriptionLength": 112,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/botmate-walmart-papalote",
+      "title": "Walmart · Proyecto Botmate en México",
+      "descriptionLength": 94,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/food-bayana",
+      "title": "Food Bayana · Caso internacional Pudu | Botmate",
+      "descriptionLength": 175,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/manufactura-baterias",
+      "title": "Manufactura de baterías · Caso internacional Pudu | Botmate",
+      "descriptionLength": 165,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/mediamarkt",
+      "title": "MediaMarkt · Caso internacional Pudu | Botmate",
+      "descriptionLength": 201,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/meritum",
+      "title": "Meritum · Caso internacional Pudu | Botmate",
+      "descriptionLength": 168,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/mnactec",
+      "title": "MNACTEC · Caso internacional Pudu | Botmate",
+      "descriptionLength": 173,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/parkhotel",
+      "title": "Parkhotel Eisenstadt · Caso internacional Pudu | Botmate",
+      "descriptionLength": 178,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/skylark",
+      "title": "Skylark Group · Caso internacional Pudu | Botmate",
+      "descriptionLength": 210,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/smile-park",
+      "title": "Smile Park · Caso internacional Pudu | Botmate",
+      "descriptionLength": 218,
+      "status": 200
+    },
+    {
+      "path": "/casos-de-exito/xtreme",
+      "title": "Xtreme Trampoline Park · Caso internacional Pudu | Botmate",
+      "descriptionLength": 172,
+      "status": 200
+    },
+    {
+      "path": "/contacto",
+      "title": "Contacto · Demostraciones y cotizaciones de robots | Botmate",
+      "descriptionLength": 137,
+      "status": 200
+    },
+    {
+      "path": "/en",
+      "title": "Pudu robots in Mexico: sales and rental | Botmate",
+      "descriptionLength": 161,
+      "status": 200
+    },
+    {
+      "path": "/en/about",
+      "title": "Botmate · Official Pudu Robotics distributor in Mexico",
+      "descriptionLength": 72,
+      "status": 200
+    },
+    {
+      "path": "/en/blog",
+      "title": "Robotics insights and guides | Botmate",
+      "descriptionLength": 48,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/amr-vs-agv",
+      "title": "AMR or AGV: start with your operation | Botmate",
+      "descriptionLength": 42,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/botmate-serve-vs-botmate-ads-cual-elegir",
+      "title": "Delivery or advertising: define your robot’s priority | Botmate",
+      "descriptionLength": 68,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/como-elegir-amr",
+      "title": "How to choose a warehouse AMR | Botmate",
+      "descriptionLength": 43,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/como-implementar-robot-en-restaurante",
+      "title": "Prepare your restaurant for a demonstration | Botmate",
+      "descriptionLength": 59,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/futuro-robotica-mexico-2026",
+      "title": "What to ask before choosing a robotics supplier | Botmate",
+      "descriptionLength": 62,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/ia-fisica-pudu",
+      "title": "Physical AI: from software to real-world work | Botmate",
+      "descriptionLength": 32,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/limpieza-autonoma-botmate-clean-vs-tradicional",
+      "title": "Autonomous and operator-guided cleaning: different tasks | Botmate",
+      "descriptionLength": 88,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/limpieza-espacios-pequenos",
+      "title": "Robotic cleaning in smaller spaces | Botmate",
+      "descriptionLength": 37,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/modernizacion-industrial-mexico-equipo-botmate",
+      "title": "A modern Mexico: industrial transformation is built together | Botmate",
+      "descriptionLength": 122,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/robots-cargas-pesadas-almacenes",
+      "title": "Robots for warehouses, pallets and heavy loads | Botmate",
+      "descriptionLength": 90,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/robots-industria-textil",
+      "title": "Robots in textile manufacturing | Botmate",
+      "descriptionLength": 41,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/robots-jardineria-grandes-exteriores",
+      "title": "GT3, GT5 and GT7: robotics for landscaping and large outdoor spaces | Botmate",
+      "descriptionLength": 82,
+      "status": 200
+    },
+    {
+      "path": "/en/blog/roi-renta-de-robots-restaurantes",
+      "title": "How to assess the cost of introducing a robot | Botmate",
+      "descriptionLength": 79,
+      "status": 200
+    },
+    {
+      "path": "/en/book",
+      "title": "Book a call with Botmate",
+      "descriptionLength": 57,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies",
+      "title": "Botmate projects in Mexico and Pudu case studies",
+      "descriptionLength": 123,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/botmate-mabe",
+      "title": "Mabe · Botmate project in Mexico",
+      "descriptionLength": 98,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/botmate-meximold-2026",
+      "title": "Meximold 2026 · Botmate project in Mexico",
+      "descriptionLength": 98,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/botmate-purina",
+      "title": "Purina · Botmate project in Mexico",
+      "descriptionLength": 98,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/botmate-walmart-papalote",
+      "title": "Walmart · Botmate project in Mexico",
+      "descriptionLength": 94,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/food-bayana",
+      "title": "Food Bayana · Pudu case study | Botmate",
+      "descriptionLength": 28,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/manufactura-baterias",
+      "title": "Manufactura de baterías · Pudu case study | Botmate",
+      "descriptionLength": 29,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/mediamarkt",
+      "title": "MediaMarkt · Pudu case study | Botmate",
+      "descriptionLength": 26,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/meritum",
+      "title": "Meritum · Pudu case study | Botmate",
+      "descriptionLength": 29,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/mnactec",
+      "title": "MNACTEC · Pudu case study | Botmate",
+      "descriptionLength": 36,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/parkhotel",
+      "title": "Parkhotel Eisenstadt · Pudu case study | Botmate",
+      "descriptionLength": 38,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/skylark",
+      "title": "Skylark Group · Pudu case study | Botmate",
+      "descriptionLength": 28,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/smile-park",
+      "title": "Smile Park · Pudu case study | Botmate",
+      "descriptionLength": 27,
+      "status": 200
+    },
+    {
+      "path": "/en/case-studies/xtreme",
+      "title": "Xtreme Trampoline Park · Pudu case study | Botmate",
+      "descriptionLength": 46,
+      "status": 200
+    },
+    {
+      "path": "/en/cleaning-robots",
+      "title": "Cleaning robots in Mexico: CC1, CC1 Pro and MT1 | Botmate",
+      "descriptionLength": 142,
+      "status": 200
+    },
+    {
+      "path": "/en/contact",
+      "title": "Contact Botmate",
+      "descriptionLength": 69,
+      "status": 200
+    },
+    {
+      "path": "/en/faq",
+      "title": "Robot rental, purchase and support FAQ · Botmate",
+      "descriptionLength": 103,
+      "status": 200
+    },
+    {
+      "path": "/en/find-your-robot",
+      "title": "Find your robot in Mexico · Botmate selector",
+      "descriptionLength": 103,
+      "status": 200
+    },
+    {
+      "path": "/en/industries",
+      "title": "Robotics solutions for 11 application areas | Botmate",
+      "descriptionLength": 122,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/education",
+      "title": "Education | Botmate",
+      "descriptionLength": 100,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/entertainment-and-sports",
+      "title": "Entertainment and Sports | Botmate",
+      "descriptionLength": 100,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/food-and-beverage",
+      "title": "Food &amp; Beverage | Botmate",
+      "descriptionLength": 101,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/health-care",
+      "title": "Health Care | Botmate",
+      "descriptionLength": 89,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/hospitality",
+      "title": "Hospitality | Botmate",
+      "descriptionLength": 107,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/industrial-warehouse-logistics",
+      "title": "Industrial Facility | Botmate",
+      "descriptionLength": 101,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/jardineria-y-exteriores",
+      "title": "Landscaping and large outdoor spaces | Botmate",
+      "descriptionLength": 112,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/public-service",
+      "title": "Public Service | Botmate",
+      "descriptionLength": 106,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/realestate-and-property-services",
+      "title": "Real Estate &amp; Property Services | Botmate",
+      "descriptionLength": 96,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/retail",
+      "title": "Retail | Botmate",
+      "descriptionLength": 77,
+      "status": 200
+    },
+    {
+      "path": "/en/industries/transportation-and-related-service",
+      "title": "Transportation and Related Service | Botmate",
+      "descriptionLength": 87,
+      "status": 200
+    },
+    {
+      "path": "/en/purchase",
+      "title": "Buy Pudu robots in Mexico | Botmate",
+      "descriptionLength": 61,
+      "status": 200
+    },
+    {
+      "path": "/en/rental",
+      "title": "Robot rental in Mexico | Botmate",
+      "descriptionLength": 65,
+      "status": 200
+    },
+    {
+      "path": "/en/resources",
+      "title": "Pudu brochures, datasheets and resources | Botmate",
+      "descriptionLength": 43,
+      "status": 200
+    },
+    {
+      "path": "/en/robots",
+      "title": "Pudu robot catalog in Mexico | Botmate",
+      "descriptionLength": 64,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/bellabot",
+      "title": "BellaBot in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/bellabot-pro",
+      "title": "BellaBot Pro in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/botmate-carry",
+      "title": "Pudu HolaBot | Botmate",
+      "descriptionLength": 42,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/botmate-glide",
+      "title": "SwiftBot | Botmate",
+      "descriptionLength": 40,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/botmate-tower",
+      "title": "FlashBot | Botmate",
+      "descriptionLength": 37,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/flashbot-arm",
+      "title": "FlashBot Arm in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/flashbot-max",
+      "title": "FlashBot Max in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/kettybot-pro",
+      "title": "KettyBot Pro in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-bg1",
+      "title": "PUDU BG1 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-bg1-pro",
+      "title": "PUDU BG1 Pro in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-cc1",
+      "title": "PUDU CC1 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-cc1-pro",
+      "title": "PUDU CC1 Pro in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-cc1-pro-disc",
+      "title": "PUDU CC1 Pro Disc in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 135,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-d5-series",
+      "title": "PUDU D5 Series in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 132,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-d7",
+      "title": "PUDU D7 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 125,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-d9",
+      "title": "PUDU D9 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 125,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-et1",
+      "title": "PUDU ET1 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-gt3",
+      "title": "PUDU GT3 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-gt5",
+      "title": "PUDU GT5 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-gt7",
+      "title": "PUDU GT7 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-mp2000",
+      "title": "PUDU MP2000 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 129,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-mt1",
+      "title": "PUDU MT1 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-mt1-max",
+      "title": "PUDU MT1 Max in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-mt1-vac",
+      "title": "PUDU MT1 Vac in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-sh1",
+      "title": "PUDU SH1 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 126,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-t150",
+      "title": "PUDU T150 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 127,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-t300",
+      "title": "PUDU T300 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 127,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-t600",
+      "title": "PUDU T600 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 127,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudu-t600-underride",
+      "title": "PUDU T600 Underride in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 137,
+      "status": 200
+    },
+    {
+      "path": "/en/robots/pudubot-2",
+      "title": "PuduBot 2 in Mexico · Functions and applications | Botmate",
+      "descriptionLength": 127,
+      "status": 200
+    },
+    {
+      "path": "/en/services",
+      "title": "Robot implementation and support | Botmate",
+      "descriptionLength": 74,
+      "status": 200
+    },
+    {
+      "path": "/en/spare-parts",
+      "title": "Pudu accessories and spare parts | Botmate",
+      "descriptionLength": 77,
+      "status": 200
+    },
+    {
+      "path": "/en/support",
+      "title": "Robot support in Mexico · Botmate",
+      "descriptionLength": 90,
+      "status": 200
+    },
+    {
+      "path": "/encuentra-tu-robot",
+      "title": "Encuentra tu robot en México · Selector Botmate",
+      "descriptionLength": 147,
+      "status": 200
+    },
+    {
+      "path": "/nosotros",
+      "title": "Botmate · Distribuidor oficial de Pudu Robotics en México",
+      "descriptionLength": 145,
+      "status": 200
+    },
+    {
+      "path": "/preguntas-frecuentes",
+      "title": "Preguntas sobre renta, compra y soporte de robots · Botmate",
+      "descriptionLength": 128,
+      "status": 200
+    },
+    {
+      "path": "/recursos",
+      "title": "Catálogos, fichas y documentación Pudu Robotics | Botmate",
+      "descriptionLength": 106,
+      "status": 200
+    },
+    {
+      "path": "/refacciones",
+      "title": "Refacciones y accesorios Pudu en México | Botmate",
+      "descriptionLength": 140,
+      "status": 200
+    },
+    {
+      "path": "/renta",
+      "title": "Renta de robots en México | Botmate",
+      "descriptionLength": 149,
+      "status": 200
+    },
+    {
+      "path": "/reservar",
+      "title": "Reserva una llamada sobre robots para tu empresa | Botmate",
+      "descriptionLength": 145,
+      "status": 200
+    },
+    {
+      "path": "/robots",
+      "title": "Catálogo Pudu Robotics en México · 27 modelos y variantes | Botmate",
+      "descriptionLength": 115,
+      "status": 200
+    },
+    {
+      "path": "/robots-de-limpieza",
+      "title": "Robots de limpieza en México: CC1, CC1 Pro y MT1 | Botmate",
+      "descriptionLength": 142,
+      "status": 200
+    },
+    {
+      "path": "/robots/bellabot",
+      "title": "BellaBot en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/bellabot-pro",
+      "title": "BellaBot Pro en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/botmate-carry",
+      "title": "Pudu HolaBot · Aplicaciones y características | Botmate",
+      "descriptionLength": 177,
+      "status": 200
+    },
+    {
+      "path": "/robots/botmate-glide",
+      "title": "SwiftBot · Aplicaciones y características | Botmate",
+      "descriptionLength": 162,
+      "status": 200
+    },
+    {
+      "path": "/robots/botmate-tower",
+      "title": "FlashBot · Aplicaciones y características | Botmate",
+      "descriptionLength": 167,
+      "status": 200
+    },
+    {
+      "path": "/robots/flashbot-arm",
+      "title": "FlashBot Arm en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/flashbot-max",
+      "title": "FlashBot Max en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/kettybot-pro",
+      "title": "KettyBot Pro en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-bg1",
+      "title": "PUDU BG1 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-bg1-pro",
+      "title": "PUDU BG1 Pro en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-cc1",
+      "title": "PUDU CC1 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-cc1-pro",
+      "title": "PUDU CC1 Pro en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-cc1-pro-disc",
+      "title": "PUDU CC1 Pro Disc en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 139,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-d5-series",
+      "title": "PUDU D5 Series en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 136,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-d7",
+      "title": "PUDU D7 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 129,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-d9",
+      "title": "PUDU D9 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 129,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-et1",
+      "title": "PUDU ET1 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-gt3",
+      "title": "PUDU GT3 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-gt5",
+      "title": "PUDU GT5 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-gt7",
+      "title": "PUDU GT7 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-mp2000",
+      "title": "PUDU MP2000 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 133,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-mt1",
+      "title": "PUDU MT1 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-mt1-max",
+      "title": "PUDU MT1 Max en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-mt1-vac",
+      "title": "PUDU MT1 Vac en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 134,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-sh1",
+      "title": "PUDU SH1 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 130,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-t150",
+      "title": "PUDU T150 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 131,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-t300",
+      "title": "PUDU T300 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 131,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-t600",
+      "title": "PUDU T600 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 131,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudu-t600-underride",
+      "title": "PUDU T600 Underride en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 141,
+      "status": 200
+    },
+    {
+      "path": "/robots/pudubot-2",
+      "title": "PuduBot 2 en México · Funciones y aplicaciones | Botmate",
+      "descriptionLength": 131,
+      "status": 200
+    },
+    {
+      "path": "/sectores",
+      "title": "Soluciones robóticas para 11 áreas de aplicación en México | Botmate",
+      "descriptionLength": 142,
+      "status": 200
+    },
+    {
+      "path": "/sectores/education",
+      "title": "Educación | Botmate",
+      "descriptionLength": 87,
+      "status": 200
+    },
+    {
+      "path": "/sectores/entertainment-and-sports",
+      "title": "Entretenimiento y deportes | Botmate",
+      "descriptionLength": 121,
+      "status": 200
+    },
+    {
+      "path": "/sectores/food-and-beverage",
+      "title": "Restaurantes y alimentos | Botmate",
+      "descriptionLength": 144,
+      "status": 200
+    },
+    {
+      "path": "/sectores/health-care",
+      "title": "Salud y cuidados | Botmate",
+      "descriptionLength": 98,
+      "status": 200
+    },
+    {
+      "path": "/sectores/hospitality",
+      "title": "Hoteles y hospitalidad | Botmate",
+      "descriptionLength": 106,
+      "status": 200
+    },
+    {
+      "path": "/sectores/industrial-warehouse-logistics",
+      "title": "Manufactura y almacenes | Botmate",
+      "descriptionLength": 129,
+      "status": 200
+    },
+    {
+      "path": "/sectores/jardineria-y-exteriores",
+      "title": "Jardinería y grandes exteriores | Botmate",
+      "descriptionLength": 132,
+      "status": 200
+    },
+    {
+      "path": "/sectores/public-service",
+      "title": "Servicios públicos | Botmate",
+      "descriptionLength": 121,
+      "status": 200
+    },
+    {
+      "path": "/sectores/realestate-and-property-services",
+      "title": "Edificios y servicios inmobiliarios | Botmate",
+      "descriptionLength": 115,
+      "status": 200
+    },
+    {
+      "path": "/sectores/retail",
+      "title": "Retail y centros comerciales | Botmate",
+      "descriptionLength": 105,
+      "status": 200
+    },
+    {
+      "path": "/sectores/transportation-and-related-service",
+      "title": "Aeropuertos y transporte | Botmate",
+      "descriptionLength": 104,
+      "status": 200
+    },
+    {
+      "path": "/servicios",
+      "title": "Servicios · Implementación, capacitación y soporte | Botmate",
+      "descriptionLength": 138,
+      "status": 200
+    },
+    {
+      "path": "/soporte",
+      "title": "Soporte para robots en México · Botmate",
+      "descriptionLength": 136,
+      "status": 200
+    },
+    {
+      "path": "/venta",
+      "title": "Compra de robots en México | Botmate",
+      "descriptionLength": 150,
+      "status": 200
+    }
+  ]
+}

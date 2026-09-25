@@ -7,6 +7,7 @@ import { robotExperiences } from '@/lib/robot-experience';
 import consumables from '@/lib/robot-consumables.json';
 import stories from '@/lib/pudu-stories.json';
 import { site } from '@/lib/site';
+import { breadcrumbLd } from '@/lib/seo';
 import JsonLd from './JsonLd';
 import PuduVideo from './PuduVideo';
 import Robot3DShowcase from './Robot3DShowcase';
@@ -57,6 +58,7 @@ export default function RobotProductPage({ robot: r, locale = 'es' }: { robot: P
       <Link className="text-link" href={localPath('/refacciones', locale)}>{es ? 'Explorar accesorios del catálogo' : 'Explore catalog accessories'}<ArrowUpRight size={17}/></Link>
     </section>
     <section className="robot-closing"><div className="container-x"><p className="eyebrow">{es ? 'EL SIGUIENTE PASO ES TUYO' : 'YOUR NEXT STEP'}</p><h2>{es ? 'Veamos cómo encaja' : 'Let’s see how'}<br/>{es ? 'en tu operación.' : 'it fits your operation.'}</h2><Link href={localPath('/reservar', locale)} className="btn-primary">{es ? 'Agendar con Botmate' : 'Book with Botmate'}<ArrowUpRight size={19}/></Link><span>{es ? '30 minutos · Google Meet' : '30 minutes · Google Meet'}</span></div></section>
+    <JsonLd data={breadcrumbLd([{name:'Botmate',url:localPath('/',locale)},{name:es?'Robots':'Robots',url:localPath('/robots',locale)},{name:r.name,url:localPath('/robots/'+r.slug,locale)}])}/>
     <JsonLd data={{ '@context': 'https://schema.org', '@type': 'Product', name: r.name, model: r.name, description: r.description[locale], image: site.url + r.image, brand: { '@type': 'Brand', name: 'Pudu Robotics' }, url: site.url + localPath('/robots/' + r.slug, locale) }}/>
   </div>;
 }

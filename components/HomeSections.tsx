@@ -20,7 +20,7 @@ export function HomeAreas({locale}: {locale: Locale}) {
     <div className="home-heading"><h2>{es ? '¿Qué necesitas resolver?' : 'What do you need to solve?'}</h2><Link className="text-link" href={localPath('/robots',locale)}>{es ? 'Todos los robots' : 'All robots'}<ArrowUpRight size={17}/></Link></div>
     <div className="home-area-grid">{areas.map(area => {
       const robot = puduProducts.find(r => r.slug === area.model)!;
-      return <Link key={area.family} className="home-area-card" href={localPath('/robots?familia='+area.family,locale)}><div className="home-area-image"><Image src={robot.image} alt={robot.name} fill sizes="(min-width: 1000px) 18vw, (min-width: 600px) 30vw, 45vw"/></div><h3>{es ? area.es : area.en}<ArrowUpRight size={16}/></h3><p>{es ? area.detailEs : area.detailEn}</p></Link>;
+      return <Link key={area.family} className="home-area-card" href={localPath(area.family==='cleaning'?'/robots-de-limpieza':'/robots?familia='+area.family,locale)}><div className="home-area-image"><Image src={robot.image} alt={robot.name} fill sizes="(min-width: 1000px) 18vw, (min-width: 600px) 30vw, 45vw"/></div><h3>{es ? area.es : area.en}<ArrowUpRight size={16}/></h3><p>{es ? area.detailEs : area.detailEn}</p></Link>;
     })}</div>
   </div></section>;
 }

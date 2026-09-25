@@ -5,6 +5,7 @@ import "./globals.css";
 import "./pudu.css";
 import "./immersive.css";
 import "./robot-experience.css";
+import "./cleaning.css";
 import { site } from "@/lib/site";
 import Navbar, {SkipLink} from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: { card: "summary_large_image", images: ["/opengraph-image"] },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
 };
 export const viewport: Viewport = {
   themeColor: "#ffffff",

@@ -22,7 +22,7 @@ export default function PuduHero({locale='es'}:{locale?:Locale}) {
   <div className="container-x pudu-hero-grid">
    <div className="pudu-hero-copy">
     <p className="eyebrow"><span className="live-dot"/>{es?'BOTMATE × PUDU ROBOTICS · MÉXICO':'BOTMATE × PUDU ROBOTICS · MEXICO'}</p>
-    <h1>{es?'El futuro':'The future'}<br/><span>{es?'ya trabaja.':'is at work.'}</span></h1>
+    <h1>{es?'Robots en México.':'Robots in Mexico.'}<br/><span>{es?'El futuro trabaja.':'The future at work.'}</span></h1>
     <p>{es?'Robots para limpiar, transportar y atender. Encuentra el adecuado para tu empresa en México.':'Robots that clean, transport and serve. Find the right one for your business in Mexico.'}</p>
     <div className="hero-actions"><Link className="btn-primary" href={localPath('/encuentra-tu-robot',locale)}>{es?'Encuentra tu robot':'Find your robot'}<ArrowUpRight size={18}/></Link><Link className="text-link" href={localPath('/reservar',locale)}>{es?'Reserva una demostración':'Book a demonstration'}<ArrowUpRight size={17}/></Link></div>
     <div className="distributor-note"><Image src="/media/pudu/pudu-logo.webp" alt="Pudu Robotics" width={100} height={30}/><span>{es?'Distribuidor oficial en México':'Official distributor in Mexico'}</span></div>

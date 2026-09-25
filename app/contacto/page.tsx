@@ -43,6 +43,7 @@ export default async function Page(
         <div className="container-x contact-layout">
           <aside className="contact-aside">
             <h2>Conversemos a tu manera.</h2>
+            <p>Atención comercial las 24 horas, todos los días.</p>
             <div className="contact-options">
               <a href={waLink()} target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={22} />
@@ -66,6 +67,7 @@ export default async function Page(
                 </div>
               </a>
             </div>
+            <a className="text-link" href="https://www.google.com/maps/place/BOTMATE/data=!4m2!3m1!1s0x0:0xaec3244ce320d15f" target="_blank" rel="noopener noreferrer">Ver el perfil y las reseñas de Botmate en Google</a>
             <p className="eyebrow">Para preparar tu demostración</p>
             <p>
               Ten a la mano tu ubicación, el tipo de espacio y la tarea que
