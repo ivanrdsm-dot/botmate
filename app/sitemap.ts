@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ].filter((src): src is string => Boolean(src)))].map(src => new URL(src, site.url).href);
     const languages = { 'es-MX': site.url + path, en: site.url + localPath(path, 'en'), 'x-default': site.url + path };
     // Content edit dates, not crawler requests or build times.
-    const lastModified = product || path === '/' || path === '/robots-de-limpieza' ? '2026-09-24'
+    const lastModified = path === '/' || path === '/nosotros' || path === '/robots-de-limpieza' || product ? '2026-10-02'
       : path === '/casos-de-exito' || ownCase ? '2026-09-17' : '2026-09-13';
     return (['es', 'en'] as const).map(locale => ({
       url: site.url + localPath(path, locale), lastModified, images, alternates: { languages },

@@ -21,14 +21,14 @@ export default function PuduHero({locale='es'}:{locale?:Locale}) {
   <div className="showroom-texture" aria-hidden="true"/>
   <div className="container-x pudu-hero-grid">
    <div className="pudu-hero-copy">
-    <p className="eyebrow"><span className="live-dot"/>{es?'BOTMATE × PUDU ROBOTICS · MÉXICO':'BOTMATE × PUDU ROBOTICS · MEXICO'}</p>
+    <p className="eyebrow"><span className="live-dot"/>{es?'BOTMATE · ROBÓTICA PARA EMPRESAS':'BOTMATE · ROBOTICS FOR BUSINESS'}</p>
     <h1>{es?'Robots en México.':'Robots in Mexico.'}<br/><span>{es?'El futuro trabaja.':'The future at work.'}</span></h1>
     <p>{es?'Robots para limpiar, transportar y atender. Encuentra el adecuado para tu empresa en México.':'Robots that clean, transport and serve. Find the right one for your business in Mexico.'}</p>
     <div className="hero-actions"><Link className="btn-primary" href={localPath('/encuentra-tu-robot',locale)}>{es?'Encuentra tu robot':'Find your robot'}<ArrowUpRight size={18}/></Link><Link className="text-link" href={localPath('/reservar',locale)}>{es?'Reserva una demostración':'Book a demonstration'}<ArrowUpRight size={17}/></Link></div>
-    <div className="distributor-note"><Image src="/media/pudu/pudu-logo.webp" alt="Pudu Robotics" width={100} height={30}/><span>{es?'Distribuidor oficial en México':'Official distributor in Mexico'}</span></div>
+    <div className="brand-note"><span>{es?'Venta · Renta · Implementación · Soporte':'Sales · Rental · Implementation · Support'}</span></div>
    </div>
    <div className="showroom-exhibit"><SpatialLogo/><div className="pudu-stage">
-    <div className="stage-coordinate">MX / PUDU / {String(index+1).padStart(2,'0')}</div>
+    <div className="stage-coordinate">MX / BOTMATE / {String(index+1).padStart(2,'0')}</div>
     <DepthCard className="showroom-depth"><div className="stage-orbit stage-orbit-one"/><div className="stage-orbit stage-orbit-two"/><div className="stage-floor"/>
     <Link className="stage-product" href={localPath('/robots/'+robot.slug,locale)} aria-label={robot.name} key={robot.slug}><Image src={robot.image} alt={robot.name+' · Pudu Robotics'} fill sizes="(min-width: 1000px) 52vw, 95vw" priority={index===0}/></Link></DepthCard>
     <div className="stage-caption" aria-live={playing?"off":"polite"}><span>{es?'INGENIERÍA EN MOVIMIENTO':'ENGINEERING IN MOTION'}</span><h2>{robot.name}</h2><p>{robot.description[locale]}</p></div>

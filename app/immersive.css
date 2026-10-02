@@ -15,9 +15,9 @@
 .showroom-film-link{display:inline-flex;align-items:center;gap:12px;font-size:12px;margin-top:25px;color:#b9c4de}
 .showroom-film-link>span{height:32px;width:32px;border:1px solid #8092bc60;display:grid;place-items:center;border-radius:50%}
 .showroom-film-link:hover{color:#fff}
-.immersive-showroom .distributor-note{margin-top:34px;color:#aeb8cc;font-size:9px}
-.immersive-showroom .distributor-note img{background:white;padding:6px;border-radius:3px;width:82px}
-.immersive-showroom .distributor-note span{border-color:#ffffff30}
+.immersive-showroom .brand-note{margin-top:34px;color:#aeb8cc;font-size:9px}
+.immersive-showroom .brand-note img{background:white;padding:6px;border-radius:3px;width:82px}
+.immersive-showroom .brand-note span{border-color:#ffffff30}
 .showroom-exhibit{min-width:0;position:relative;padding-top:132px}
 .spatial-logo{position:absolute;left:50%;top:25px;width:300px;height:76px;transform:translateX(-50%);perspective:1000px}
 .spatial-logo-object{height:76px;width:100%;position:relative;transform-style:preserve-3d;transform:rotateX(-12deg) rotateY(-18deg)}
@@ -63,7 +63,7 @@ html[data-motion=on] .spatial-logo-object{animation:brand-revolve 20s linear inf
 .cinema-caption{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:24px}.cinema-caption span{font-size:8px;letter-spacing:.15em;color:#acb8d0}.cinema-caption h3{font-size:22px;font-weight:500;margin-top:8px}.cinema-caption .text-link{color:#dce3ff;font-size:12px}
 @media(min-width:1500px){.immersive-showroom .pudu-hero-grid{min-height:790px}.immersive-showroom .pudu-stage{height:530px}}
 @media(max-width:1050px){.immersive-showroom .pudu-hero-grid{gap:25px}.immersive-showroom h1{font-size:61px}.showroom-applications{grid-template-columns:repeat(3,minmax(0,1fr))}.immersive-showroom .pudu-hero-copy>p.showroom-lead{font-size:19px}.spatial-logo{width:260px}.spatial-logo-left{transform:rotateY(-90deg) translateZ(130px)}.spatial-logo-right{transform:rotateY(90deg) translateZ(130px)}}
-@media(max-width:760px){.immersive-showroom .pudu-hero-grid{grid-template-columns:1fr;gap:12px;padding-top:7px;padding-bottom:27px}.immersive-showroom .pudu-hero-copy{padding:36px 0 0}.immersive-showroom h1{font-size:clamp(53px,11vw,82px);margin-block:24px 18px}.immersive-showroom .pudu-hero-copy>p:not(.eyebrow){max-width:500px}.immersive-showroom .hero-actions{gap:19px;margin-top:26px}.immersive-showroom .distributor-note{margin-top:25px}.showroom-exhibit{width:100%;max-width:510px;margin:0 auto;padding-top:135px}.immersive-showroom .pudu-stage{height:445px}.showroom-applications{gap:7px;padding-bottom:23px}.showroom-applications button{font-size:10px;padding:12px 10px;min-height:57px}.showroom-applications button>svg{display:none}.cinema-heading{display:block;margin-bottom:27px}.cinema-heading>p{margin-top:20px;max-width:420px}.experience-cinema{padding:55px 0}.cinema-choices{gap:6px}.cinema-choices button{padding:12px 10px;font-size:10px;flex:1;justify-content:center;gap:7px}.cinema-screen{aspect-ratio:4/3}.cinema-caption{align-items:flex-start;flex-direction:column;gap:16px}.cinema-caption h3{font-size:20px}.cinema-caption span{font-size:7px}}
+@media(max-width:760px){.immersive-showroom .pudu-hero-grid{grid-template-columns:1fr;gap:12px;padding-top:7px;padding-bottom:27px}.immersive-showroom .pudu-hero-copy{padding:36px 0 0}.immersive-showroom h1{font-size:clamp(53px,11vw,82px);margin-block:24px 18px}.immersive-showroom .pudu-hero-copy>p:not(.eyebrow){max-width:500px}.immersive-showroom .hero-actions{gap:19px;margin-top:26px}.immersive-showroom .brand-note{margin-top:25px}.showroom-exhibit{width:100%;max-width:510px;margin:0 auto;padding-top:135px}.immersive-showroom .pudu-stage{height:445px}.showroom-applications{gap:7px;padding-bottom:23px}.showroom-applications button{font-size:10px;padding:12px 10px;min-height:57px}.showroom-applications button>svg{display:none}.cinema-heading{display:block;margin-bottom:27px}.cinema-heading>p{margin-top:20px;max-width:420px}.experience-cinema{padding:55px 0}.cinema-choices{gap:6px}.cinema-choices button{padding:12px 10px;font-size:10px;flex:1;justify-content:center;gap:7px}.cinema-screen{aspect-ratio:4/3}.cinema-caption{align-items:flex-start;flex-direction:column;gap:16px}.cinema-caption h3{font-size:20px}.cinema-caption span{font-size:7px}}
 @media(prefers-reduced-motion:reduce){.spatial-logo-object{animation:none!important}.showroom-applications button:hover{transform:none}}
 
 /* Compact homepage: one purpose per section; detail lives on destination pages. */
@@ -76,7 +76,7 @@ html[data-motion=on] .spatial-logo-object{animation:brand-revolve 20s linear inf
 .compact-home .pudu-stage{height:425px}
 .compact-home .showroom-depth{inset:35px 0 112px}
 .compact-home .hero-actions{margin-top:24px}
-.compact-home .distributor-note{margin-top:26px}
+.compact-home .brand-note{margin-top:26px}
 .home-section{padding-block:60px}
 .home-heading{display:flex;justify-content:space-between;align-items:center;gap:22px;margin-bottom:25px}
 .home-heading h2,.home-next h2,.compact-home .cinema-heading h2{font-size:clamp(26px,3vw,36px);font-weight:550;letter-spacing:-.04em}

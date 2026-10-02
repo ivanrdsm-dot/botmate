@@ -3,7 +3,7 @@ export const site = {
   legalName: "BotMate México",
   tagline: "Robótica que trabaja contigo.",
   description:
-    "Robots de servicio para entrega, publicidad y limpieza en México. Explora soluciones Pudu Robotics y consulta renta, compra e implementación con Botmate.",
+    "Botmate: soluciones de robótica para empresas en México. Explora robots de limpieza, servicio y logística; consulta venta, renta e implementación.",
   url: "https://www.botmate.mx",
   email: "contacto@botmate.mx",
   whatsapp: "525531491986",

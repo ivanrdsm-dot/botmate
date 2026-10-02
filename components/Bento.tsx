@@ -25,7 +25,7 @@ export default function Bento() {
                   Tecnología <span className="gradient-text">BotMate</span> certificada
                 </h3>
                 <p className="mt-3 max-w-md text-sm text-white/65">
-                  Distribuidor autorizado con acceso directo a roadmap, firmware temprano y soporte de ingeniería desde Shenzhen. Tus robots siempre están a la última.
+                  Soluciones de robótica elegidas según tu operación. Botmate te acompaña en la selección, implementación y soporte de tus equipos.
                 </p>
               </div>
               <div className="mt-6 grid grid-cols-3 gap-3 text-center">

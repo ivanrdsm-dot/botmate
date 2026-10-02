@@ -30,7 +30,7 @@ export default function RobotProductPage({ robot: r, locale = 'es' }: { robot: P
   return <div className="robot-experience">
     <section className="robot-product-hero" id="modelo"><div className="container-x">
       <Link className="pudu-breadcrumb" href={localPath('/robots', locale)}>{es ? 'Todos los robots' : 'All robots'} <span>/</span> {r.name}</Link>
-      <div className="robot-product-grid"><div className="robot-product-copy"><p className="eyebrow">BOTMATE × PUDU / {familyNames[r.category][locale]}</p><h1>{r.name}</h1><p className="robot-product-lead">{r.description[locale]}</p>
+      <div className="robot-product-grid"><div className="robot-product-copy"><p className="eyebrow">BOTMATE / {familyNames[r.category][locale]}</p><h1>{r.name}</h1><p className="robot-product-lead">{r.description[locale]}</p>
         <div className="robot-product-actions"><Link href={contact} className="btn-primary">{es ? 'Cotizar este robot' : 'Enquire about this robot'}<ArrowUpRight size={18}/></Link><a href="#funcionamiento" className="text-link">{es ? 'Explorar funciones' : 'Explore functions'}<ArrowDown size={17}/></a></div>
         <div className="robot-hero-facts">{metrics.map(s => <div key={s.label.en}><strong>{s.value[locale]}</strong><span>{s.label[locale]}</span></div>)}</div>
         <p className="robot-fine-print">{es ? 'Datos del fabricante. Configuración y disponibilidad en México por confirmar.' : 'Manufacturer data. Configuration and availability in Mexico require confirmation.'}</p>

@@ -16,7 +16,7 @@ import {localizedMetadata} from '@/lib/pudu-seo';
 type Props={params:Promise<{path?:string[]}>;searchParams:Promise<{familia?:string;robot?:string}>};
 const pages:Record<string,[string,string]>={
  'cleaning-robots':['Cleaning robots in Mexico: CC1, CC1 Pro and MT1','Compare Pudu cleaning robots for businesses, factories and warehouses. Ask Botmate about purchases, rentals, spare parts and site assessments.'],
- '':['Pudu robots in Mexico: sales and rental | Botmate','Explore Pudu robots for cleaning, delivery, industrial logistics and physical AI. Discover models, industries, international cases and Botmate support in Mexico.'],
+ '':['Robots in Mexico: sales, rental and solutions | Botmate','Botmate robotics solutions for businesses in Mexico. Explore cleaning, service and logistics robots with sales, rental and implementation support.'],
  robots:['Pudu robot catalog in Mexico','Compare 27 Pudu models and variants for your business in Mexico.'],
  industries:['Robotics solutions for 11 application areas','Explore Pudu applications for hospitality, retail, manufacturing, healthcare, transportation, education and public spaces.'],
  'case-studies':['Botmate projects in Mexico and Pudu case studies','Explore Botmate projects with Walmart, Purina, Mabe and Meximold, their documented scope and international Pudu references.'],
@@ -25,7 +25,7 @@ const pages:Record<string,[string,string]>={
  faq:['Robot rental, purchase and support FAQ · Botmate','Answers about pricing, rental, purchases, demonstrations, installation, warranty and support in Mexico.'],
  'spare-parts':['Pudu accessories and spare parts','Explore official Pudu accessories and check model compatibility with Botmate.'],
  blog:['Robotics insights and guides','Botmate guides based on official Pudu resources.'],
- about:['Botmate · Official Pudu Robotics distributor in Mexico','Global robotics technology and local project conversations with Botmate.'],
+ about:['Botmate · Robotics solutions for businesses in Mexico','Meet Botmate: a Mexican robotics solutions brand with a multi-brand vision. Project assessment, implementation and support for your business.'],
  resources:['Pudu brochures, datasheets and resources','Explore the official Pudu resource library.'],
  book:['Book a call with Botmate','Choose a time to discuss your robotics project in Mexico.'],
  contact:['Contact Botmate','Talk to Botmate about robots, applications, availability and support.'],
